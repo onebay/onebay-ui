@@ -10,7 +10,7 @@
     width: 100%;
     min-height: $font-size-lg;
     color: $color-text-base;
-    font-size: 16px;
+    font-size: $font-size-lg;
     box-sizing: border-box;
     @include hairline-bottom();
     @include active;

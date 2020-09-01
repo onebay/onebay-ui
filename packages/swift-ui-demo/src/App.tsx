@@ -4,7 +4,8 @@ import { Loading, Accordion } from '/@/swift-ui/src/index.ts'
 import '/@/swift-ui/src/style/components/loading.scss'
 import '/@/swift-ui/src/style/components/accordion.scss'
 import '/@/swift-ui/src/style/components/icon.scss'
-
+import '/@/swift-ui/src/style/index.scss'
+import Index from './index.vue'
 export default defineComponent({
   name: 'App',
   setup() {
@@ -24,6 +25,7 @@ export default defineComponent({
             >
               <div>标题文字: <img src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png" alt=""/></div>
             </Accordion>
+            <Index />
         </div>
     )
   }
