@@ -1,4 +1,14 @@
-<script lang="tsx">
+<template>
+  <div 
+    class="at-loading"
+    :style="transformStyle(sizeStyle)"
+  >
+    <div class="at-loading__ring" :style="ringStyle"></div>
+    <div class="at-loading__ring" :style="transformStyle(ringStyle)"></div>
+    <div class="at-loading__ring" :style="ringStyle" :data-id="ringStyle"></div>
+  </div>
+</template>
+<script lang="ts">
 import { defineComponent, computed } from 'vue';
 
 export default defineComponent({
@@ -31,9 +41,8 @@ export default defineComponent({
           ? `${color} transparent transparent transparent`
           : '',
       }
-      return Object.assign({}, colorStyle, sizeStyle)
+      return Object.assign({}, colorStyle, sizeStyle.value)
     })
-
     const transformStyle = (style = {}) => {
       return Object.keys(style)
         .map((item) => `${item}: ${style[item]}`)
@@ -46,18 +55,5 @@ export default defineComponent({
       transformStyle
     }
   },
-  render () {
-    const { transformStyle, sizeStyle, ringStyle } = this
-    return (
-      <div 
-        class="at-loading"
-        style={transformStyle(sizeStyle)}
-      >
-        <div class="at-loading__ring" style={ringStyle}></div>
-        <div class="at-loading__ring" style={transformStyle(ringStyle)}></div>
-        <div class="at-loading__ring" style={ringStyle}></div>
-      </div>
-    )
-  }
 })
 </script>

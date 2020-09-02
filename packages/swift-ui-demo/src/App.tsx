@@ -1,6 +1,6 @@
 import { defineComponent, ref } from 'vue';
 // import { SButton } from './components'
-import { Loading, Accordion } from '/@/swift-ui/src/index.ts'
+import { Accordion } from '/@/swift-ui/src/index.ts'
 import '/@/swift-ui/src/style/components/loading.scss'
 import '/@/swift-ui/src/style/components/accordion.scss'
 import '/@/swift-ui/src/style/components/icon.scss'
@@ -17,7 +17,6 @@ export default defineComponent({
   render () {
     return (
       <div id="nav">
-          <Loading size="12" color="#f45" />
           <Accordion
               onClick={() => { this.value1 = !this.value1}}
               title="标题一"
