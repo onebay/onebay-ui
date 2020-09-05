@@ -4,6 +4,7 @@ import ActionSheet from './components/action-sheet/index.vue'
 import ActionSheetItem from './components/action-sheet/components/item.vue'
 import ActivityIndicator from './components/activity-indicator/index.vue'
 import Badge from './components/badge/index.vue'
+import Button from './components/button/index.vue'
 
 export {
   Loading,
@@ -11,5 +12,6 @@ export {
   ActionSheet,
   ActionSheetItem,
   ActivityIndicator,
-  Badge
+  Badge,
+  Button
 }
