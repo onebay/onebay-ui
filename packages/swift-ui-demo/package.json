@@ -7,8 +7,9 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "swift-ui": "file:../swift-ui",
     "vue": "^3.0.0-rc.1",
-    "swift-ui": "file:../swift-ui"
+    "vue-router": "^4.0.0-beta.9"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.10",
