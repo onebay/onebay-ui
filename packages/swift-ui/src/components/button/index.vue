@@ -22,13 +22,6 @@
 </template>
 
 <script>
-import Loading from '../loading/index.vue'
 import Button from './index'
-export default {
-  name: 'Button',
-  components: {
-    Loading,
-  },
-  mixins: [Button],
-}
+export default Button
 </script>

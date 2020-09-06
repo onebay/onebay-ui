@@ -1,6 +1,6 @@
 import { defineComponent, computed } from 'vue'
 import classNames from 'classnames'
-
+import Loading from '../loading/index.vue'
 const SIZE_CLASS = {
   normal: 'normal',
   small: 'small',
@@ -12,6 +12,9 @@ const TYPE_CLASS = {
 }
 
 export default defineComponent({
+  components: {
+    Loading
+  },
   props: {
     size: {
       type: String,
