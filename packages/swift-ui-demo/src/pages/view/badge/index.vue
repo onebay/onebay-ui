@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <!-- S Header -->
-    <div title="Badge 徽标">Badge 徽标</div>
+    <DocsHeader title="Badge 徽标"></DocsHeader>
     <!-- E Header -->
 
     <!-- S Body -->
@@ -10,17 +10,17 @@
       <div class="panel">
         <div class="panel__title">数字</div>
         <div class="panel__content">
-          <div class="badge-item">
+          <div class="example-item">
             <div class="subitem">
               <Badge value="10" :maxValue="99">
-                <button size="small" circle>
+                <Button size="small" circle>
                   按钮
-                </button>
+                </Button>
               </Badge>
             </div>
             <div class="subitem">
               <Badge value="100" :maxValue="99">
-                <button size="small">按钮</button>
+                <Button size="small">按钮</Button>
               </Badge>
             </div>
           </div>
@@ -31,17 +31,17 @@
       <div class="panel">
         <div class="panel__title">小红点</div>
         <div class="panel__content">
-          <div class="badge-item">
+          <div class="example-item">
             <div class="subitem">
               <Badge dot>
-                <button size="small" circle>
+                <Button size="small" circle>
                   按钮
-                </button>
+                </Button>
               </Badge>
             </div>
             <div class="subitem">
               <Badge dot>
-                <button size="small">按钮</button>
+                <Button size="small">按钮</Button>
               </Badge>
             </div>
           </div>
@@ -52,17 +52,17 @@
       <div class="panel">
         <div class="panel__title">文本</div>
         <div class="panel__content">
-          <div class="badge-item">
+          <div class="example-item">
             <div class="subitem">
               <Badge value="NEW">
-                <button size="small" circle>
+                <Button size="small" circle>
                   按钮
-                </button>
+                </Button>
               </Badge>
             </div>
             <div class="subitem">
               <Badge value="NEW">
-                <button size="small">按钮</button>
+                <Button size="small">按钮</Button>
               </Badge>
             </div>
           </div>
@@ -73,17 +73,17 @@
       <div class="panel">
         <div class="panel__title">省略号</div>
         <div class="panel__content">
-          <div class="badge-item">
+          <div class="example-item">
             <div class="subitem">
               <Badge :value="dot">
-                <button size="small" circle>
+                <Button size="small" circle>
                   按钮
-                </button>
+                </Button>
               </Badge>
             </div>
             <div class="subitem">
               <Badge :value="dot">
-                <button size="small">按钮</button>
+                <Button size="small">按钮</Button>
               </Badge>
             </div>
           </div>
@@ -95,12 +95,13 @@
 
 <script>
 import { defineComponent } from "vue";
-import { Badge } from '/@/swift-ui/src/index.ts'
-import './index.scss'
+import { Badge, Button } from '/@/swift-ui/src/index.ts'
+
 export default defineComponent({
   name: 'BadgePage',
   components: {
-    Badge
+    Badge,
+    Button
   },
   data() {
     return {
@@ -109,3 +110,6 @@ export default defineComponent({
   },
 })
 </script>
+<style lang="scss">
+  @import url('./index.scss');
+</style>

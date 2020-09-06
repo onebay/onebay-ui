@@ -14,7 +14,10 @@ const routes = [
     path: '/',
     component: Index
   },
-  dynamicRoute('/pages/action/index')
+  dynamicRoute('/pages/panel/index'),
+  dynamicRoute('/pages/action/action-sheet/index'),
+  dynamicRoute('/pages/action/activity-indicator/index'),
+  dynamicRoute('/pages/view/badge/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),

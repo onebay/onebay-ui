@@ -88,6 +88,9 @@ const list = [
   },
 ]
 export default defineComponent({
+  mounted() {
+    console.log('this.$route :>> ', this.$route);
+  },
   data() {
     return {
       taroLogo,
