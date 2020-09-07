@@ -4,14 +4,6 @@
     :style="customStyle"
     @click="handelOnClick"
   >
-    <button
-      v-if="!disabled"
-      class="at-button__wxbutton"
-      :lang="lang"
-      :formType="
-        formType === 'submit' || formType === 'reset' ? formType : undefined
-      "
-    />
     <div v-if="loading" class="at-button__icon">
       <Loading :color="loadingColor" :size="loadingSize" />
     </div>
