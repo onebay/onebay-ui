@@ -18,6 +18,7 @@ const routes = [
   dynamicRoute('/pages/action/action-sheet/index'),
   dynamicRoute('/pages/action/activity-indicator/index'),
   dynamicRoute('/pages/view/badge/index'),
+  dynamicRoute('/pages/basic/button/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),
