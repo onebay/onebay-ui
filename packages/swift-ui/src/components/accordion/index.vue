@@ -52,10 +52,10 @@
 
 <script lang="ts">
 import classNames from 'classnames'
-import { ref, computed } from 'vue'
+import { ref, computed, defineComponent } from 'vue'
 
-export default {
-  name: 'AtAccordion',
+export default defineComponent({
+  name: 'Accordion',
   props: {
     open: {
       type: Boolean,
@@ -158,6 +158,6 @@ export default {
       }, 700)
     },
   },
-}
+})
 
 </script>

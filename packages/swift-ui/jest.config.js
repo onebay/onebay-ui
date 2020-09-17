@@ -1,4 +1,12 @@
 module.exports = {
+  coverageThreshold: {
+    global: {
+      statements: 85,
+      branches: 80,
+      functions: 85,
+      lines: 85
+    }
+  },
   moduleFileExtensions: ['js', 'jsx', 'json', 'vue', 'tsx', 'ts'],
   transform: {
     '^.+\\.vue$': 'vue-jest',

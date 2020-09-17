@@ -9,7 +9,7 @@ import { defineComponent, computed } from 'vue'
 import classNames from 'classnames'
 
 export default defineComponent({
-  name: 'AtActionSheetItem',
+  name: 'ActionSheetItem',
   props: {
     className: {
       type: [Array, String],
