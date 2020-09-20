@@ -19,10 +19,12 @@ const routes = [
   dynamicRoute('/pages/action/activity-indicator/index'),
   dynamicRoute('/pages/view/badge/index'),
   dynamicRoute('/pages/basic/button/index'),
+  dynamicRoute('/pages/form/checkbox/index'),
+  dynamicRoute('/pages/layout/accordion/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),
-  routes 
+  routes
 })
 
 export default router
