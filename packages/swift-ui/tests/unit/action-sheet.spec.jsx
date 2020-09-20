@@ -4,14 +4,10 @@ import ActionSheetItem from '../../src/components/action-sheet/components/item.v
 import ActionSheetHeader from '../../src/components/action-sheet/components/header.vue'
 import ActionSheetFooter from '../../src/components/action-sheet/components/footer.vue'
 
-
 const factory = (
   values = {},
   slots = {
-    default: [
-      <ActionSheetItem>按钮一</ActionSheetItem>,
-      <ActionSheetItem>按钮二</ActionSheetItem>,
-    ],
+    default: [<ActionSheetItem>按钮一</ActionSheetItem>, <ActionSheetItem>按钮二</ActionSheetItem>]
   }
 ) => {
   return mount(ActionSheet, {
@@ -21,7 +17,7 @@ const factory = (
       ActionSheetFooter,
       ActionSheetItem
     },
-    props: { ...values },
+    props: { ...values }
   })
 }
 
@@ -33,7 +29,7 @@ describe('ActionSheet Snap', () => {
 
   it('render opened ActionSheet', () => {
     const wrapper = factory({
-      isOpened: true,
+      isOpened: true
     })
     expect(wrapper.element).toMatchSnapshot()
   })
@@ -41,7 +37,7 @@ describe('ActionSheet Snap', () => {
   it('render opened ActionSheet -- props cancelText', () => {
     const wrapper = factory({
       isOpened: true,
-      cancelText: '取消',
+      cancelText: '取消'
     })
     expect(wrapper.element).toMatchSnapshot()
   })
@@ -49,7 +45,7 @@ describe('ActionSheet Snap', () => {
   it('render opened ActionSheet -- props title', () => {
     const wrapper = factory({
       isOpened: true,
-      title: '清除位置信息后， 别人将不能查看到你\r\n可以通过转义字符换行',
+      title: '清除位置信息后， 别人将不能查看到你\r\n可以通过转义字符换行'
     })
     expect(wrapper.element).toMatchSnapshot()
   })
@@ -58,23 +54,23 @@ describe('ActionSheet Snap', () => {
     const wrapper = factory({
       isOpened: true,
       cancelText: '取消',
-      title: '清除位置信息后， 别人将不能查看到你\r\n可以通过转义字符换行',
+      title: '清除位置信息后， 别人将不能查看到你\r\n可以通过转义字符换行'
     })
     expect(wrapper.element).toMatchSnapshot()
   })
 })
 
 describe('ActionSheet Behavior ', () => {
-  beforeEach(() => {})
+  beforeEach(() => { })
   it('ActionSheet onCancel & onClose', () => {
     const wrapper = factory(
       {
         isOpened: true,
         cancelText: '取消',
-        title: '清除位置信息后， 别人将不能查看到你\r\n可以通过转义字符换行',
+        title: '清除位置信息后， 别人将不能查看到你\r\n可以通过转义字符换行'
       },
       {
-        default: [<ActionSheetItem>按钮一</ActionSheetItem>],
+        default: [<ActionSheetItem>按钮一</ActionSheetItem>]
       }
     )
 
@@ -91,7 +87,7 @@ describe('ActionSheet Behavior ', () => {
     expect(wrapper).toMatchSnapshot()
     wrapper.find('.at-action-sheet__item').trigger('click')
 
-    const comp = wrapper.findComponent({name: 'ActionSheetItem'})
+    const comp = wrapper.findComponent({ name: 'ActionSheetItem' })
     expect(comp.emitted()).toHaveProperty('click')
   })
 })

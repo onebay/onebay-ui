@@ -13,14 +13,11 @@ export default defineComponent({
   props: {
     className: {
       type: [Array, String],
-      default: () => '',
-    },
-    onClick: {
-      type: Function,
-      default: () => {},
-    },
+      default: () => ''
+    }
   },
-  setup (props) {
+  emits: ['click'],
+  setup(props) {
     const rootClass = computed(() => {
       return classNames('at-action-sheet__item', props.className)
     })
@@ -31,7 +28,7 @@ export default defineComponent({
   methods: {
     handleClick(e) {
       this.$emit('click', e)
-    },
-  },
+    }
+  }
 })
 </script>

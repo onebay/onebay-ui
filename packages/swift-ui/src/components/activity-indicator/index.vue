@@ -20,37 +20,37 @@ export default defineComponent({
   props: {
     size: {
       type: Number,
-      default: 0,
+      default: 0
     },
     mode: {
       type: String,
-      default: 'normal',
+      default: 'normal'
     },
     color: {
       type: String,
-      default: '',
+      default: ''
     },
     content: {
       type: String,
-      default: '',
+      default: ''
     },
     className: {
       type: [Array, String],
-      default: () => '',
+      default: () => ''
     },
     isOpened: {
       type: Boolean,
-      default: true,
-    },
+      default: true
+    }
   },
-  setup (props) {
+  setup(props) {
     const rootClass = computed(() => {
       const { mode, isOpened, className } = props
       return classNames(
         'at-activity-indicator',
         {
           'at-activity-indicator--center': mode === 'center',
-          'at-activity-indicator--isopened': isOpened,
+          'at-activity-indicator--isopened': isOpened
         },
         className
       )
@@ -58,7 +58,6 @@ export default defineComponent({
     return {
       rootClass
     }
-  },
+  }
 })
-
 </script>

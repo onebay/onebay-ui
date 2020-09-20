@@ -6,7 +6,7 @@ const factory = (values = {}, slots = { default: [] }) => {
   return mount(ActivityIndicator, {
     slots,
     components: { Loading },
-    props: { ...values },
+    props: { ...values }
   })
 }
 

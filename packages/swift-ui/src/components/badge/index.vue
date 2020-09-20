@@ -3,9 +3,7 @@
     <slot />
     <div v-if="dot" class="at-badge__dot" />
     <div v-if="!dot && val">
-      <div class="at-badge__num">
-        {{ val }}
-      </div>
+      <div class="at-badge__num">{{ val }}</div>
     </div>
   </div>
 </template>
@@ -34,32 +32,32 @@ export default defineComponent({
   props: {
     dot: {
       type: Boolean,
-      default: false,
+      default: false
     },
     value: {
       type: [String, Number],
-      default: '',
+      default: ''
     },
     maxValue: {
       type: Number,
-      default: 99,
+      default: 99
     },
     customStyle: {
       type: [String, Object],
-      default: () => {},
+      default: ''
     },
     className: {
-      type: [String, Array],
-      default: '',
-    },
+      type: [String, Object],
+      default: ''
+    }
   },
-  setup (props) {
-    const { value, maxValue, className } = props
+  setup(props) {
     const val = computed(() => {
+      const { value, maxValue } = props
       return formatValue(value, maxValue)
     })
     const rootClass = computed(() => {
-      return classNames('at-badge', className)
+      return classNames('at-badge', props.className)
     })
     return {
       val,
@@ -67,8 +65,7 @@ export default defineComponent({
     }
   },
   methods: {
-    classNames,
-  },
+    classNames
+  }
 })
-
 </script>

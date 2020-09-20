@@ -7,21 +7,21 @@
 <script lang="ts">
 import { defineComponent, computed } from 'vue'
 import classNames from 'classnames'
-export default {
+export default defineComponent({
   name: 'ActionSheetHeader',
   props: {
     className: {
       type: [Array, String],
-      default: () => '',
-    },
+      default: () => ''
+    }
   },
-  setup (props) {
+  setup(props) {
     const rootClass = computed(() => {
       return classNames('at-action-sheet__header', props.className)
     })
-     return {
+    return {
       rootClass
     }
   }
-}
+})
 </script>

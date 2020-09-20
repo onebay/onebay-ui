@@ -1,23 +1,33 @@
 <template>
   <div :class="rootClass">
-    <slot />
+    <slot></slot>
   </div>
 </template>
-
 <script lang="ts">
 import { defineComponent, computed } from 'vue'
 import classNames from 'classnames'
+
 export default defineComponent({
-  name: 'ActionSheetBody',
+  name: 'List',
   props: {
+    hasBorder: {
+      type: Boolean,
+      default: true
+    },
     className: {
       type: [Array, String],
-      default: () => ''
+      default: ''
     }
   },
   setup(props) {
     const rootClass = computed(() => {
-      return classNames('at-action-sheet__body', props.className)
+      return classNames(
+        'at-list',
+        {
+          'at-list--no-border': !props.hasBorder
+        },
+        props.className
+      )
     })
     return {
       rootClass

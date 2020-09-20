@@ -4,56 +4,56 @@ import Button from '../../src/components/button/index.vue'
 const factory = (values = {}, slots = { default: ['click me'] }) => {
   return mount(Button, {
     slots,
-    props: { ...values },
+    props: { ...values }
   })
 }
 
 describe('Button.vue', () => {
   it('render Button -- props size(normal)', () => {
     const wrapper = factory({
-      size: 'normal',
+      size: 'normal'
     })
     expect(wrapper.element).toMatchSnapshot()
   })
   it('render Button -- props size(small)', () => {
     const wrapper = factory({
-      size: 'small',
+      size: 'small'
     })
     expect(wrapper.element).toMatchSnapshot()
   })
   it('render Button -- props size(primary)', () => {
     const wrapper = factory({
-      size: 'primary',
+      size: 'primary'
     })
     expect(wrapper.element).toMatchSnapshot()
   })
   it('render Button -- props size(secondary)', () => {
     const wrapper = factory({
-      size: 'secondary',
+      size: 'secondary'
     })
     expect(wrapper.element).toMatchSnapshot()
   })
   it('render Button -- props circle', () => {
     const wrapper = factory({
-      circle: true,
+      circle: true
     })
     expect(wrapper.element).toMatchSnapshot()
   })
   it('render Button -- props full', () => {
     const wrapper = factory({
-      full: true,
+      full: true
     })
     expect(wrapper.element).toMatchSnapshot()
   })
   it('render Button -- props loading', () => {
     const wrapper = factory({
-      loading: true,
+      loading: true
     })
     expect(wrapper.element).toMatchSnapshot()
   })
   it('render Button -- props disabled', () => {
     const wrapper = factory({
-      disabled: true,
+      disabled: true
     })
     expect(wrapper.element).toMatchSnapshot()
   })

@@ -3,7 +3,7 @@
 
 $at-list-item-horizontal-padding: 24px;
 
-@mixin squareImg($size: 56px) {
+@mixin squareImg($size: 28px) {
   width: $size;
   height: $size;
 
@@ -117,6 +117,7 @@ $at-list-item-horizontal-padding: 24px;
           color: $at-list-arrow-color;
           font-size: 48px;
         }
+
         // margin-left: $spacing-h-sm;
         // margin-right: -$spacing-h-sm;
       }
@@ -155,6 +156,7 @@ $at-list-item-horizontal-padding: 24px;
 
   /* modifiers */
   &--no-border {
+
     &::after,
     &::before {
       content: initial;

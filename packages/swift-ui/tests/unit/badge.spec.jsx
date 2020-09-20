@@ -4,8 +4,8 @@ import Badge from '../../src/components/badge/index.vue'
 const factory = (values = {}, slots = { default: [] }) => {
   return mount(Badge, {
     slots,
-    components: {  },
-    props: { ...values },
+    components: {},
+    props: { ...values }
   })
 }
 
@@ -26,5 +26,4 @@ describe('Badge Snap', () => {
     const wrapper = factory({ value: '10', maxValue: 9 })
     expect(wrapper.element).toMatchSnapshot()
   })
-
 })

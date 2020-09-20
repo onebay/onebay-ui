@@ -8,7 +8,8 @@
   "source": "src/index.ts",
   "scripts": {
     "build": "rollup --config ./config/rollup.config.js",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "lint": "eslint src/**/*.{ts,vue}"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,8 @@
     "@testing-library/vue": "^5.0.4",
     "@types/classnames": "^2.2.10",
     "@types/jest": "^26.0.10",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
     "@vue/babel-plugin-jsx": "^1.0.0-rc.2",
     "@vue/babel-preset-jsx": "^1.1.2",
     "@vue/compiler-sfc": "^3.0.0-rc.9",
@@ -31,9 +34,14 @@
     "babel-jest": "^26.3.0",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^7.0.0-beta.3",
     "jest": "^24.9.0",
     "jest-serializer-vue": "^2.0.2",
     "jest-transform-stub": "^2.0.0",
+    "prettier": "^2.1.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-terser": "^7.0.1",

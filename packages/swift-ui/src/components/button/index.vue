@@ -19,12 +19,12 @@ import classNames from 'classnames'
 import Loading from '../loading/index.vue'
 const SIZE_CLASS = {
   normal: 'normal',
-  small: 'small',
+  small: 'small'
 }
 
 const TYPE_CLASS = {
   primary: 'primary',
-  secondary: 'secondary',
+  secondary: 'secondary'
 }
 
 export default defineComponent({
@@ -34,63 +34,60 @@ export default defineComponent({
   props: {
     size: {
       type: String,
-      default: 'normal',
+      default: 'normal'
     },
     type: {
       type: String,
-      default: undefined,
+      default: undefined
     },
     circle: {
       type: Boolean,
-      default: false,
+      default: false
     },
     full: {
       type: Boolean,
-      default: false,
+      default: false
     },
     loading: {
       type: Boolean,
-      default: false,
+      default: false
     },
     disabled: {
       type: Boolean,
-      default: false,
+      default: false
     },
     customStyle: {
       type: [Object, String],
-      default: () => {},
+      default: ''
     },
     className: {
       type: [Object, String],
-      default: () => {},
-    },
-    onClick: {
-      type: Function,
-      default: () => {},
-    },
+      default: ''
+    }
   },
-  setup (props) {
-    const { type, size, loading, circle, full, disabled } = props
+  emits: ['click'],
+  setup(props) {
     const loadingColor = computed(() => {
-      return type === 'primary' ? '#fff' : ''
+      return props.type === 'primary' ? '#fff' : ''
     })
     const loadingSize = computed(() => {
-      return size === 'small' ? '15' : 0
+      return props.size === 'small' ? '15' : 0
     })
     const rootClassName = computed(() => {
       const rootClass = ['at-button']
-      if (loading) {
+      if (props.loading) {
         rootClass.push('at-button--icon')
       }
       return rootClass
     })
     const classObject = computed(() => {
+      const { type, size, circle, full, disabled } = props
       return {
         [`at-button--${SIZE_CLASS[size]}`]: SIZE_CLASS[size],
         'at-button--disabled': disabled,
         [`at-button--${type}`]: TYPE_CLASS[type],
         'at-button--circle': circle,
-        'at-button--full': full,
+        'at-button--full': full
       }
     })
     return {
@@ -106,8 +103,7 @@ export default defineComponent({
       if (!this.disabled) {
         this.$emit('click', event)
       }
-    },
-  },
+    }
+  }
 })
-
 </script>

@@ -197,14 +197,12 @@ $at-fab-size-sm: 40px * $hd !default;
 $at-fab-icon-size: 24px * $hd !default;
 $at-fab-bg-color: $color-brand;
 $at-fab-bg-color-active: $color-brand-dark;
-$at-fab-box-shadow:
-  0 6px 10px -2px rgba(0, 0, 0, 0.2),
-  0 12px 20px 0 rgba(0, 0, 0, 0.14),
-  0 2px 36px 0 rgba(0, 0, 0, 0.12) !default;
-$at-fab-box-shadow-active:
-  0 14px 16px -8px rgba(0, 0, 0, 0.2),
-  0 24px 34px 4px rgba(0, 0, 0, 0.14),
-  0 10px 44px 8px rgba(0, 0, 0, 0.12) !default;
+$at-fab-box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.2),
+0 12px 20px 0 rgba(0, 0, 0, 0.14),
+0 2px 36px 0 rgba(0, 0, 0, 0.12) !default;
+$at-fab-box-shadow-active: 0 14px 16px -8px rgba(0, 0, 0, 0.2),
+0 24px 34px 4px rgba(0, 0, 0, 0.14),
+0 10px 44px 8px rgba(0, 0, 0, 0.12) !default;
 
 /* Calendar */
 $at-calendar-day-size: 72px !default;
@@ -222,7 +220,7 @@ $at-card-info-color: $color-text-base !default;
 $at-card-note-color: $color-grey-2 !default;
 
 /* Checkbox */
-$at-checkbox-circle-size: 40px !default;
+$at-checkbox-circle-size: 20px !default;
 $at-checkbox-icon-size: $font-size-sm !default;
 $at-checkbox-icon-color: $color-brand !default;
 $at-checkbox-icon-color-checked: $color-white !default;
@@ -292,7 +290,7 @@ $at-input-font-size: $font-size-lg !default;
 $at-input-placeholder-color: $color-grey-3 !default;
 
 /* List */
-$at-list-thumb-size: 56px !default;
+$at-list-thumb-size: 28px !default;
 $at-list-arrow-color: $color-grey-3 !default;
 $at-list-text-color: $color-text-base !default;
 $at-list-content-color: $color-grey-2 !default;

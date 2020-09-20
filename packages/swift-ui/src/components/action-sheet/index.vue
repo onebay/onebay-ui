@@ -2,15 +2,11 @@
   <div :class="rootClass" @touchmove="handleTouchMove">
     <div class="at-action-sheet__overlay" @click="close" />
     <div class="at-action-sheet__container">
-      <ActionSheetHeader v-if="title">
-        {{ title }}
-      </ActionSheetHeader>
+      <ActionSheetHeader v-if="title">{{ title }}</ActionSheetHeader>
       <ActionSheetBody>
         <slot />
       </ActionSheetBody>
-      <ActionSheetFooter @click="handleCancel">
-        {{ cancelText }}
-      </ActionSheetFooter>
+      <ActionSheetFooter @click="handleCancel">{{ cancelText }}</ActionSheetFooter>
     </div>
   </div>
 </template>
@@ -26,36 +22,36 @@ export default defineComponent({
   components: {
     ActionSheetBody,
     ActionSheetFooter,
-    ActionSheetHeader,
+    ActionSheetHeader
   },
   props: {
     title: {
       type: String,
-      default: '',
+      default: ''
     },
     cancelText: {
       type: String,
-      default: '',
+      default: ''
     },
     isOpened: {
       type: Boolean,
-      default: false,
+      default: false
     },
     className: {
       type: [Array, String],
-      default: () => '',
-    },
+      default: () => ''
+    }
   },
-  setup (props) {
-    const { className, isOpened } = props
-    const show = ref(isOpened)
+  emits: ['close', 'cancel'],
+  setup(props) {
+    const show = ref(props.isOpened)
     const rootClass = computed(() => {
       const res = classNames(
         'at-action-sheet',
         {
-          'at-action-sheet--active': show.value,
+          'at-action-sheet--active': show.value
         },
-        className
+        props.className
       )
       return res
     })
@@ -68,7 +64,7 @@ export default defineComponent({
     isOpened(val) {
       this.show = val
       !val && this.handleClose()
-    },
+    }
   },
   methods: {
     handleClose() {
@@ -85,8 +81,7 @@ export default defineComponent({
     handleTouchMove(e) {
       e.stopPropagation()
       e.preventDefault()
-    },
-  },
+    }
+  }
 })
-
 </script>
