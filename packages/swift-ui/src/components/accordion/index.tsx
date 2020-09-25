@@ -1,51 +1,3 @@
-<template>
-  <div :class="classNames('at-accordion', className)" :style="customStyle">
-    <div
-      :class="
-        classNames('at-accordion__header', {
-          'at-accordion__header--noborder': !hasBorder
-        })
-      "
-      @click="handleClick"
-    >
-      <div
-        v-if="icon && icon.value"
-        :class="iconCls"
-        :style="{
-          color: (icon && icon.color) || '',
-          fontSize: (icon && `${icon.size}px`) || ''
-        }"
-      />
-      <div class="at-accordion__info">
-        <div class="at-accordion__info__title">{{ title }}</div>
-        <div class="at-accordion__info__note">{{ note }}</div>
-      </div>
-      <div
-        :class="
-          classNames('at-accordion__arrow', {
-            'at-accordion__arrow--folded': !!open
-          })
-        "
-      >
-        <div class="at-icon at-icon-chevron-down" />
-      </div>
-    </div>
-    <div
-      :style="contentStyle"
-      :class="
-        classNames('at-accordion__content', {
-          'at-accordion__content--inactive': (!open && isCompleted) || startOpen
-        })
-      "
-    >
-      <div class="at-accordion__body">
-        <slot />
-      </div>
-    </div>
-  </div>
-</template>
-
-<script lang="ts">
 import classNames from 'classnames'
 import { ref, computed, defineComponent } from 'vue'
 
@@ -149,7 +101,6 @@ export default defineComponent({
     classNames,
     handleClick(event): void {
       const { open } = this
-      console.log('this.isCompleted :>> ', this.isCompleted)
       if (!this.isCompleted) return
       this.$emit('click', !open, event)
     },
@@ -171,6 +122,44 @@ export default defineComponent({
         this.isCompleted = true
       }, 700)
     }
+  },
+  render(): JSX.Element {
+    const { className, customStyle, hasBorder, icon, title, note, open } = this.$props
+    const { iconCls, contentStyle, isCompleted, startOpen, $slots } = this
+    return (
+      <div class={classNames('at-accordion', className)} style={customStyle}>
+        <div class={classNames('at-accordion__header', {
+          'at-accordion__header--noborder': !hasBorder
+        })}
+          onClick={this.handleClick}
+        >
+          {icon && icon.value && <div class={iconCls} style={{
+            color: (icon && icon.color) || '',
+            fontSize: (icon && `${icon.size}px`) || ''
+          }}></div>}
+          <div class="at-accordion__info">
+            <div class="at-accordion__info__title">{title}</div>
+            <div class="at-accordion__info__note">{note}</div>
+          </div>
+          <div
+            class={classNames('at-accordion__arrow', {
+              'at-accordion__arrow--folded': !!open
+            })}
+          >
+            <div class="at-icon at-icon-chevron-down" />
+          </div>
+        </div>
+        <div
+          style={contentStyle}
+          class={classNames('at-accordion__content', {
+            'at-accordion__content--inactive': (!open && isCompleted) || startOpen
+          })}
+        >
+          <div class="at-accordion__body">
+            {$slots.default && $slots.default()}
+          </div>
+        </div>
+      </div>
+    )
   }
 })
-</script>

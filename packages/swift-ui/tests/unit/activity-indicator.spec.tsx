@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils'
-import ActivityIndicator from '../../src/components/activity-indicator/index.vue'
-import Loading from '../../src/components/loading/index.vue'
+import ActivityIndicator from '../../src/components/activity-indicator/index'
+import Loading from '../../src/components/loading/index'
 
 const factory = (values = {}, slots = { default: [] }) => {
   return mount(ActivityIndicator, {

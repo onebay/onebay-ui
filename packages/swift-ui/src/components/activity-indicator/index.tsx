@@ -1,18 +1,6 @@
-<template>
-  <div :class="rootClass">
-    <div class="at-activity-indicator__body">
-      <Loading :size="size" :color="color" />
-    </div>
-    <div class="at-activity-indicator__content">
-      <slot />
-    </div>
-  </div>
-</template>
-
-<script lang="ts">
 import { defineComponent, computed } from 'vue'
 import classNames from 'classnames'
-import Loading from '../loading/index.vue'
+import Loading from '../loading/index'
 export default defineComponent({
   components: {
     Loading
@@ -58,6 +46,19 @@ export default defineComponent({
     return {
       rootClass
     }
+  },
+  render() {
+    const { rootClass, size, color } = this.$props
+    const { $slots } = this
+    return (
+      <div class={rootClass}>
+        <div class="at-activity-indicator__body">
+          <Loading size={size} color={color} />
+        </div>
+        <div class="at-activity-indicator__content">
+          {$slots.default && $slots.default()}
+        </div>
+      </div>
+    )
   }
 })
-</script>

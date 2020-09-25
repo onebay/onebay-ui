@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Accordion from '../../src/components/accordion/index.vue'
+import Accordion from '../../src/components/accordion/index'
 
 const factory = (values = {}, slots = { default: ['按钮'] }) => {
   return mount(Accordion, {
@@ -14,17 +14,17 @@ describe('Accordion Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtAccordion -- props title', () => {
+  it('render Accordion -- props title', () => {
     const wrapper = mount(<Accordion title="title" />)
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtAccordion -- props open', () => {
+  it('render Accordion -- props open', () => {
     const wrapper = mount(<Accordion open={true} />)
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtAccordion -- props icon', () => {
+  it('render Accordion -- props icon', () => {
     const wrapper = factory(
       {
         icon: { value: 'chevron-down', color: 'red' }
@@ -36,7 +36,7 @@ describe('Accordion Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtAccordion -- props icon prefixClass', () => {
+  it('render Accordion -- props icon prefixClass', () => {
     const wrapper = factory(
       {
         icon: { prefixClass: 'prefixClass', value: 'star', color: 'red' }
@@ -48,7 +48,7 @@ describe('Accordion Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtAccordion -- props note', () => {
+  it('render Accordion -- props note', () => {
     const wrapper = factory(
       {
         note: 'note'
@@ -60,7 +60,7 @@ describe('Accordion Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtAccordion -- props note', () => {
+  it('render Accordion -- props note', () => {
     const wrapper = factory(
       {
         note: 'note'

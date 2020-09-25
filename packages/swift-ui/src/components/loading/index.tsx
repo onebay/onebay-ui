@@ -1,12 +1,9 @@
-<template>
-  <div class="at-loading" :style="transformStyle(sizeStyle)">
-    <div class="at-loading__ring" :style="ringStyle"></div>
-    <div class="at-loading__ring" :style="transformStyle(ringStyle)"></div>
-    <div class="at-loading__ring" :style="ringStyle" :data-id="ringStyle"></div>
-  </div>
-</template>
-<script lang="ts">
 import { defineComponent, computed } from 'vue'
+
+export interface LoadingProps {
+  color: string | number
+  size: string | number
+}
 
 export default defineComponent({
   name: 'Loading',
@@ -20,7 +17,7 @@ export default defineComponent({
       default: ''
     }
   },
-  setup(props) {
+  setup(props: LoadingProps) {
     const sizeStyle = computed(() => {
       const { size } = props
       const loadingSize = typeof size === 'string' ? size : String(size)
@@ -49,6 +46,15 @@ export default defineComponent({
       ringStyle,
       transformStyle
     }
+  },
+  render() {
+    const { sizeStyle, ringStyle, transformStyle } = this
+    return (
+      <div class="at-loading" style={transformStyle(sizeStyle)}>
+        <div class="at-loading__ring"></div>
+        <div class="at-loading__ring" style={transformStyle(ringStyle)}></div>
+        <div class="at-loading__ring" style={ringStyle} data-id={ringStyle}></div>
+      </div>
+    )
   }
 })
-</script>

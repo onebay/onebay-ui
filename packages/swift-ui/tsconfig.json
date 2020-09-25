@@ -6,4 +6,5 @@
     "jsxFactory": "h",
     "experimentalDecorators": true
   },
+  "files": ["global.d.ts"]
 }

@@ -1,9 +1,3 @@
-<template>
-  <div :class="rootClass">
-    <slot></slot>
-  </div>
-</template>
-<script lang="ts">
 import { defineComponent, computed } from 'vue'
 import classNames from 'classnames'
 
@@ -32,6 +26,13 @@ export default defineComponent({
     return {
       rootClass
     }
+  },
+  render(): JSX.Element {
+    const { rootClass, $slots } = this
+    return (
+      <div class={rootClass}>
+        {$slots.default && $slots.default()}
+      </div>
+    )
   }
 })
-</script>

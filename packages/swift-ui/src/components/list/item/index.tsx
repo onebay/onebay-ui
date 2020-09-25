@@ -1,32 +1,3 @@
-<template>
-  <div :class="rootClass" @tap="handleClick">
-    <div class="at-list__item-container">
-      <div v-if="thumb" class="at-list__item-thumb item-thumb">
-        <img class="item-thumb__info" mode="scaleToFill" :src="thumb" />
-      </div>
-      <div v-if="iconInfo.value" class="at-list__item-icon item-icon">
-        <div :class="iconClass" :style="getIconStyle()"></div>
-      </div>
-      <div class="at-list__item-content item-content">
-        <div class="item-content__info">
-          <div class="item-content__info-title">{{ String(title) }}</div>
-          <div v-if="note" class="item-content__info-note">{{ note }}</div>
-        </div>
-      </div>
-      <div class="at-list__item-extra item-extra">
-        <div v-if="extraText" class="item-extra__info">{{ String(extraText) }}</div>
-        <div v-if="extraThumb && !String(extraText)" class="item-extra__image">
-          <img class="item-extra__image-info" mode="aspectFit" :src="extraThumb" />
-        </div>
-        <div v-if="arrow" class="item-extra__icon">
-          <div :class="`at-icon item-extra__icon-arrow at-icon-chevron-${arrow}`" />
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
-<script lang="ts">
 import classNames from 'classnames'
 import { computed, defineComponent } from 'vue'
 import { mergeStyle } from '../../../utils'
@@ -46,6 +17,7 @@ export interface ListItemProps {
   extraText?: string
   extraThumb?: string
   title?: string
+  click?: () => void
 }
 export default defineComponent({
   name: 'ListItem',
@@ -92,10 +64,13 @@ export default defineComponent({
       type: String,
       default: '',
       validator: (val: string): boolean => ['up', 'down', 'right', ''].includes(val)
+    },
+    click: {
+      type: Function
     }
   },
-  emits: ['click'],
-  setup(props) {
+  emits: ['click', 'click1'],
+  setup(props, { emit }) {
     const rootClass = computed(() => {
       const { note, thumb, disabled, hasBorder, className } = props as ListItemProps
       return classNames(
@@ -119,14 +94,22 @@ export default defineComponent({
         iconInfo.className
       )
     })
+    const onClick = (e) => {
+      emit('click', e)
+      console.log('emit', e);
+    }
     return {
       rootClass,
-      iconClass
+      iconClass,
+      onClick
     }
   },
   methods: {
     handleClick(event: Event): void {
       this.$emit('click', event)
+      const { onClick } = this.$props
+      console.log(' this.$props :>> ',  this.$props);
+      onClick && onClick()
     },
     getIconStyle(): unknown {
       const { iconInfo } = this
@@ -138,6 +121,36 @@ export default defineComponent({
         iconInfo.customStyle
       )
     }
+  },
+  render(): JSX.Element {
+    const { thumb, iconInfo, extraThumb, extraText, arrow, note, title } = this.$props
+    const { handleClick, iconClass, rootClass, getIconStyle, onClick } = this
+    return (
+      <div class={rootClass} onClick={onClick}>
+        <div class="at-list__item-container">
+          {thumb && <div class="at-list__item-thumb item-thumb">
+            <img class="item-thumb__info" src={thumb} />
+          </div>}
+          {iconInfo.value && <div class="at-list__item-icon item-icon">
+            <div class={iconClass} style={getIconStyle()}></div>
+          </div>}
+          <div class="at-list__item-content item-content">
+            <div class="item-content__info">
+              <div class="item-content__info-title">{String(title)}</div>
+              {note && <div class="item-content__info-note">{note}</div>}
+            </div>
+          </div>
+          <div class="at-list__item-extra item-extra">
+            {extraText && <div class="item-extra__info">{String(extraText)}</div>}
+            {extraThumb && !String(extraText) && <div class="item-extra__image">
+              <img class="item-extra__image-info" src={extraThumb} />
+            </div>}
+            {arrow && <div class="item-extra__icon">
+              <div class={`at-icon item-extra__icon-arrow at-icon-chevron-${arrow}`} />
+            </div>}
+          </div>
+        </div>
+      </div>
+    )
   }
 })
-</script>

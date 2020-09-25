@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Badge from '../../src/components/badge/index.vue'
+import Badge from '../../src/components/badge/index.tsx'
 
 const factory = (values = {}, slots = { default: [] }) => {
   return mount(Badge, {

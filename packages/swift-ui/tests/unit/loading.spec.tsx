@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Loading from '../../src/components/loading/index.vue'
+import Loading from '../../src/components/loading/index'
 
 describe('Loading Snap', () => {
   it('render initial AtLoading', () => {

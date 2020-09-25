@@ -1,30 +1,21 @@
-<template>
-  <div :class="rootClass" :style="customStyle">
-    <slot />
-    <div v-if="dot" class="at-badge__dot" />
-    <div v-if="!dot && val">
-      <div class="at-badge__num">{{ val }}</div>
-    </div>
-  </div>
-</template>
-
-<script lang="ts">
 import { defineComponent, computed } from 'vue'
 import classNames from 'classnames'
 
-/**
- * formatValue
- * @param {string | number | undefined} value
- * @param {number} maxValue
- * @return string | number
- */
-const formatValue = (value, maxValue) => {
+const formatValue = (value: string | number | undefined, maxValue: number): string | number => {
   if (value === '' || value === null || value === undefined) return ''
   const numValue = +value
   if (Number.isNaN(numValue)) {
     return value
   }
   return numValue > maxValue ? `${maxValue}+` : numValue
+}
+
+interface BadgeProps {
+  dot?: boolean
+  value?: string | number
+  maxValue?: number
+  customStyle?: unknown
+  className?: unknown
 }
 
 export default defineComponent({
@@ -51,7 +42,7 @@ export default defineComponent({
       default: ''
     }
   },
-  setup(props) {
+  setup(props: BadgeProps) {
     const val = computed(() => {
       const { value, maxValue } = props
       return formatValue(value, maxValue)
@@ -64,8 +55,18 @@ export default defineComponent({
       rootClass
     }
   },
-  methods: {
-    classNames
+  render(): JSX.Element {
+    const { rootClass, dot, customStyle } = this.$props
+    const { val } = this
+    return (
+      <div class={rootClass} style={customStyle}>
+        {dot && <div class="at-badge__dot" />}
+        {
+          !dot && val && <div>
+            <div class="at-badge__num">{val}</div>
+          </div>
+        }
+      </div>
+    )
   }
 })
-</script>

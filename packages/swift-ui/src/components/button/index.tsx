@@ -1,22 +1,6 @@
-<template>
-  <div
-    :class="classNames(rootClassName, classObject, className)"
-    :style="customStyle"
-    @click="handelOnClick"
-  >
-    <div v-if="loading" class="at-button__icon">
-      <Loading :color="loadingColor" :size="loadingSize" />
-    </div>
-    <div class="at-button__text">
-      <slot />
-    </div>
-  </div>
-</template>
-
-<script lang="ts">
 import { defineComponent, computed } from 'vue'
 import classNames from 'classnames'
-import Loading from '../loading/index.vue'
+import Loading from '../loading/index'
 const SIZE_CLASS = {
   normal: 'normal',
   small: 'small'
@@ -104,6 +88,23 @@ export default defineComponent({
         this.$emit('click', event)
       }
     }
+  },
+  render(): JSX.Element {
+    const { customStyle, className, loading } = this.$props
+    const { handelOnClick, classObject, rootClassName, loadingColor, loadingSize, $slots } = this
+    return (
+      <div
+        class={classNames(rootClassName, classObject, className)}
+        style="customStyle"
+        onClick={handelOnClick}
+      >
+        {loading && <div class="at-button__icon">
+          <Loading color={loadingColor} size={loadingSize} />
+        </div>}
+        <div class="at-button__text">
+          {$slots.default && $slots.default()}
+        </div>
+      </div>
+    )
   }
 })
-</script>

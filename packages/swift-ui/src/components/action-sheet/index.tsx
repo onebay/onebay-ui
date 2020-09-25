@@ -1,20 +1,6 @@
-<template>
-  <div :class="rootClass" @touchmove="handleTouchMove">
-    <div class="at-action-sheet__overlay" @click="close" />
-    <div class="at-action-sheet__container">
-      <ActionSheetHeader v-if="title">{{ title }}</ActionSheetHeader>
-      <ActionSheetBody>
-        <slot />
-      </ActionSheetBody>
-      <ActionSheetFooter @click="handleCancel">{{ cancelText }}</ActionSheetFooter>
-    </div>
-  </div>
-</template>
-
-<script>
-import ActionSheetBody from './components/body.vue'
-import ActionSheetFooter from './components/footer.vue'
-import ActionSheetHeader from './components/header.vue'
+import ActionSheetBody from './components/body'
+import ActionSheetFooter from './components/footer'
+import ActionSheetHeader from './components/header'
 import classNames from 'classnames'
 import { defineComponent, ref, computed } from 'vue'
 export default defineComponent({
@@ -82,6 +68,21 @@ export default defineComponent({
       e.stopPropagation()
       e.preventDefault()
     }
+  },
+  render(): JSX.Element {
+    const { rootClass, title, cancelText } = this.$props
+    const { handleTouchMove, close, handleCancel, $slots } = this
+    return (
+      <div class={rootClass} onTouchmove={handleTouchMove}>
+        <div class="at-action-sheet__overlay" onClick={close} />
+        <div class="at-action-sheet__container">
+          {title && <ActionSheetHeader>{title}</ActionSheetHeader>}
+          <ActionSheetBody>
+            {$slots.default && $slots.default()}
+          </ActionSheetBody>
+          <ActionSheetFooter onClick={handleCancel}>{cancelText}</ActionSheetFooter>
+        </div>
+      </div>
+    )
   }
 })
-</script>

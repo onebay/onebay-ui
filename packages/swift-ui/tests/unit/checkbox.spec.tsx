@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Checkbox from '../../src/components/checkbox/index.vue'
+import Checkbox from '../../src/components/checkbox/index'
 
 const factory = (values = {}, slots = { default: [] }) => {
   return mount(Checkbox, {

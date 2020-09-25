@@ -1,10 +1,3 @@
-<template>
-  <div :class="rootClass" @click="handleClick">
-    <slot />
-  </div>
-</template>
-
-<script>
 import { defineComponent, computed } from 'vue'
 import classNames from 'classnames'
 
@@ -29,6 +22,13 @@ export default defineComponent({
     handleClick(e) {
       this.$emit('click', e)
     }
+  },
+  render(): JSX.Element {
+    const { handleClick, $slots, rootClass } = this
+    return (
+      <div class={rootClass} onClick={handleClick}>
+        {$slots.default && $slots.default()}
+      </div>
+    )
   }
 })
-</script>

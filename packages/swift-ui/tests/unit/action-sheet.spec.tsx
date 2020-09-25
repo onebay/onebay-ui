@@ -1,8 +1,8 @@
 import { mount } from '@vue/test-utils'
 import ActionSheet from '../../src/components/action-sheet/index'
-import ActionSheetItem from '../../src/components/action-sheet/components/item.vue'
-import ActionSheetHeader from '../../src/components/action-sheet/components/header.vue'
-import ActionSheetFooter from '../../src/components/action-sheet/components/footer.vue'
+import ActionSheetItem from '../../src/components/action-sheet/components/item'
+import ActionSheetHeader from '../../src/components/action-sheet/components/header'
+import ActionSheetFooter from '../../src/components/action-sheet/components/footer'
 
 const factory = (
   values = {},
@@ -73,7 +73,6 @@ describe('ActionSheet Behavior ', () => {
         default: [<ActionSheetItem>按钮一</ActionSheetItem>]
       }
     )
-
     wrapper.find('.at-action-sheet__footer').trigger('click')
     expect(wrapper.emitted()).toHaveProperty('cancel')
 
@@ -82,9 +81,13 @@ describe('ActionSheet Behavior ', () => {
   })
 
   it('ActionSheet click event on ActionSheetItem', () => {
-    const wrapper = factory()
+    const wrapper = mount(
+      <ActionSheet>
+        <ActionSheetItem>按钮一</ActionSheetItem>
+      </ActionSheet>
+    )
 
-    expect(wrapper).toMatchSnapshot()
+    expect(wrapper.element).toMatchSnapshot()
     wrapper.find('.at-action-sheet__item').trigger('click')
 
     const comp = wrapper.findComponent({ name: 'ActionSheetItem' })

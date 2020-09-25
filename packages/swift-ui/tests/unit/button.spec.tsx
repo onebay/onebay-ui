@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Button from '../../src/components/button/index.vue'
+import Button from '../../src/components/button/index'
 
 const factory = (values = {}, slots = { default: ['click me'] }) => {
   return mount(Button, {
@@ -8,7 +8,7 @@ const factory = (values = {}, slots = { default: ['click me'] }) => {
   })
 }
 
-describe('Button.vue', () => {
+describe('test Button', () => {
   it('render Button -- props size(normal)', () => {
     const wrapper = factory({
       size: 'normal'

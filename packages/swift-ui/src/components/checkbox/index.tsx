@@ -1,27 +1,11 @@
-<template>
-  <div :class="rootCls" :style="customStyle">
-    <div
-      v-for="(option, idx) in options"
-      :class="getOptionCls(option)"
-      :key="option.value"
-      @click="handleClick(idx)"
-    >
-      <div class="at-checkbox__option-wrap">
-        <div class="at-checkbox__option-cnt">
-          <div class="at-checkbox__icon-cnt">
-            <span class="at-icon at-icon-check"></span>
-          </div>
-          <div class="at-checkbox__title">{{ option.label }}</div>
-        </div>
-        <div v-if="option.desc" class="at-checkbox__desc">{{ option.desc }}</div>
-      </div>
-    </div>
-  </div>
-</template>
-
-<script lang="ts">
 import classNames from 'classnames'
 import { defineComponent, computed } from 'vue'
+
+export interface CheckboxItem {
+  value: unknown
+  label: string
+  desc?: string
+}
 
 const Checkbox = defineComponent({
   name: 'Checkbox',
@@ -81,8 +65,33 @@ const Checkbox = defineComponent({
         'at-checkbox__option--selected': this.selectedList.includes(value)
       })
     }
+  },
+  render() {
+    const { rootCls, customStyle, options } = this.$props
+    return (
+      <div class={rootCls} style={customStyle}>
+        {
+          options.map((option: CheckboxItem) => (
+            <div
+              class={this.getOptionCls(option)}
+              key={option.value}
+            >
+              <div class="at-checkbox__option-wrap">
+                <div class="at-checkbox__option-cnt">
+                  <div class="at-checkbox__icon-cnt">
+                    <span class="at-icon at-icon-check"></span>
+                  </div>
+                  <div class="at-checkbox__title">{option.label}</div>
+                </div>
+                {option.desc && <div class="at-checkbox__desc">{option.desc}</div>}
+              </div>
+            </div>
+          ))
+        }
+
+      </div>
+    )
   }
 })
 
 export default Checkbox
-</script>
