@@ -9,6 +9,7 @@ import Checkbox from './components/checkbox/index'
 import List from './components/list/index'
 import ListItem from './components/list/item/index'
 import Divider from './components/divider/index'
+import Drawer from './components/drawer/index'
 
 export {
   Loading,
@@ -21,5 +22,6 @@ export {
   Checkbox,
   List,
   ListItem,
-  Divider
+  Divider,
+  Drawer
 }

@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Index from '../pages/index/index.vue'
+import Drawer from '../pages/navigation/drawer/index.vue'
 
 const dynamicRoute = (path: string): RouteRecordRaw => {
   const comp = `..${path}.vue`
@@ -23,6 +24,11 @@ const routes = [
   dynamicRoute('/pages/layout/accordion/index'),
   dynamicRoute('/pages/layout/list/index'),
   dynamicRoute('/pages/view/divider/index'),
+  dynamicRoute('/pages/navigation/drawer/index'),
+  {
+    path: '/pages/navigation/drawer/index',
+    component: Drawer
+  }
 ]
 const router = createRouter({
   history: createWebHashHistory(),

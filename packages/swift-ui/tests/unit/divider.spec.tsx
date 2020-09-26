@@ -1,56 +1,56 @@
 import { mount } from '@vue/test-utils'
-import AtDivider from '../../src/components/divider'
+import Divider from '../../src/components/divider'
 
 const factory = (values = {}, slots = { default: [] }) => {
-  return mount(AtDivider, {
+  return mount(Divider, {
     components: {},
     slots,
     props: { ...values },
   })
 }
 
-describe('AtDivider Snap', () => {
-  it('render initial AtDivider', () => {
+describe('Divider Snap', () => {
+  it('render initial Divider', () => {
     const wrapper = factory()
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtDivider -- props className', () => {
+  it('render Divider -- props className', () => {
     const wrapper = factory({ className: 'test' })
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtDivider -- props customStyle', () => {
+  it('render Divider -- props customStyle', () => {
     const wrapper = factory({ customStyle: 'color:red;' })
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtDivider -- props content', () => {
+  it('render Divider -- props content', () => {
     const wrapper = factory({ content: 'content' })
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtDivider -- props height', () => {
+  it('render Divider -- props height', () => {
     const wrapper = factory({ height: '120' })
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtDivider -- props fontColor', () => {
+  it('render Divider -- props fontColor', () => {
     const wrapper = factory({ fontColor: '#fff' })
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtDivider -- props fontSize', () => {
+  it('render Divider -- props fontSize', () => {
     const wrapper = factory({ fontSize: '56' })
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtDivider -- props lineColor', () => {
+  it('render Divider -- props lineColor', () => {
     const wrapper = factory({ lineColor: '#fff' })
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render AtDivider -- props childen', () => {
+  it('render Divider -- props childen', () => {
     const wrapper = factory({ childen: 'content' }, { default: ['test'] })
     expect(wrapper.element).toMatchSnapshot()
   })

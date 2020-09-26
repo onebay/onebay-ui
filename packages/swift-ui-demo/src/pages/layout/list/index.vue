@@ -150,14 +150,14 @@ export default defineComponent({
   },
   methods: {
     handleChange(e) {
-      Taro.showToast({
+      alert({
         title: `Change Switch: ${e}`,
         icon: 'none'
       })
     },
 
     handleClick(e) {
-      Taro.showToast({
+      alert({
         title: `Click Item: ${e}`,
         icon: 'none'
       })
