@@ -8,6 +8,7 @@ import Button from './components/button/index'
 import Checkbox from './components/checkbox/index'
 import List from './components/list/index'
 import ListItem from './components/list/item/index'
+import Divider from './components/divider/index'
 
 export {
   Loading,
@@ -19,5 +20,6 @@ export {
   Button,
   Checkbox,
   List,
-  ListItem
+  ListItem,
+  Divider
 }
