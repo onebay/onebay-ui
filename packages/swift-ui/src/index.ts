@@ -10,6 +10,8 @@ import List from './components/list/index'
 import ListItem from './components/list/item/index'
 import Divider from './components/divider/index'
 import Drawer from './components/drawer/index'
+import FloatLayout from './components/float-layout/index'
+import Toast from './components/toast/index'
 
 export {
   Loading,
@@ -23,5 +25,7 @@ export {
   List,
   ListItem,
   Divider,
-  Drawer
+  Drawer,
+  FloatLayout,
+  Toast
 }

@@ -17,3 +17,21 @@ export function mergeStyle(style1: string | unknown, style2: string | unknown): 
   }
   return objectToString(style1) + objectToString(style2)
 }
+
+let scrollTop = 0
+export function handleTouchScroll(flag: boolean): void {
+  if (flag) {
+    scrollTop = document.documentElement.scrollTop
+
+    // 使body脱离文档流
+    document.body.classList.add('at-frozen')
+
+    // 把脱离文档流的body拉上去！否则页面会回到顶部！
+    document.body.style.top = `${-scrollTop}px`
+  } else {
+    document.body.style.top = ''
+    document.body.classList.remove('at-frozen')
+
+    document.documentElement.scrollTop = scrollTop
+  }
+}

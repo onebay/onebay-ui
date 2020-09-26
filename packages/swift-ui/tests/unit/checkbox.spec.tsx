@@ -7,27 +7,24 @@ const factory = (values = {}, slots = { default: [] }) => {
     props: { ...values }
   })
 }
-
+const text = 'Some regions provide electronic ordinary invoices, which users can print by themselves, and the effect is equivalent to paper ordinary invoices. The actual invoice type shall prevail.'
 const checkboxOption = [
   {
     value: 'list1',
     label: 'iPhone X',
-    desc:
-      '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。'
+    desc: text
   },
   { value: 'list2', label: 'HUAWEI P20' },
   {
     value: 'list3',
     label: 'OPPO Find X',
-    desc:
-      '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。',
+    desc: text,
     disabled: true
   },
   {
     value: 'list4',
     label: 'vivo NEX',
-    desc:
-      '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。',
+    desc: text,
     disabled: true
   }
 ]

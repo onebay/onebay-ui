@@ -25,6 +25,7 @@ const routes = [
   dynamicRoute('/pages/layout/list/index'),
   dynamicRoute('/pages/view/divider/index'),
   dynamicRoute('/pages/navigation/drawer/index'),
+  dynamicRoute('/pages/layout/float-layout/index'),
   {
     path: '/pages/navigation/drawer/index',
     component: Drawer

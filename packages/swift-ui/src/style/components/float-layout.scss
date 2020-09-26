@@ -53,7 +53,7 @@ $float-layout-timer: 300ms;
         padding: $spacing-h-sm;
         top: 50%;
         right: $spacing-v-md;
-        width: 40px;
+        width: 20px;
         height: 100%;
         line-height: 1;
         transform: translate(0, -50%);
@@ -65,8 +65,8 @@ $float-layout-timer: 300ms;
           top: 50%;
           left: 50%;
           display: inline-block;
-          width: 36px;
-          height: 2PX;
+          width: 18px;
+          height: 1PX;
           border-radius: 1PX;
           background: $float-layout-btn-color;
         }
@@ -84,12 +84,12 @@ $float-layout-timer: 300ms;
     &-body {
       font-size: $font-size-base;
       padding: $spacing-v-md;
-      max-height: 828px;
-      min-height: 514px;
+      max-height: 408px;
+      min-height: 50px;
+      overflow-y: auto;
 
       &__content {
-        max-height: 798px;
-        min-height: 484px;
+        height: 100%;
       }
     }
   }

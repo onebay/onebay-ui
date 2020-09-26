@@ -7,7 +7,7 @@ import ActionSheetFooter from '../../src/components/action-sheet/components/foot
 const factory = (
   values = {},
   slots = {
-    default: [<ActionSheetItem>按钮一</ActionSheetItem>, <ActionSheetItem>按钮二</ActionSheetItem>]
+    default: [<ActionSheetItem>Button A</ActionSheetItem>, <ActionSheetItem>Button B</ActionSheetItem>]
   }
 ) => {
   return mount(ActionSheet, {
@@ -37,7 +37,7 @@ describe('ActionSheet Snap', () => {
   it('render opened ActionSheet -- props cancelText', () => {
     const wrapper = factory({
       isOpened: true,
-      cancelText: '取消'
+      cancelText: 'Cancel'
     })
     expect(wrapper.element).toMatchSnapshot()
   })
@@ -45,7 +45,7 @@ describe('ActionSheet Snap', () => {
   it('render opened ActionSheet -- props title', () => {
     const wrapper = factory({
       isOpened: true,
-      title: '清除位置信息后， 别人将不能查看到你\r\n可以通过转义字符换行'
+      title: 'After clearing the location information, others will not be able to see you\r\nLine breaks can be escaped'
     })
     expect(wrapper.element).toMatchSnapshot()
   })
@@ -53,8 +53,8 @@ describe('ActionSheet Snap', () => {
   it('render opened ActionSheet -- props completed', () => {
     const wrapper = factory({
       isOpened: true,
-      cancelText: '取消',
-      title: '清除位置信息后， 别人将不能查看到你\r\n可以通过转义字符换行'
+      cancelText: 'Cancel',
+      title: 'After clearing the location information, others will not be able to see you\r\nLine breaks can be escaped'
     })
     expect(wrapper.element).toMatchSnapshot()
   })
@@ -66,11 +66,11 @@ describe('ActionSheet Behavior ', () => {
     const wrapper = factory(
       {
         isOpened: true,
-        cancelText: '取消',
-        title: '清除位置信息后， 别人将不能查看到你\r\n可以通过转义字符换行'
+        cancelText: 'Cancel',
+        title: 'After clearing the location information, others will not be able to see you\r\nLine breaks can be escaped'
       },
       {
-        default: [<ActionSheetItem>按钮一</ActionSheetItem>]
+        default: [<ActionSheetItem>Button A</ActionSheetItem>]
       }
     )
     wrapper.find('.at-action-sheet__footer').trigger('click')
@@ -83,7 +83,7 @@ describe('ActionSheet Behavior ', () => {
   it('ActionSheet click event on ActionSheetItem', () => {
     const wrapper = mount(
       <ActionSheet>
-        <ActionSheetItem>按钮一</ActionSheetItem>
+        <ActionSheetItem>Button A</ActionSheetItem>
       </ActionSheet>
     )
 

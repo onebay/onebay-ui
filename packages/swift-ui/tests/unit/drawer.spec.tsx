@@ -25,7 +25,7 @@ describe('Drawer Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
   it('render Drawer -- props items', () => {
-    const wrapper = factory({ show: true, items: ['菜单1', '菜单2'] })
+    const wrapper = factory({ show: true, items: ['Menu A', 'Menu B'] })
     expect(wrapper.element).toMatchSnapshot()
   })
 })
@@ -36,7 +36,7 @@ describe('Drawer Event', () => {
     const wrapper = factory({
       show: true,
       onItemClick: onItemClick,
-      items: ['菜单1', '菜单2'],
+      items: ['Menu A', 'Menu B'],
     })
     await sleep(300)
     wrapper.find('.at-drawer .at-list__item').trigger('click')
@@ -50,7 +50,7 @@ describe('Drawer Event', () => {
     const wrapper = factory({
       show: true,
       onItemClick: onItemClick,
-      items: ['菜单1', '菜单2'],
+      items: ['Menu A', 'Menu B'],
     })
     await sleep(300)
     console.log('at-list__item :>> ', wrapper.find('.at-drawer .at-list__item'));
@@ -65,7 +65,7 @@ describe('Drawer Event', () => {
     const wrapper = factory({
       show: true,
       onClose: onClose,
-      items: ['菜单1', '菜单2'],
+      items: ['Menu A', 'Menu B'],
     })
     await sleep(300)
     wrapper.find('.at-drawer .at-drawer__mask').trigger('click')

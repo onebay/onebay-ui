@@ -30,37 +30,37 @@ describe('List Snap', () => {
       },
       template: `
       <List>
-        <ListItem title='标题文字' />
-        <ListItem title='标题文字' arrow='right' />
-        <ListItem title='标题文字' note='描述信息' />
-        <ListItem title='禁用状态' disabled extraText='详细信息' />
-        <ListItem title='标题文字' note='描述信息' arrow='right' />
-        <ListItem title='标题文字' extraText='详细信息' arrow='right' />
+        <ListItem title='Title text' />
+        <ListItem title='Title text' arrow='right' />
+        <ListItem title='Title text' note='Description' />
+        <ListItem title='Disabled state' disabled extraText='details' />
+        <ListItem title='Title text' note='Description' arrow='right' />
+        <ListItem title='Title text' extraText='details' arrow='right' />
         <ListItem
           arrow='right'
-          note='描述信息'
-          title='标题文字标题文字标题文字标题文字标题文字'
-          extraText='详细信息详细信息详细信息详细信息'
+          note='Description'
+          title='Title textTitle textTitle textTitle textTitle text'
+          extraText='details details details details'
         />
         <ListItem
-          title='标题文字'
-          note='描述信息'
-          extraText='详细信息'
+          title='Title text'
+          note='Description'
+          extraText='details'
           arrow='right'
           thumb='http://img12.360buyimg.com/jdphoto/s72x72_jfs/t10660/330/203667368/1672/801735d7/59c85643N31e68303.png'
         />
         <ListItem
           arrow='right'
-          note='描述信息'
+          note='Description'
           :iconInfo="iconInfo"
-          title='标题文字'
-          extraText='详细信息'
+          title='Title text'
+          extraText='details'
           thumb='http://img12.360buyimg.com/jdphoto/s72x72_jfs/t10660/330/203667368/1672/801735d7/59c85643N31e68303.png'
         />
-        <ListItem title='标题文字' isSwitch />
-        <ListItem title='标题文字' isSwitch disabled />
-        <ListItem title='标题文字' switchIsCheck isSwitch />
-        <ListItem title='标题文字' switchIsCheck isSwitch disabled />
+        <ListItem title='Title text' isSwitch />
+        <ListItem title='Title text' isSwitch disabled />
+        <ListItem title='Title text' switchIsCheck isSwitch />
+        <ListItem title='Title text' switchIsCheck isSwitch disabled />
       </List>
       `,
     })
@@ -75,8 +75,8 @@ describe('List Snap', () => {
       },
       template: `
       <List :hasBorder="false">
-        <ListItem title='标题文字' :hasBorder="false" />
-        <ListItem title='标题文字' :hasBorder="false" />
+        <ListItem title='Title text' :hasBorder="false" />
+        <ListItem title='Title text' :hasBorder="false" />
       </List>
       `,
     })
@@ -112,7 +112,7 @@ describe('List Behavior ', () => {
       template: `
         <List>
           <ListItem
-            title='标题文字'
+            title='Title text'
             is-switch
             :on-click="onClick"
             :on-switch-change="onChange"
@@ -135,7 +135,7 @@ describe('List Behavior ', () => {
       template: `
         <List>
           <ListItem
-            title='标题文字'
+            title='Title text'
             is-switch
             switch-is-check
           />
@@ -155,7 +155,7 @@ describe('List Behavior ', () => {
       template: `
         <List>
           <ListItem
-            title='标题文字'
+            title='Title text'
             is-switch
           />
         </List>
