@@ -21,6 +21,7 @@ const routes = [
   dynamicRoute('/pages/basic/button/index'),
   dynamicRoute('/pages/form/checkbox/index'),
   dynamicRoute('/pages/layout/accordion/index'),
+  dynamicRoute('/pages/layout/list/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),
