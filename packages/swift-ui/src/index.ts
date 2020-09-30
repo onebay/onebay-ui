@@ -1,3 +1,4 @@
+import SwiftUi from './plugins'
 import Loading from './components/loading/index'
 import Accordion from './components/accordion/index'
 import ActionSheet from './components/action-sheet/index'
@@ -29,3 +30,5 @@ export {
   FloatLayout,
   Toast
 }
+
+export default SwiftUi

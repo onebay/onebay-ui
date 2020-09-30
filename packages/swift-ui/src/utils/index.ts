@@ -35,3 +35,6 @@ export function handleTouchScroll(flag: boolean): void {
     document.documentElement.scrollTop = scrollTop
   }
 }
+
+// eslint-disable-next-line @typescript-eslint/ban-types
+export const isFunction = (value: unknown): value is Function => typeof value === 'function'

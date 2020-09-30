@@ -125,7 +125,6 @@ export default defineComponent({
       this.handleChange()
     },
   },
-
   methods: {
     clearTimmer() {
       if (this.timer) {
@@ -171,7 +170,6 @@ export default defineComponent({
 
     handleChange() {
       const { isOpened, duration } = this.$props
-      console.log('duration :>> ', duration)
       if (!isOpened) {
         this.close()
         return
@@ -196,7 +194,7 @@ export default defineComponent({
             <div class="toast-body-content">
               {
                 realImg &&
-                <div v-if="" class="toast-body-content__img">
+                <div class="toast-body-content__img">
                   <img
                     class="toast-body-content__img-item"
                     src={realImg}
