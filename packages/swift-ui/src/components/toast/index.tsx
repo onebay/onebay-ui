@@ -71,7 +71,7 @@ export default defineComponent({
     },
   },
   setup(props: ToastProps) {
-    const timer = ref(null)
+    const timer = ref(0)
     const visible = ref(props.isOpened)
 
     const rootCls = computed(() => {
@@ -80,7 +80,7 @@ export default defineComponent({
 
     const realImg = computed(() => {
       const { status, image } = props
-      return image || statusImg[status] || null
+      return image || statusImg[status as string] || null
     })
 
     const bodyClass = computed(() => {
@@ -101,7 +101,7 @@ export default defineComponent({
 
     const isRenderIcon = computed(() => {
       const { icon, status, image } = props
-      return !!(icon && !(image || statusImg[status]))
+      return !!(icon && !(image || statusImg[status as string]))
     })
 
     return {
@@ -129,15 +129,15 @@ export default defineComponent({
     clearTimmer() {
       if (this.timer) {
         clearTimeout(this.timer)
-        this.timer = null
+        this.timer = 0
       }
     },
 
-    makeTimer(duration) {
+    makeTimer(duration: number) {
       if (duration === 0) {
         return
       }
-      this.timer = setTimeout(() => {
+      this.timer = window.setTimeout(() => {
         this.close()
       }, +duration)
     },
@@ -151,13 +151,13 @@ export default defineComponent({
       }
     },
 
-    handleClose(event) {
+    handleClose() {
       if (typeof this.onClose === 'function') {
-        this.onClose(event)
+        this.onClose()
       }
     },
 
-    handleClick(event) {
+    handleClick(event: MouseEvent) {
       const { onClick, status } = this
       if (status === 'loading') {
         return
