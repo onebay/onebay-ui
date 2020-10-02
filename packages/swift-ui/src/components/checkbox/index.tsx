@@ -68,10 +68,14 @@ const Checkbox = defineComponent({
   },
   render() {
     const { rootCls, customStyle, options } = this.$props
+    const { handleClick } = this
     return (
       <div class={rootCls} style={customStyle}>
-        {options.map((option: CheckboxItem) => (
-          <div class={this.getOptionCls(option)} key={option.value}>
+        {options.map((option: CheckboxItem, index: number) => (
+          <div
+            class={this.getOptionCls(option)}
+            key={`${option.value}`}
+            onClick={handleClick(index)}>
             <div class="at-checkbox__option-wrap">
               <div class="at-checkbox__option-cnt">
                 <div class="at-checkbox__icon-cnt">
