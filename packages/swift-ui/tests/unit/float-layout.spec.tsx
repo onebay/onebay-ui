@@ -34,6 +34,12 @@ describe('FloatLayout Snap', () => {
     const wrapper = factory({ title: 'This is a Title', isOpened: true })
     expect(wrapper.element).toMatchSnapshot()
   })
+
+  it('Change FloatLayout -- props isOpened', async () => {
+    const wrapper = factory()
+    await wrapper.setProps({ isOpened: true })
+    expect(wrapper.element).toMatchSnapshot()
+  })
 })
 
 describe('FloatLayout Behavior ', () => {

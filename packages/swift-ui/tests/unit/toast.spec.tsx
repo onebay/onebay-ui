@@ -68,7 +68,6 @@ describe('Toast Behavior ', () => {
   it('Toast will close when is clicked && onClose will be called', async () => {
     const onClose = jest.fn()
     const wrapper = factory({ isOpened: true, onClose: onClose })
-    console.log('wrapper.vm :>> ', wrapper.vm);
     expect(wrapper.vm.isOpened).toBeTruthy()
     expect(wrapper.vm.status === 'loading').toBeFalsy()
     wrapper.find('.at-toast .toast-body').trigger('click')

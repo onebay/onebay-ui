@@ -53,7 +53,6 @@ describe('Drawer Event', () => {
       items: ['Menu A', 'Menu B'],
     })
     await sleep(300)
-    console.log('at-list__item :>> ', wrapper.find('.at-drawer .at-list__item'));
     wrapper.find('.at-drawer .at-list__item').trigger('click')
     wrapper.find('.at-drawer .at-list__item[data-index="1"]').trigger('click')
     await sleep(0)

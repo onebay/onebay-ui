@@ -58,6 +58,15 @@ describe('ActionSheet Snap', () => {
     })
     expect(wrapper.element).toMatchSnapshot()
   })
+
+  it('Change ActionSheet -- props isOpened', async () => {
+    const wrapper = factory({
+      cancelText: 'Cancel',
+      title: 'After clearing the location information, others will not be able to see you\r\nLine breaks can be escaped'
+    })
+    await wrapper.setProps({ isOpened: true })
+    expect(wrapper.element).toMatchSnapshot()
+  })
 })
 
 describe('ActionSheet Behavior ', () => {

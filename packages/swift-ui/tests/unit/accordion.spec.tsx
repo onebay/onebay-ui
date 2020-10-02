@@ -71,6 +71,13 @@ describe('Accordion Snap', () => {
     )
     expect(wrapper.element).toMatchSnapshot()
   })
+
+  it('test change props open', async () => {
+    const wrapper = factory()
+    await wrapper.setProps({ open: true })
+    expect(wrapper.vm.open).toBeTruthy()
+    expect(wrapper.element).toMatchSnapshot()
+  })
 })
 
 describe('Accordion Event', () => {
