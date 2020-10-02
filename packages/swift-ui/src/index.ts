@@ -13,6 +13,8 @@ import Divider from './components/divider/index'
 import Drawer from './components/drawer/index'
 import FloatLayout from './components/float-layout/index'
 import Toast from './components/toast/index'
+import Input from './components/input/index'
+import Form from './components/form/index'
 
 export {
   Loading,
@@ -28,7 +30,9 @@ export {
   Divider,
   Drawer,
   FloatLayout,
-  Toast
+  Toast,
+  Input,
+  Form
 }
 
 export default SwiftUi

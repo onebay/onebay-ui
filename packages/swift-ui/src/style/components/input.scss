@@ -33,7 +33,7 @@
 
   &__title {
     margin-right: $spacing-h-md;
-    width: 172px;
+    width: 86px;
     font-size: $at-input-font-size;
     line-height: $line-height-zh;
     vertical-align: middle;
@@ -60,6 +60,8 @@
     font-size: $at-input-font-size;
     line-height: $line-height-zh;
     vertical-align: middle;
+    border: 0;
+    outline: 0;
     @include placeholder($at-input-placeholder-color);
   }
 
@@ -95,7 +97,7 @@
     display: inline-flex;
     @include hairline-left();
 
-    > view,
+    >view,
     div,
     span,
     text,
@@ -108,12 +110,12 @@
       text-align: center;
     }
 
-    > image,
+    >image,
     img,
     .taro-img {
       display: inline-block;
-      width: 145px;
-      height: 60px;
+      width: 72px;
+      height: 30px;
       vertical-align: middle;
     }
   }
