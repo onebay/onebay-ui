@@ -66,7 +66,7 @@ export default defineComponent({
       validator: (val: string): boolean => ['up', 'down', 'right', ''].includes(val)
     }
   },
-  emits: ['click', 'click1'],
+  emits: ['click'],
   setup(props, { emit }) {
     const rootClass = computed(() => {
       const { note, thumb, disabled, hasBorder, className } = props as ListItemProps

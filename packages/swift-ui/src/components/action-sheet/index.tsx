@@ -70,8 +70,8 @@ export default defineComponent({
     }
   },
   render(): JSX.Element {
-    const { rootClass, title, cancelText } = this.$props
-    const { handleTouchMove, close, handleCancel, $slots } = this
+    const { title, cancelText } = this.$props
+    const { handleTouchMove, close, handleCancel, $slots, rootClass } = this
     return (
       <div class={rootClass} onTouchmove={handleTouchMove}>
         <div class="at-action-sheet__overlay" onClick={close} />

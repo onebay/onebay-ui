@@ -56,8 +56,8 @@ export default defineComponent({
     }
   },
   render(): JSX.Element {
-    const { rootClass, dot, customStyle } = this.$props
-    const { val } = this
+    const { dot, customStyle } = this.$props
+    const { val, rootClass } = this
     return (
       <div class={rootClass} style={customStyle}>
         {dot && <div class="at-badge__dot" />}

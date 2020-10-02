@@ -48,8 +48,8 @@ export default defineComponent({
     }
   },
   render() {
-    const { rootClass, size, color } = this.$props
-    const { $slots } = this
+    const { size, color } = this.$props
+    const { $slots, rootClass } = this
     return (
       <div class={rootClass}>
         <div class="at-activity-indicator__body">

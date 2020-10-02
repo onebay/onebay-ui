@@ -59,13 +59,13 @@ export default defineComponent({
   },
   render(): JSX.Element {
     const { className, customStyle, content } = this.$props
-    const { rootStyle, $slots } = this
+    const { rootStyle, $slots, fontStyle, lineStyle } = this
     return (
       <div class={classNames('at-divider', className)} style={mergeStyle(rootStyle, customStyle)}>
-        <div class="at-divider__content" style="fontStyle">
+        <div class="at-divider__content" style={fontStyle}>
           {$slots.default ? $slots.default() : content}
         </div>
-        <div class="at-divider__line" style="lineStyle" />
+        <div class="at-divider__line" style={lineStyle} />
       </div>
     )
   }

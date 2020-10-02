@@ -86,7 +86,6 @@ export default defineComponent({
   },
   watch: {
     open(val) {
-      console.log('open :>> ', val)
       this.startOpen = !!val && !!this.isAnimation
       this.toggleWithAnimation()
     }
