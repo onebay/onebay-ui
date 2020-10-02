@@ -87,81 +87,15 @@ describe('List Snap', () => {
 describe('List Behavior ', () => {
   it('ListItem onClick', () => {
     const onClick = jest.fn()
-    const wrapper = mount(ListItem, {
+    const wrapper = mount(
+      <List>
+        <ListItem title='标题文字' onClick={onClick} />
+      </List>, {
       props: {
         title: 'ListItem title'
       }
-
     })
-    expect(wrapper.element).toMatchSnapshot()
-    expect(wrapper.emitted()).toHaveProperty('click')
+    wrapper.find('.at-list .at-list__item').trigger('click')
+    expect(wrapper.findComponent(ListItem).emitted()).toHaveProperty('click')
   })
-
-  /* it('ListItem onSwitchChange && onClick', () => {
-    const onClick = jest.fn()
-    const onChange = jest.fn()
-    const wrapper = mount({
-      components: {
-        List,
-        ListItem,
-      },
-      methods: {
-        onClick: onClick,
-        onChange: onChange,
-      },
-      template: `
-        <List>
-          <ListItem
-            title='Title text'
-            is-switch
-            :on-click="onClick"
-            :on-switch-change="onChange"
-          />
-        </List>
-      `,
-    })
-    wrapper.find('.at-list .at-list__item .item-extra__switch switch').trigger('tap')
-    wrapper.find('.at-list .at-list__item .item-extra__switch switch').trigger('change')
-    expect(onClick).toBeCalled()
-    expect(onChange).toBeCalled()
-  })
-
-  it('ListItem switch was checked', () => {
-    const wrapper = mount({
-      components: {
-        List,
-        ListItem,
-      },
-      template: `
-        <List>
-          <ListItem
-            title='Title text'
-            is-switch
-            switch-is-check
-          />
-        </List>
-      `,
-    })
-    const switchEl = wrapper.find('.at-list .at-list__item .item-extra__switch switch')
-    expect(switchEl.attributes('checked')).toBe('checked')
-  })
-
-  it('ListItem switch was unchecked', () => {
-    const wrapper = mount({
-      components: {
-        List,
-        ListItem,
-      },
-      template: `
-        <List>
-          <ListItem
-            title='Title text'
-            is-switch
-          />
-        </List>
-      `,
-    })
-    const switchEl = wrapper.find('.at-list .at-list__item .item-extra__switch switch')
-    expect(switchEl.attributes('checked')).toBe(undefined)
-  }) */
 })

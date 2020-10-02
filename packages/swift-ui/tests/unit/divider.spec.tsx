@@ -26,7 +26,7 @@ describe('Divider Snap', () => {
   })
 
   it('render Divider -- props content', () => {
-    const wrapper = factory({ content: 'content' })
+    const wrapper = factory({ content: 'content' }, { default: void 0 })
     expect(wrapper.element).toMatchSnapshot()
   })
 
