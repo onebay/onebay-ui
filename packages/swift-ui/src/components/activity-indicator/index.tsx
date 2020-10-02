@@ -55,9 +55,7 @@ export default defineComponent({
         <div class="at-activity-indicator__body">
           <Loading size={size} color={color} />
         </div>
-        <div class="at-activity-indicator__content">
-          {$slots.default && $slots.default()}
-        </div>
+        <div class="at-activity-indicator__content">{$slots.default && $slots.default()}</div>
       </div>
     )
   }

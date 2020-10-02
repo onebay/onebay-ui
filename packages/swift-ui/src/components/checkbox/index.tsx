@@ -70,25 +70,19 @@ const Checkbox = defineComponent({
     const { rootCls, customStyle, options } = this.$props
     return (
       <div class={rootCls} style={customStyle}>
-        {
-          options.map((option: CheckboxItem) => (
-            <div
-              class={this.getOptionCls(option)}
-              key={option.value}
-            >
-              <div class="at-checkbox__option-wrap">
-                <div class="at-checkbox__option-cnt">
-                  <div class="at-checkbox__icon-cnt">
-                    <span class="at-icon at-icon-check"></span>
-                  </div>
-                  <div class="at-checkbox__title">{option.label}</div>
+        {options.map((option: CheckboxItem) => (
+          <div class={this.getOptionCls(option)} key={option.value}>
+            <div class="at-checkbox__option-wrap">
+              <div class="at-checkbox__option-cnt">
+                <div class="at-checkbox__icon-cnt">
+                  <span class="at-icon at-icon-check"></span>
                 </div>
-                {option.desc && <div class="at-checkbox__desc">{option.desc}</div>}
+                <div class="at-checkbox__title">{option.label}</div>
               </div>
+              {option.desc && <div class="at-checkbox__desc">{option.desc}</div>}
             </div>
-          ))
-        }
-
+          </div>
+        ))}
       </div>
     )
   }

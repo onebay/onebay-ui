@@ -54,7 +54,7 @@ export default defineComponent({
   emits: ['click'],
   setup(props: AccordionProps) {
     const isCompleted = ref(true)
-    let startOpen = ref(false)
+    const startOpen = ref(false)
     const wrapperHeight = ref(0)
 
     const contentStyle = computed(() => {
@@ -109,7 +109,7 @@ export default defineComponent({
       if (!this.isCompleted || !isAnimation) return
       this.isCompleted = false
       const rect = this._el.querySelectorAll('.at-accordion__body')
-      let arr = rect || [{ height: '' }]
+      const arr = rect || [{ height: '' }]
       const height = parseInt(arr[0].style.height.toString())
       const startHeight = open ? 0 : height
       const endHeight = open ? height : 0
@@ -128,15 +128,19 @@ export default defineComponent({
     const { iconCls, contentStyle, isCompleted, startOpen, $slots } = this
     return (
       <div class={classNames('at-accordion', className)} style={customStyle}>
-        <div class={classNames('at-accordion__header', {
-          'at-accordion__header--noborder': !hasBorder
-        })}
-          onClick={this.handleClick}
-        >
-          {icon && icon.value && <div class={iconCls} style={{
-            color: (icon && icon.color) || '',
-            fontSize: (icon && `${icon.size}px`) || ''
-          }}></div>}
+        <div
+          class={classNames('at-accordion__header', {
+            'at-accordion__header--noborder': !hasBorder
+          })}
+          onClick={this.handleClick}>
+          {icon && icon.value && (
+            <div
+              class={iconCls}
+              style={{
+                color: (icon && icon.color) || '',
+                fontSize: (icon && `${icon.size}px`) || ''
+              }}></div>
+          )}
           <div class="at-accordion__info">
             <div class="at-accordion__info__title">{title}</div>
             <div class="at-accordion__info__note">{note}</div>
@@ -144,8 +148,7 @@ export default defineComponent({
           <div
             class={classNames('at-accordion__arrow', {
               'at-accordion__arrow--folded': !!open
-            })}
-          >
+            })}>
             <div class="at-icon at-icon-chevron-down" />
           </div>
         </div>
@@ -153,11 +156,8 @@ export default defineComponent({
           style={contentStyle}
           class={classNames('at-accordion__content', {
             'at-accordion__content--inactive': (!open && isCompleted) || startOpen
-          })}
-        >
-          <div class="at-accordion__body">
-            {$slots.default && $slots.default()}
-          </div>
+          })}>
+          <div class="at-accordion__body">{$slots.default && $slots.default()}</div>
         </div>
       </div>
     )

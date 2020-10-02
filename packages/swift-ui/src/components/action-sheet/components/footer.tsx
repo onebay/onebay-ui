@@ -6,10 +6,13 @@ export default defineComponent({
   props: {
     className: {
       type: [Array, String],
-      default: () => ''
+      default: ''
     },
     onClick: {
-      type: Function
+      type: Function,
+      default: () => {
+        /* */
+      }
     }
   },
   emits: ['click'],

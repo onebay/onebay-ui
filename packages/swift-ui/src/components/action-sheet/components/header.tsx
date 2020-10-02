@@ -18,10 +18,6 @@ export default defineComponent({
   },
   render(): JSX.Element {
     const { rootClass, $slots } = this
-    return (
-      <div class={rootClass}>
-        {$slots.default && $slots.default()}
-      </div>
-    )
+    return <div class={rootClass}>{$slots.default && $slots.default()}</div>
   }
 })

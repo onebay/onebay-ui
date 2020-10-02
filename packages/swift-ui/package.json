@@ -9,7 +9,8 @@
   "scripts": {
     "build": "rollup --config ./config/rollup.config.js",
     "test": "jest --coverage",
-    "lint": "eslint src/**/*.{ts,vue}"
+    "lint": "eslint src/**/*.tsx",
+    "lint:fix": "eslint src/**/*.tsx --fix"
   },
   "keywords": [],
   "author": "",

@@ -10,8 +10,10 @@ export interface ToastProps {
   isOpened?: boolean
   duration?: number
   status?: string
+  /* eslint-disable */
   className: any
   customStyle: any
+  /* eslint-disable */
 }
 
 export enum ToastStatus {
@@ -26,49 +28,49 @@ export default defineComponent({
   props: {
     text: {
       type: String,
-      default: '',
+      default: ''
     },
     icon: {
       type: String,
-      default: '',
+      default: ''
     },
     hasMask: {
       type: Boolean,
-      default: false,
+      default: false
     },
     image: {
       type: String,
-      default: '',
+      default: ''
     },
     isOpened: {
       type: Boolean,
-      default: false,
+      default: false
     },
     duration: {
       type: Number,
-      default: 3000,
+      default: 3000
     },
     status: {
       type: String,
       default: ToastStatus.default,
-      validator: (val: string) => ['', 'error', 'loading', 'success'].includes(val),
+      validator: (val: string) => ['', 'error', 'loading', 'success'].includes(val)
     },
     onClick: {
       type: Function,
-      default: null,
+      default: null
     },
     onClose: {
       type: Function,
-      default: () => () => { },
+      default: () => () => { }
     },
     className: {
       type: [Object, String],
-      default: () => '',
+      default: () => ''
     },
     customStyle: {
       type: [Object, String],
-      default: '',
-    },
+      default: ''
+    }
   },
   setup(props: ToastProps) {
     const timer = ref(0)
@@ -88,14 +90,14 @@ export default defineComponent({
       return classNames('toast-body', {
         'at-toast__body--custom-image': image,
         'toast-body--text': !realImg && !icon,
-        [`at-toast__body--${status}`]: !!status,
+        [`at-toast__body--${status}`]: !!status
       })
     })
 
     const iconClass = computed(() => {
       const { icon } = props
       return classNames('at-icon', {
-        [`at-icon-${icon}`]: icon,
+        [`at-icon-${icon}`]: icon
       })
     })
 
@@ -119,11 +121,11 @@ export default defineComponent({
       immediate: true,
       handler() {
         this.handleChange()
-      },
+      }
     },
     duration() {
       this.handleChange()
-    },
+    }
   },
   methods: {
     clearTimmer() {
@@ -181,7 +183,7 @@ export default defineComponent({
         this.clearTimmer()
       }
       this.makeTimer(duration || 0)
-    },
+    }
   },
   render(): JSX.Element | null {
     const { handleClick, visible, rootCls, bodyClass, realImg, isRenderIcon, iconClass } = this
@@ -192,27 +194,21 @@ export default defineComponent({
           {hasMask && <div class="at-toast__overlay"></div>}
           <div class={bodyClass} style={customStyle} onClick={handleClick}>
             <div class="toast-body-content">
-              {
-                realImg &&
+              {realImg && (
                 <div class="toast-body-content__img">
-                  <img
-                    class="toast-body-content__img-item"
-                    src={realImg}
-                  />
+                  <img class="toast-body-content__img-item" src={realImg} />
                 </div>
-              }
-              {
-                isRenderIcon &&
+              )}
+              {isRenderIcon && (
                 <div class="toast-body-content__icon">
                   <div class={iconClass}></div>
                 </div>
-              }
-              {
-                text &&
+              )}
+              {text && (
                 <div class="toast-body-content__info">
                   <div>{text}</div>
                 </div>
-              }
+              )}
             </div>
           </div>
         </div>

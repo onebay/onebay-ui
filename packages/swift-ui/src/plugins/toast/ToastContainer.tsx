@@ -2,6 +2,7 @@ import { defineComponent, ref } from 'vue'
 import Toast from '../../components/toast'
 
 export default defineComponent({
+  name: 'ToastContainer',
   components: {
     Toast
   },
@@ -17,10 +18,11 @@ export default defineComponent({
     },
     close: {
       type: Function,
-      default: () => { }
+      default: () => {
+        /* */
+      }
     }
   },
-  name: 'ToastContainer',
   setup() {
     const showToast = ref(true)
     return { showToast }
@@ -34,12 +36,6 @@ export default defineComponent({
   render(): JSX.Element {
     const { showToast, handleClose } = this
     const { config } = this.$props
-    return (
-      <Toast
-        isOpened={showToast}
-        onClose={handleClose}
-        {...config}
-      />
-    )
+    return <Toast isOpened={showToast} onClose={handleClose} {...config} />
   }
-});
+})

@@ -8,8 +8,10 @@ export interface DrawerProps {
   mask?: boolean
   right?: boolean
   width?: string | number
+  /* eslint-disable */
   items?: any[]
   className: any
+  /* eslint-disable */
 }
 const Drawer = defineComponent({
   components: {
@@ -19,39 +21,38 @@ const Drawer = defineComponent({
   props: {
     show: {
       type: Boolean,
-      default: false,
+      default: false
     },
     mask: {
       type: Boolean,
-      default: true,
+      default: true
     },
     right: {
       type: Boolean,
-      default: false,
+      default: false
     },
     width: {
       type: [Number, String],
-      default: '',
+      default: ''
     },
     items: {
       type: Array,
       default: function () {
         return []
-      },
+      }
     },
     className: {
       type: [Object, String],
       default: function () {
         return {}
-      },
+      }
     },
     onItemClick: {
       type: Function,
-      default: function () {
-        return () => { }
-      },
-    },
+      default: () => { /* */ }
+    }
   },
+  emits: ['close'],
   setup(props: DrawerProps) {
     const animShow = ref(false)
     const visible = ref(props.show)
@@ -63,15 +64,18 @@ const Drawer = defineComponent({
       }, 200)
     }
 
-    watch(() => props.show, (val) => {
-      visible.value = val
-      if (val) {
-        inimationShow()
-      }
-    }, { immediate: true })
+    watch(
+      () => props.show,
+      (val) => {
+        visible.value = val
+        if (val) {
+          inimationShow()
+        }
+      },
+      { immediate: true }
+    )
 
     const maskStyle = computed(() => {
-      const { mask } = props
       return {
         display: props.mask ? 'block' : 'none',
         opacity: animShow.value ? 1 : 0
@@ -83,7 +87,7 @@ const Drawer = defineComponent({
       return {
         'at-drawer--show': animShow.value,
         'at-drawer--right': right,
-        'at-drawer--left': !right,
+        'at-drawer--left': !right
       }
     })
 
@@ -94,7 +98,7 @@ const Drawer = defineComponent({
         opacity: animShow.value ? 1 : 0,
         transition: animShow.value
           ? 'all 225ms cubic-bezier(0, 0, 0.2, 1)'
-          : 'all 195ms cubic-bezier(0.4, 0, 0.6, 1)',
+          : 'all 195ms cubic-bezier(0.4, 0, 0.6, 1)'
       }
     })
 
@@ -136,7 +140,7 @@ const Drawer = defineComponent({
 
     onMaskClick(): void {
       this.animHide()
-    },
+    }
   },
   render(): JSX.Element {
     const { items } = this.$props
@@ -146,21 +150,18 @@ const Drawer = defineComponent({
         <div class={rootCls}>
           <div class="at-drawer__mask" style={maskStyle} onClick={onMaskClick}></div>
           <div class="at-drawer__content" style={listStyle}>
-            {
-              !!items && items.length && items.map((name, index) => (
+            {!!items &&
+              items.length &&
+              items.map((name, index) => (
                 <List key={index}>
                   <ListItem
                     key={`${name}-${index}`}
                     data-index={index}
                     onClick={handleItemClick.bind(this, index)}
                     title={name}
-                    arrow="right"
-                  >
-                  </ListItem>
+                    arrow="right"></ListItem>
                 </List>
-              )
-              )
-            }
+              ))}
             {items.length === 0 && $slots.default && $slots.default()}
           </div>
         </div>

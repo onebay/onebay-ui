@@ -7,50 +7,48 @@ export default defineComponent({
   props: {
     content: {
       type: String,
-      default: '',
+      default: ''
     },
     height: {
       type: [Number, String],
-      default: 0,
+      default: 0
     },
     fontColor: {
       type: String,
-      default: '',
+      default: ''
     },
     customStyle: {
       type: String,
-      default: '',
+      default: ''
     },
     fontSize: {
       type: [Number, String],
-      default: 0,
+      default: 0
     },
     lineColor: {
       type: String,
-      default: '',
+      default: ''
     },
     className: {
       type: [Object, String],
-      default: '',
-    },
+      default: ''
+    }
   },
   setup(props) {
     const rootStyle = computed(() => {
       return {
-        height: props.height ? `${Number(props.height)}` : '',
+        height: props.height ? `${Number(props.height)}` : ''
       }
     })
     const fontStyle = computed(() => {
       return {
         color: props.fontColor,
-        'font-size': props.fontSize
-          ? `${Number(props.fontSize)}`
-          : '',
+        'font-size': props.fontSize ? `${Number(props.fontSize)}` : ''
       }
     })
     const lineStyle = computed(() => {
       return {
-        backgroundColor: props.lineColor,
+        backgroundColor: props.lineColor
       }
     })
     return {
@@ -63,10 +61,7 @@ export default defineComponent({
     const { className, customStyle, content } = this.$props
     const { rootStyle, $slots } = this
     return (
-      <div
-        class={classNames('at-divider', className)}
-        style={mergeStyle(rootStyle, customStyle)}
-      >
+      <div class={classNames('at-divider', className)} style={mergeStyle(rootStyle, customStyle)}>
         <div class="at-divider__content" style="fontStyle">
           {$slots.default ? $slots.default() : content}
         </div>

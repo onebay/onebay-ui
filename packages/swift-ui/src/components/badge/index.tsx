@@ -61,11 +61,11 @@ export default defineComponent({
     return (
       <div class={rootClass} style={customStyle}>
         {dot && <div class="at-badge__dot" />}
-        {
-          !dot && val && <div>
+        {!dot && val && (
+          <div>
             <div class="at-badge__num">{val}</div>
           </div>
-        }
+        )}
       </div>
     )
   }

@@ -7,60 +7,56 @@ export default defineComponent({
   props: {
     title: {
       type: String,
-      default: '',
+      default: ''
     },
     isOpened: {
       type: Boolean,
-      default: false,
+      default: false
     },
     scrollY: {
       type: Boolean,
-      default: true,
+      default: true
     },
     scrollX: {
       type: Boolean,
-      default: false,
+      default: false
     },
     scrollWithAnimation: {
       type: Boolean,
-      default: false,
+      default: false
     },
     onClose: {
       type: Function,
-      default: () => () => { },
+      default: () => {
+        /* */
+      }
     },
     onScroll: {
       type: Function,
-      default: () => () => { },
-    },
-    onScrollToLower: {
-      type: Function,
-      default: () => () => { },
-    },
-    onScrollToUpper: {
-      type: Function,
-      default: () => () => { },
+      default: () => {
+        /* */
+      }
     },
     scrollTop: {
       type: Number,
-      default: 0,
+      default: 0
     },
     scrollLeft: {
       type: Number,
-      default: 0,
+      default: 0
     },
     upperThreshold: {
       type: Number,
-      default: 0,
+      default: 0
     },
     lowerThreshold: {
       type: Number,
-      default: 0,
+      default: 0
     },
     className: {
       type: [String, Array],
-      default: '',
-    },
+      default: ''
+    }
   },
   setup(props) {
     const show = ref(props.isOpened)
@@ -68,20 +64,23 @@ export default defineComponent({
       return classNames(
         'at-float-layout',
         {
-          'at-float-layout--active': show.value,
+          'at-float-layout--active': show.value
         },
         props.className
       )
     })
 
-    watch(() => props.isOpened, (val, oldVal) => {
-      if (val !== oldVal) {
-        handleTouchScroll(val)
+    watch(
+      () => props.isOpened,
+      (val, oldVal) => {
+        if (val !== oldVal) {
+          handleTouchScroll(val)
+        }
+        if (val !== show.value) {
+          show.value = val
+        }
       }
-      if (val !== show.value) {
-        show.value = val
-      }
-    })
+    )
 
     return {
       rootClass,
@@ -104,7 +103,7 @@ export default defineComponent({
      */
     handleTouchMove(e) {
       e.stopPropagation()
-    },
+    }
   },
   render(): JSX.Element {
     const { title } = this.$props
@@ -113,24 +112,17 @@ export default defineComponent({
       <div class={rootClass} onTouchmove={handleTouchMove}>
         <div class="at-float-layout__overlay" onClick={close} />
         <div class="at-float-layout__container layout">
-          {
-            title &&
+          {title && (
             <div class="layout-header">
-              <div class="layout-header__title">
-                {title}
-              </div>
+              <div class="layout-header__title">{title}</div>
               <div class="layout-header__btn-close" onClick={close} />
             </div>
-          }
+          )}
           <div class="layout-body">
-            <div
-              class="layout-body__content"
-            >
-              {$slots.default && $slots.default()}
-            </div>
+            <div class="layout-body__content">{$slots.default && $slots.default()}</div>
           </div>
         </div>
-      </ div>
+      </div>
     )
   }
 })

@@ -77,9 +77,7 @@ export default defineComponent({
         <div class="at-action-sheet__overlay" onClick={close} />
         <div class="at-action-sheet__container">
           {title && <ActionSheetHeader>{title}</ActionSheetHeader>}
-          <ActionSheetBody>
-            {$slots.default && $slots.default()}
-          </ActionSheetBody>
+          <ActionSheetBody>{$slots.default && $slots.default()}</ActionSheetBody>
           <ActionSheetFooter onClick={handleCancel}>{cancelText}</ActionSheetFooter>
         </div>
       </div>

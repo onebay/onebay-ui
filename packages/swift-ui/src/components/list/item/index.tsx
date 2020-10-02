@@ -64,9 +64,6 @@ export default defineComponent({
       type: String,
       default: '',
       validator: (val: string): boolean => ['up', 'down', 'right', ''].includes(val)
-    },
-    click: {
-      type: Function
     }
   },
   emits: ['click', 'click1'],
@@ -96,7 +93,6 @@ export default defineComponent({
     })
     const onClick = (e) => {
       emit('click', e)
-      console.log('emit', e);
     }
     return {
       rootClass,
@@ -105,12 +101,6 @@ export default defineComponent({
     }
   },
   methods: {
-    handleClick(event: Event): void {
-      this.$emit('click', event)
-      const { onClick } = this.$props
-      console.log(' this.$props :>> ',  this.$props);
-      onClick && onClick()
-    },
     getIconStyle(): unknown {
       const { iconInfo } = this
       return mergeStyle(
@@ -124,16 +114,20 @@ export default defineComponent({
   },
   render(): JSX.Element {
     const { thumb, iconInfo, extraThumb, extraText, arrow, note, title } = this.$props
-    const { handleClick, iconClass, rootClass, getIconStyle, onClick } = this
+    const { iconClass, rootClass, getIconStyle, onClick } = this
     return (
       <div class={rootClass} onClick={onClick}>
         <div class="at-list__item-container">
-          {thumb && <div class="at-list__item-thumb item-thumb">
-            <img class="item-thumb__info" src={thumb} />
-          </div>}
-          {iconInfo.value && <div class="at-list__item-icon item-icon">
-            <div class={iconClass} style={getIconStyle()}></div>
-          </div>}
+          {thumb && (
+            <div class="at-list__item-thumb item-thumb">
+              <img class="item-thumb__info" src={thumb} />
+            </div>
+          )}
+          {iconInfo.value && (
+            <div class="at-list__item-icon item-icon">
+              <div class={iconClass} style={getIconStyle()}></div>
+            </div>
+          )}
           <div class="at-list__item-content item-content">
             <div class="item-content__info">
               <div class="item-content__info-title">{String(title)}</div>
@@ -142,12 +136,16 @@ export default defineComponent({
           </div>
           <div class="at-list__item-extra item-extra">
             {extraText && <div class="item-extra__info">{String(extraText)}</div>}
-            {extraThumb && !String(extraText) && <div class="item-extra__image">
-              <img class="item-extra__image-info" src={extraThumb} />
-            </div>}
-            {arrow && <div class="item-extra__icon">
-              <div class={`at-icon item-extra__icon-arrow at-icon-chevron-${arrow}`} />
-            </div>}
+            {extraThumb && !String(extraText) && (
+              <div class="item-extra__image">
+                <img class="item-extra__image-info" src={extraThumb} />
+              </div>
+            )}
+            {arrow && (
+              <div class="item-extra__icon">
+                <div class={`at-icon item-extra__icon-arrow at-icon-chevron-${arrow}`} />
+              </div>
+            )}
           </div>
         </div>
       </div>

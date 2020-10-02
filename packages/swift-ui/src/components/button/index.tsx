@@ -95,15 +95,14 @@ export default defineComponent({
     return (
       <div
         class={classNames(rootClassName, classObject, className)}
-        style="customStyle"
-        onClick={handelOnClick}
-      >
-        {loading && <div class="at-button__icon">
-          <Loading color={loadingColor} size={loadingSize} />
-        </div>}
-        <div class="at-button__text">
-          {$slots.default && $slots.default()}
-        </div>
+        style={customStyle}
+        onClick={handelOnClick}>
+        {loading && (
+          <div class="at-button__icon">
+            <Loading color={loadingColor} size={loadingSize} />
+          </div>
+        )}
+        <div class="at-button__text">{$slots.default && $slots.default()}</div>
       </div>
     )
   }
