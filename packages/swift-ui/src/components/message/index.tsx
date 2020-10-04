@@ -41,6 +41,7 @@ export default defineComponent({
       }
     }
   },
+  emits: ['close', 'click'],
   setup(props) {
     const timer = ref(0)
     const visible = ref(props.isOpened)
@@ -87,16 +88,11 @@ export default defineComponent({
     },
 
     handleClose() {
-      if (typeof this.onClose === 'function') {
-        this.onClose()
-      }
+      this.$emit('close')
     },
 
     handleClick(event: MouseEvent) {
-      const { onClick } = this.$props
-      if (typeof onClick == 'function') {
-        onClick(event)
-      }
+      this.$emit('click', event)
     },
 
     handleChange() {
@@ -116,6 +112,7 @@ export default defineComponent({
   },
   render(): JSX.Element {
     const { className, customStyle, isOpened, message, type } = this.$props
+    const { handleClick } = this
     return (
       <div
         class={classNames(
@@ -127,7 +124,8 @@ export default defineComponent({
           `at-message--${type}`,
           className
         )}
-        style={customStyle}>
+        style={customStyle}
+        onClick={handleClick}>
         {message}
       </div>
     )
