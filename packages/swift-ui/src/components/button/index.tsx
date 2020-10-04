@@ -1,14 +1,15 @@
-import { defineComponent, computed } from 'vue'
+import { defineComponent, computed, PropType } from 'vue'
 import classNames from 'classnames'
 import Loading from '../loading/index'
-const SIZE_CLASS = {
-  normal: 'normal',
-  small: 'small'
+
+export enum SIZE_CLASS {
+  normal = 'normal',
+  small = 'small'
 }
 
-const TYPE_CLASS = {
-  primary: 'primary',
-  secondary: 'secondary'
+export enum TYPE_CLASS {
+  primary = 'primary',
+  secondary = 'secondary'
 }
 
 export default defineComponent({
@@ -17,11 +18,11 @@ export default defineComponent({
   },
   props: {
     size: {
-      type: String,
+      type: String as PropType<SIZE_CLASS>,
       default: 'normal'
     },
     type: {
-      type: String,
+      type: String as PropType<TYPE_CLASS>,
       default: undefined
     },
     circle: {
@@ -83,7 +84,7 @@ export default defineComponent({
   },
   methods: {
     classNames,
-    handelOnClick(event): void {
+    handelOnClick(event: MouseEvent): void {
       if (!this.disabled) {
         this.$emit('click', event)
       }
