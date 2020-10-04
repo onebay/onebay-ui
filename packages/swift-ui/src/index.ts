@@ -15,6 +15,7 @@ import FloatLayout from './components/float-layout/index'
 import Toast from './components/toast/index'
 import Input from './components/input/index'
 import Form from './components/form/index'
+import Message from './components/message/index'
 
 export {
   Loading,
@@ -32,7 +33,8 @@ export {
   FloatLayout,
   Toast,
   Input,
-  Form
+  Form,
+  Message
 }
 
 export default SwiftUi
