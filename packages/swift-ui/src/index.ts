@@ -16,6 +16,10 @@ import Toast from './components/toast/index'
 import Input from './components/input/index'
 import Form from './components/form/index'
 import Message from './components/message/index'
+import Modal from './components/modal/index'
+import ModalHeader from './components/modal/header/index'
+import ModalAction from './components/modal/action/index'
+import ModalContent from './components/modal/content/index'
 
 export {
   Loading,
@@ -34,7 +38,11 @@ export {
   Toast,
   Input,
   Form,
-  Message
+  Message,
+  Modal,
+  ModalHeader,
+  ModalAction,
+  ModalContent
 }
 
 export default SwiftUi
