@@ -206,7 +206,6 @@ const Input = defineComponent({
       this.$emit('change', event.target?.value, event)
     },
     handleInput(event: Event): void {
-      console.log('handleInput')
       this.$emit('input', event)
     },
     handleFocus(event: Event): void {
