@@ -160,7 +160,7 @@ export default defineComponent({
     },
 
     handleClick(event: MouseEvent) {
-      const { onClick, status } = this
+      const { onClick, status } = this.$props
       if (status === 'loading') {
         return
       }
