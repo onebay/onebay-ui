@@ -45,8 +45,8 @@ $at-modal-duration: 200ms;
 
   &__content {
     padding: $spacing-h-xl $spacing-h-lg;
-    min-height: 180px;
-    max-height: 840px;
+    // min-height: 90px;
+    // max-height: 420px;
     color: $at-modal-content-text-color;
     font-size: $font-size-base;
     box-sizing: content-box;
@@ -59,17 +59,18 @@ $at-modal-duration: 200ms;
     .at-modal__action {
       @include display-flex;
 
-      & > taro-button-core, button {
+      &>taro-button-core,
+      button {
         @include flex(auto);
         @include line(1);
         @include active;
 
         margin-top: 0;
-        min-width: 160px;
-        height: 88px;
+        min-width: 80px;
+        height: 40px;
         color: $at-modal-btn-default-color;
         font-size: $font-size-base;
-        line-height: 86px;
+        line-height: 40px;
         outline: 0;
         border: 0;
         border-radius: 0;
@@ -92,7 +93,7 @@ $at-modal-duration: 200ms;
       }
     }
 
-    &--simple .at-modal__action > button:last-child:nth-child(2) {
+    &--simple .at-modal__action>button:last-child:nth-child(2) {
       color: $at-modal-btn-confirm-color;
     }
   }

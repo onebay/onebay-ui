@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import { createApp, Component } from 'vue'
 import { isFunction } from '../utils'
 
 export type ContainerCallback = () => HTMLElement | Promise<HTMLElement>
@@ -8,10 +8,10 @@ export interface Config {
 }
 
 export default function withContainer(
-  component: unknown,
+  component: Component,
   containerClass: string,
   config: Config
-): { close: () => void } {
+): { close: () => void } | void {
   let { container = document.body } = config
 
   const getContainer = async () => {

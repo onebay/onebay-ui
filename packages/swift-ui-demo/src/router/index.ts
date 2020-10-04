@@ -15,6 +15,10 @@ const routes = [
     path: '/',
     component: Index
   },
+  {
+    path: '/jsx',
+    component: () => import('../App')
+  },
   dynamicRoute('/pages/panel/index'),
   dynamicRoute('/pages/action/action-sheet/index'),
   dynamicRoute('/pages/action/activity-indicator/index'),
@@ -31,7 +35,8 @@ const routes = [
   {
     path: '/pages/navigation/drawer/index',
     component: Drawer
-  }
+  },
+  dynamicRoute('/pages/action/modal/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),
