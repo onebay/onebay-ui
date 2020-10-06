@@ -37,6 +37,7 @@ const routes = [
     component: Drawer
   },
   dynamicRoute('/pages/action/modal/index'),
+  dynamicRoute('/pages/navigation/navbar/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),

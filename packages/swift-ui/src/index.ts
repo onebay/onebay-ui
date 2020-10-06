@@ -20,6 +20,7 @@ import Modal from './components/modal/index'
 import ModalHeader from './components/modal/header/index'
 import ModalAction from './components/modal/action/index'
 import ModalContent from './components/modal/content/index'
+import NavBar from './components/nav-bar/index'
 
 export {
   Loading,
@@ -42,7 +43,8 @@ export {
   Modal,
   ModalHeader,
   ModalAction,
-  ModalContent
+  ModalContent,
+  NavBar
 }
 
 export default SwiftUi

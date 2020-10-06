@@ -1,8 +1,8 @@
 @import '../variables/default.scss';
 @import '../mixins/index.scss';
 
-$at-nav-bar-spacing-v: 9PX;
-$at-nav-bar-spacing-h: 5PX;
+$at-nav-bar-spacing-v: 4px;
+$at-nav-bar-spacing-h: 2px;
 $at-nav-bar-font-size: 18PX;
 $at-nav-bar-back-font-size: 16PX;
 
@@ -30,7 +30,7 @@ $at-nav-bar-back-font-size: 16PX;
     @include active;
 
     .at-icon {
-      font-size: 48px;
+      font-size: 24px;
     }
   }
 
@@ -40,6 +40,7 @@ $at-nav-bar-back-font-size: 16PX;
     color: $at-nav-bar-link-color;
     text-align: right;
     overflow: hidden;
+    padding-right: 6px;
   }
 
   &__title {
@@ -62,6 +63,10 @@ $at-nav-bar-back-font-size: 16PX;
     @include line;
   }
 
+  .at-icon {
+    font-size: 24px;
+  }
+
   &__container {
     display: inline-block;
     padding: $at-nav-bar-spacing-v $at-nav-bar-spacing-h;
@@ -73,7 +78,7 @@ $at-nav-bar-back-font-size: 16PX;
     @include active;
 
     .at-icon {
-      font-size: 48px;
+      font-size: 24px;
     }
 
     &--hide {

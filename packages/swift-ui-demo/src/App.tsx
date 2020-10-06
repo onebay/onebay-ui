@@ -20,7 +20,13 @@ export default defineComponent({
         title: 'Open Modal as Method',
         'cancel-text': 'Cancel',
         'confirm-text': 'Confirm',
-        content: <p>This is modal content This is modal content</p>
+        content: <p>This is modal content This is modal content</p>,
+        onCancel() {
+          console.log('onCancel')
+        },
+        onConfirm() {
+          console.log('onConfirm')
+        }
       })
     }
   },
