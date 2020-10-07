@@ -38,6 +38,7 @@ const routes = [
   },
   dynamicRoute('/pages/action/modal/index'),
   dynamicRoute('/pages/navigation/navbar/index'),
+  dynamicRoute('/pages/view/noticebar/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),

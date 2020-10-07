@@ -48,8 +48,8 @@
       font-size: $at-noticebar-btn-close-size;
     }
 
-    + .at-noticebar__content {
-      margin-left: 50px;
+    +.at-noticebar__content {
+      margin-left: 24px;
     }
   }
 
@@ -57,6 +57,7 @@
     color: $color-grey-2;
     font-size: 0;
     flex-shrink: 0;
+
     .text {
       font-size: $at-noticebar-font-size;
       line-height: $line-height-zh;
@@ -66,7 +67,7 @@
     &-icon {
       display: inline-block;
       width: $at-noticebar-font-size;
-      vertical-align: middle;
+      vertical-align: -3px;
       overflow: hidden;
 
       .at-icon {
