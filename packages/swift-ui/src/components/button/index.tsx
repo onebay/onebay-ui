@@ -18,7 +18,7 @@ export default defineComponent({
   },
   props: {
     size: {
-      type: String as PropType<SIZE_CLASS>,
+      type: String as PropType<string>,
       default: 'normal'
     },
     type: {
@@ -48,6 +48,12 @@ export default defineComponent({
     className: {
       type: [Object, String],
       default: ''
+    },
+    onClick: {
+      type: Function as PropType<() => void>,
+      default: () => {
+        /* */
+      }
     }
   },
   emits: ['click'],
