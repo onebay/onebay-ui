@@ -23,6 +23,7 @@ import ModalContent from './components/modal/content/index'
 import NavBar from './components/nav-bar/index'
 import Noticebar from './components/noticebar/index'
 import Pagination from './components/pagination/index'
+import Progress from './components/progress/index'
 
 export {
   Loading,
@@ -48,7 +49,8 @@ export {
   ModalContent,
   NavBar,
   Noticebar,
-  Pagination
+  Pagination,
+  Progress
 }
 
 export default SwiftUi

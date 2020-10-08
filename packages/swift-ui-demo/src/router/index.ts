@@ -40,6 +40,7 @@ const routes = [
   dynamicRoute('/pages/navigation/navbar/index'),
   dynamicRoute('/pages/view/noticebar/index'),
   dynamicRoute('/pages/navigation/pagination/index'),
+  dynamicRoute('/pages/action/progress/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),
