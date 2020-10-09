@@ -25,6 +25,7 @@ import Noticebar from './components/noticebar/index'
 import Pagination from './components/pagination/index'
 import Progress from './components/progress/index'
 import Radio from './components/radio/index'
+import Rate from './components/rate/index'
 
 export {
   Loading,
@@ -52,7 +53,8 @@ export {
   Noticebar,
   Pagination,
   Progress,
-  Radio
+  Radio,
+  Rate
 }
 
 export default SwiftUi

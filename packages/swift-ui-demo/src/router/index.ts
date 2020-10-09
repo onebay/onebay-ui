@@ -42,6 +42,7 @@ const routes = [
   dynamicRoute('/pages/navigation/pagination/index'),
   dynamicRoute('/pages/action/progress/index'),
   dynamicRoute('/pages/form/radio/index'),
+  dynamicRoute('/pages/form/rate/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),
