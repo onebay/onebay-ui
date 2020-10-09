@@ -24,6 +24,7 @@ import NavBar from './components/nav-bar/index'
 import Noticebar from './components/noticebar/index'
 import Pagination from './components/pagination/index'
 import Progress from './components/progress/index'
+import Radio from './components/radio/index'
 
 export {
   Loading,
@@ -50,7 +51,8 @@ export {
   NavBar,
   Noticebar,
   Pagination,
-  Progress
+  Progress,
+  Radio
 }
 
 export default SwiftUi
