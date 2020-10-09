@@ -31,24 +31,6 @@ export default defineComponent({
       type: Boolean,
       default: false
     },
-    onCancel: {
-      type: Function,
-      default: () => {
-        /* */
-      }
-    },
-    onConfirm: {
-      type: Function,
-      default: () => {
-        /* */
-      }
-    },
-    onClose: {
-      type: Function,
-      default: () => {
-        /* */
-      }
-    },
     content: {
       type: String,
       default: ''

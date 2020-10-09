@@ -50,6 +50,7 @@ describe('FloatLayout Behavior ', () => {
       isOpened: true,
       onClose: onClose,
     })
+    wrapper.trigger('touchmove')
     wrapper.find('.at-float-layout__overlay').trigger('click')
     await sleep(0)
     expect(onClose).toBeCalled()

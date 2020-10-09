@@ -121,6 +121,13 @@ describe('Input Event', () => {
     expect(wrapper.emitted()).toHaveProperty('focus')
   })
 
+  it('Input onBlur', () => {
+    const onBlur = jest.fn()
+    const wrapper = factory({ onBlur: onBlur })
+    wrapper.find('.at-input__input').trigger('blur')
+    expect(wrapper.emitted()).toHaveProperty('blur')
+  })
+
   it('Input onClick', () => {
     const onClick = jest.fn()
     const wrapper = factory({ onClick: onClick, editable: false })

@@ -25,18 +25,6 @@ export default defineComponent({
       type: Boolean,
       default: false
     },
-    onClose: {
-      type: Function,
-      default: () => {
-        /* */
-      }
-    },
-    onScroll: {
-      type: Function,
-      default: () => {
-        /* */
-      }
-    },
     scrollTop: {
       type: Number,
       default: 0
@@ -58,6 +46,7 @@ export default defineComponent({
       default: ''
     }
   },
+  emits: ['close'],
   setup(props) {
     const show = ref(props.isOpened)
     const rootClass = computed(() => {
@@ -88,14 +77,9 @@ export default defineComponent({
     }
   },
   methods: {
-    handleClose() {
-      if (typeof this.onClose === 'function') {
-        this.onClose()
-      }
-    },
     close() {
       this.show = false
-      this.handleClose()
+      this.$emit('close')
     },
     /**
      *

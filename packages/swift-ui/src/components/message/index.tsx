@@ -27,18 +27,6 @@ export default defineComponent({
     duration: {
       type: Number,
       default: 3000
-    },
-    onClose: {
-      type: Function,
-      default: () => {
-        /* */
-      }
-    },
-    onClick: {
-      type: Function,
-      default: () => {
-        /* */
-      }
     }
   },
   emits: ['close', 'click'],

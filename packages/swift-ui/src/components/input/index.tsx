@@ -4,11 +4,12 @@ import { defineComponent, computed, PropType, ref } from 'vue'
 interface ActualProps {
   type: string
   maxLength: number
-  disabled: boolean
+  disabled?: boolean
   password: boolean
+  editable?: boolean
 }
 
-function getInputProps(props): ActualProps {
+function getInputProps(props: ActualProps): ActualProps {
   const actualProps = {
     type: props.type,
     maxLength: props.maxLength,
@@ -115,39 +116,9 @@ const compProps = {
     type: Boolean as PropType<boolean>,
     default: false
   },
-  onChange: {
-    type: Function,
-    default: function () {
-      /* */
-    }
-  },
-  onFocus: {
-    type: Function,
-    default: function () {
-      /* */
-    }
-  },
-  onBlur: {
-    type: Function,
-    default: function () {
-      /* */
-    }
-  },
-  onConfirm: {
-    type: Function,
-    default: function () {
-      /* */
-    }
-  },
   onErrorClick: {
     type: Function,
-    default: function () {
-      /* */
-    }
-  },
-  onClick: {
-    type: Function,
-    default: function () {
+    default: () => {
       /* */
     }
   }
@@ -203,7 +174,7 @@ const Input = defineComponent({
   },
   methods: {
     handleChange(event: Event): void {
-      this.$emit('change', event.target?.value, event)
+      this.$emit('change', (event.target as HTMLInputElement).value, event)
     },
     handleInput(event: Event): void {
       this.$emit('input', event)
@@ -211,21 +182,21 @@ const Input = defineComponent({
     handleFocus(event: Event): void {
       this.$emit('focus', event)
     },
-    handleBlur(event: Event): void {
+    handleBlur(event: MouseEvent): void {
       this.$emit('blur', event)
       if (event.type === 'blur' && !this.inputClearing) {
-        this.onChange(event.target.value)
+        this.$emit('change', (event.target as HTMLInputElement).value)
       }
       this.inputClearing = false
     },
     handleClick(event: MouseEvent): void {
-      if (!this.editable && typeof this.onClick === 'function') {
+      if (!this.editable) {
         this.$emit('click', event)
       }
     },
     handleClearValue(event: MouseEvent): void {
       this.inputClearing = true
-      this.onChange('', event)
+      this.$emit('change', '', event)
     },
     handleErrorClick(event: MouseEvent): void {
       if (typeof this.onErrorClick === 'function') {

@@ -25,20 +25,9 @@ export default defineComponent({
     reportSubmit: {
       type: Boolean,
       default: false
-    },
-    onSubmit: {
-      type: Function,
-      default: function () {
-        /*  */
-      }
-    },
-    onReset: {
-      type: Function,
-      default: function () {
-        /*  */
-      }
     }
   },
+  emits: ['submit', 'reset'],
   setup(props: FormProps) {
     const rootCls = computed(() => {
       return classNames('at-form', props.className)
@@ -49,11 +38,11 @@ export default defineComponent({
   },
   methods: {
     handleSubmit() {
-      this.onSubmit && this.onSubmit(arguments)
+      this.$emit('submit')
     },
 
     handleReset() {
-      this.onReset && this.onReset(arguments)
+      this.$emit('reset')
     }
   },
   render(): JSX.Element {
