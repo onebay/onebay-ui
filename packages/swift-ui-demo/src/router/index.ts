@@ -43,6 +43,7 @@ const routes = [
   dynamicRoute('/pages/action/progress/index'),
   dynamicRoute('/pages/form/radio/index'),
   dynamicRoute('/pages/form/rate/index'),
+  dynamicRoute('/pages/navigation/segmented-control/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),

@@ -26,6 +26,7 @@ import Pagination from './components/pagination/index'
 import Progress from './components/progress/index'
 import Radio from './components/radio/index'
 import Rate from './components/rate/index'
+import SegmentedControl from './components/segmented-control/index'
 
 export {
   Loading,
@@ -54,7 +55,8 @@ export {
   Pagination,
   Progress,
   Radio,
-  Rate
+  Rate,
+  SegmentedControl
 }
 
 export default SwiftUi
