@@ -40,12 +40,6 @@ export default defineComponent({
       type: [Object, String],
       default: ''
     },
-    onClose: {
-      type: Function,
-      default: () => {
-        /* */
-      }
-    },
     onGotoMore: {
       type: Function,
       default: () => {
@@ -53,6 +47,7 @@ export default defineComponent({
       }
     }
   },
+  emits: ['close'],
   setup(props) {
     const animElemId = `J_${Math.ceil(Math.random() * 10e5).toString(36)}`
     const state = reactive({
@@ -61,7 +56,7 @@ export default defineComponent({
       animationData: [{}],
       dura: 15
     })
-    const timeout = ref<number | null>(null)
+    const timeout = ref(0)
     const classObject = computed(() => {
       return {
         'at-noticebar--marquee': props.marquee,
@@ -81,7 +76,7 @@ export default defineComponent({
       return innerClassName
     })
     const style = computed(() => {
-      const result = {}
+      const result: { 'animation-duration'?: string } = {}
       if (props.marquee) {
         result['animation-duration'] = `${state.dura}s`
       }
@@ -102,16 +97,16 @@ export default defineComponent({
   },
   methods: {
     classNames,
-    handleClose(event) {
+    handleClose(event: Event) {
       this.state.show = false
-      this.onClose && this.onClose(event)
+      this.$emit('close', event)
     },
-    handleGotoMore(event) {
+    handleGotoMore(event: unknown) {
       this.onGotoMore && this.onGotoMore(event)
     },
     initAnimation() {
-      this.timeout = setTimeout(() => {
-        this.timeout = null
+      this.timeout = window.setTimeout(() => {
+        this.timeout = 0
         const elem = document.querySelector(`.${this.state.animElemId}`)
         if (!elem) return
         const width = elem.getBoundingClientRect().width
@@ -149,7 +144,7 @@ export default defineComponent({
             </div>
           )}
           <div class="at-noticebar__content-text">
-            <div class={classNames(innerClassName)} style={style}>
+            <div class={classNames(innerClassName)} style={style as string}>
               {$slots.default && $slots.default()}
             </div>
           </div>

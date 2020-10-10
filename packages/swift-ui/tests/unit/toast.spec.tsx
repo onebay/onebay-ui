@@ -62,6 +62,12 @@ describe('Toast Snap', () => {
     const wrapper = factory({ isOpened: true, status: STATUS_ERROR })
     expect(wrapper.element).toMatchSnapshot()
   })
+
+  it('render opened Toast -- props duration : 0 ', async () => {
+    const wrapper = factory({ isOpened: true })
+    await wrapper.setProps({ duration: 0 })
+    expect(wrapper.element).toMatchSnapshot()
+  })
 })
 
 describe('Toast Behavior ', () => {
@@ -103,5 +109,14 @@ describe('Toast Behavior ', () => {
     await sleep(0)
     expect(onClick).toBeCalled()
     expect(wrapper.vm.visible).toBeTruthy()
+  })
+
+  it('Toast onClick will be called when loading', async () => {
+    const onClick = jest.fn()
+    const wrapper = factory({ isOpened: true, onClick: onClick, status: 'loading' })
+    expect(wrapper.vm.isOpened).toBeTruthy()
+    wrapper.find('.at-toast .toast-body').trigger('click')
+    await sleep(0)
+    expect(onClick).not.toBeCalled()
   })
 })

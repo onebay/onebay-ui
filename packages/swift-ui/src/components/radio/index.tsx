@@ -26,12 +26,6 @@ const Radio = defineComponent({
     options: {
       type: Array,
       default: () => []
-    },
-    onClick: {
-      type: Function,
-      default: () => {
-        /* */
-      }
     }
   },
   emits: ['click'],

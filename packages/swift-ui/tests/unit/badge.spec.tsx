@@ -26,4 +26,14 @@ describe('Badge Snap', () => {
     const wrapper = factory({ value: '10', maxValue: 9 })
     expect(wrapper.element).toMatchSnapshot()
   })
+
+  it('render Badge -- props value less than maxValue', () => {
+    const wrapper = factory({ value: '4', maxValue: 9 })
+    expect(wrapper.element).toMatchSnapshot()
+  })
+
+  it('render Badge -- props value not valid', () => {
+    const wrapper = factory({ value: 's', maxValue: 9 })
+    expect(wrapper.element).toMatchSnapshot()
+  })
 })

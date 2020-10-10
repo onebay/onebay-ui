@@ -40,6 +40,12 @@ describe('Message Snap', () => {
     await sleep(1500)
     expect(wrapper.emitted()).toHaveProperty('close')
   })
+
+  it('render opened Message -- props duration : 0 ', async () => {
+    const wrapper = factory({ isOpened: true })
+    await wrapper.setProps({ duration: 0 })
+    expect(wrapper.element).toMatchSnapshot()
+  })
 })
 
 describe('Message Behavior ', () => {

@@ -16,6 +16,15 @@ describe('Radio Snap', () => {
     })
     expect(wrapper.element).toMatchSnapshot()
   })
+
+  it('render Radio default options', () => {
+    const wrapper = mount({
+      render() {
+        return <Radio />
+      },
+    })
+    expect(wrapper.element).toMatchSnapshot()
+  })
 })
 
 describe('Radio Event', () => {

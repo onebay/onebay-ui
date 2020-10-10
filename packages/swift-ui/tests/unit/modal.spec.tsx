@@ -92,6 +92,7 @@ describe('Modal Snap', () => {
         )
       },
     })
+    wrapper.find('.at-modal').trigger('touchmove')
     expect(wrapper.element).toMatchSnapshot()
   })
 
@@ -103,7 +104,6 @@ describe('Modal Snap', () => {
           <Modal
             isOpened
             title="This is Title "
-            cancelText="Cancel"
             confirmText="Confirm"
             content="This is Modal Content \n\r This is Modal Content"
           />
@@ -152,7 +152,6 @@ describe('Modal Behavior ', () => {
         )
       },
     })
-
     const confirmDom = wrapper.find(
       '.at-modal .at-modal__footer .at-modal__action button:last-child'
     )

@@ -59,10 +59,6 @@ export default defineComponent({
       type: Function,
       default: null
     },
-    onClose: {
-      type: Function,
-      default: () => () => { }
-    },
     className: {
       type: [Object, String],
       default: () => ''
@@ -72,6 +68,7 @@ export default defineComponent({
       default: ''
     }
   },
+  emits: ['click', 'close'],
   setup(props: ToastProps) {
     const timer = ref(0)
     const visible = ref(props.isOpened)
@@ -154,9 +151,7 @@ export default defineComponent({
     },
 
     handleClose() {
-      if (typeof this.onClose === 'function') {
-        this.onClose()
-      }
+      this.$emit('close')
     },
 
     handleClick(event: MouseEvent) {
@@ -164,10 +159,10 @@ export default defineComponent({
       if (status === 'loading') {
         return
       }
-      if (typeof onClick == 'function') {
-        return onClick(event)
+      this.$emit('click')
+      if (!onClick) {
+        this.close()
       }
-      this.close()
     },
 
     handleChange() {
