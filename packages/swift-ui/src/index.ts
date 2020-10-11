@@ -27,6 +27,7 @@ import Progress from './components/progress/index'
 import Radio from './components/radio/index'
 import Rate from './components/rate/index'
 import SegmentedControl from './components/segmented-control/index'
+import Slider from './components/slider/index'
 
 export {
   Loading,
@@ -56,7 +57,8 @@ export {
   Progress,
   Radio,
   Rate,
-  SegmentedControl
+  SegmentedControl,
+  Slider
 }
 
 export default SwiftUi
