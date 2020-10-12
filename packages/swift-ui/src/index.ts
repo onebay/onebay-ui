@@ -28,6 +28,7 @@ import Radio from './components/radio/index'
 import Rate from './components/rate/index'
 import SegmentedControl from './components/segmented-control/index'
 import Slider from './components/slider/index'
+import Steps from './components/steps/index'
 
 export {
   Loading,
@@ -58,7 +59,8 @@ export {
   Radio,
   Rate,
   SegmentedControl,
-  Slider
+  Slider,
+  Steps
 }
 
 export default SwiftUi
