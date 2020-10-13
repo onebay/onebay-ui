@@ -10,14 +10,6 @@ const formatValue = (value: string | number | undefined, maxValue: number): stri
   return numValue > maxValue ? `${maxValue}+` : numValue
 }
 
-interface BadgeProps {
-  dot?: boolean
-  value?: string | number
-  maxValue?: number
-  customStyle?: unknown
-  className?: unknown
-}
-
 export default defineComponent({
   name: 'Badge',
   props: {
@@ -42,7 +34,7 @@ export default defineComponent({
       default: ''
     }
   },
-  setup(props: BadgeProps) {
+  setup(props) {
     const val = computed(() => {
       const { value, maxValue } = props
       return formatValue(value, maxValue)
@@ -57,9 +49,10 @@ export default defineComponent({
   },
   render(): JSX.Element {
     const { dot, customStyle } = this.$props
-    const { val, rootClass } = this
+    const { val, rootClass, $slots } = this
     return (
       <div class={rootClass} style={customStyle}>
+        {$slots.default && $slots.default()}
         {dot && <div class="at-badge__dot" />}
         {!dot && val && (
           <div>
