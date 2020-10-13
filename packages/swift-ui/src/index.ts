@@ -29,6 +29,8 @@ import Rate from './components/rate/index'
 import SegmentedControl from './components/segmented-control/index'
 import Slider from './components/slider/index'
 import Steps from './components/steps/index'
+import Tag from './components/tag/index'
+import TabBar from './components/tab-bar/index'
 
 export {
   Loading,
@@ -60,7 +62,9 @@ export {
   Rate,
   SegmentedControl,
   Slider,
-  Steps
+  Steps,
+  Tag,
+  TabBar
 }
 
 export default SwiftUi

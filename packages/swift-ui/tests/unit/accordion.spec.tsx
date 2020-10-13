@@ -1,5 +1,6 @@
 import { mount } from '@vue/test-utils'
 import Accordion from '../../src/components/accordion/index'
+import { sleep } from '../helper'
 
 const factory = (values = {}, slots = { default: ['按钮'] }) => {
   return mount(Accordion, {
@@ -21,6 +22,13 @@ describe('Accordion Snap', () => {
 
   it('render Accordion -- props open', () => {
     const wrapper = mount(<Accordion open={true} />)
+    expect(wrapper.element).toMatchSnapshot()
+  })
+
+  it('render Accordion -- props isAnimation', async () => {
+    const wrapper = mount(<Accordion isAnimation={false} />)
+    await wrapper.setProps({ open: true })
+    await sleep(0)
     expect(wrapper.element).toMatchSnapshot()
   })
 
@@ -77,6 +85,7 @@ describe('Accordion Snap', () => {
     await wrapper.setProps({ open: true })
     expect(wrapper.vm.open).toBeTruthy()
     expect(wrapper.element).toMatchSnapshot()
+    await sleep(700)
   })
 })
 
@@ -85,5 +94,12 @@ describe('Accordion Event', () => {
     const wrapper = factory()
     wrapper.find('.at-accordion__header').trigger('click')
     expect(wrapper.emitted()).toHaveProperty('click')
+  })
+
+  it('toggle accordion animation is not completed', async () => {
+    const wrapper = factory()
+    await wrapper.setProps({ open: true })
+    wrapper.find('.at-accordion__header').trigger('click')
+    expect(wrapper.emitted()).not.toHaveProperty('click')
   })
 })

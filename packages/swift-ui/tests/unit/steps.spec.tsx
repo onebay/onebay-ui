@@ -1,4 +1,4 @@
-import { mount, VueWrapper } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 import { Steps } from '../../src/index'
 
 const factory = (values = {}, slots = { default: [''] }) => {

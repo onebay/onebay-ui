@@ -410,8 +410,8 @@ $at-tab-bar-color: $color-text-base !default;
 $at-tab-bar-color-active: $color-brand !default;
 $at-tab-bar-font-size: $font-size-base !default;
 $at-tab-bar-icon-color: $color-grey-0 !default;
-$at-tab-bar-icon-font-size: 48px !default;
-$at-tab-bar-icon-image-size: 50px !default;
+$at-tab-bar-icon-font-size: 24px !default;
+$at-tab-bar-icon-image-size: 24px !default;
 
 /* Tabs */
 $at-tabs-color: $color-text-base !default;
@@ -422,8 +422,8 @@ $at-tabs-underline-color: $color-grey-5 !default;
 $at-tabs-bg-color: $color-bg !default;
 
 /* Tag */
-$at-tag-height: 60px !default;
-$at-tag-height-sm: 40px !default;
+$at-tag-height: 30px !default;
+$at-tag-height-sm: 20px !default;
 $at-tag-color: $color-grey-1 !default;
 $at-tag-color-primary: $color-grey-1 !default;
 $at-tag-color-active: $color-brand-light !default;

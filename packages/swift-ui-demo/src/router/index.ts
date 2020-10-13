@@ -46,6 +46,8 @@ const routes = [
   dynamicRoute('/pages/navigation/segmented-control/index'),
   dynamicRoute('/pages/form/slider/index'),
   dynamicRoute('/pages/view/steps/index'),
+  dynamicRoute('/pages/view/tag/index'),
+  dynamicRoute('/pages/navigation/tabbar/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),
