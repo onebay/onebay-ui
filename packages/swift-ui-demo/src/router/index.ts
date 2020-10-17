@@ -48,6 +48,7 @@ const routes = [
   dynamicRoute('/pages/view/steps/index'),
   dynamicRoute('/pages/view/tag/index'),
   dynamicRoute('/pages/navigation/tabbar/index'),
+  dynamicRoute('/pages/view/swiper/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),

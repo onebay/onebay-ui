@@ -107,11 +107,13 @@ export default defineComponent({
     initAnimation() {
       this.timeout = window.setTimeout(() => {
         this.timeout = 0
-        const elem = document.querySelector(`.${this.state.animElemId}`)
-        if (!elem) return
-        const width = elem.getBoundingClientRect().width
-        const dura = width / +this.$props.speed
-        this.state.dura = dura
+        const elem = this.$el.querySelector(`.${this.state.animElemId}`)
+        /* istanbul ignore else */
+        if (elem) {
+          const width = elem.getBoundingClientRect().width
+          const dura = width / +this.$props.speed
+          this.state.dura = dura
+        }
       }, 100)
     }
   },

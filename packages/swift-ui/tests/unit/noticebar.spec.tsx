@@ -46,6 +46,7 @@ describe('Noticebar Event', () => {
       onClose: onClose,
     })
     await sleep(100)
+    expect(wrapper.element).toMatchSnapshot()
     wrapper.find('.at-noticebar__close').trigger('click')
     expect(onClose).toBeCalled()
   })
@@ -61,5 +62,14 @@ describe('Noticebar Event', () => {
     })
     wrapper.find('.at-noticebar__more').trigger('click')
     expect(onGotoMore).toBeCalled()
+  })
+  it('Noticebar default onGotoMore', () => {
+    const wrapper = factory({
+      icon: 'volume-plus',
+      single: true,
+      showMore: true,
+      moreText: 'more',
+    })
+    wrapper.find('.at-noticebar__more').trigger('click')
   })
 })

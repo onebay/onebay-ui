@@ -62,9 +62,11 @@ export default defineComponent({
     watch(
       () => props.isOpened,
       (val, oldVal) => {
+        /* istanbul ignore else */
         if (val !== oldVal) {
           handleTouchScroll(val)
         }
+        /* istanbul ignore else */
         if (val !== show.value) {
           show.value = val
         }
