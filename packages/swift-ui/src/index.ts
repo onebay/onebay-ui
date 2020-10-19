@@ -31,7 +31,9 @@ import Slider from './components/slider/index'
 import Steps from './components/steps/index'
 import Tag from './components/tag/index'
 import TabBar from './components/tab-bar/index'
-import Swiper from './components/swiper/index.tsx'
+import Swiper from './components/swiper/index'
+import Picker from './components/picker/index'
+import PickerGroup from './components/picker/picker-group'
 
 export {
   Loading,
@@ -66,7 +68,9 @@ export {
   Steps,
   Tag,
   TabBar,
-  Swiper
+  Swiper,
+  Picker,
+  PickerGroup
 }
 
 export default SwiftUi
