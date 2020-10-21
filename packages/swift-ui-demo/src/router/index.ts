@@ -50,6 +50,7 @@ const routes = [
   dynamicRoute('/pages/navigation/tabbar/index'),
   dynamicRoute('/pages/view/swiper/index'),
   dynamicRoute('/pages/form/picker/index'),
+  dynamicRoute('/pages/form/input-number/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),

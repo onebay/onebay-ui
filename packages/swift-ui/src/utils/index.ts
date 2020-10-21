@@ -1,3 +1,4 @@
+import baseToString from './baseToString'
 const objectToString = (style: string | unknown): string => {
   if (style && typeof style === 'object') {
     let styleStr = ''
@@ -38,3 +39,5 @@ export function handleTouchScroll(flag: boolean): void {
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 export const isFunction = (value: unknown): value is Function => typeof value === 'function'
+
+export { baseToString }

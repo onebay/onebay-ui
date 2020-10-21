@@ -34,6 +34,7 @@ import TabBar from './components/tab-bar/index'
 import Swiper from './components/swiper/index'
 import Picker from './components/picker/index'
 import PickerGroup from './components/picker/picker-group'
+import InputNumber from './components/input-number'
 
 export {
   Loading,
@@ -70,7 +71,8 @@ export {
   TabBar,
   Swiper,
   Picker,
-  PickerGroup
+  PickerGroup,
+  InputNumber
 }
 
 export default SwiftUi
