@@ -60,3 +60,52 @@ $component: '.at-switch';
     }
   }
 }
+
+.weui-switch {
+  appearance: none;
+}
+.weui-switch {
+  position: relative;
+  width: 52px;
+  height: 32px;
+  border: 2px solid #f7f7f7;
+  outline: 0;
+  border-radius: 16px;
+  box-sizing: border-box;
+  transition: background-color 0.1s, border 0.1s;
+
+  &:before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border-radius: 15px;
+      background-color: #f7f7f7;
+      transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+  }
+  &:after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 15px;
+      background-color:$color-bg; // 固定色值
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+      transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+  }
+}
+
+.weui-switch:checked {
+  border-color: $color-brand;
+  background-color: $color-brand;
+  &:before {
+      transform: scale(0);
+  }
+  &:after {
+      transform: translateX(20px);
+  }
+}

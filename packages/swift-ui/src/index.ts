@@ -35,6 +35,7 @@ import Swiper from './components/swiper/index'
 import Picker from './components/picker/index'
 import PickerGroup from './components/picker/picker-group'
 import InputNumber from './components/input-number'
+import Switch from './components/switch'
 
 export {
   Loading,
@@ -72,7 +73,8 @@ export {
   Swiper,
   Picker,
   PickerGroup,
-  InputNumber
+  InputNumber,
+  Switch
 }
 
 export default SwiftUi
