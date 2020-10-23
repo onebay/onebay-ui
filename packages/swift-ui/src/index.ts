@@ -36,6 +36,7 @@ import Picker from './components/picker/index'
 import PickerGroup from './components/picker/picker-group'
 import InputNumber from './components/input-number'
 import Switch from './components/switch'
+import Textarea from './components/textarea'
 
 export {
   Loading,
@@ -74,7 +75,8 @@ export {
   Picker,
   PickerGroup,
   InputNumber,
-  Switch
+  Switch,
+  Textarea
 }
 
 export default SwiftUi

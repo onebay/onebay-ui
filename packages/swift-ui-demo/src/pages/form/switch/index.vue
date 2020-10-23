@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <!-- S Header -->
-    <DocsHeader title="Switch 开关"></DocsHeader>
+    <DocsHeader title="Switch"></DocsHeader>
     <!-- E Header -->
 
     <!-- S Body -->
