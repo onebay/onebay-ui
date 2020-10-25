@@ -40,4 +40,30 @@ export function handleTouchScroll(flag: boolean): void {
 // eslint-disable-next-line @typescript-eslint/ban-types
 export const isFunction = (value: unknown): value is Function => typeof value === 'function'
 
+interface EventDetail {
+  pageX: number
+  pageY: number
+  clientX: number
+  clientY: number
+  offsetX: number
+  offsetY: number
+  x: number
+  y: number
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function getEventDetail(event: any): EventDetail {
+  const detail: EventDetail = {
+    pageX: event.pageX,
+    pageY: event.pageY,
+    clientX: event.clientX,
+    clientY: event.clientY,
+    offsetX: event.offsetX,
+    offsetY: event.offsetY,
+    x: event.x,
+    y: event.y
+  }
+  return detail
+}
+
 export { baseToString }

@@ -53,6 +53,7 @@ const routes = [
   dynamicRoute('/pages/form/input-number/index'),
   dynamicRoute('/pages/form/switch/index'),
   dynamicRoute('/pages/form/textarea/index'),
+  dynamicRoute('/pages/form/range/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),
