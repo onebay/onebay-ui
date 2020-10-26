@@ -38,6 +38,7 @@ import InputNumber from './components/input-number'
 import Switch from './components/switch'
 import Textarea from './components/textarea'
 import Range from './components/range'
+import ImagePicker from './components/image-picker'
 
 export {
   Loading,
@@ -78,7 +79,8 @@ export {
   InputNumber,
   Switch,
   Textarea,
-  Range
+  Range,
+  ImagePicker
 }
 
 export default SwiftUi

@@ -66,4 +66,32 @@ export function getEventDetail(event: any): EventDetail {
   return detail
 }
 
+export function shouleBeObject(target) {
+  if (target && typeof target === 'object') return { res: true }
+  return {
+    res: false,
+    msg: getParameterError({
+      correct: 'Object',
+      wrong: target
+    })
+  }
+}
+
+export function getParameterError({ name = '', para, correct, wrong }) {
+  const parameter = para ? `parameter.${para}` : 'parameter'
+  const errorType = upperCaseFirstLetter(wrong === null ? 'Null' : typeof wrong)
+  return `${name}:fail parameter error: ${parameter} should be ${correct} instead of ${errorType}`
+}
+
+function upperCaseFirstLetter(string: unknown) {
+  if (typeof string !== 'string') return string
+  string = string.replace(/^./, (match) => match.toUpperCase())
+  return string
+}
+
+/**
+ * return a uuid
+ */
+export const uuid = ((id: number) => () => `uuid-${id++}`)(1000)
+
 export { baseToString }
