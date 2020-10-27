@@ -1,4 +1,5 @@
 import Vue, { VNode } from 'vue'
+import * as CSS from 'csstype'
 
 declare module "*.png";
 declare module "*.gif";
@@ -12,11 +13,11 @@ declare module "*.sass";
 declare module "*.styl";
 
 declare namespace JSX {
-  interface Element extends VNode {}
-  interface ElementClass extends Vue {}
-    interface IntrinsicElements {
-      [elem: string]: any;
-    }
+  interface Element extends VNode { }
+  interface ElementClass extends Vue { }
+  interface IntrinsicElements {
+    [elem: string]: any;
+  }
 }
 
 declare module 'vue/types/options' {
@@ -24,3 +25,5 @@ declare module 'vue/types/options' {
     [propName: string]: any;
   }
 }
+
+export type CSSProperties = CSS.Properties

@@ -39,6 +39,7 @@ import Switch from './components/switch'
 import Textarea from './components/textarea'
 import Range from './components/range'
 import ImagePicker from './components/image-picker'
+import SearchBar from './components/search-bar'
 
 export {
   Loading,
@@ -80,7 +81,8 @@ export {
   Switch,
   Textarea,
   Range,
-  ImagePicker
+  ImagePicker,
+  SearchBar
 }
 
 export default SwiftUi

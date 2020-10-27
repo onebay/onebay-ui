@@ -2,7 +2,6 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Index from '../pages/index/index.vue'
 import Panel from '../pages/panel/index.vue'
 import Drawer from '../pages/navigation/drawer/index.vue'
-import ImagePicker from '../pages/form/image-picker/index.vue'
 
 const dynamicRoute = (path: string): RouteRecordRaw => {
   const comp = `..${path}.vue`
@@ -60,11 +59,8 @@ const routes = [
   dynamicRoute('/pages/form/switch/index'),
   dynamicRoute('/pages/form/textarea/index'),
   dynamicRoute('/pages/form/range/index'),
-  {
-    path: '/pages/form/image-picker/index',
-    component: ImagePicker
-  },
-  // dynamicRoute('/pages/form/image-picker/index'),
+  dynamicRoute('/pages/form/image-picker/index'),
+  dynamicRoute('/pages/form/search-bar/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),

@@ -77,6 +77,10 @@ $at-search-bar-placholder-color: $color-grey-2;
     background-color: transparent;
     transition: width 0.3s;
     box-sizing: border-box;
+    border-color: transparent;
+    &:focus {
+      outline: none;
+    }
   }
 
   &__clear {
