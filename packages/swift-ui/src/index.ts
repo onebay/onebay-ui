@@ -40,6 +40,7 @@ import Textarea from './components/textarea'
 import Range from './components/range'
 import ImagePicker from './components/image-picker'
 import SearchBar from './components/search-bar'
+import ImagePreview from './components/image-preview'
 
 export {
   Loading,
@@ -82,7 +83,8 @@ export {
   Textarea,
   Range,
   ImagePicker,
-  SearchBar
+  SearchBar,
+  ImagePreview
 }
 
 export default SwiftUi

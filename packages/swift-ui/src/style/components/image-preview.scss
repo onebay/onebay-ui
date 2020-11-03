@@ -1,0 +1,19 @@
+@import '../variables/default.scss';
+@import '../mixins/index.scss';
+
+.at-image-preview {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.9);
+  .at-image-preview-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    margin-top: -100px;
+  }
+}

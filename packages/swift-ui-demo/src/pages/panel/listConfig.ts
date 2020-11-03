@@ -82,6 +82,10 @@ export const list = {
       id: 'Steps',
       name: '步骤条',
     },
+    {
+      id: 'Image-Preview',
+      name: 'ImagePreview',
+    },
   ],
   action: [
     {
@@ -149,10 +153,6 @@ export const list = {
     {
       id: 'Picker',
       name: '选择器',
-    },
-    {
-      id: 'Picker-View',
-      name: '滚动选择器',
     },
     {
       id: 'Slider',

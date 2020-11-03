@@ -61,6 +61,7 @@ const routes = [
   dynamicRoute('/pages/form/range/index'),
   dynamicRoute('/pages/form/image-picker/index'),
   dynamicRoute('/pages/form/search-bar/index'),
+  dynamicRoute('/pages/view/image-preview/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),
