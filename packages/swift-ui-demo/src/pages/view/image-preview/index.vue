@@ -8,7 +8,7 @@
     <div class="doc-body">
       <!-- Basic usage -->
       <div class="panel">
-        <ImagePreview :images="imgs" />
+        <ImagePreview :images="imgs" :startPosition="2" />
       </div>
     </div>
     <!-- E Body -->
