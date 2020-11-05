@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { defineComponent, PropType, ref, computed } from 'vue'
+import { defineComponent, PropType, ref, computed, watch } from 'vue'
 import Swiper from '../swiper'
 
 export interface Point {
@@ -35,17 +35,44 @@ const ImagePreview = defineComponent({
     },
     show: {
       type: Boolean,
-      default: true
+      default: false
     },
     startPosition: {
       type: Number,
       default: 0
+    },
+    paginationVisible: {
+      type: Boolean,
+      default: true
     }
   },
-  setup() {
+  emits: ['close', 'open'],
+  setup(props, { emit }) {
     const touchPoint = []
     let movePoint = []
     const scale = ref(minScale)
+    const visible = ref(props.show)
+    watch(
+      () => props.show,
+      (val) => {
+        if (val !== visible.value) {
+          visible.value = val
+        }
+      }
+    )
+    watch(
+      () => visible.value,
+      (val) => {
+        if (!val) {
+          emit('close')
+        } else {
+          emit('open')
+        }
+      }
+    )
+    const toggleVisible = () => {
+      visible.value = !visible.value
+    }
     const handleTouchstart = (event: TouchEvent) => {
       const touchList = [].slice.call(event.targetTouches)
       if (touchList.length > 1) {
@@ -109,29 +136,42 @@ const ImagePreview = defineComponent({
         scale.value = 1.5
       }
     }
+
     return {
       handleTouchstart,
       handleTouchmove,
       handleTouchend,
       scaleStyle,
-      handleDbClick
+      handleDbClick,
+      visible,
+      toggleVisible
     }
   },
   render() {
-    const { className, images, startPosition } = this.$props
-    const { handleTouchstart, handleTouchmove, handleTouchend, scaleStyle, handleDbClick } = this
+    const { className, images, startPosition, paginationVisible } = this.$props
+    const {
+      handleTouchstart,
+      handleTouchmove,
+      handleTouchend,
+      scaleStyle,
+      handleDbClick,
+      visible,
+      toggleVisible
+    } = this
     return (
       <div
-        class={classNames('at-image-preview', className)}
+        class={classNames('at-image-preview', className, { 'at-image-preview-active': visible })}
         onTouchstart={handleTouchstart}
         onTouchmove={handleTouchmove}
         onTouchend={handleTouchend}
         onDblclick={handleDbClick}>
+        <div class="at-image-preview-mask" onClick={toggleVisible}></div>
         <Swiper
           swiperData={images}
           class="at-image-preview-content"
           style={scaleStyle}
-          initPage={startPosition}>
+          initPage={startPosition}
+          paginationVisible={paginationVisible}>
           {images.map((item: string, index: number) => (
             <div key={index} class="at-swiper-slide">
               <img src={item} style="max-width: 100%" />
