@@ -12,7 +12,6 @@
         <ImagePreview
           :images="imgs"
           :show="show"
-          :paginationVisible="paginationVisible"
           :startPosition="startPosition"
           @close="handleClose"
         />
@@ -55,8 +54,8 @@ export default defineComponent({
     return {
       imgs,
       show: false,
-      paginationVisible: true,
-      startPosition: 0
+      paginationVisible: false,
+      startPosition: 1
     }
   },
   methods: {
