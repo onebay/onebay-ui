@@ -16,8 +16,6 @@ const getLen = (points: Point[]) => {
 }
 
 const threshold = 10
-const maxScale = 3
-const minScale = 1
 
 const ImagePreview = defineComponent({
   name: 'ImagePreview',
@@ -39,22 +37,31 @@ const ImagePreview = defineComponent({
     },
     startPosition: {
       type: Number,
-      default: 0
+      default: 1
     },
     paginationVisible: {
       type: Boolean,
       default: true
+    },
+    maxScale: {
+      type: Number,
+      default: 3
+    },
+    minScale: {
+      type: Number,
+      default: 1
     }
   },
   emits: ['close', 'open'],
   setup(props, { emit }) {
     const touchPoint = []
     let movePoint = []
-    const scale = ref(minScale)
+    const scale = ref(1)
     const visible = ref(props.show)
     watch(
       () => props.show,
       (val) => {
+        /* istanbul ignore else */
         if (val !== visible.value) {
           visible.value = val
         }
@@ -63,10 +70,10 @@ const ImagePreview = defineComponent({
     watch(
       () => visible.value,
       (val) => {
-        if (!val) {
-          emit('close')
-        } else {
+        if (val) {
           emit('open')
+        } else {
+          emit('close')
         }
       }
     )
@@ -75,6 +82,7 @@ const ImagePreview = defineComponent({
     }
     const handleTouchstart = (event: TouchEvent) => {
       const touchList = [].slice.call(event.targetTouches)
+      /* istanbul ignore else */
       if (touchList.length > 1) {
         touchList.forEach((item: Touch, index: number) => {
           const point = {
@@ -88,6 +96,7 @@ const ImagePreview = defineComponent({
       }
     }
     const handleTouchmove = (event: TouchEvent) => {
+      const { minScale, maxScale } = props
       const touchList = [].slice.call(event.changedTouches)
       touchList.forEach((item: Touch, index: number) => {
         const point = {
@@ -103,9 +112,11 @@ const ImagePreview = defineComponent({
           movePoint[index] = point
         }
       })
+      /* istanbul ignore else */
       if (movePoint.length > 1) {
         const start = getLen(touchPoint)
         const end = getLen(movePoint)
+        /* istanbul ignore else */
         if (threshold < Math.abs(start - end)) {
           const temp = end / start
           if (temp > maxScale) {
@@ -144,7 +155,8 @@ const ImagePreview = defineComponent({
       scaleStyle,
       handleDbClick,
       visible,
-      toggleVisible
+      toggleVisible,
+      scale
     }
   },
   render() {
@@ -166,18 +178,20 @@ const ImagePreview = defineComponent({
         onTouchend={handleTouchend}
         onDblclick={handleDbClick}>
         <div class="at-image-preview-mask" onClick={toggleVisible}></div>
-        <Swiper
-          swiperData={images}
-          class="at-image-preview-content"
-          style={scaleStyle}
-          initPage={startPosition}
-          paginationVisible={paginationVisible}>
-          {images.map((item: string, index: number) => (
-            <div key={index} class="at-swiper-slide">
-              <img src={item} style="max-width: 100%" />
-            </div>
-          ))}
-        </Swiper>
+        {visible && (
+          <Swiper
+            swiperData={images}
+            class="at-image-preview-content"
+            style={scaleStyle}
+            initPage={startPosition}
+            paginationVisible={paginationVisible}>
+            {images.map((item: string, index: number) => (
+              <div key={index} class="at-swiper-slide">
+                <img src={item} style="max-width: 100%" />
+              </div>
+            ))}
+          </Swiper>
+        )}
       </div>
     )
   }
