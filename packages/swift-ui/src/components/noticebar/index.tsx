@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 import { defineComponent, ref, computed, reactive } from 'vue'
+import { isTest } from '../../utils'
 
 export default defineComponent({
   name: 'Noticebar',
@@ -49,7 +50,9 @@ export default defineComponent({
   },
   emits: ['close'],
   setup(props) {
-    const animElemId = `J_${Math.ceil(Math.random() * 10e5).toString(36)}`
+    const animElemId = isTest()
+      ? 'cherry-2020'
+      : `cherry_${Math.ceil(Math.random() * 10e5).toString(36)}`
     const state = reactive({
       show: true,
       animElemId,

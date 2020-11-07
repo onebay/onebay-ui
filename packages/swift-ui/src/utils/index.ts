@@ -94,4 +94,6 @@ function upperCaseFirstLetter(string: unknown) {
  */
 export const uuid = ((id: number) => () => `uuid-${id++}`)(1000)
 
+export const isTest = (): boolean => process?.env?.NODE_ENV === 'test'
+
 export { baseToString }

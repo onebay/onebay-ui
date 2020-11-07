@@ -65,7 +65,7 @@ describe('InputNumber Snap', () => {
   })
 
   it('render InputNumber -- props value & min = ""', () => {
-    const wrapper = factory({ value: '', min: '' })
+    const wrapper = factory({ value: '', min: 0 })
     expect(wrapper.element).toMatchSnapshot()
   })
 
