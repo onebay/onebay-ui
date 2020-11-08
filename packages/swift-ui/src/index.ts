@@ -41,6 +41,8 @@ import Range from './components/range'
 import ImagePicker from './components/image-picker'
 import SearchBar from './components/search-bar'
 import ImagePreview from './components/image-preview'
+import Row from './components/row'
+import Col from './components/col'
 
 export {
   Loading,
@@ -84,7 +86,9 @@ export {
   Range,
   ImagePicker,
   SearchBar,
-  ImagePreview
+  ImagePreview,
+  Row,
+  Col
 }
 
 export default SwiftUi

@@ -177,6 +177,10 @@ export const list = {
       name: '弹性布局',
     },
     {
+      id: 'Row',
+      name: 'Percentage layout',
+    },
+    {
       id: 'Grid',
       name: '栅格',
     },

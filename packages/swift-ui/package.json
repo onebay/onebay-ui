@@ -58,6 +58,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "lodash": "^4.17.20",
     "vue": "^3.0.0-rc.9"
   }
 }
