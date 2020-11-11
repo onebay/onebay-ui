@@ -43,6 +43,7 @@ import SearchBar from './components/search-bar'
 import ImagePreview from './components/image-preview'
 import Row from './components/row'
 import Col from './components/col'
+import Flex from './components/flex'
 
 export {
   Loading,
@@ -88,7 +89,8 @@ export {
   SearchBar,
   ImagePreview,
   Row,
-  Col
+  Col,
+  Flex
 }
 
 export default SwiftUi
