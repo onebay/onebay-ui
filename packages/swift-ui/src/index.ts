@@ -44,6 +44,7 @@ import ImagePreview from './components/image-preview'
 import Row from './components/row'
 import Col from './components/col'
 import Flex from './components/flex'
+import BackTop from './components/back-top'
 
 export {
   Loading,
@@ -90,7 +91,8 @@ export {
   ImagePreview,
   Row,
   Col,
-  Flex
+  Flex,
+  BackTop
 }
 
 export default SwiftUi

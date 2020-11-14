@@ -64,6 +64,7 @@ const routes = [
   dynamicRoute('/pages/view/image-preview/index'),
   dynamicRoute('/pages/layout/row/index'),
   dynamicRoute('/pages/layout/flex/index'),
+  dynamicRoute('/pages/navigation/back-top/index'),
 ]
 const router = createRouter({
   history: createWebHashHistory(),

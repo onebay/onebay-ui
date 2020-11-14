@@ -230,6 +230,10 @@ export const list = {
       id: 'Indexes',
       name: '索引选择器',
     },
+    {
+      id: 'Back-Top',
+      name: 'Back Top Button',
+    },
   ],
   advanced: [
     {
