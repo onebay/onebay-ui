@@ -45,6 +45,8 @@ import Row from './components/row'
 import Col from './components/col'
 import Flex from './components/flex'
 import BackTop from './components/back-top'
+import PullToRefresh from './components/pull-to-refresh'
+import Icon from './components/icon'
 
 export {
   Loading,
@@ -92,7 +94,9 @@ export {
   Row,
   Col,
   Flex,
-  BackTop
+  BackTop,
+  PullToRefresh,
+  Icon
 }
 
 export default SwiftUi

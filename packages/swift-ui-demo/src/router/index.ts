@@ -65,6 +65,7 @@ const routes = [
   dynamicRoute('/pages/layout/row/index'),
   dynamicRoute('/pages/layout/flex/index'),
   dynamicRoute('/pages/navigation/back-top/index'),
+  dynamicRoute('/pages/action/pull-to-refresh/index')
 ]
 const router = createRouter({
   history: createWebHashHistory(),

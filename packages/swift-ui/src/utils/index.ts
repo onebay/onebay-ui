@@ -100,3 +100,38 @@ export { baseToString }
 
 export const getScrollTop = (): number =>
   document.documentElement.scrollTop || document.body.scrollTop
+
+export interface Point {
+  index: number
+  x: number
+  y: number
+}
+
+interface TouchPoint {
+  clientX: number
+  clientY: number
+  force: number
+  identifier: number
+  pageX: number
+  pageY: number
+  radiusX: number
+  radiusY: number
+  rotationAngle: number
+  screenX: number
+  screenY: number
+}
+
+export const getPoint = (point: Partial<TouchPoint>): Point => {
+  return {
+    index: point.identifier,
+    x: point.clientX,
+    y: point.clientY
+  }
+}
+
+export const getLen = (points: Point[]): number => {
+  const len = Math.sqrt(
+    Math.pow(points[0].x - points[1].x, 2) + Math.pow(points[0].y - points[1].y, 2)
+  )
+  return len
+}

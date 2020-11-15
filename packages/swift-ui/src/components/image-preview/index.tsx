@@ -1,19 +1,7 @@
 import classNames from 'classnames'
 import { defineComponent, PropType, ref, computed, watch } from 'vue'
 import Swiper from '../swiper'
-
-export interface Point {
-  index: number
-  x: number
-  y: number
-}
-
-const getLen = (points: Point[]) => {
-  const len = Math.sqrt(
-    Math.pow(points[0].x - points[1].x, 2) + Math.pow(points[0].y - points[1].y, 2)
-  )
-  return len
-}
+import { getLen } from '../../utils'
 
 const threshold = 10
 

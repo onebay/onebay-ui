@@ -116,6 +116,10 @@ export const list = {
       id: 'Message',
       name: '消息通知',
     },
+    {
+      id: 'Pull-To-Refresh',
+      name: 'PullToRefresh',
+    },
   ],
   form: [
     {
