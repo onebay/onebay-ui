@@ -8,7 +8,7 @@ export enum Direction {
   Down = 'down'
 }
 
-const prefixCls = 'cr-pull-refresh'
+const prefixCls = 'cr-pull-to-refresh'
 
 const getDirection = (point1: Point, point2: Point): Direction => {
   return point1.y > point2.y ? Direction.Up : Direction.Down
@@ -99,6 +99,7 @@ export default defineComponent({
         emit('refresh')
       }
       /* istanbul ignore else */
+      console.log('getLen([startPoint, endPoint])', getLen([startPoint, endPoint]))
       if (distanceToRefresh < getLen([startPoint, endPoint])) {
         setTimeout(resetStyle, 500)
       }
@@ -144,15 +145,17 @@ export default defineComponent({
       const { direction, style, className } = props
       return (
         <div class={classNames(prefixCls, `${prefixCls}-${direction}`, className)} style={style}>
-          <div
-            class={`${prefixCls}__track`}
-            style={trackStyle.value}
-            onTouchstart={onTouchStart}
-            onTouchmove={onTouchMove}
-            onTouchend={onTouchEnd}>
-            {direction === Direction.Down && loadingContent()}
-            {slots.default?.()}
-            {direction === Direction.Up && loadingContent()}
+          <div class={`${prefixCls}-wrapper`}>
+            <div
+              class={`${prefixCls}__track`}
+              style={trackStyle.value}
+              onTouchstart={onTouchStart}
+              onTouchmove={onTouchMove}
+              onTouchend={onTouchEnd}>
+              {direction === Direction.Down && loadingContent()}
+              {slots.default?.()}
+              {direction === Direction.Up && loadingContent()}
+            </div>
           </div>
         </div>
       )

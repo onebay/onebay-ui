@@ -11,7 +11,7 @@
             style="height: 60vh; overflow: auto"
             :direction="direction"
           >
-            <div v-for="n of 20" style="text-align: center; padding: 20px">
+            <div v-for="n of 20" :key="n" style="text-align: center; padding: 20px">
               pull {{ direction }} {{ n }}
             </div>
           </PullToRefresh>

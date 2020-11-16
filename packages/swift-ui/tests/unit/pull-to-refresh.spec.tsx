@@ -19,15 +19,15 @@ describe('PullToRefresh Event', () => {
   it('PullToRefresh pull down', async () => {
     const wrapper = mount(<PullToRefresh />)
 
-    wrapper.find('.cr-pull-refresh__track').trigger('touchstart', {
+    wrapper.find('.cr-pull-to-refresh__track').trigger('touchstart', {
       targetTouches: [{ clientX: 10, clientY: 10, identifier: 0 }]
     })
 
-    wrapper.find('.cr-pull-refresh__track').trigger('touchmove', {
+    wrapper.find('.cr-pull-to-refresh__track').trigger('touchmove', {
       changedTouches: [{ clientX: 10, clientY: 100, identifier: 0 }]
     })
 
-    wrapper.find('.cr-pull-refresh__track').trigger('touchend', {
+    wrapper.find('.cr-pull-to-refresh__track').trigger('touchend', {
       changedTouches: [{ clientX: 10, clientY: 100, identifier: 0 }]
     })
     await sleep(600)
@@ -37,23 +37,23 @@ describe('PullToRefresh Event', () => {
   it('PullToRefresh pull up', async () => {
     const wrapper = mount(<PullToRefresh direction={Direction.Up} />)
 
-    wrapper.find('.cr-pull-refresh__track').trigger('touchstart', {
+    wrapper.find('.cr-pull-to-refresh__track').trigger('touchstart', {
       targetTouches: [{ clientX: 10, clientY: 100, identifier: 0 }]
     })
     // test two finger touch
-    wrapper.find('.cr-pull-refresh__track').trigger('touchstart', {
+    wrapper.find('.cr-pull-to-refresh__track').trigger('touchstart', {
       targetTouches: [{ clientX: 10, clientY: 100, identifier: 1 }]
     })
 
-    wrapper.find('.cr-pull-refresh__track').trigger('touchmove', {
+    wrapper.find('.cr-pull-to-refresh__track').trigger('touchmove', {
       changedTouches: [{ clientX: 10, clientY: 10, identifier: 0 }]
     })
 
-    wrapper.find('.cr-pull-refresh__track').trigger('touchend', {
+    wrapper.find('.cr-pull-to-refresh__track').trigger('touchend', {
       changedTouches: [{ clientX: 10, clientY: 10, identifier: 1 }]
     })
     expect(wrapper.emitted()).not.toHaveProperty('refresh')
-    wrapper.find('.cr-pull-refresh__track').trigger('touchend', {
+    wrapper.find('.cr-pull-to-refresh__track').trigger('touchend', {
       changedTouches: [{ clientX: 10, clientY: 10, identifier: 0 }]
     })
     await sleep(600)
