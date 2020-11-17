@@ -1,6 +1,7 @@
 import { defineComponent, computed } from 'vue'
 import classNames from 'classnames'
 import Loading from '../loading/index'
+
 export default defineComponent({
   components: {
     Loading
@@ -31,7 +32,7 @@ export default defineComponent({
       default: true
     }
   },
-  setup(props) {
+  setup(props, { slots }) {
     const rootClass = computed(() => {
       const { mode, isOpened, className } = props
       return classNames(
@@ -43,20 +44,16 @@ export default defineComponent({
         className
       )
     })
-    return {
-      rootClass
-    }
-  },
-  render() {
-    const { size, color } = this.$props
-    const { $slots, rootClass } = this
-    return (
-      <div class={rootClass}>
-        <div class="at-activity-indicator__body">
-          <Loading size={size} color={color} />
+    return () => {
+      const { size, color, content } = props
+      return (
+        <div class={rootClass.value}>
+          <div class="at-activity-indicator__body">
+            <Loading size={size} color={color} />
+          </div>
+          <div class="at-activity-indicator__content">{slots.default?.() || content}</div>
         </div>
-        <div class="at-activity-indicator__content">{$slots.default && $slots.default()}</div>
-      </div>
-    )
+      )
+    }
   }
 })

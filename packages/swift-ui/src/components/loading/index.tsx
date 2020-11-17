@@ -51,7 +51,7 @@ export default defineComponent({
     const { sizeStyle, ringStyle, transformStyle } = this
     return (
       <div class="at-loading" style={transformStyle(sizeStyle)}>
-        <div class="at-loading__ring"></div>
+        <div class="at-loading__ring" style={ringStyle}></div>
         <div class="at-loading__ring" style={transformStyle(ringStyle)}></div>
         <div class="at-loading__ring" style={ringStyle} data-id={ringStyle}></div>
       </div>

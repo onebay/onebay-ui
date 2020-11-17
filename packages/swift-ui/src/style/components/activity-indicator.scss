@@ -3,7 +3,7 @@
 
 .at-activity-indicator {
   @include display-flex();
-
+  // display: inline-block;
   line-height: $line-height-base;
   visibility: hidden;
   opacity: 0;
