@@ -1,10 +1,8 @@
-# slider``` javascript
-import { defineComponent } from 'vue'
+# slider <DemoView />``` javascriptimport { defineComponent } from 'vue'
 export default defineComponent({
   setup() {
     return () => {
       return <h1>hello world</h1>
     }
   }
-})
-```
+})```

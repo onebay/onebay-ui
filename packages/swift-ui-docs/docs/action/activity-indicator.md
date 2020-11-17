@@ -1,10 +1,8 @@
-# activity-indicator``` javascript
-import { defineComponent } from 'vue'
+# activity-indicator <DemoView />``` javascriptimport { defineComponent } from 'vue'
 export default defineComponent({
   setup() {
     return () => {
       return <h1>hello world</h1>
     }
   }
-})
-```
+})```

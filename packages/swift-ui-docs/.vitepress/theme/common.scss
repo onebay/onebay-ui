@@ -1,0 +1,28 @@
+@media screen and (min-width: 750px) {
+  .content {
+    max-width: 60rem;
+    padding: 0 5rem;
+    margin: 0;
+    margin-right: 475px;
+    .iframe {
+      position: absolute;
+      right: 50px;
+      z-index: 1;
+      width: 375px;
+      height: 667px;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .content {
+    .iframe {
+      width: 100%;
+      max-width: 375px;
+      height: 667px;
+      border: 1px solid var(--border-color);
+    }
+  }
+}

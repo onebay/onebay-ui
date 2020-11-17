@@ -1,10 +1,8 @@
-# pull-to-refresh``` javascript
-import { defineComponent } from 'vue'
+# pull-to-refresh <DemoView />``` javascriptimport { defineComponent } from 'vue'
 export default defineComponent({
   setup() {
     return () => {
       return <h1>hello world</h1>
     }
   }
-})
-```
+})```
