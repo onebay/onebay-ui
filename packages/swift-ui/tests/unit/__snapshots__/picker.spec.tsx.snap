@@ -22811,7 +22811,7 @@ exports[`Picker Snap render Picker -- props mode === date :nth-child(2) 1`] = `
         />
         <div
           class="weui-picker__content"
-          style="transform: translate3d(0, -720px, 0); transition: transform 0s;"
+          style="transform: translate3d(0, -768px, 0); transition: transform 0s;"
         >
           
           <div
@@ -28266,7 +28266,7 @@ exports[`Picker Snap render Picker -- props mode === date 1`] = `
         />
         <div
           class="weui-picker__content"
-          style="transform: translate3d(0, -720px, 0); transition: transform 0s;"
+          style="transform: translate3d(0, -768px, 0); transition: transform 0s;"
         >
           
           <div
@@ -33721,7 +33721,7 @@ exports[`Picker Snap render Picker -- props mode === date last-child 1`] = `
         />
         <div
           class="weui-picker__content"
-          style="transform: translate3d(0, -720px, 0); transition: transform 0s;"
+          style="transform: translate3d(0, -768px, 0); transition: transform 0s;"
         >
           
           <div
