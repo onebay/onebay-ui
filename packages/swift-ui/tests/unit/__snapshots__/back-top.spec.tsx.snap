@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackTop Snap render initial BackTop 1`] = `
+<div
+  class="cr-back-top cr-back-top__hide"
+  distance="100"
+>
+  top
+</div>
+`;

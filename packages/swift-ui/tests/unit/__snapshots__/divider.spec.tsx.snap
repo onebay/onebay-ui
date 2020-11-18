@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider Snap render Divider -- props childen 1`] = `
+<div
+  childen="content"
+  class="at-divider"
+>
+  <div
+    class="at-divider__content"
+  >
+    
+    test
+    
+  </div>
+  <div
+    class="at-divider__line"
+  />
+</div>
+`;
+
+exports[`Divider Snap render Divider -- props className 1`] = `
+<div
+  class="at-divider test"
+>
+  <div
+    class="at-divider__content"
+  >
+    
+    
+  </div>
+  <div
+    class="at-divider__line"
+  />
+</div>
+`;
+
+exports[`Divider Snap render Divider -- props content 1`] = `
+<div
+  class="at-divider"
+>
+  <div
+    class="at-divider__content"
+  >
+    content
+  </div>
+  <div
+    class="at-divider__line"
+  />
+</div>
+`;
+
+exports[`Divider Snap render Divider -- props customStyle 1`] = `
+<div
+  class="at-divider"
+  style=""
+>
+  <div
+    class="at-divider__content"
+  >
+    
+    
+  </div>
+  <div
+    class="at-divider__line"
+  />
+</div>
+`;
+
+exports[`Divider Snap render Divider -- props fontColor 1`] = `
+<div
+  class="at-divider"
+>
+  <div
+    class="at-divider__content"
+    style="color: rgb(255, 255, 255);"
+  >
+    
+    
+  </div>
+  <div
+    class="at-divider__line"
+  />
+</div>
+`;
+
+exports[`Divider Snap render Divider -- props fontSize 1`] = `
+<div
+  class="at-divider"
+>
+  <div
+    class="at-divider__content"
+    style="font-size: 56;"
+  >
+    
+    
+  </div>
+  <div
+    class="at-divider__line"
+  />
+</div>
+`;
+
+exports[`Divider Snap render Divider -- props height 1`] = `
+<div
+  class="at-divider"
+  style=""
+>
+  <div
+    class="at-divider__content"
+  >
+    
+    
+  </div>
+  <div
+    class="at-divider__line"
+  />
+</div>
+`;
+
+exports[`Divider Snap render Divider -- props lineColor 1`] = `
+<div
+  class="at-divider"
+>
+  <div
+    class="at-divider__content"
+  >
+    
+    
+  </div>
+  <div
+    class="at-divider__line"
+    style="background-color: rgb(255, 255, 255);"
+  />
+</div>
+`;
+
+exports[`Divider Snap render initial Divider 1`] = `
+<div
+  class="at-divider"
+>
+  <div
+    class="at-divider__content"
+  >
+    
+    
+  </div>
+  <div
+    class="at-divider__line"
+  />
+</div>
+`;

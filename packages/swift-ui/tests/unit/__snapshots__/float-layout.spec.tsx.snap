@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FloatLayout Snap Change FloatLayout -- props isOpened 1`] = `
+<div
+  class="at-float-layout at-float-layout--active"
+>
+  <div
+    class="at-float-layout__overlay"
+  />
+  <div
+    class="at-float-layout__container layout"
+  >
+    
+    <div
+      class="layout-body"
+    >
+      <div
+        class="layout-body__content"
+      >
+        
+        This is the content area, write as you like
+      This is the content area, write as you like
+      This is the content area, write as you like
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FloatLayout Snap render FloatLayout -- props isOpened 1`] = `
+<div
+  class="at-float-layout at-float-layout--active"
+>
+  <div
+    class="at-float-layout__overlay"
+  />
+  <div
+    class="at-float-layout__container layout"
+  >
+    
+    <div
+      class="layout-body"
+    >
+      <div
+        class="layout-body__content"
+      >
+        
+        This is the content area, write as you like
+      This is the content area, write as you like
+      This is the content area, write as you like
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FloatLayout Snap render FloatLayout -- props title 1`] = `
+<div
+  class="at-float-layout at-float-layout--active"
+>
+  <div
+    class="at-float-layout__overlay"
+  />
+  <div
+    class="at-float-layout__container layout"
+  >
+    <div
+      class="layout-header"
+    >
+      <div
+        class="layout-header__title"
+      >
+        This is a Title
+      </div>
+      <div
+        class="layout-header__btn-close"
+      />
+    </div>
+    <div
+      class="layout-body"
+    >
+      <div
+        class="layout-body__content"
+      >
+        
+        This is the content area, write as you like
+      This is the content area, write as you like
+      This is the content area, write as you like
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FloatLayout Snap render initial FloatLayout 1`] = `
+<div
+  class="at-float-layout"
+>
+  <div
+    class="at-float-layout__overlay"
+  />
+  <div
+    class="at-float-layout__container layout"
+  >
+    
+    <div
+      class="layout-body"
+    >
+      <div
+        class="layout-body__content"
+      >
+        
+        This is the content area, write as you like
+      This is the content area, write as you like
+      This is the content area, write as you like
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,413 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider Snap render Slider -- props activeColor 1`] = `
+<div
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+        style="background-color: red;"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    0
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render Slider -- props backgroundColor 1`] = `
+<div
+  backgroundcolor="red"
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    0
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render Slider -- props blockColor 1`] = `
+<div
+  blockcolor="red"
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    0
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render Slider -- props blockSize 1`] = `
+<div
+  blocksize="24"
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    0
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render Slider -- props disabled 1`] = `
+<div
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider slider-disabled"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    0
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render Slider -- props handlerColor 1`] = `
+<div
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+        style="background-color: rgb(255, 68, 85);"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    0
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render Slider -- props max 1`] = `
+<div
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    0
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render Slider -- props min 1`] = `
+<div
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    0
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render Slider -- props showValue 1`] = `
+<div
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    0
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render Slider -- props step 1`] = `
+<div
+  class="weui-slider-box"
+  step="1"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    0
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render Slider -- props trackColor 1`] = `
+<div
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+      style="background-color: rgb(255, 68, 85);"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    0
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render Slider -- props value 1`] = `
+<div
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    50
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render Slider -- props value greater than max 1`] = `
+<div
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    110
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render Slider -- props value less than min 1`] = `
+<div
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    10
+  </div>
+</div>
+`;
+
+exports[`Slider Snap render initial Slider 1`] = `
+<div
+  class="weui-slider-box"
+>
+  <div
+    class="weui-slider"
+  >
+    <div
+      class="weui-slider__inner"
+    >
+      <div
+        class="weui-slider__track"
+      />
+      <div
+        class="weui-slider__handler"
+      />
+    </div>
+  </div>
+  <div
+    class="weui-slider-box__value"
+    id="sliderValue"
+  >
+    0
+  </div>
+</div>
+`;

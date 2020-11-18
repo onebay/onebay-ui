@@ -1,0 +1,1507 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabBar Snap render TabBar -- props backgroundColor 1`] = `
+<div
+  class="at-tab-bar at-tab-bar--fixed"
+>
+  
+  
+</div>
+`;
+
+exports[`TabBar Snap render TabBar -- props className 1`] = `
+<div
+  class="at-tab-bar test"
+>
+  
+  
+</div>
+`;
+
+exports[`TabBar Snap render TabBar -- props color 1`] = `
+<div
+  class="at-tab-bar"
+>
+  
+  <div
+    class="at-tab-bar__item at-tab-bar__item--active"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-bullet-list"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          bullet-lis
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+    style="color: red;"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-camera"
+          style="color: red;"
+        />
+      </div>
+      
+      <!---->
+      
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          camera
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+    style="color: red;"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-folder"
+          style="color: red;"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          99+
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          folder
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+    style="color: red;"
+  >
+    <!---->
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <img
+          class="at-tab-bar__inner-img at-tab-bar__inner-img--inactive"
+          src="https://img14.360buyimg.com/jdphoto/s72x72_jfs/t17251/336/1311038817/3177/72595a07/5ac44618Na1db7b09.png"
+        />
+        <img
+          class="at-tab-bar__inner-img"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          shopping
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+    style="color: red;"
+  >
+    <!---->
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <img
+          class="at-tab-bar__inner-img at-tab-bar__inner-img--inactive"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+        <img
+          class="at-tab-bar__inner-img"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          information
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+    style="color: red;"
+  >
+    <!---->
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          message
+        </div>
+        
+        <div
+          class="at-badge__dot"
+        />
+        <!---->
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`TabBar Snap render TabBar -- props customStyle 1`] = `
+<div
+  class="at-tab-bar"
+  style=""
+>
+  
+  
+</div>
+`;
+
+exports[`TabBar Snap render TabBar -- props fontSize 1`] = `
+<div
+  class="at-tab-bar"
+>
+  
+  <div
+    class="at-tab-bar__item at-tab-bar__item--active"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-bullet-list"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+          style="font-size: 26px;"
+        >
+          bullet-lis
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-camera"
+        />
+      </div>
+      
+      <!---->
+      
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+          style="font-size: 26px;"
+        >
+          camera
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-folder"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          99+
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+          style="font-size: 26px;"
+        >
+          folder
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <img
+          class="at-tab-bar__inner-img at-tab-bar__inner-img--inactive"
+          src="https://img14.360buyimg.com/jdphoto/s72x72_jfs/t17251/336/1311038817/3177/72595a07/5ac44618Na1db7b09.png"
+        />
+        <img
+          class="at-tab-bar__inner-img"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+          style="font-size: 26px;"
+        >
+          shopping
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <img
+          class="at-tab-bar__inner-img at-tab-bar__inner-img--inactive"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+        <img
+          class="at-tab-bar__inner-img"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+          style="font-size: 26px;"
+        >
+          information
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+          style="font-size: 26px;"
+        >
+          message
+        </div>
+        
+        <div
+          class="at-badge__dot"
+        />
+        <!---->
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`TabBar Snap render TabBar -- props iconSize 1`] = `
+<div
+  class="at-tab-bar"
+>
+  
+  <div
+    class="at-tab-bar__item at-tab-bar__item--active"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-bullet-list"
+          style="font-size: 26px;"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          bullet-lis
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-camera"
+          style="font-size: 26px;"
+        />
+      </div>
+      
+      <!---->
+      
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          camera
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-folder"
+          style="font-size: 26px;"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          99+
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          folder
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <img
+          class="at-tab-bar__inner-img at-tab-bar__inner-img--inactive"
+          src="https://img14.360buyimg.com/jdphoto/s72x72_jfs/t17251/336/1311038817/3177/72595a07/5ac44618Na1db7b09.png"
+          style="width: 26px; height: 26px;"
+        />
+        <img
+          class="at-tab-bar__inner-img"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+          style="width: 26px; height: 26px;"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          shopping
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <img
+          class="at-tab-bar__inner-img at-tab-bar__inner-img--inactive"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+          style="width: 26px; height: 26px;"
+        />
+        <img
+          class="at-tab-bar__inner-img"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+          style="width: 26px; height: 26px;"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          information
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          message
+        </div>
+        
+        <div
+          class="at-badge__dot"
+        />
+        <!---->
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`TabBar Snap render TabBar -- props scroll 1`] = `
+<div
+  class="at-tab-bar"
+  scroll="true"
+>
+  
+  <div
+    class="at-tab-bar__item at-tab-bar__item--active"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-bullet-list"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          bullet-lis
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-camera"
+        />
+      </div>
+      
+      <!---->
+      
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          camera
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-folder"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          99+
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          folder
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <img
+          class="at-tab-bar__inner-img at-tab-bar__inner-img--inactive"
+          src="https://img14.360buyimg.com/jdphoto/s72x72_jfs/t17251/336/1311038817/3177/72595a07/5ac44618Na1db7b09.png"
+        />
+        <img
+          class="at-tab-bar__inner-img"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          shopping
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <img
+          class="at-tab-bar__inner-img at-tab-bar__inner-img--inactive"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+        <img
+          class="at-tab-bar__inner-img"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          information
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          message
+        </div>
+        
+        <div
+          class="at-badge__dot"
+        />
+        <!---->
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`TabBar Snap render TabBar -- props selectedColor 1`] = `
+<div
+  class="at-tab-bar"
+>
+  
+  <div
+    class="at-tab-bar__item at-tab-bar__item--active"
+    style="color: red;"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-bullet-list"
+          style="color: red;"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          bullet-lis
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-camera"
+        />
+      </div>
+      
+      <!---->
+      
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          camera
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-folder"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          99+
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          folder
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <img
+          class="at-tab-bar__inner-img at-tab-bar__inner-img--inactive"
+          src="https://img14.360buyimg.com/jdphoto/s72x72_jfs/t17251/336/1311038817/3177/72595a07/5ac44618Na1db7b09.png"
+        />
+        <img
+          class="at-tab-bar__inner-img"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          shopping
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <img
+          class="at-tab-bar__inner-img at-tab-bar__inner-img--inactive"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+        <img
+          class="at-tab-bar__inner-img"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          information
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          message
+        </div>
+        
+        <div
+          class="at-badge__dot"
+        />
+        <!---->
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`TabBar Snap render TabBar -- props tabList 1`] = `
+<div
+  class="at-tab-bar"
+>
+  
+  <div
+    class="at-tab-bar__item at-tab-bar__item--active"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-bullet-list"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          bullet-lis
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-camera"
+        />
+      </div>
+      
+      <!---->
+      
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          camera
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <div
+          class="at-icon at-icon-folder"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          99+
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          folder
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <img
+          class="at-tab-bar__inner-img at-tab-bar__inner-img--inactive"
+          src="https://img14.360buyimg.com/jdphoto/s72x72_jfs/t17251/336/1311038817/3177/72595a07/5ac44618Na1db7b09.png"
+        />
+        <img
+          class="at-tab-bar__inner-img"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          shopping
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <div
+      class="at-badge"
+    >
+      
+      <div
+        class="at-tab-bar__icon"
+      >
+        <img
+          class="at-tab-bar__inner-img at-tab-bar__inner-img--inactive"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+        <img
+          class="at-tab-bar__inner-img"
+          src="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
+        />
+      </div>
+      
+      <!---->
+      <div>
+        <div
+          class="at-badge__num"
+        >
+          new
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          information
+        </div>
+        
+        <!---->
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="at-tab-bar__item"
+  >
+    <!---->
+    <!---->
+    <div>
+      <div
+        class="at-badge"
+      >
+        
+        <div
+          class="at-tab-bar__title"
+        >
+          message
+        </div>
+        
+        <div
+          class="at-badge__dot"
+        />
+        <!---->
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`TabBar Snap render initial TabBar 1`] = `
+<div
+  class="at-tab-bar"
+>
+  
+  
+</div>
+`;

@@ -1,0 +1,396 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion Snap render Accordion -- props icon 1`] = `
+<div
+  class="at-accordion"
+>
+  <div
+    class="at-accordion__header"
+  >
+    <div
+      class="at-icon at-icon-chevron-down at-accordion__icon"
+      style="color: red; font-size: undefinedpx;"
+    />
+    <div
+      class="at-accordion__info"
+    >
+      <div
+        class="at-accordion__info__title"
+      >
+        
+      </div>
+      <div
+        class="at-accordion__info__note"
+      >
+        
+      </div>
+    </div>
+    <div
+      class="at-accordion__arrow"
+    >
+      <div
+        class="at-icon at-icon-chevron-down"
+      />
+    </div>
+  </div>
+  <div
+    class="at-accordion__content at-accordion__content--inactive"
+  >
+    <div
+      class="at-accordion__body"
+    >
+      
+      &lt;div&gt;&lt;/div&gt;
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Accordion Snap render Accordion -- props icon prefixClass 1`] = `
+<div
+  class="at-accordion"
+>
+  <div
+    class="at-accordion__header"
+  >
+    <div
+      class="prefixClass prefixClass-star at-accordion__icon"
+      style="color: red; font-size: undefinedpx;"
+    />
+    <div
+      class="at-accordion__info"
+    >
+      <div
+        class="at-accordion__info__title"
+      >
+        
+      </div>
+      <div
+        class="at-accordion__info__note"
+      >
+        
+      </div>
+    </div>
+    <div
+      class="at-accordion__arrow"
+    >
+      <div
+        class="at-icon at-icon-chevron-down"
+      />
+    </div>
+  </div>
+  <div
+    class="at-accordion__content at-accordion__content--inactive"
+  >
+    <div
+      class="at-accordion__body"
+    >
+      
+      &lt;div&gt;&lt;/div&gt;
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Accordion Snap render Accordion -- props isAnimation 1`] = `
+<div
+  class="at-accordion"
+>
+  <div
+    class="at-accordion__header"
+  >
+    
+    <div
+      class="at-accordion__info"
+    >
+      <div
+        class="at-accordion__info__title"
+      >
+        
+      </div>
+      <div
+        class="at-accordion__info__note"
+      >
+        
+      </div>
+    </div>
+    <div
+      class="at-accordion__arrow at-accordion__arrow--folded"
+    >
+      <div
+        class="at-icon at-icon-chevron-down"
+      />
+    </div>
+  </div>
+  <div
+    class="at-accordion__content"
+  >
+    <div
+      class="at-accordion__body"
+    >
+      <!---->
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Accordion Snap render Accordion -- props note 1`] = `
+<div
+  class="at-accordion"
+>
+  <div
+    class="at-accordion__header"
+  >
+    
+    <div
+      class="at-accordion__info"
+    >
+      <div
+        class="at-accordion__info__title"
+      >
+        
+      </div>
+      <div
+        class="at-accordion__info__note"
+      >
+        note
+      </div>
+    </div>
+    <div
+      class="at-accordion__arrow"
+    >
+      <div
+        class="at-icon at-icon-chevron-down"
+      />
+    </div>
+  </div>
+  <div
+    class="at-accordion__content at-accordion__content--inactive"
+  >
+    <div
+      class="at-accordion__body"
+    >
+      
+      &lt;div&gt;&lt;/div&gt;
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Accordion Snap render Accordion -- props note 2`] = `
+<div
+  class="at-accordion"
+>
+  <div
+    class="at-accordion__header"
+  >
+    
+    <div
+      class="at-accordion__info"
+    >
+      <div
+        class="at-accordion__info__title"
+      >
+        
+      </div>
+      <div
+        class="at-accordion__info__note"
+      >
+        note
+      </div>
+    </div>
+    <div
+      class="at-accordion__arrow"
+    >
+      <div
+        class="at-icon at-icon-chevron-down"
+      />
+    </div>
+  </div>
+  <div
+    class="at-accordion__content at-accordion__content--inactive"
+  >
+    <div
+      class="at-accordion__body"
+    >
+      
+      &lt;div&gt;&lt;/div&gt;
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Accordion Snap render Accordion -- props open 1`] = `
+<div
+  class="at-accordion"
+>
+  <div
+    class="at-accordion__header"
+  >
+    
+    <div
+      class="at-accordion__info"
+    >
+      <div
+        class="at-accordion__info__title"
+      >
+        
+      </div>
+      <div
+        class="at-accordion__info__note"
+      >
+        
+      </div>
+    </div>
+    <div
+      class="at-accordion__arrow at-accordion__arrow--folded"
+    >
+      <div
+        class="at-icon at-icon-chevron-down"
+      />
+    </div>
+  </div>
+  <div
+    class="at-accordion__content"
+  >
+    <div
+      class="at-accordion__body"
+    >
+      <!---->
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Accordion Snap render Accordion -- props title 1`] = `
+<div
+  class="at-accordion"
+>
+  <div
+    class="at-accordion__header"
+  >
+    
+    <div
+      class="at-accordion__info"
+    >
+      <div
+        class="at-accordion__info__title"
+      >
+        title
+      </div>
+      <div
+        class="at-accordion__info__note"
+      >
+        
+      </div>
+    </div>
+    <div
+      class="at-accordion__arrow"
+    >
+      <div
+        class="at-icon at-icon-chevron-down"
+      />
+    </div>
+  </div>
+  <div
+    class="at-accordion__content at-accordion__content--inactive"
+  >
+    <div
+      class="at-accordion__body"
+    >
+      <!---->
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Accordion Snap render initial Accordion 1`] = `
+<div
+  class="at-accordion"
+>
+  <div
+    class="at-accordion__header"
+  >
+    
+    <div
+      class="at-accordion__info"
+    >
+      <div
+        class="at-accordion__info__title"
+      >
+        
+      </div>
+      <div
+        class="at-accordion__info__note"
+      >
+        
+      </div>
+    </div>
+    <div
+      class="at-accordion__arrow"
+    >
+      <div
+        class="at-icon at-icon-chevron-down"
+      />
+    </div>
+  </div>
+  <div
+    class="at-accordion__content at-accordion__content--inactive"
+  >
+    <div
+      class="at-accordion__body"
+    >
+      <!---->
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Accordion Snap test change props open 1`] = `
+<div
+  class="at-accordion"
+>
+  <div
+    class="at-accordion__header"
+  >
+    
+    <div
+      class="at-accordion__info"
+    >
+      <div
+        class="at-accordion__info__title"
+      >
+        
+      </div>
+      <div
+        class="at-accordion__info__note"
+      >
+        
+      </div>
+    </div>
+    <div
+      class="at-accordion__arrow at-accordion__arrow--folded"
+    >
+      <div
+        class="at-icon at-icon-chevron-down"
+      />
+    </div>
+  </div>
+  <div
+    class="at-accordion__content"
+    style="height: 0px;"
+  >
+    <div
+      class="at-accordion__body"
+    >
+      
+      按钮
+      
+    </div>
+  </div>
+</div>
+`;

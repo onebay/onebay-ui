@@ -1,0 +1,715 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rate Snap render Rate -- props className 1`] = `
+<div
+  class="at-rate test"
+>
+  
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render Rate -- props customStyle 1`] = `
+<div
+  class="at-rate"
+  style="color: red;"
+>
+  
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render Rate -- props float value 1`] = `
+<div
+  class="at-rate"
+>
+  
+  <div
+    class="at-rate__icon at-rate__icon--on"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--on"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--half"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render Rate -- props margin 1`] = `
+<div
+  class="at-rate"
+>
+  
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render Rate -- props max 1`] = `
+<div
+  class="at-rate"
+>
+  
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render Rate -- props size 1`] = `
+<div
+  class="at-rate"
+>
+  
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+      style="font-size: 10px;"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+        style="font-size: 10px;"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+      style="font-size: 10px;"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+        style="font-size: 10px;"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+      style="font-size: 10px;"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+        style="font-size: 10px;"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+      style="font-size: 10px;"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+        style="font-size: 10px;"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+      style="font-size: 10px;"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+        style="font-size: 10px;"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render Rate -- props value 1`] = `
+<div
+  class="at-rate"
+>
+  
+  <div
+    class="at-rate__icon at-rate__icon--on"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--on"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render initial Rate 1`] = `
+<div
+  class="at-rate"
+  istest="true"
+>
+  
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="at-rate__icon at-rate__icon--off"
+  >
+    <div
+      class="at-icon at-icon-star-2"
+    />
+    <div
+      class="at-rate__left"
+    >
+      <div
+        class="at-icon at-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;

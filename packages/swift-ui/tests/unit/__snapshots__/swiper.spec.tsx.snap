@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Swiper Event Swiper touch with lazyLoad image 1`] = `
+<div
+  class="at-swiper horizontal dragging"
+>
+  <div
+    class="at-swiper-wrap"
+    style="transform: translate3d(0px,0px,0); transition-duration: 0ms; transition-timing-function: ease;"
+  >
+    
+    
+    <div
+      class="at-swiper-slide at-swiper-slide-selected"
+    >
+      <img
+        class="at-img-lazyload"
+        data-src="//m.360buyimg.com/mobilecms/s750x366_jfs/t1/18629/34/3378/144318/5c263f64Ef0e2bff0/0d650e0aa2e852ee.jpg"
+        style="max-width: 100%;"
+      />
+    </div>
+    <div
+      class="at-swiper-slide"
+    >
+      <img
+        class="at-img-lazyload"
+        data-src="//m.360buyimg.com/mobilecms/s750x366_jfs/t1/26597/30/4870/174583/5c35c5d2Ed55eedc6/50e27870c25e7a82.png"
+        style="max-width: 100%;"
+      />
+      <div
+        class="at-lazy preloader"
+      />
+    </div>
+    <div
+      class="at-swiper-slide"
+    >
+      <img
+        class="at-img-lazyload"
+        data-src="//m.360buyimg.com/mobilecms/s750x366_jfs/t1/9542/17/12873/201687/5c3c4362Ea9eb757d/60026b40a9d60d85.jpg"
+        style="max-width: 100%;"
+      />
+      <div
+        class="at-lazy preloader"
+      />
+    </div>
+    <div
+      class="at-swiper-slide"
+    >
+      <img
+        class="at-img-lazyload"
+        data-src="//m.360buyimg.com/mobilecms/s750x366_jfs/t1/30042/36/427/82951/5c3bfdabE3faf2f66/9adca782661c988c.jpg"
+        style="max-width: 100%;"
+      />
+      <div
+        class="at-lazy preloader"
+      />
+    </div>
+    
+    
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`Swiper Snap render initial Swiper 1`] = `
+<div
+  class="at-swiper horizontal"
+>
+  <div
+    class="at-swiper-wrap"
+    style="transform: translate3d(0px,0px,0); transition-duration: 0ms; transition-timing-function: ease;"
+  >
+    
+    
+    
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`Swiper Snap render props -- swiperData 1`] = `
+<div
+  class="at-swiper horizontal"
+>
+  <div
+    class="at-swiper-wrap"
+    style="transform: translate3d(0px,0px,0); transition-duration: 0ms; transition-timing-function: ease;"
+  >
+    
+    
+    <div
+      class="at-swiper-slide"
+    >
+      <img
+        src="//m.360buyimg.com/mobilecms/s750x366_jfs/t1/18629/34/3378/144318/5c263f64Ef0e2bff0/0d650e0aa2e852ee.jpg"
+        style="max-width: 100%;"
+      />
+    </div>
+    <div
+      class="at-swiper-slide"
+    >
+      <img
+        src="//m.360buyimg.com/mobilecms/s750x366_jfs/t1/26597/30/4870/174583/5c35c5d2Ed55eedc6/50e27870c25e7a82.png"
+        style="max-width: 100%;"
+      />
+    </div>
+    <div
+      class="at-swiper-slide"
+    >
+      <img
+        src="//m.360buyimg.com/mobilecms/s750x366_jfs/t1/9542/17/12873/201687/5c3c4362Ea9eb757d/60026b40a9d60d85.jpg"
+        style="max-width: 100%;"
+      />
+    </div>
+    <div
+      class="at-swiper-slide"
+    >
+      <img
+        src="//m.360buyimg.com/mobilecms/s750x366_jfs/t1/30042/36/427/82951/5c3bfdabE3faf2f66/9adca782661c988c.jpg"
+        style="max-width: 100%;"
+      />
+    </div>
+    
+    
+  </div>
+  <!---->
+</div>
+`;

@@ -1,0 +1,323 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Steps Snap render Steps -- props className 1`] = `
+<div
+  class="at-steps test"
+>
+  
+  
+</div>
+`;
+
+exports[`Steps Snap render Steps -- props current 1`] = `
+<div
+  class="at-steps"
+>
+  
+  <div
+    class="at-steps__item at-steps__item--inactive"
+  >
+    <div
+      class="at-steps__circular-wrap"
+    >
+      <!---->
+      <div
+        class="at-steps__circular"
+      >
+        <div
+          class="at-icon at-icon-sound at-steps__circle-icon"
+        />
+      </div>
+      <div
+        class="at-steps__right-line"
+      />
+    </div>
+    <div
+      class="at-steps__title"
+    >
+      step1
+    </div>
+    <div
+      class="at-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  <div
+    class="at-steps__item at-steps__item--active"
+  >
+    <div
+      class="at-steps__circular-wrap"
+    >
+      <div
+        class="at-steps__left-line"
+      />
+      <div
+        class="at-steps__circular"
+      >
+        <div
+          class="at-icon at-icon-shopping-cart at-steps__circle-icon"
+        />
+      </div>
+      <div
+        class="at-steps__right-line"
+      />
+    </div>
+    <div
+      class="at-steps__title"
+    >
+      step2
+    </div>
+    <div
+      class="at-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  <div
+    class="at-steps__item at-steps__item--inactive"
+  >
+    <div
+      class="at-steps__circular-wrap"
+    >
+      <div
+        class="at-steps__left-line"
+      />
+      <div
+        class="at-steps__circular"
+      >
+        <div
+          class="at-icon at-icon-camera at-steps__circle-icon"
+        />
+      </div>
+      <!---->
+    </div>
+    <div
+      class="at-steps__title"
+    >
+      step3
+    </div>
+    <div
+      class="at-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Steps Snap render Steps -- props customStyle 1`] = `
+<div
+  class="at-steps"
+  style="color: red;"
+>
+  
+  
+</div>
+`;
+
+exports[`Steps Snap render Steps -- props items 1`] = `
+<div
+  class="at-steps"
+>
+  
+  <div
+    class="at-steps__item at-steps__item--active"
+  >
+    <div
+      class="at-steps__circular-wrap"
+    >
+      <!---->
+      <div
+        class="at-steps__circular"
+      >
+        <div
+          class="at-icon at-icon-sound at-steps__circle-icon"
+        />
+      </div>
+      <div
+        class="at-steps__right-line"
+      />
+    </div>
+    <div
+      class="at-steps__title"
+    >
+      step1
+    </div>
+    <div
+      class="at-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  <div
+    class="at-steps__item at-steps__item--inactive"
+  >
+    <div
+      class="at-steps__circular-wrap"
+    >
+      <div
+        class="at-steps__left-line"
+      />
+      <div
+        class="at-steps__circular"
+      >
+        <div
+          class="at-icon at-icon-shopping-cart at-steps__circle-icon"
+        />
+      </div>
+      <div
+        class="at-steps__right-line"
+      />
+    </div>
+    <div
+      class="at-steps__title"
+    >
+      step2
+    </div>
+    <div
+      class="at-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  <div
+    class="at-steps__item at-steps__item--inactive"
+  >
+    <div
+      class="at-steps__circular-wrap"
+    >
+      <div
+        class="at-steps__left-line"
+      />
+      <div
+        class="at-steps__circular"
+      >
+        <div
+          class="at-icon at-icon-camera at-steps__circle-icon"
+        />
+      </div>
+      <!---->
+    </div>
+    <div
+      class="at-steps__title"
+    >
+      step3
+    </div>
+    <div
+      class="at-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Steps Snap render Steps -- props items 2`] = `
+<div
+  class="at-steps"
+>
+  
+  <div
+    class="at-steps__item at-steps__item--active"
+  >
+    <div
+      class="at-steps__circular-wrap"
+    >
+      <!---->
+      <div
+        class="at-icon at-icon-check-circle at-steps__single-icon at-steps__single-icon--success"
+      />
+      <div
+        class="at-steps__right-line"
+      />
+    </div>
+    <div
+      class="at-steps__title"
+    >
+      step1
+    </div>
+    <div
+      class="at-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  <div
+    class="at-steps__item at-steps__item--inactive"
+  >
+    <div
+      class="at-steps__circular-wrap"
+    >
+      <div
+        class="at-steps__left-line"
+      />
+      <div
+        class="at-steps__circular"
+      >
+        <div
+          class="at-steps__num"
+        >
+          2
+        </div>
+      </div>
+      <div
+        class="at-steps__right-line"
+      />
+    </div>
+    <div
+      class="at-steps__title"
+    >
+      step2
+    </div>
+    <div
+      class="at-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  <div
+    class="at-steps__item at-steps__item--inactive"
+  >
+    <div
+      class="at-steps__circular-wrap"
+    >
+      <div
+        class="at-steps__left-line"
+      />
+      <div
+        class="at-steps__circular"
+      >
+        <div
+          class="at-steps__num"
+        >
+          3
+        </div>
+      </div>
+      <!---->
+    </div>
+    <div
+      class="at-steps__title"
+    >
+      step3
+    </div>
+    <div
+      class="at-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Steps Snap render initial Steps 1`] = `
+<div
+  class="at-steps"
+>
+  
+  
+</div>
+`;

@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Drawer Snap render Drawer -- props items 1`] = `
+<div
+  class="at-drawer at-drawer--left"
+>
+  <div
+    class="at-drawer__mask"
+    style="display: block; opacity: 0;"
+  />
+  <div
+    class="at-drawer__content"
+    style="opacity: 0; transition: all 195ms cubic-bezier(0.4, 0, 0.6, 1);"
+  >
+    
+    <div
+      class="at-list"
+    >
+      
+      <div
+        class="at-list__item"
+        data-index="0"
+      >
+        <div
+          class="at-list__item-container"
+        >
+          
+          
+          <div
+            class="at-list__item-content item-content"
+          >
+            <div
+              class="item-content__info"
+            >
+              <div
+                class="item-content__info-title"
+              >
+                Menu A
+              </div>
+              
+            </div>
+          </div>
+          <div
+            class="at-list__item-extra item-extra"
+          >
+            
+            
+            <div
+              class="item-extra__icon"
+            >
+              <div
+                class="at-icon item-extra__icon-arrow at-icon-chevron-right"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div
+      class="at-list"
+    >
+      
+      <div
+        class="at-list__item"
+        data-index="1"
+      >
+        <div
+          class="at-list__item-container"
+        >
+          
+          
+          <div
+            class="at-list__item-content item-content"
+          >
+            <div
+              class="item-content__info"
+            >
+              <div
+                class="item-content__info-title"
+              >
+                Menu B
+              </div>
+              
+            </div>
+          </div>
+          <div
+            class="at-list__item-extra item-extra"
+          >
+            
+            
+            <div
+              class="item-extra__icon"
+            >
+              <div
+                class="at-icon item-extra__icon-arrow at-icon-chevron-right"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Drawer Snap render Drawer -- props show 1`] = `
+<div
+  class="at-drawer at-drawer--left"
+>
+  <div
+    class="at-drawer__mask"
+    style="display: block; opacity: 0;"
+  />
+  <div
+    class="at-drawer__content"
+    style="opacity: 0; transition: all 195ms cubic-bezier(0.4, 0, 0.6, 1);"
+  >
+    0
+    
+    
+  </div>
+</div>
+`;
+
+exports[`Drawer Snap render Drawer -- props width 1`] = `
+<div
+  class="at-drawer at-drawer--left"
+>
+  <div
+    class="at-drawer__mask"
+    style="display: block; opacity: 0;"
+  />
+  <div
+    class="at-drawer__content"
+    style="opacity: 0; transition: all 195ms cubic-bezier(0.4, 0, 0.6, 1);"
+  >
+    0
+    
+    
+  </div>
+</div>
+`;
+
+exports[`Drawer Snap render initial Drawer 1`] = `<!---->`;

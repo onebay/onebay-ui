@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading Snap render Loading -- props color 1`] = `
+<div
+  class="at-loading"
+  style=""
+>
+  <div
+    class="at-loading__ring"
+    style="border: 1px solid #fff; border-color: #fff transparent transparent transparent;"
+  />
+  <div
+    class="at-loading__ring"
+    style="border: 1px solid #fff; border-color: #fff transparent transparent transparent;"
+  />
+  <div
+    class="at-loading__ring"
+    data-id="[object Object]"
+    style="border: 1px solid #fff; border-color: #fff transparent transparent transparent;"
+  />
+</div>
+`;
+
+exports[`Loading Snap render Loading -- props size 1`] = `
+<div
+  class="at-loading"
+  style="width: 15px; height: 15px;"
+>
+  <div
+    class="at-loading__ring"
+    style="width: 15px; height: 15px;"
+  />
+  <div
+    class="at-loading__ring"
+    style="width: 15px; height: 15px;"
+  />
+  <div
+    class="at-loading__ring"
+    data-id="[object Object]"
+    style="width: 15px; height: 15px;"
+  />
+</div>
+`;
+
+exports[`Loading Snap render initial AtLoading 1`] = `
+<div
+  class="at-loading"
+  style=""
+>
+  <div
+    class="at-loading__ring"
+  />
+  <div
+    class="at-loading__ring"
+    style=""
+  />
+  <div
+    class="at-loading__ring"
+    data-id="[object Object]"
+  />
+</div>
+`;
+
+exports[`Loading Snap render initial AtLoading 2`] = `
+<div
+  class="at-loading"
+  style=""
+>
+  <div
+    class="at-loading__ring"
+  />
+  <div
+    class="at-loading__ring"
+    style=""
+  />
+  <div
+    class="at-loading__ring"
+    data-id="[object Object]"
+  />
+</div>
+`;

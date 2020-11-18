@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActivityIndicator Snap render ActivityIndicator -- props color 1`] = `
+<div
+  class="at-activity-indicator at-activity-indicator--isopened"
+>
+  <div
+    class="at-activity-indicator__body"
+  >
+    <div
+      class="at-loading"
+      style=""
+    >
+      <div
+        class="at-loading__ring"
+        style="border: 1px solid #13ce66; border-color: #13ce66 transparent transparent transparent;"
+      />
+      <div
+        class="at-loading__ring"
+        style="border: 1px solid #13ce66; border-color: #13ce66 transparent transparent transparent;"
+      />
+      <div
+        class="at-loading__ring"
+        data-id="[object Object]"
+        style="border: 1px solid #13ce66; border-color: #13ce66 transparent transparent transparent;"
+      />
+    </div>
+  </div>
+  <div
+    class="at-activity-indicator__content"
+  >
+    
+    
+  </div>
+</div>
+`;
+
+exports[`ActivityIndicator Snap render ActivityIndicator -- props content 1`] = `
+<div
+  class="at-activity-indicator at-activity-indicator--isopened"
+>
+  <div
+    class="at-activity-indicator__body"
+  >
+    <div
+      class="at-loading"
+      style=""
+    >
+      <div
+        class="at-loading__ring"
+      />
+      <div
+        class="at-loading__ring"
+        style=""
+      />
+      <div
+        class="at-loading__ring"
+        data-id="[object Object]"
+      />
+    </div>
+  </div>
+  <div
+    class="at-activity-indicator__content"
+  >
+    
+    
+  </div>
+</div>
+`;
+
+exports[`ActivityIndicator Snap render ActivityIndicator -- props isOpened 1`] = `
+<div
+  class="at-activity-indicator at-activity-indicator--isopened"
+>
+  <div
+    class="at-activity-indicator__body"
+  >
+    <div
+      class="at-loading"
+      style=""
+    >
+      <div
+        class="at-loading__ring"
+      />
+      <div
+        class="at-loading__ring"
+        style=""
+      />
+      <div
+        class="at-loading__ring"
+        data-id="[object Object]"
+      />
+    </div>
+  </div>
+  <div
+    class="at-activity-indicator__content"
+  >
+    
+    
+  </div>
+</div>
+`;
+
+exports[`ActivityIndicator Snap render ActivityIndicator -- props mode 1`] = `
+<div
+  class="at-activity-indicator at-activity-indicator--center at-activity-indicator--isopened"
+>
+  <div
+    class="at-activity-indicator__body"
+  >
+    <div
+      class="at-loading"
+      style=""
+    >
+      <div
+        class="at-loading__ring"
+      />
+      <div
+        class="at-loading__ring"
+        style=""
+      />
+      <div
+        class="at-loading__ring"
+        data-id="[object Object]"
+      />
+    </div>
+  </div>
+  <div
+    class="at-activity-indicator__content"
+  >
+    
+    
+  </div>
+</div>
+`;
+
+exports[`ActivityIndicator Snap render ActivityIndicator -- props size 1`] = `
+<div
+  class="at-activity-indicator at-activity-indicator--isopened"
+>
+  <div
+    class="at-activity-indicator__body"
+  >
+    <div
+      class="at-loading"
+      style="width: 32px; height: 32px;"
+    >
+      <div
+        class="at-loading__ring"
+        style="width: 32px; height: 32px;"
+      />
+      <div
+        class="at-loading__ring"
+        style="width: 32px; height: 32px;"
+      />
+      <div
+        class="at-loading__ring"
+        data-id="[object Object]"
+        style="width: 32px; height: 32px;"
+      />
+    </div>
+  </div>
+  <div
+    class="at-activity-indicator__content"
+  >
+    
+    
+  </div>
+</div>
+`;
+
+exports[`ActivityIndicator Snap render initial ActivityIndicator 1`] = `
+<div
+  class="at-activity-indicator at-activity-indicator--isopened"
+>
+  <div
+    class="at-activity-indicator__body"
+  >
+    <div
+      class="at-loading"
+      style=""
+    >
+      <div
+        class="at-loading__ring"
+      />
+      <div
+        class="at-loading__ring"
+        style=""
+      />
+      <div
+        class="at-loading__ring"
+        data-id="[object Object]"
+      />
+    </div>
+  </div>
+  <div
+    class="at-activity-indicator__content"
+  >
+    
+    
+  </div>
+</div>
+`;

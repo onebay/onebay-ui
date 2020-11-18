@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Snap render initial Modal 1`] = `
+<div>
+  <div
+    class="at-modal"
+  >
+    <div
+      class="at-modal__overlay"
+    />
+    <div
+      class="at-modal__container"
+    >
+      
+      <div
+        class="at-modal__header"
+      >
+        
+        This is Title 
+        
+      </div>
+      <div
+        class="at-modal__content"
+        scroll-y="true"
+      >
+        
+        This is Modal Content  This is Modal Content This is Modal Content
+        
+      </div>
+      <div
+        class="at-modal__footer"
+      >
+        <div
+          class="at-modal__action"
+        >
+          
+          <div
+            class="at-button at-button--normal"
+          >
+            <!---->
+            <div
+              class="at-button__text"
+            >
+              
+              Cancel
+              
+            </div>
+          </div>
+          <div
+            class="at-button at-button--normal"
+          >
+            <!---->
+            <div
+              class="at-button__text"
+            >
+              
+              Confirm
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Modal Snap render opened  Modal -- simple 1`] = `
+<div>
+  <div
+    class="at-modal at-modal--active"
+  >
+    <div
+      class="at-modal__overlay"
+    />
+    <div
+      class="at-modal__container"
+    >
+      <div
+        class="at-modal__header"
+      >
+        
+        <div>
+          This is Title 
+        </div>
+        
+      </div>
+      <div
+        class="at-modal__content"
+        scroll-y="true"
+      >
+        
+        <div
+          class="content-simple"
+        >
+          <div>
+            This is Modal Content 
+
+ This is Modal Content
+          </div>
+        </div>
+        
+      </div>
+      <div
+        class="at-modal__footer at-modal__footer--simple"
+      >
+        <div
+          class="at-modal__action"
+        >
+          
+          
+          <button>
+            Confirm
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Modal Snap render opened Modal -- not header 1`] = `
+<div>
+  <div
+    class="at-modal at-modal--active"
+  >
+    <div
+      class="at-modal__overlay"
+    />
+    <div
+      class="at-modal__container"
+    >
+      
+      <div
+        class="at-modal__content"
+        scroll-y="true"
+      >
+        
+        This is Modal Content  This is Modal Content This is Modal Content
+        
+      </div>
+      <div
+        class="at-modal__footer"
+      >
+        <div
+          class="at-modal__action"
+        >
+          
+          <div
+            class="at-button at-button--normal"
+          >
+            <!---->
+            <div
+              class="at-button__text"
+            >
+              
+              Cancel
+              
+            </div>
+          </div>
+          <div
+            class="at-button at-button--normal"
+          >
+            <!---->
+            <div
+              class="at-button__text"
+            >
+              
+              Confirm
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Modal Snap render opened Modal -- single button 1`] = `
+<div>
+  <div
+    class="at-modal at-modal--active"
+  >
+    <div
+      class="at-modal__overlay"
+    />
+    <div
+      class="at-modal__container"
+    >
+      
+      <div
+        class="at-modal__content"
+        scroll-y="true"
+      >
+        
+        This is Modal Content  This is Modal Content This is Modal Content
+        
+      </div>
+      <div
+        class="at-modal__footer"
+      >
+        <div
+          class="at-modal__action"
+        >
+          
+          <div
+            class="at-button at-button--normal"
+          >
+            <!---->
+            <div
+              class="at-button__text"
+            >
+              
+              Confirm
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Modal Snap render opened Modal 1`] = `
+<div>
+  <div
+    class="at-modal at-modal--active"
+  >
+    <div
+      class="at-modal__overlay"
+    />
+    <div
+      class="at-modal__container"
+    >
+      
+      <div
+        class="at-modal__header"
+      >
+        
+        This is Title 
+        
+      </div>
+      <div
+        class="at-modal__content"
+        scroll-y="true"
+      >
+        
+        This is Modal Content  This is Modal Content This is Modal Content
+        
+      </div>
+      <div
+        class="at-modal__footer"
+      >
+        <div
+          class="at-modal__action"
+        >
+          
+          <div
+            class="at-button at-button--normal"
+          >
+            <!---->
+            <div
+              class="at-button__text"
+            >
+              
+              Cancel
+              
+            </div>
+          </div>
+          <div
+            class="at-button at-button--normal"
+          >
+            <!---->
+            <div
+              class="at-button__text"
+            >
+              
+              Confirm
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;

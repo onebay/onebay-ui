@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [8.x, 10.x, 12.x]
 
     defaults:
       run:
@@ -23,6 +23,5 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: pwd
       - run: npm install
       - run: npm run test
