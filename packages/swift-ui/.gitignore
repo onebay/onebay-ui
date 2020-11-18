@@ -5,4 +5,3 @@ dist
 lib
 tests/coverage
 **/__snapshots__
-dist
