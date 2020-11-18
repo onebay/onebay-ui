@@ -4,4 +4,3 @@ dist
 *.local
 lib
 tests/coverage
-dist
