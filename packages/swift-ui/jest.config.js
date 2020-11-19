@@ -26,5 +26,6 @@ module.exports = {
     'ts-jest': {
       tsConfig: './jest.tsconfig.json'
     }
-  }
+  },
+  coverageReporters: ['text', 'text-summary', 'lcov', 'json-summary', 'json']
 }
