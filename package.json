@@ -9,7 +9,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "cd packages/swift-ui && npm run lint && npm run test",
+      "pre-commit": "cd packages/swift-ui && npm run lint",
       "commit-msg": "commitlint -e $GIT_PARAMS"
     }
   }

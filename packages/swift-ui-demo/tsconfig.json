@@ -21,5 +21,6 @@
     "paths": {
       "/@/swift-ui/*": ["../swift-ui/*"]
     }
-  }
+  },
+  "exclude": ["./.env.**"]
 }

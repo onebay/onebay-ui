@@ -2,9 +2,20 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Index from '../pages/index/index.vue'
 import Panel from '../pages/panel/index.vue'
 import Drawer from '../pages/navigation/drawer/index.vue'
+import getEnv from './getEnv'
+const env = getEnv()
 
 const dynamicRoute = (path: string): RouteRecordRaw => {
   const comp = `..${path}.vue`
+  if (env.VITE_TEMPLATE_ENV === 'tsx') {
+    console.log('VITE_TEMPLATE_ENV', env.VITE_TEMPLATE_ENV)
+    // const tsxComp = comp.replace('index.vue', 'main.tsx')
+    return {
+      path,
+      component: () => import('../pages/action/action-sheet/main')
+    }
+  }
+
   return {
     path,
     component: () => import(comp)
@@ -71,5 +82,5 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes
 })
-
+console.log('router', router)
 export default router

@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "vite",
+    "dev:tsx": "vite --mode tsx",
     "build": "vite build"
   },
   "dependencies": {
