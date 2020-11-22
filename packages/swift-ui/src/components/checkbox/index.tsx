@@ -31,6 +31,11 @@ const Checkbox = defineComponent({
       default: function () {
         return []
       }
+    },
+    onChange: {
+      type: Function,
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      default: () => {}
     }
   },
   emits: ['change'],

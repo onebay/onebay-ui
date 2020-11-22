@@ -12,6 +12,8 @@ export enum TYPE_CLASS {
   secondary = 'secondary'
 }
 
+export type ButtonType = 'primary' | 'secondary'
+
 export default defineComponent({
   components: {
     Loading
@@ -22,7 +24,7 @@ export default defineComponent({
       default: 'normal'
     },
     type: {
-      type: String as PropType<TYPE_CLASS>,
+      type: String as PropType<ButtonType>,
       default: undefined
     },
     circle: {
