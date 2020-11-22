@@ -1,4 +1,4 @@
-# indexes 
+# compName 
 
 <DemoView />
 
@@ -15,5 +15,5 @@ export default defineComponent({
 
 <div class="code-box code-vue-active">
 <div class="code-tabs"></div>
-
+{{code}}
 </div> 

@@ -23,3 +23,38 @@
     }
   }
 }
+
+.code-box {
+  .code-tabs {
+    button {
+      width: 80px;
+      height: 30px;
+      border: 0;
+      outline: none;
+    }
+  }
+  .language-vue, .language-tsx {
+    display: none;
+  }
+  &.code-vue-active {
+    .language-vue {
+      display: block;
+    }
+    .btn-vue {
+      background-color: var(--accent-color);
+      color: #fff;
+    }
+  }
+  &.code-tsx-active {
+    .language-tsx {
+      display: block;
+    }
+    .btn-tsx {
+      background-color: var(--accent-color);
+      color: #fff;
+      &:active {
+        border: 0;
+      }
+    }
+  }
+}

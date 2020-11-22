@@ -12,6 +12,8 @@
 
 <script>
 import Loading from "./Loading.vue";
+import { renderTabs } from "../common";
+
 export default {
   name: "Demoview",
   components: {
@@ -21,6 +23,9 @@ export default {
     const route = this.$router.route.path.split(".")[0].replace("/docs/", "");
     console.log("route", route);
     this.src = `http://localhost:3333/#/pages/${route}/index`;
+  },
+  mounted() {
+    renderTabs();
   },
   data() {
     return {
