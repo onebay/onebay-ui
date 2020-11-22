@@ -7,6 +7,7 @@ const config: UserConfig = {
     '/@/swift-ui/': path.resolve(__dirname, '../swift-ui'),
   },
   resolvers: [tsResolver],
+  port: 3333
 }
 
 export default config

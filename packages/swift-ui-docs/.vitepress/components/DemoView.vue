@@ -20,7 +20,7 @@ export default {
   created() {
     const route = this.$router.route.path.split(".")[0].replace("/docs/", "");
     console.log("route", route);
-    this.src = `http://localhost:3001/#/pages/${route}/index`;
+    this.src = `http://localhost:3333/#/pages/${route}/index`;
   },
   data() {
     return {
