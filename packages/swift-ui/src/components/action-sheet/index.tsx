@@ -26,6 +26,11 @@ export default defineComponent({
     className: {
       type: [Array, String],
       default: () => ''
+    },
+    onClose: {
+      type: Function,
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      default: () => {}
     }
   },
   emits: ['close', 'cancel'],
@@ -49,7 +54,6 @@ export default defineComponent({
   watch: {
     isOpened(val) {
       this.show = val
-      !val && this.handleClose()
     }
   },
   methods: {
@@ -64,7 +68,7 @@ export default defineComponent({
       this.show = false
       this.handleClose()
     },
-    handleTouchMove(e) {
+    handleTouchMove(e: Event) {
       e.stopPropagation()
       e.preventDefault()
     }
@@ -77,7 +81,7 @@ export default defineComponent({
         <div class="at-action-sheet__overlay" onClick={close} />
         <div class="at-action-sheet__container">
           {title && <ActionSheetHeader>{title}</ActionSheetHeader>}
-          <ActionSheetBody>{$slots.default && $slots.default()}</ActionSheetBody>
+          <ActionSheetBody>{$slots.default?.()}</ActionSheetBody>
           <ActionSheetFooter onClick={handleCancel}>{cancelText}</ActionSheetFooter>
         </div>
       </div>

@@ -7,6 +7,11 @@ export default defineComponent({
     className: {
       type: [Array, String],
       default: () => ''
+    },
+    onClick: {
+      type: Function,
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      default: () => {}
     }
   },
   emits: ['click'],
@@ -19,7 +24,7 @@ export default defineComponent({
     }
   },
   methods: {
-    handleClick(e) {
+    handleClick(e: Event) {
       this.$emit('click', e)
     }
   },
@@ -27,7 +32,7 @@ export default defineComponent({
     const { handleClick, $slots, rootClass } = this
     return (
       <div class={rootClass} onClick={handleClick}>
-        {$slots.default && $slots.default()}
+        {$slots.default?.()}
       </div>
     )
   }
