@@ -37,7 +37,9 @@ export default defineComponent({
       direction.value = direction.value === 'up' ? 'down' : 'up'
     }
     const onRefresh = () => {
-      console.log('onRefresh')
+      this.$toast({
+        text: 'onRefresh'
+      })
     }
     return {
       direction,

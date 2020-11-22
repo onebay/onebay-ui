@@ -7,6 +7,7 @@ export enum Direction {
   Up = 'up',
   Down = 'down'
 }
+export type DirectionType = 'up' | 'down'
 
 const prefixCls = 'cr-pull-to-refresh'
 
@@ -30,7 +31,7 @@ export default defineComponent({
       default: ''
     },
     direction: {
-      type: String as PropType<Direction>,
+      type: String as PropType<DirectionType>,
       default: Direction.Down
     },
     distanceToRefresh: {
@@ -44,6 +45,11 @@ export default defineComponent({
     style: {
       type: String as PropType<CSSProperties>,
       default: ''
+    },
+    onRefresh: {
+      type: Function,
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      default: () => {}
     }
   },
   emits: ['refresh'],
@@ -99,7 +105,6 @@ export default defineComponent({
         emit('refresh')
       }
       /* istanbul ignore else */
-      console.log('getLen([startPoint, endPoint])', getLen([startPoint, endPoint]))
       if (distanceToRefresh < getLen([startPoint, endPoint])) {
         setTimeout(resetStyle, 500)
       }

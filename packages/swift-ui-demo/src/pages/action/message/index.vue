@@ -1,28 +1,28 @@
 <template>
   <div class="page toast-page">
     <!-- S Header -->
-    <DocsHeader title="Message 消息通知" />
+    <DocsHeader title="Message" />
     <!-- E Header -->
 
     <!-- S Body -->
     <div class="doc-body">
       <div class="panel">
-        <div class="panel__title">基本案例</div>
+        <div class="panel__title">Basic usage</div>
         <div class="panel__content">
           <div class="example-item">
-            <Button @click="handleClick('')"> 普通消息 </Button>
+            <Button @click="handleClick('')"> normal message </Button>
           </div>
           <div class="example-item">
-            <Button @click="handleClick('success')"> 成功消息 </Button>
+            <Button @click="handleClick('success')"> success message </Button>
           </div>
           <div class="example-item">
-            <Button @click="handleClick('error')"> 错误消息 </Button>
+            <Button @click="handleClick('error')"> error message </Button>
           </div>
           <div class="example-item">
-            <Button @click="handleClick('warning')"> 警告消息 </Button>
+            <Button @click="handleClick('warning')"> warning message </Button>
           </div>
           <div class="example-item">
-            <Button @click="handleClick('info')"> 提示消息 </Button>
+            <Button @click="handleClick('info')"> prompt message </Button>
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@
 import { defineComponent } from 'vue'
 import { Button } from '/@/swift-ui/src/index.ts'
 export default defineComponent({
-  name: 'ToastPage',
+  name: 'MessagePage',
   components: {
     Button
   },

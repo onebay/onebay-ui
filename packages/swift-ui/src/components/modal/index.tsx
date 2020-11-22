@@ -46,6 +46,10 @@ export default defineComponent({
     className: {
       type: [String, Array],
       default: ''
+    },
+    onClose: {
+      type: Function,
+      default: () => { }
     }
   },
   emits: ['close', 'cancel', 'confirm'],
