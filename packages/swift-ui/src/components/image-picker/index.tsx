@@ -1,11 +1,11 @@
 import classNames from 'classnames'
-import { defineComponent, computed, PropType } from 'vue'
+import { defineComponent, computed, PropType, toRaw } from 'vue'
 import chooseImage, { ChooseImageResponse, ChooseImageOptions } from '../../utils/chooseImage'
 import { uuid } from '../../utils'
 
 interface MatrixFile extends Partial<File> {
-  type: 'blank' | 'btn'
-  uuid: string
+  type?: 'blank' | 'btn'
+  uuid?: string
   url?: string
 }
 
@@ -77,7 +77,7 @@ const ImagePicker = defineComponent({
     },
     onFail: {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      type: Function as PropType<(reason: any) => Promise<unknown>>,
+      type: Function as PropType<(reason: any) => Promise<unknown> | any>,
       default: () => {
         /* */
       }
@@ -94,7 +94,7 @@ const ImagePicker = defineComponent({
     const matrix = computed(() => {
       const { files, length, showAddBtn } = props
       const rowLength = length <= 0 ? 1 : length
-      return generateMatrix(files, rowLength, showAddBtn)
+      return generateMatrix(toRaw(files), rowLength, showAddBtn)
     })
     return {
       rootCls,
@@ -142,7 +142,7 @@ const ImagePicker = defineComponent({
   },
   render() {
     const { rootCls, matrix, handleRemoveImg, handleImageClick, chooseFile } = this
-    const { customStyle } = this.$props
+    const { customStyle, length } = this.$props
     return (
       <div class={rootCls} style={customStyle}>
         {matrix.map((row, i) => (
@@ -163,14 +163,14 @@ const ImagePicker = defineComponent({
                 </div>
               ) : (
                 <div class="at-image-picker__flex-item" key={`btn${i * length + j}`}>
-                  {item.type === 'btn' && (
+                  {item.type === 'btn' ? (
                     <div
                       class="at-image-picker__item at-image-picker__choose-btn"
                       onClick={chooseFile}>
                       <div class="add-bar"></div>
                       <div class="add-bar"></div>
                     </div>
-                  )}
+                  ) : null}
                 </div>
               )
             )}
