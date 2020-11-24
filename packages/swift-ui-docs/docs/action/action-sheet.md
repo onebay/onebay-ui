@@ -7,10 +7,8 @@
 
 ```tsx
 import { defineComponent, ref } from 'vue'
-// @ts-ignore
-import { ActionSheet, ActionSheetItem, Button } from '/@/swift-ui/src/index'
-// @ts-ignore
-import toast from '/@/swift-ui/src/plugins/toast'
+import { ActionSheet, ActionSheetItem, Button } from 'swift-ui/src/index'
+import toast from 'swift-ui/src/plugins/toast'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({
@@ -45,12 +43,12 @@ export default defineComponent({
             </div>
             <ActionSheet
               onClose={handleClose}
-              cancelText="取消"
+              cancelText="cancel"
               isOpened={isOpened.value}
-              title="清除位置信息后， 别人将不能查看到你"
+              title="After clearing the location information, others will not be able to see you"
             >
-              <ActionSheetItem onClick={() => showToast('点击了按钮一')}> 按钮一 </ActionSheetItem>
-              <ActionSheetItem onClick={() => showToast('点击了按钮二')}> 按钮二 </ActionSheetItem>
+              <ActionSheetItem onClick={() => showToast('click button 1')}> button 1 </ActionSheetItem>
+              <ActionSheetItem onClick={() => showToast('click button 2')}> button 2 </ActionSheetItem>
             </ActionSheet>
           </div>
         </div>

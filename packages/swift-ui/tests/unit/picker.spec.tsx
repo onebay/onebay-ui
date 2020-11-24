@@ -92,7 +92,7 @@ describe('Picker Snap', () => {
   })
 
   it('render Picker -- props mode === date last-child', async () => {
-    const wrapper = factory({ mode: "date" })
+    const wrapper = factory({ mode: "date", start: '2020-11-11' })
     wrapper.find('.weui-picker__group:last-child').trigger('touchstart', { changedTouches: [{ clientX: 50, clientY: 10 }] })
     wrapper.find('.weui-picker__group:last-child').trigger('touchmove', { changedTouches: [{ clientX: 50, clientY: 100 }] })
     wrapper.find('.weui-picker__group:last-child').trigger('touchend', { changedTouches: [{ clientX: 50, clientY: 100 }] })
@@ -100,7 +100,7 @@ describe('Picker Snap', () => {
   })
 
   it('render Picker -- props mode === date :nth-child(2)', async () => {
-    const wrapper = factory({ mode: "date" })
+    const wrapper = factory({ mode: "date", start: '2020-11-11' })
     wrapper.find('.weui-picker__group:nth-child(2)').trigger('touchstart', { changedTouches: [{ clientX: 50, clientY: 10 }] })
     wrapper.find('.weui-picker__group:nth-child(2)').trigger('touchmove', { changedTouches: [{ clientX: 50, clientY: 100 }] })
     wrapper.find('.weui-picker__group:nth-child(2)').trigger('touchend', { changedTouches: [{ clientX: 50, clientY: 100 }] })

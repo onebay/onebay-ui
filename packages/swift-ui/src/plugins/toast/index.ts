@@ -11,7 +11,7 @@ export enum ToastStatus {
 
 export interface ToastConfig extends Config {
   text?: string
-  status?: ToastStatus
+  status?: 'success' | 'error' | 'loading'
   duration?: number
   isOpened?: boolean
   hasMask?: boolean

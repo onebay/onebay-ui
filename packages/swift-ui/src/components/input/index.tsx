@@ -43,10 +43,8 @@ const compProps = {
     }
   },
   className: {
-    type: [Object, String],
-    default: function () {
-      return {}
-    }
+    type: String,
+    default: ''
   },
   value: {
     type: [String, Number] as PropType<string | number>,
@@ -121,6 +119,12 @@ const compProps = {
     default: () => {
       /* */
     }
+  },
+  onChange: {
+    type: Function,
+    default: () => {
+      /* */
+    }
   }
 }
 
@@ -128,7 +132,7 @@ export interface InputProps {
   border?: boolean
   error?: boolean
   /* eslint-disable */
-  className?: any
+  className: string
   /* eslint-disable */
 }
 
