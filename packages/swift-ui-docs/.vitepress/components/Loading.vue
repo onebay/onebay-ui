@@ -31,8 +31,8 @@
   align-items: center;
 }
 .loading {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   animation: myRotate 3s linear infinite;
 }
 @keyframes myRotate {

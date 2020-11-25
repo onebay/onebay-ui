@@ -120,11 +120,9 @@ const compProps = {
       /* */
     }
   },
+  // eslint-disable-next-line vue/require-default-prop
   onChange: {
-    type: Function,
-    default: () => {
-      /* */
-    }
+    type: Function
   }
 }
 

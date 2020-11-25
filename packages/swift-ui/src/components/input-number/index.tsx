@@ -87,6 +87,10 @@ const InputNumber = defineComponent({
       default: () => {
         /* */
       }
+    },
+    // eslint-disable-next-line vue/require-default-prop
+    onChange: {
+      type: Function
     }
   },
   emits: ['change', 'blur'],
