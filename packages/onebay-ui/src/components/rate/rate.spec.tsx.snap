@@ -1,0 +1,715 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rate Snap render Rate -- props className 1`] = `
+<div
+  class="ob-rate test"
+>
+  
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render Rate -- props customStyle 1`] = `
+<div
+  class="ob-rate"
+  style="color: red;"
+>
+  
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render Rate -- props float value 1`] = `
+<div
+  class="ob-rate"
+>
+  
+  <div
+    class="ob-rate__icon ob-rate__icon--on"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--on"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--half"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render Rate -- props margin 1`] = `
+<div
+  class="ob-rate"
+>
+  
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render Rate -- props max 1`] = `
+<div
+  class="ob-rate"
+>
+  
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render Rate -- props size 1`] = `
+<div
+  class="ob-rate"
+>
+  
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+      style="font-size: 10px;"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+        style="font-size: 10px;"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+      style="font-size: 10px;"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+        style="font-size: 10px;"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+      style="font-size: 10px;"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+        style="font-size: 10px;"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+      style="font-size: 10px;"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+        style="font-size: 10px;"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+      style="font-size: 10px;"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+        style="font-size: 10px;"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render Rate -- props value 1`] = `
+<div
+  class="ob-rate"
+>
+  
+  <div
+    class="ob-rate__icon ob-rate__icon--on"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--on"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Rate Snap render initial Rate 1`] = `
+<div
+  class="ob-rate"
+  istest="true"
+>
+  
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-rate__icon ob-rate__icon--off"
+  >
+    <div
+      class="ob-icon ob-icon-star-2"
+    />
+    <div
+      class="ob-rate__left"
+    >
+      <div
+        class="ob-icon ob-icon-star-2"
+      />
+    </div>
+  </div>
+  
+</div>
+`;

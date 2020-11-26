@@ -1,0 +1,25 @@
+@import '../variables/default.scss';
+@import '../mixins/index.scss';
+
+.ob-load-more {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: $ob-load-more-height;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  &__cnt {
+    flex: 1;
+  }
+
+  &__tip {
+    text-align: center;
+    width: 100%;
+    color: $ob-load-more-tips-color;
+    font-size: $ob-load-more-tips-size;
+  }
+}

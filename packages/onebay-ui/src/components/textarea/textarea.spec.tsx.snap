@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textarea Snap render Textarea -- props className 1`] = `
+<div
+  class="ob-textarea ob-textarea--WEB test"
+>
+  <textarea
+    class="ob-textarea__textarea"
+    maxlength="200"
+    placeholder=""
+  />
+  <div
+    class="ob-textarea__counter"
+  >
+    0
+    /
+    200
+  </div>
+</div>
+`;
+
+exports[`Textarea Snap render Textarea -- props count 1`] = `
+<div
+  class="ob-textarea ob-textarea--WEB"
+>
+  <textarea
+    class="ob-textarea__textarea"
+    maxlength="200"
+    placeholder=""
+  />
+  <!---->
+</div>
+`;
+
+exports[`Textarea Snap render Textarea -- props customStyle 1`] = `
+<div
+  class="ob-textarea ob-textarea--WEB"
+  style="color: red;"
+>
+  <textarea
+    class="ob-textarea__textarea"
+    maxlength="200"
+    placeholder=""
+  />
+  <div
+    class="ob-textarea__counter"
+  >
+    0
+    /
+    200
+  </div>
+</div>
+`;
+
+exports[`Textarea Snap render Textarea -- props height 1`] = `
+<div
+  class="ob-textarea ob-textarea--WEB"
+>
+  <textarea
+    class="ob-textarea__textarea"
+    maxlength="200"
+    placeholder=""
+    style="height: 3000px;"
+  />
+  <div
+    class="ob-textarea__counter"
+  >
+    0
+    /
+    200
+  </div>
+</div>
+`;
+
+exports[`Textarea Snap render Textarea -- props maxLength 1`] = `
+<div
+  class="ob-textarea ob-textarea--WEB"
+>
+  <textarea
+    class="ob-textarea__textarea"
+    maxlength="300"
+    placeholder=""
+  />
+  <div
+    class="ob-textarea__counter"
+  >
+    0
+    /
+    300
+  </div>
+</div>
+`;
+
+exports[`Textarea Snap render Textarea -- props placeholder 1`] = `
+<div
+  class="ob-textarea ob-textarea--WEB"
+>
+  <textarea
+    class="ob-textarea__textarea"
+    maxlength="200"
+    placeholder="test"
+  />
+  <div
+    class="ob-textarea__counter"
+  >
+    0
+    /
+    200
+  </div>
+</div>
+`;
+
+exports[`Textarea Snap render Textarea -- props value 1`] = `
+<div
+  class="ob-textarea ob-textarea--WEB"
+>
+  <textarea
+    class="ob-textarea__textarea"
+    maxlength="200"
+    placeholder=""
+  />
+  <div
+    class="ob-textarea__counter"
+  >
+    4
+    /
+    200
+  </div>
+</div>
+`;
+
+exports[`Textarea Snap render Textarea textOverflowForbidden false 1`] = `
+<div
+  class="ob-textarea ob-textarea--WEB"
+>
+  <textarea
+    class="ob-textarea__textarea"
+    maxlength="700"
+    placeholder=""
+  />
+  <div
+    class="ob-textarea__counter"
+  >
+    0
+    /
+    200
+  </div>
+</div>
+`;
+
+exports[`Textarea Snap render initial Textarea 1`] = `
+<div
+  class="ob-textarea ob-textarea--WEB"
+>
+  <textarea
+    class="ob-textarea__textarea"
+    maxlength="200"
+    placeholder=""
+  />
+  <div
+    class="ob-textarea__counter"
+  >
+    0
+    /
+    200
+  </div>
+</div>
+`;

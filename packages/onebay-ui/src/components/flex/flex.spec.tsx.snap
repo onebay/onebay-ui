@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flex Snap render initial Flex 1`] = `
+<div
+  class="ob-flexbox ob-flexbox-align-center"
+>
+  
+  <div
+    class="ob-flexbox-item"
+  >
+    
+    hello wrold
+    
+  </div>
+  
+</div>
+`;

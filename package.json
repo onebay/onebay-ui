@@ -10,7 +10,7 @@
   "type": "module",
   "husky": {
     "hooks": {
-      "pre-commit": "cd packages/swift-ui && npm run lint && npm test",
+      "pre-commit": "cd packages/onebay-ui && npm run lint && npm test",
       "commit-msg": "commitlint -e $GIT_PARAMS"
     }
   }

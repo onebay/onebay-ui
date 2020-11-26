@@ -1,0 +1,531 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar Snap render SearchBar -- props actionName 1`] = `
+<div
+  class="ob-search-bar"
+>
+  <div
+    class="ob-search-bar__input-cnt"
+  >
+    <div
+      class="ob-search-bar__placeholder-wrap"
+      style="flex-grow: 1;"
+    >
+      <div
+        class="ob-icon ob-icon-search"
+      />
+      <div
+        class="ob-search-bar__placeholder"
+        style="visibility: visible;"
+      >
+        Search
+      </div>
+    </div>
+    <input
+      class="ob-search-bar__input"
+      maxlength="140"
+      type="text"
+    />
+    <div
+      class="ob-search-bar__clear"
+      style="display: none;"
+    >
+      <div
+        class="ob-icon ob-icon-close-circle"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-search-bar__action"
+    style="opacity: 0;"
+  >
+    actionName
+  </div>
+</div>
+`;
+
+exports[`SearchBar Snap render SearchBar -- props className 1`] = `
+<div
+  class="ob-search-bar test"
+>
+  <div
+    class="ob-search-bar__input-cnt"
+  >
+    <div
+      class="ob-search-bar__placeholder-wrap"
+      style="flex-grow: 1;"
+    >
+      <div
+        class="ob-icon ob-icon-search"
+      />
+      <div
+        class="ob-search-bar__placeholder"
+        style="visibility: visible;"
+      >
+        Search
+      </div>
+    </div>
+    <input
+      class="ob-search-bar__input"
+      maxlength="140"
+      type="text"
+    />
+    <div
+      class="ob-search-bar__clear"
+      style="display: none;"
+    >
+      <div
+        class="ob-icon ob-icon-close-circle"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-search-bar__action"
+    style="opacity: 0;"
+  >
+    Search
+  </div>
+</div>
+`;
+
+exports[`SearchBar Snap render SearchBar -- props customStyle 1`] = `
+<div
+  class="ob-search-bar"
+  style="color: red;"
+>
+  <div
+    class="ob-search-bar__input-cnt"
+  >
+    <div
+      class="ob-search-bar__placeholder-wrap"
+      style="flex-grow: 1;"
+    >
+      <div
+        class="ob-icon ob-icon-search"
+      />
+      <div
+        class="ob-search-bar__placeholder"
+        style="visibility: visible;"
+      >
+        Search
+      </div>
+    </div>
+    <input
+      class="ob-search-bar__input"
+      maxlength="140"
+      type="text"
+    />
+    <div
+      class="ob-search-bar__clear"
+      style="display: none;"
+    >
+      <div
+        class="ob-icon ob-icon-close-circle"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-search-bar__action"
+    style="opacity: 0;"
+  >
+    Search
+  </div>
+</div>
+`;
+
+exports[`SearchBar Snap render SearchBar -- props disabled 1`] = `
+<div
+  class="ob-search-bar"
+>
+  <div
+    class="ob-search-bar__input-cnt"
+  >
+    <div
+      class="ob-search-bar__placeholder-wrap"
+      style="flex-grow: 1;"
+    >
+      <div
+        class="ob-icon ob-icon-search"
+      />
+      <div
+        class="ob-search-bar__placeholder"
+        style="visibility: visible;"
+      >
+        Search
+      </div>
+    </div>
+    <input
+      class="ob-search-bar__input"
+      disabled=""
+      maxlength="140"
+      type="text"
+    />
+    <div
+      class="ob-search-bar__clear"
+      style="display: none;"
+    >
+      <div
+        class="ob-icon ob-icon-close-circle"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-search-bar__action"
+    style="opacity: 0;"
+  >
+    Search
+  </div>
+</div>
+`;
+
+exports[`SearchBar Snap render SearchBar -- props fixed 1`] = `
+<div
+  class="ob-search-bar ob-search-bar--fixed"
+>
+  <div
+    class="ob-search-bar__input-cnt"
+  >
+    <div
+      class="ob-search-bar__placeholder-wrap"
+      style="flex-grow: 1;"
+    >
+      <div
+        class="ob-icon ob-icon-search"
+      />
+      <div
+        class="ob-search-bar__placeholder"
+        style="visibility: visible;"
+      >
+        Search
+      </div>
+    </div>
+    <input
+      class="ob-search-bar__input"
+      maxlength="140"
+      type="text"
+    />
+    <div
+      class="ob-search-bar__clear"
+      style="display: none;"
+    >
+      <div
+        class="ob-icon ob-icon-close-circle"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-search-bar__action"
+    style="opacity: 0;"
+  >
+    Search
+  </div>
+</div>
+`;
+
+exports[`SearchBar Snap render SearchBar -- props focus 1`] = `
+<div
+  class="ob-search-bar"
+>
+  <div
+    class="ob-search-bar__input-cnt"
+  >
+    <div
+      class="ob-search-bar__placeholder-wrap"
+      style="flex-grow: 0;"
+    >
+      <div
+        class="ob-icon ob-icon-search"
+      />
+      <div
+        class="ob-search-bar__placeholder"
+        style="visibility: visible;"
+      >
+        
+      </div>
+    </div>
+    <input
+      class="ob-search-bar__input"
+      maxlength="140"
+      type="text"
+    />
+    <div
+      class="ob-search-bar__clear"
+      style="display: none;"
+    >
+      <div
+        class="ob-icon ob-icon-close-circle"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-search-bar__action"
+    style="opacity: 1; margin-right: 0px;"
+  >
+    Search
+  </div>
+</div>
+`;
+
+exports[`SearchBar Snap render SearchBar -- props inputType number 1`] = `
+<div
+  class="ob-search-bar"
+>
+  <div
+    class="ob-search-bar__input-cnt"
+  >
+    <div
+      class="ob-search-bar__placeholder-wrap"
+      style="flex-grow: 1;"
+    >
+      <div
+        class="ob-icon ob-icon-search"
+      />
+      <div
+        class="ob-search-bar__placeholder"
+        style="visibility: visible;"
+      >
+        Search
+      </div>
+    </div>
+    <input
+      class="ob-search-bar__input"
+      maxlength="140"
+      type="number"
+    />
+    <div
+      class="ob-search-bar__clear"
+      style="display: none;"
+    >
+      <div
+        class="ob-icon ob-icon-close-circle"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-search-bar__action"
+    style="opacity: 0;"
+  >
+    Search
+  </div>
+</div>
+`;
+
+exports[`SearchBar Snap render SearchBar -- props maxLength 1`] = `
+<div
+  class="ob-search-bar"
+>
+  <div
+    class="ob-search-bar__input-cnt"
+  >
+    <div
+      class="ob-search-bar__placeholder-wrap"
+      style="flex-grow: 1;"
+    >
+      <div
+        class="ob-icon ob-icon-search"
+      />
+      <div
+        class="ob-search-bar__placeholder"
+        style="visibility: visible;"
+      >
+        Search
+      </div>
+    </div>
+    <input
+      class="ob-search-bar__input"
+      maxlength="120"
+      type="text"
+    />
+    <div
+      class="ob-search-bar__clear"
+      style="display: none;"
+    >
+      <div
+        class="ob-icon ob-icon-close-circle"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-search-bar__action"
+    style="opacity: 0;"
+  >
+    Search
+  </div>
+</div>
+`;
+
+exports[`SearchBar Snap render SearchBar -- props placeholder 1`] = `
+<div
+  class="ob-search-bar"
+>
+  <div
+    class="ob-search-bar__input-cnt"
+  >
+    <div
+      class="ob-search-bar__placeholder-wrap"
+      style="flex-grow: 1;"
+    >
+      <div
+        class="ob-icon ob-icon-search"
+      />
+      <div
+        class="ob-search-bar__placeholder"
+        style="visibility: visible;"
+      >
+        placeholder
+      </div>
+    </div>
+    <input
+      class="ob-search-bar__input"
+      maxlength="140"
+      type="text"
+    />
+    <div
+      class="ob-search-bar__clear"
+      style="display: none;"
+    >
+      <div
+        class="ob-icon ob-icon-close-circle"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-search-bar__action"
+    style="opacity: 0;"
+  >
+    Search
+  </div>
+</div>
+`;
+
+exports[`SearchBar Snap render SearchBar -- props showActionButton 1`] = `
+<div
+  class="ob-search-bar"
+>
+  <div
+    class="ob-search-bar__input-cnt"
+  >
+    <div
+      class="ob-search-bar__placeholder-wrap"
+      style="flex-grow: 1;"
+    >
+      <div
+        class="ob-icon ob-icon-search"
+      />
+      <div
+        class="ob-search-bar__placeholder"
+        style="visibility: visible;"
+      >
+        Search
+      </div>
+    </div>
+    <input
+      class="ob-search-bar__input"
+      maxlength="140"
+      type="text"
+    />
+    <div
+      class="ob-search-bar__clear"
+      style="display: none;"
+    >
+      <div
+        class="ob-icon ob-icon-close-circle"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-search-bar__action"
+    style="opacity: 1; margin-right: 0px;"
+  >
+    Search
+  </div>
+</div>
+`;
+
+exports[`SearchBar Snap render SearchBar -- props value 1`] = `
+<div
+  class="ob-search-bar"
+>
+  <div
+    class="ob-search-bar__input-cnt"
+  >
+    <div
+      class="ob-search-bar__placeholder-wrap"
+      style="flex-grow: 0;"
+    >
+      <div
+        class="ob-icon ob-icon-search"
+      />
+      <div
+        class="ob-search-bar__placeholder"
+        style="visibility: hidden;"
+      >
+        Search
+      </div>
+    </div>
+    <input
+      class="ob-search-bar__input"
+      maxlength="140"
+      type="text"
+    />
+    <div
+      class="ob-search-bar__clear"
+      style="display: flex;"
+    >
+      <div
+        class="ob-icon ob-icon-close-circle"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-search-bar__action"
+    style="opacity: 1; margin-right: 0px;"
+  >
+    Search
+  </div>
+</div>
+`;
+
+exports[`SearchBar Snap render initial SearchBar 1`] = `
+<div
+  class="ob-search-bar"
+>
+  <div
+    class="ob-search-bar__input-cnt"
+  >
+    <div
+      class="ob-search-bar__placeholder-wrap"
+      style="flex-grow: 1;"
+    >
+      <div
+        class="ob-icon ob-icon-search"
+      />
+      <div
+        class="ob-search-bar__placeholder"
+        style="visibility: visible;"
+      >
+        Search
+      </div>
+    </div>
+    <input
+      class="ob-search-bar__input"
+      maxlength="140"
+      type="text"
+    />
+    <div
+      class="ob-search-bar__clear"
+      style="display: none;"
+    >
+      <div
+        class="ob-icon ob-icon-close-circle"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-search-bar__action"
+    style="opacity: 0;"
+  >
+    Search
+  </div>
+</div>
+`;

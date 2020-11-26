@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Snap render initial Form 1`] = `
+<form
+  class="ob-form"
+>
+  
+  
+</form>
+`;
+
+exports[`Form Snap render initial Form 2`] = `
+<form
+  class="ob-form"
+>
+  
+  
+</form>
+`;

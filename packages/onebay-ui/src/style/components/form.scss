@@ -1,0 +1,10 @@
+@import '../variables/default.scss';
+@import '../mixins/index.scss';
+
+$ob-form-bg-color: $color-bg;
+
+.ob-form {
+  display: block;
+  background-color: $ob-form-bg-color;
+  @include hairline-top-bottom();
+}

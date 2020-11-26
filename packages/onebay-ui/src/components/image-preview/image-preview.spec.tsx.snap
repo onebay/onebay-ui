@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImagePreview Snap render ImagePreview props images 1`] = `
+<div
+  class="ob-image-preview"
+>
+  <div
+    class="ob-image-preview-mask"
+  />
+  <!---->
+</div>
+`;
+
+exports[`ImagePreview Snap render ImagePreview props show 1`] = `
+<div
+  class="ob-image-preview ob-image-preview-active"
+>
+  <div
+    class="ob-image-preview-mask"
+  />
+  <div
+    class="ob-swiper horizontal ob-image-preview-content"
+    style="transform: scale(1, 1);"
+  >
+    <div
+      class="ob-swiper-wrap"
+      style="transform: translate3d(0px,0px,0); transition-duration: 0ms; transition-timing-function: ease;"
+    >
+      
+      
+      <div
+        class="ob-swiper-slide"
+      >
+        <img
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+          style="max-width: 100%;"
+        />
+      </div>
+      <div
+        class="ob-swiper-slide"
+      >
+        <img
+          src="https://zos.alipayobjects.com/rmsportal/hqQWgTXdrlmVVYi.jpeg"
+          style="max-width: 100%;"
+        />
+      </div>
+      <div
+        class="ob-swiper-slide"
+      >
+        <img
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+          style="max-width: 100%;"
+        />
+      </div>
+      <div
+        class="ob-swiper-slide"
+      >
+        <img
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+          style="max-width: 100%;"
+        />
+      </div>
+      <div
+        class="ob-swiper-slide"
+      >
+        <img
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+          style="max-width: 100%;"
+        />
+      </div>
+      
+      
+    </div>
+    <div
+      class="ob-swiper-pagination"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ImagePreview Snap render initial ImagePreview 1`] = `
+<div
+  class="ob-image-preview"
+>
+  <div
+    class="ob-image-preview-mask"
+  />
+  <!---->
+</div>
+`;

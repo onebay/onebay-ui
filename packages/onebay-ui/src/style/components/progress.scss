@@ -1,0 +1,89 @@
+@import '../variables/default.scss';
+@import '../mixins/index.scss';
+
+@keyframes progress-active {
+  from {
+    opacity: 0.5;
+    transform: translate(-100%);
+  }
+
+  to {
+    opacity: 0.1;
+    transform: translate(0);
+  }
+}
+
+.ob-progress {
+  display: flex;
+  align-items: center;
+
+  /* elements */
+  &__outer {
+    flex: 1 1 100%;
+    margin-right: 0;
+    padding-right: 0;
+
+    &-inner {
+      width: 100%;
+      background-color: $ob-progress-inner-bg-color;
+      border-radius: $ob-progress-height / 2;
+      vertical-align: middle;
+
+      &-background {
+        position: relative;
+        height: $ob-progress-height;
+        border-radius: $ob-progress-height / 2;
+        background-color: $ob-progress-bar-bg-color;
+        transition: all 0.3s $ease-in-out-quad;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &__content {
+    flex: 1 1 70px;
+    margin-left: 10px;
+    font-size: $ob-progress-text-size;
+    text-align: center;
+
+    .ob-icon {
+      font-size: $ob-progress-icon-size;
+    }
+  }
+
+  /* modifiers */
+  &--progress {
+    .ob-progress__outer-inner-background::before {
+      content: "";
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $ob-progress-bar-bg-color-active;
+      border-radius: $ob-progress-height / 2;
+      animation: progress-active 2s $ease-out-quad infinite;
+    }
+  }
+
+  &--error {
+    .ob-progress__outer-inner-background {
+      background: $color-error;
+    }
+
+    .ob-icon {
+      color: $color-error;
+    }
+  }
+
+  &--success {
+    .ob-progress__outer-inner-background {
+      background: $color-success;
+    }
+
+    .ob-icon {
+      color: $color-success;
+    }
+  }
+}

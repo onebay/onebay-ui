@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test Button render Button -- props circle 1`] = `
+<div
+  class="ob-button ob-button--normal ob-button--circle"
+>
+  <!---->
+  <div
+    class="ob-button__text"
+  >
+    
+    click me
+    
+  </div>
+</div>
+`;
+
+exports[`test Button render Button -- props disabled 1`] = `
+<div
+  class="ob-button ob-button--normal ob-button--disabled"
+>
+  <!---->
+  <div
+    class="ob-button__text"
+  >
+    
+    click me
+    
+  </div>
+</div>
+`;
+
+exports[`test Button render Button -- props full 1`] = `
+<div
+  class="ob-button ob-button--normal ob-button--full"
+>
+  <!---->
+  <div
+    class="ob-button__text"
+  >
+    
+    click me
+    
+  </div>
+</div>
+`;
+
+exports[`test Button render Button -- props loading 1`] = `
+<div
+  class="ob-button ob-button--icon ob-button--normal"
+>
+  <div
+    class="ob-button__icon"
+  >
+    <div
+      class="ob-loading"
+      style=""
+    >
+      <div
+        class="ob-loading__ring"
+      />
+      <div
+        class="ob-loading__ring"
+        style=""
+      />
+      <div
+        class="ob-loading__ring"
+        data-id="[object Object]"
+      />
+    </div>
+  </div>
+  <div
+    class="ob-button__text"
+  >
+    
+    click me
+    
+  </div>
+</div>
+`;
+
+exports[`test Button render Button -- props size(normal) 1`] = `
+<div
+  class="ob-button ob-button--normal"
+>
+  <!---->
+  <div
+    class="ob-button__text"
+  >
+    
+    click me
+    
+  </div>
+</div>
+`;
+
+exports[`test Button render Button -- props size(primary) 1`] = `
+<div
+  class="ob-button"
+>
+  <!---->
+  <div
+    class="ob-button__text"
+  >
+    
+    click me
+    
+  </div>
+</div>
+`;
+
+exports[`test Button render Button -- props size(secondary) 1`] = `
+<div
+  class="ob-button"
+>
+  <!---->
+  <div
+    class="ob-button__text"
+  >
+    
+    click me
+    
+  </div>
+</div>
+`;
+
+exports[`test Button render Button -- props size(small) 1`] = `
+<div
+  class="ob-button ob-button--small"
+>
+  <!---->
+  <div
+    class="ob-button__text"
+  >
+    
+    click me
+    
+  </div>
+</div>
+`;

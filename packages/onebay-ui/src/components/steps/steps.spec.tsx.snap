@@ -1,0 +1,323 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Steps Snap render Steps -- props className 1`] = `
+<div
+  class="ob-steps test"
+>
+  
+  
+</div>
+`;
+
+exports[`Steps Snap render Steps -- props current 1`] = `
+<div
+  class="ob-steps"
+>
+  
+  <div
+    class="ob-steps__item ob-steps__item--inactive"
+  >
+    <div
+      class="ob-steps__circular-wrap"
+    >
+      <!---->
+      <div
+        class="ob-steps__circular"
+      >
+        <div
+          class="ob-icon ob-icon-sound ob-steps__circle-icon"
+        />
+      </div>
+      <div
+        class="ob-steps__right-line"
+      />
+    </div>
+    <div
+      class="ob-steps__title"
+    >
+      step1
+    </div>
+    <div
+      class="ob-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  <div
+    class="ob-steps__item ob-steps__item--active"
+  >
+    <div
+      class="ob-steps__circular-wrap"
+    >
+      <div
+        class="ob-steps__left-line"
+      />
+      <div
+        class="ob-steps__circular"
+      >
+        <div
+          class="ob-icon ob-icon-shopping-cart ob-steps__circle-icon"
+        />
+      </div>
+      <div
+        class="ob-steps__right-line"
+      />
+    </div>
+    <div
+      class="ob-steps__title"
+    >
+      step2
+    </div>
+    <div
+      class="ob-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  <div
+    class="ob-steps__item ob-steps__item--inactive"
+  >
+    <div
+      class="ob-steps__circular-wrap"
+    >
+      <div
+        class="ob-steps__left-line"
+      />
+      <div
+        class="ob-steps__circular"
+      >
+        <div
+          class="ob-icon ob-icon-camera ob-steps__circle-icon"
+        />
+      </div>
+      <!---->
+    </div>
+    <div
+      class="ob-steps__title"
+    >
+      step3
+    </div>
+    <div
+      class="ob-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Steps Snap render Steps -- props customStyle 1`] = `
+<div
+  class="ob-steps"
+  style="color: red;"
+>
+  
+  
+</div>
+`;
+
+exports[`Steps Snap render Steps -- props items 1`] = `
+<div
+  class="ob-steps"
+>
+  
+  <div
+    class="ob-steps__item ob-steps__item--active"
+  >
+    <div
+      class="ob-steps__circular-wrap"
+    >
+      <!---->
+      <div
+        class="ob-steps__circular"
+      >
+        <div
+          class="ob-icon ob-icon-sound ob-steps__circle-icon"
+        />
+      </div>
+      <div
+        class="ob-steps__right-line"
+      />
+    </div>
+    <div
+      class="ob-steps__title"
+    >
+      step1
+    </div>
+    <div
+      class="ob-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  <div
+    class="ob-steps__item ob-steps__item--inactive"
+  >
+    <div
+      class="ob-steps__circular-wrap"
+    >
+      <div
+        class="ob-steps__left-line"
+      />
+      <div
+        class="ob-steps__circular"
+      >
+        <div
+          class="ob-icon ob-icon-shopping-cart ob-steps__circle-icon"
+        />
+      </div>
+      <div
+        class="ob-steps__right-line"
+      />
+    </div>
+    <div
+      class="ob-steps__title"
+    >
+      step2
+    </div>
+    <div
+      class="ob-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  <div
+    class="ob-steps__item ob-steps__item--inactive"
+  >
+    <div
+      class="ob-steps__circular-wrap"
+    >
+      <div
+        class="ob-steps__left-line"
+      />
+      <div
+        class="ob-steps__circular"
+      >
+        <div
+          class="ob-icon ob-icon-camera ob-steps__circle-icon"
+        />
+      </div>
+      <!---->
+    </div>
+    <div
+      class="ob-steps__title"
+    >
+      step3
+    </div>
+    <div
+      class="ob-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Steps Snap render Steps -- props items 2`] = `
+<div
+  class="ob-steps"
+>
+  
+  <div
+    class="ob-steps__item ob-steps__item--active"
+  >
+    <div
+      class="ob-steps__circular-wrap"
+    >
+      <!---->
+      <div
+        class="ob-icon ob-icon-check-circle ob-steps__single-icon ob-steps__single-icon--success"
+      />
+      <div
+        class="ob-steps__right-line"
+      />
+    </div>
+    <div
+      class="ob-steps__title"
+    >
+      step1
+    </div>
+    <div
+      class="ob-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  <div
+    class="ob-steps__item ob-steps__item--inactive"
+  >
+    <div
+      class="ob-steps__circular-wrap"
+    >
+      <div
+        class="ob-steps__left-line"
+      />
+      <div
+        class="ob-steps__circular"
+      >
+        <div
+          class="ob-steps__num"
+        >
+          2
+        </div>
+      </div>
+      <div
+        class="ob-steps__right-line"
+      />
+    </div>
+    <div
+      class="ob-steps__title"
+    >
+      step2
+    </div>
+    <div
+      class="ob-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  <div
+    class="ob-steps__item ob-steps__item--inactive"
+  >
+    <div
+      class="ob-steps__circular-wrap"
+    >
+      <div
+        class="ob-steps__left-line"
+      />
+      <div
+        class="ob-steps__circular"
+      >
+        <div
+          class="ob-steps__num"
+        >
+          3
+        </div>
+      </div>
+      <!---->
+    </div>
+    <div
+      class="ob-steps__title"
+    >
+      step3
+    </div>
+    <div
+      class="ob-steps__desc"
+    >
+      Here is additional information, up to two lines
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Steps Snap render initial Steps 1`] = `
+<div
+  class="ob-steps"
+>
+  
+  
+</div>
+`;

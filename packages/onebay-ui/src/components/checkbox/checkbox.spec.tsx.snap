@@ -1,0 +1,373 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox Event Checkbox onChange 1`] = `
+<div
+  class="ob-checkbox"
+>
+  
+  <div
+    class="ob-checkbox__option"
+  >
+    <div
+      class="ob-checkbox__option-wrap"
+    >
+      <div
+        class="ob-checkbox__option-cnt"
+      >
+        <div
+          class="ob-checkbox__icon-cnt"
+        >
+          <span
+            class="ob-icon ob-icon-check"
+          />
+        </div>
+        <div
+          class="ob-checkbox__title"
+        >
+          iPhone X
+        </div>
+      </div>
+      <div
+        class="ob-checkbox__desc"
+      >
+        Some regions provide electronic ordinary invoices, which users can print by themselves, and the effect is equivalent to paper ordinary invoices. The actual invoice type shall prevail.
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-checkbox__option ob-checkbox__option--selected"
+  >
+    <div
+      class="ob-checkbox__option-wrap"
+    >
+      <div
+        class="ob-checkbox__option-cnt"
+      >
+        <div
+          class="ob-checkbox__icon-cnt"
+        >
+          <span
+            class="ob-icon ob-icon-check"
+          />
+        </div>
+        <div
+          class="ob-checkbox__title"
+        >
+          HUAWEI P20
+        </div>
+      </div>
+      <!---->
+    </div>
+  </div>
+  <div
+    class="ob-checkbox__option ob-checkbox__option--disabled"
+  >
+    <div
+      class="ob-checkbox__option-wrap"
+    >
+      <div
+        class="ob-checkbox__option-cnt"
+      >
+        <div
+          class="ob-checkbox__icon-cnt"
+        >
+          <span
+            class="ob-icon ob-icon-check"
+          />
+        </div>
+        <div
+          class="ob-checkbox__title"
+        >
+          OPPO Find X
+        </div>
+      </div>
+      <div
+        class="ob-checkbox__desc"
+      >
+        Some regions provide electronic ordinary invoices, which users can print by themselves, and the effect is equivalent to paper ordinary invoices. The actual invoice type shall prevail.
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-checkbox__option ob-checkbox__option--disabled"
+  >
+    <div
+      class="ob-checkbox__option-wrap"
+    >
+      <div
+        class="ob-checkbox__option-cnt"
+      >
+        <div
+          class="ob-checkbox__icon-cnt"
+        >
+          <span
+            class="ob-icon ob-icon-check"
+          />
+        </div>
+        <div
+          class="ob-checkbox__title"
+        >
+          vivo NEX
+        </div>
+      </div>
+      <div
+        class="ob-checkbox__desc"
+      >
+        Some regions provide electronic ordinary invoices, which users can print by themselves, and the effect is equivalent to paper ordinary invoices. The actual invoice type shall prevail.
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Checkbox Snap render Checkbox -- props options 1`] = `
+<div
+  class="ob-checkbox"
+>
+  
+  <div
+    class="ob-checkbox__option"
+  >
+    <div
+      class="ob-checkbox__option-wrap"
+    >
+      <div
+        class="ob-checkbox__option-cnt"
+      >
+        <div
+          class="ob-checkbox__icon-cnt"
+        >
+          <span
+            class="ob-icon ob-icon-check"
+          />
+        </div>
+        <div
+          class="ob-checkbox__title"
+        >
+          iPhone X
+        </div>
+      </div>
+      <div
+        class="ob-checkbox__desc"
+      >
+        Some regions provide electronic ordinary invoices, which users can print by themselves, and the effect is equivalent to paper ordinary invoices. The actual invoice type shall prevail.
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-checkbox__option"
+  >
+    <div
+      class="ob-checkbox__option-wrap"
+    >
+      <div
+        class="ob-checkbox__option-cnt"
+      >
+        <div
+          class="ob-checkbox__icon-cnt"
+        >
+          <span
+            class="ob-icon ob-icon-check"
+          />
+        </div>
+        <div
+          class="ob-checkbox__title"
+        >
+          HUAWEI P20
+        </div>
+      </div>
+      <!---->
+    </div>
+  </div>
+  <div
+    class="ob-checkbox__option ob-checkbox__option--disabled"
+  >
+    <div
+      class="ob-checkbox__option-wrap"
+    >
+      <div
+        class="ob-checkbox__option-cnt"
+      >
+        <div
+          class="ob-checkbox__icon-cnt"
+        >
+          <span
+            class="ob-icon ob-icon-check"
+          />
+        </div>
+        <div
+          class="ob-checkbox__title"
+        >
+          OPPO Find X
+        </div>
+      </div>
+      <div
+        class="ob-checkbox__desc"
+      >
+        Some regions provide electronic ordinary invoices, which users can print by themselves, and the effect is equivalent to paper ordinary invoices. The actual invoice type shall prevail.
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-checkbox__option ob-checkbox__option--disabled"
+  >
+    <div
+      class="ob-checkbox__option-wrap"
+    >
+      <div
+        class="ob-checkbox__option-cnt"
+      >
+        <div
+          class="ob-checkbox__icon-cnt"
+        >
+          <span
+            class="ob-icon ob-icon-check"
+          />
+        </div>
+        <div
+          class="ob-checkbox__title"
+        >
+          vivo NEX
+        </div>
+      </div>
+      <div
+        class="ob-checkbox__desc"
+      >
+        Some regions provide electronic ordinary invoices, which users can print by themselves, and the effect is equivalent to paper ordinary invoices. The actual invoice type shall prevail.
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Checkbox Snap render Checkbox -- props selectedList 1`] = `
+<div
+  class="ob-checkbox"
+>
+  
+  <div
+    class="ob-checkbox__option"
+  >
+    <div
+      class="ob-checkbox__option-wrap"
+    >
+      <div
+        class="ob-checkbox__option-cnt"
+      >
+        <div
+          class="ob-checkbox__icon-cnt"
+        >
+          <span
+            class="ob-icon ob-icon-check"
+          />
+        </div>
+        <div
+          class="ob-checkbox__title"
+        >
+          iPhone X
+        </div>
+      </div>
+      <div
+        class="ob-checkbox__desc"
+      >
+        Some regions provide electronic ordinary invoices, which users can print by themselves, and the effect is equivalent to paper ordinary invoices. The actual invoice type shall prevail.
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-checkbox__option ob-checkbox__option--selected"
+  >
+    <div
+      class="ob-checkbox__option-wrap"
+    >
+      <div
+        class="ob-checkbox__option-cnt"
+      >
+        <div
+          class="ob-checkbox__icon-cnt"
+        >
+          <span
+            class="ob-icon ob-icon-check"
+          />
+        </div>
+        <div
+          class="ob-checkbox__title"
+        >
+          HUAWEI P20
+        </div>
+      </div>
+      <!---->
+    </div>
+  </div>
+  <div
+    class="ob-checkbox__option ob-checkbox__option--disabled"
+  >
+    <div
+      class="ob-checkbox__option-wrap"
+    >
+      <div
+        class="ob-checkbox__option-cnt"
+      >
+        <div
+          class="ob-checkbox__icon-cnt"
+        >
+          <span
+            class="ob-icon ob-icon-check"
+          />
+        </div>
+        <div
+          class="ob-checkbox__title"
+        >
+          OPPO Find X
+        </div>
+      </div>
+      <div
+        class="ob-checkbox__desc"
+      >
+        Some regions provide electronic ordinary invoices, which users can print by themselves, and the effect is equivalent to paper ordinary invoices. The actual invoice type shall prevail.
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-checkbox__option ob-checkbox__option--disabled"
+  >
+    <div
+      class="ob-checkbox__option-wrap"
+    >
+      <div
+        class="ob-checkbox__option-cnt"
+      >
+        <div
+          class="ob-checkbox__icon-cnt"
+        >
+          <span
+            class="ob-icon ob-icon-check"
+          />
+        </div>
+        <div
+          class="ob-checkbox__title"
+        >
+          vivo NEX
+        </div>
+      </div>
+      <div
+        class="ob-checkbox__desc"
+      >
+        Some regions provide electronic ordinary invoices, which users can print by themselves, and the effect is equivalent to paper ordinary invoices. The actual invoice type shall prevail.
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Checkbox Snap render initial Checkbox 1`] = `
+<div
+  class="ob-checkbox"
+>
+  
+  
+</div>
+`;

@@ -1,0 +1,32 @@
+@import '../variables/default.scss';
+@import '../mixins/index.scss';
+
+.ob-pagination {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 $ob-pagination-margin;
+
+  &__btn-prev,
+  &__btn-next {
+    font-size: 0;
+
+    .ob-icon {
+      color: $ob-pagination-icon-color;
+      font-size: $ob-pagination-icon-font-size;
+    }
+  }
+
+  &__number {
+    flex: 1;
+    color: $ob-pagination-num-color;
+    font-size: $ob-pagination-num-font-size;
+    text-align: center;
+    overflow: hidden;
+
+    &-current {
+      color: $ob-pagination-current-num-color;
+    }
+  }
+}

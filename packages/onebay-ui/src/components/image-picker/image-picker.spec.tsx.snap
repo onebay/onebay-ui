@@ -1,0 +1,736 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImagePicker Snap render ImagePicker -- props className 1`] = `
+<div
+  class="ob-image-picker test"
+>
+  
+  <div
+    class="ob-image-picker__flex-box"
+  >
+    
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item ob-image-picker__choose-btn"
+      >
+        <div
+          class="add-bar"
+        />
+        <div
+          class="add-bar"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    
+  </div>
+  
+</div>
+`;
+
+exports[`ImagePicker Snap render ImagePicker -- props customStyle 1`] = `
+<div
+  class="ob-image-picker"
+  style="color: red;"
+>
+  
+  <div
+    class="ob-image-picker__flex-box"
+  >
+    
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item ob-image-picker__choose-btn"
+      >
+        <div
+          class="add-bar"
+        />
+        <div
+          class="add-bar"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    
+  </div>
+  
+</div>
+`;
+
+exports[`ImagePicker Snap render ImagePicker -- props files 1`] = `
+<div
+  class="ob-image-picker"
+>
+  
+  <div
+    class="ob-image-picker__flex-box"
+  >
+    
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/hqQWgTXdrlmVVYi.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    
+  </div>
+  <div
+    class="ob-image-picker__flex-box"
+  >
+    
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item ob-image-picker__choose-btn"
+      >
+        <div
+          class="add-bar"
+        />
+        <div
+          class="add-bar"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    
+  </div>
+  
+</div>
+`;
+
+exports[`ImagePicker Snap render ImagePicker -- props length 1`] = `
+<div
+  class="ob-image-picker"
+>
+  
+  <div
+    class="ob-image-picker__flex-box"
+  >
+    
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/hqQWgTXdrlmVVYi.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    
+  </div>
+  <div
+    class="ob-image-picker__flex-box"
+  >
+    
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item ob-image-picker__choose-btn"
+      >
+        <div
+          class="add-bar"
+        />
+        <div
+          class="add-bar"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    
+  </div>
+  
+</div>
+`;
+
+exports[`ImagePicker Snap render ImagePicker -- props mode 1`] = `
+<div
+  class="ob-image-picker"
+  mode="top"
+>
+  
+  <div
+    class="ob-image-picker__flex-box"
+  >
+    
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/hqQWgTXdrlmVVYi.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    
+  </div>
+  <div
+    class="ob-image-picker__flex-box"
+  >
+    
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item ob-image-picker__choose-btn"
+      >
+        <div
+          class="add-bar"
+        />
+        <div
+          class="add-bar"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    
+  </div>
+  
+</div>
+`;
+
+exports[`ImagePicker Snap render ImagePicker -- props multiple 1`] = `
+<div
+  class="ob-image-picker"
+>
+  
+  <div
+    class="ob-image-picker__flex-box"
+  >
+    
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/hqQWgTXdrlmVVYi.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    
+  </div>
+  <div
+    class="ob-image-picker__flex-box"
+  >
+    
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item ob-image-picker__choose-btn"
+      >
+        <div
+          class="add-bar"
+        />
+        <div
+          class="add-bar"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    
+  </div>
+  
+</div>
+`;
+
+exports[`ImagePicker Snap render ImagePicker -- props showAddBtn 1`] = `
+<div
+  class="ob-image-picker"
+>
+  
+  <div
+    class="ob-image-picker__flex-box"
+  >
+    
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/hqQWgTXdrlmVVYi.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    
+  </div>
+  <div
+    class="ob-image-picker__flex-box"
+  >
+    
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item"
+      >
+        <div
+          class="ob-image-picker__remove-btn"
+        />
+        <img
+          class="ob-image-picker__preview-img"
+          src="https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    
+  </div>
+  
+</div>
+`;
+
+exports[`ImagePicker Snap render initial ImagePicker 1`] = `
+<div
+  class="ob-image-picker"
+>
+  
+  <div
+    class="ob-image-picker__flex-box"
+  >
+    
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <div
+        class="ob-image-picker__item ob-image-picker__choose-btn"
+      >
+        <div
+          class="add-bar"
+        />
+        <div
+          class="add-bar"
+        />
+      </div>
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-image-picker__flex-item"
+    >
+      <!---->
+    </div>
+    
+  </div>
+  
+</div>
+`;

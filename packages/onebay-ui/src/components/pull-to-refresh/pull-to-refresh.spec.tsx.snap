@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PullToRefresh props render PullToRefresh init 1`] = `
+<div
+  class="ob-pull-to-refresh ob-pull-to-refresh-down"
+>
+  <div
+    class="ob-pull-to-refresh-wrapper"
+  >
+    <div
+      class="ob-pull-to-refresh__track"
+    >
+      <div
+        class="ob-pull-to-refresh-indicator"
+      >
+        
+        <svg
+          aria-labelledby="loading"
+          class="icon-loading"
+          height="24"
+          role="presentation"
+          style="vertical-align: -6px; margin-right: 4px;"
+          viewBox="0 0 1024 1024"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="currentColor"
+          >
+            
+            <g>
+              <path
+                d="M512 512m-426.666667 0a426.666667 426.666667 0 1 0 853.333334 0 426.666667 426.666667 0 1 0-853.333334 0Z"
+                fill="#959BA7"
+                fill-opacity=".3"
+                p-id="740"
+              />
+              <path
+                d="M938.666667 512c0-235.648-191.018667-426.666667-426.666667-426.666667v426.666667h426.666667z"
+                fill="#008CD1"
+                p-id="741"
+              />
+              <path
+                d="M512 512m-320 0a320 320 0 1 0 640 0 320 320 0 1 0-640 0Z"
+                fill="#FFFFFF"
+                p-id="742"
+              />
+            </g>
+            
+          </g>
+        </svg>
+        loading...
+        
+      </div>
+      <!---->
+      <!---->
+    </div>
+  </div>
+</div>
+`;

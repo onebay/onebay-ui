@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Message Snap render Message -- props className 1`] = `
+<div
+  class="ob-message ob-message--hidden ob-message--info test"
+>
+  
+</div>
+`;
+
+exports[`Message Snap render Message -- props customStyle 1`] = `
+<div
+  class="ob-message ob-message--hidden ob-message--info"
+  style="color: red;"
+>
+  
+</div>
+`;
+
+exports[`Message Snap render initial Message 1`] = `
+<div
+  class="ob-message ob-message--hidden ob-message--info"
+>
+  
+</div>
+`;
+
+exports[`Message Snap render opened Message -- props duration : 0  1`] = `
+<div
+  class="ob-message ob-message--show ob-message--info"
+>
+  
+</div>
+`;

@@ -1,0 +1,130 @@
+@import '../variables/default.scss';
+@import '../mixins/index.scss';
+
+.ob-timeline-item {
+  position: relative;
+  padding: 0 0 $spacing-v-sm;
+
+  /* elements */
+  &__content {
+    margin-left: $ob-timeline-offset-left;
+    min-height: 56px;
+    color: $ob-timeline-title-color;
+    font-size: $ob-timeline-title-font-size;
+    line-height: $line-height-zh;
+    text-align: left;
+
+    &--sub {
+      color: $ob-timeline-desc-color;
+      font-size: $ob-timeline-desc-font-size;
+    }
+  }
+
+  &__dot,
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: $ob-timeline-dot-size;
+    height: $ob-timeline-dot-size;
+    font-size: 0;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: $border-radius-circle;
+    background: $ob-timeline-dot-color;
+    box-sizing: border-box;
+    z-index: 1;
+
+    .ob-icon {
+      font-size: $ob-timeline-dot-size;
+    }
+  }
+
+  &__dot {
+    &::after {
+      content: '';
+      display: inline-block;
+      box-sizing: border-box;
+      width: $ob-timeline-dot-size;
+      height: $ob-timeline-dot-size;
+      border: 1PX solid transparent;
+      border-radius: $border-radius-circle;
+      border-color: $ob-timeline-dot-border-color;
+    }
+
+    &.ob-timeline-item__icon {
+      &::after {
+        border-color: transparent;
+      }
+    }
+  }
+
+  &__icon {
+    color: $ob-timeline-dot-border-color;
+  }
+
+  &__tail {
+    position: absolute;
+    top: $ob-timeline-dot-size / 2;
+    bottom: -$ob-timeline-dot-size / 2;
+    left: $ob-timeline-dot-size / 2 - 2px;
+    border-left: 1PX solid $ob-timeline-line-color;
+  }
+
+  /* modifiers */
+  &--green {
+    .ob-timeline-item__icon {
+      color: $color-success;
+    }
+
+    .ob-timeline-item__dot {
+      &::after {
+        border-color: $color-success;
+      }
+    }
+  }
+
+  &--red {
+    .ob-timeline-item__icon {
+      color: $color-error;
+    }
+
+    .ob-timeline-item__dot {
+      &::after {
+        border-color: $color-error;
+      }
+    }
+  }
+
+  &--yellow {
+    .ob-timeline-item__icon {
+      color: $color-warning;
+    }
+
+    .ob-timeline-item__dot {
+      &::after {
+        border-color: $color-warning;
+      }
+    }
+  }
+}
+
+.ob-timeline {
+  .ob-timeline-item:last-child {
+    .ob-timeline-item__tail {
+      display: none;
+    }
+  }
+
+  &--pending {
+    .ob-timeline-item:nth-last-child(2) {
+      .ob-timeline-item__content {
+        min-height: 80px;
+      }
+
+      .ob-timeline-item__tail {
+        border-left-style: dotted;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import '../variables/default.scss';
+@import '../mixins/index.scss';
+
+.ob-range {
+  position: relative;
+  padding: 0 $ob-range-slider-size / 2 + 4PX;
+  width: 100%;
+  box-sizing: border-box;
+
+  /* elements */
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: $ob-range-slider-size;
+    box-sizing: border-box;
+  }
+
+  &__rail {
+    width: 100%;
+    height: $ob-range-rail-height;
+    background-color: $ob-range-rail-bg-color;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  &__track {
+    position: absolute;
+    height: $ob-range-rail-height;
+    background-color: $ob-range-track-bg-color;
+  }
+
+  &__slider {
+    position: absolute;
+    margin-left: -$ob-range-slider-size / 2;
+    width: $ob-range-slider-size;
+    height: $ob-range-slider-size;
+    border-radius: 50%;
+    background-color: $ob-range-slider-color;
+    box-shadow: $ob-range-slider-shadow;
+    box-sizing: border-box;
+  }
+
+  /* modifiers */
+  &--disabled {
+    opacity: $opacity-disabled;
+  }
+}

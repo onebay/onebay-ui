@@ -1,0 +1,38 @@
+@import '../variables/default.scss';
+@import '../mixins/index.scss';
+
+.ob-fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: $ob-fab-size;
+  height: $ob-fab-size;
+  color: $color-white;
+  font-size: $font-size-base;
+  line-height: $line-height-zh;
+  text-align: center;
+  border-radius: 50%;
+  background: $ob-fab-bg-color;
+  box-shadow: $ob-fab-box-shadow;
+  box-sizing: border-box;
+
+  &:active {
+    background: $ob-fab-bg-color-active;
+    box-shadow: $ob-fab-box-shadow-active;
+  }
+
+  /* elements */
+  &__icon,
+  .ob-icon {
+    width: $ob-fab-icon-size;
+    height: $ob-fab-icon-size;
+    font-size: $ob-fab-icon-size;
+  }
+
+  /* modifiers */
+  &--small {
+    width: $ob-fab-size-sm;
+    height: $ob-fab-size-sm;
+  }
+}

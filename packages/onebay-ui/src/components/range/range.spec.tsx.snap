@@ -1,0 +1,290 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Range Snap render Range -- props blockSize 1`] = `
+<div
+  class="ob-range"
+>
+  <div
+    class="ob-range__container"
+  >
+    <div
+      class="ob-range__rail"
+    />
+    <div
+      class="ob-range__track"
+      style="left: 0%; width: 0%;"
+    />
+    <div
+      class="ob-range__slider"
+      style="left: 0%;"
+    />
+    <div
+      class="ob-range__slider"
+      style="left: 0%;"
+    />
+  </div>
+</div>
+`;
+
+exports[`Range Snap render Range -- props className 1`] = `
+<div
+  class="ob-range test"
+>
+  <div
+    class="ob-range__container"
+  >
+    <div
+      class="ob-range__rail"
+    />
+    <div
+      class="ob-range__track"
+      style="left: 0%; width: 0%;"
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Range Snap render Range -- props customStyle 1`] = `
+<div
+  class="ob-range"
+  style="color: red;"
+>
+  <div
+    class="ob-range__container"
+  >
+    <div
+      class="ob-range__rail"
+    />
+    <div
+      class="ob-range__track"
+      style="left: 0%; width: 0%;"
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Range Snap render Range -- props disabled 1`] = `
+<div
+  class="ob-range ob-range--disabled"
+>
+  <div
+    class="ob-range__container"
+  >
+    <div
+      class="ob-range__rail"
+    />
+    <div
+      class="ob-range__track"
+      style="left: 0%; width: 0%;"
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Range Snap render Range -- props max 1`] = `
+<div
+  class="ob-range"
+>
+  <div
+    class="ob-range__container"
+  >
+    <div
+      class="ob-range__rail"
+    />
+    <div
+      class="ob-range__track"
+      style="left: 0%; width: 0%;"
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Range Snap render Range -- props min 1`] = `
+<div
+  class="ob-range"
+>
+  <div
+    class="ob-range__container"
+  >
+    <div
+      class="ob-range__rail"
+    />
+    <div
+      class="ob-range__track"
+      style="left: 0%; width: 0%;"
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Range Snap render Range -- props railStyle 1`] = `
+<div
+  class="ob-range"
+>
+  <div
+    class="ob-range__container"
+  >
+    <div
+      class="ob-range__rail"
+      style="color: red;"
+    />
+    <div
+      class="ob-range__track"
+      style="left: 0%; width: 0%;"
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Range Snap render Range -- props sliderStyle 1`] = `
+<div
+  class="ob-range"
+>
+  <div
+    class="ob-range__container"
+  >
+    <div
+      class="ob-range__rail"
+    />
+    <div
+      class="ob-range__track"
+      style="left: 0%; width: 0%;"
+    />
+    <div
+      class="ob-range__slider"
+      style="color: red;"
+    />
+    <div
+      class="ob-range__slider"
+      style="color: red;"
+    />
+  </div>
+</div>
+`;
+
+exports[`Range Snap render Range -- props trackStyle 1`] = `
+<div
+  class="ob-range"
+>
+  <div
+    class="ob-range__container"
+  >
+    <div
+      class="ob-range__rail"
+      style="color: red;"
+    />
+    <div
+      class="ob-range__track"
+      style="left: 0%; width: 0%;"
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Range Snap render Range -- props value 1`] = `
+<div
+  class="ob-range"
+>
+  <div
+    class="ob-range__container"
+  >
+    <div
+      class="ob-range__rail"
+    />
+    <div
+      class="ob-range__track"
+      style="left: 0%; width: 0%;"
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Range Snap render initial Range 1`] = `
+<div
+  class="ob-range"
+>
+  <div
+    class="ob-range__container"
+  >
+    <div
+      class="ob-range__rail"
+    />
+    <div
+      class="ob-range__track"
+      style="left: 0%; width: 0%;"
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+    <div
+      class="ob-range__slider"
+      style=""
+    />
+  </div>
+</div>
+`;

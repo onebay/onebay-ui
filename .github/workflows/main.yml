@@ -15,7 +15,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./packages/swift-ui
+        working-directory: ./packages/onebay-ui
 
     steps:
       - uses: actions/checkout@v2

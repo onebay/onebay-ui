@@ -1,0 +1,557 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Snap render Input -- props border 1`] = `
+<div
+  class="ob-input ob-input--without-border"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="text"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props clear 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="text"
+    />
+    
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props disabled 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container ob-input--disabled"
+  >
+    <div
+      class="ob-input__overlay"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="text"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props editable 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container ob-input--disabled"
+  >
+    <div
+      class="ob-input__overlay"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="text"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props error 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container ob-input--error"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="text"
+    />
+    <!---->
+    <div
+      class="ob-input__icon"
+    >
+      <div
+        class="ob-icon ob-icon-alert-circle ob-input__icon-alert"
+      />
+    </div>
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props maxLength 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="text"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props name 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="text"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props placeholder 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder="placeholder"
+      type="text"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props required 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    <label
+      class="ob-input__title ob-input__title--required"
+      for=""
+    >
+      name
+    </label>
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="text"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props style 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="text"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props title 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    <label
+      class="ob-input__title"
+      for=""
+    >
+      title
+    </label>
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="text"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props type(digit) 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="digit"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props type(idcard) 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="idcard"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props type(number) 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="number"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props type(password) 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="text"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props type(phone) 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="number"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render Input -- props value 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="text"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input Snap render initial Input 1`] = `
+<div
+  class="ob-input"
+>
+  <div
+    class="ob-input__container"
+  >
+    <div
+      class="ob-input__overlay ob-input__overlay--hidden"
+    />
+    
+    <input
+      class="ob-input__input"
+      id="name"
+      name="name"
+      placeholder=""
+      type="text"
+    />
+    <!---->
+    <!---->
+    <div
+      class="ob-input__children"
+    >
+      
+      
+    </div>
+  </div>
+</div>
+`;

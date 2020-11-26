@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag Snap render Tag -- props active 1`] = `
+<div
+  class="ob-tag ob-tag--normal ob-tag--active"
+>
+  
+  Tag
+  
+</div>
+`;
+
+exports[`Tag Snap render Tag -- props circle 1`] = `
+<div
+  class="ob-tag ob-tag--normal ob-tag--circle"
+>
+  
+  Tag
+  
+</div>
+`;
+
+exports[`Tag Snap render Tag -- props disabled 1`] = `
+<div
+  class="ob-tag ob-tag--normal ob-tag--disabled"
+>
+  
+  Tag
+  
+</div>
+`;
+
+exports[`Tag Snap render Tag -- props name 1`] = `
+<div
+  class="ob-tag ob-tag--normal"
+>
+  
+  Tag
+  
+</div>
+`;
+
+exports[`Tag Snap render Tag -- props size 1`] = `
+<div
+  class="ob-tag ob-tag--small"
+>
+  
+  Tag
+  
+</div>
+`;
+
+exports[`Tag Snap render Tag -- props type 1`] = `
+<div
+  class="ob-tag ob-tag--normal ob-tag--primary"
+>
+  
+  Tag
+  
+</div>
+`;

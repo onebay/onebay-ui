@@ -1,0 +1,330 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputNumber Snap render InputNumber -- props className 1`] = `
+<div
+  class="ob-input-number test"
+>
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"
+    />
+  </div>
+  <input
+    class="ob-input-number__input"
+    type="number"
+  />
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-add ob-input-number__btn-add"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputNumber Snap render InputNumber -- props customStyle 1`] = `
+<div
+  class="ob-input-number"
+  style="color: red;"
+>
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"
+    />
+  </div>
+  <input
+    class="ob-input-number__input"
+    type="number"
+  />
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-add ob-input-number__btn-add"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputNumber Snap render InputNumber -- props disabled 1`] = `
+<div
+  class="ob-input-number"
+>
+  <div
+    class="ob-input-number__btn ob-input-number--disabled"
+  >
+    <div
+      class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"
+    />
+  </div>
+  <input
+    class="ob-input-number__input"
+    disabled=""
+    type="number"
+  />
+  <div
+    class="ob-input-number__btn ob-input-number--disabled"
+  >
+    <div
+      class="ob-icon ob-icon-add ob-input-number__btn-add"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputNumber Snap render InputNumber -- props disabledInput 1`] = `
+<div
+  class="ob-input-number"
+>
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"
+    />
+  </div>
+  <input
+    class="ob-input-number__input"
+    disabled=""
+    type="number"
+  />
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-add ob-input-number__btn-add"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputNumber Snap render InputNumber -- props size 1`] = `
+<div
+  class="ob-input-number ob-input-number--lg"
+>
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"
+    />
+  </div>
+  <input
+    class="ob-input-number__input"
+    type="number"
+  />
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-add ob-input-number__btn-add"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputNumber Snap render InputNumber -- props step 1`] = `
+<div
+  class="ob-input-number"
+>
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"
+    />
+  </div>
+  <input
+    class="ob-input-number__input"
+    type="number"
+  />
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-add ob-input-number__btn-add"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputNumber Snap render InputNumber -- props type(digit) 1`] = `
+<div
+  class="ob-input-number"
+>
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"
+    />
+  </div>
+  <input
+    class="ob-input-number__input"
+    type="digit"
+  />
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-add ob-input-number__btn-add"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputNumber Snap render InputNumber -- props type(number) 1`] = `
+<div
+  class="ob-input-number"
+>
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"
+    />
+  </div>
+  <input
+    class="ob-input-number__input"
+    type="number"
+  />
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-add ob-input-number__btn-add"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputNumber Snap render InputNumber -- props value & min = "" 1`] = `
+<div
+  class="ob-input-number"
+>
+  <div
+    class="ob-input-number__btn ob-input-number--disabled"
+  >
+    <div
+      class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"
+    />
+  </div>
+  <input
+    class="ob-input-number__input"
+    type="number"
+  />
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-add ob-input-number__btn-add"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputNumber Snap render InputNumber -- props value = "a" 1`] = `
+<div
+  class="ob-input-number"
+>
+  <div
+    class="ob-input-number__btn ob-input-number--disabled"
+  >
+    <div
+      class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"
+    />
+  </div>
+  <input
+    class="ob-input-number__input"
+    type="number"
+  />
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-add ob-input-number__btn-add"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputNumber Snap render InputNumber -- props value 1`] = `
+<div
+  class="ob-input-number"
+>
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"
+    />
+  </div>
+  <input
+    class="ob-input-number__input"
+    type="number"
+  />
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-add ob-input-number__btn-add"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputNumber Snap render InputNumber -- props width 1`] = `
+<div
+  class="ob-input-number"
+>
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"
+    />
+  </div>
+  <input
+    class="ob-input-number__input"
+    style="width: 200px;"
+    type="number"
+  />
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-add ob-input-number__btn-add"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputNumber Snap render initial InputNumber 1`] = `
+<div
+  class="ob-input-number"
+>
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"
+    />
+  </div>
+  <input
+    class="ob-input-number__input"
+    type="number"
+  />
+  <div
+    class="ob-input-number__btn"
+  >
+    <div
+      class="ob-icon ob-icon-add ob-input-number__btn-add"
+    />
+  </div>
+</div>
+`;

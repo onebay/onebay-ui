@@ -11,7 +11,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./packages/swift-ui
+        working-directory: ./packages/onebay-ui
 
     steps:
       - uses: actions/checkout@v2
@@ -26,14 +26,14 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          path-to-lcov: ./packages/swift-ui/tests/coverage/lcov.info
+          path-to-lcov: ./packages/onebay-ui/tests/coverage/lcov.info
           parallel: true
 
       - name: Comment Test Coverage
         uses: AthleticNet/comment-test-coverage@1.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          path: packages/swift-ui/tests/coverage/coverage-summary.json
+          path: packages/onebay-ui/tests/coverage/coverage-summary.json
           title: Test Coverage
 
   finish:

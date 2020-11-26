@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar Behavior  NavBar click right first icon 1`] = `
+<div
+  class="ob-nav-bar"
+>
+  <div
+    class="ob-nav-bar__left-view"
+  >
+    <!---->
+  </div>
+  <div
+    class="ob-nav-bar__title"
+  >
+    
+    
+  </div>
+  <div
+    class="ob-nav-bar__right-view"
+  >
+    
+    <div
+      class="ob-icon ob-icon-bullet-list"
+    />
+    <div
+      class="ob-icon ob-icon-user"
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`NavBar Behavior  NavBar click right second icon 1`] = `
+<div
+  class="ob-nav-bar"
+>
+  <div
+    class="ob-nav-bar__left-view"
+  >
+    <!---->
+  </div>
+  <div
+    class="ob-nav-bar__title"
+  >
+    
+    
+  </div>
+  <div
+    class="ob-nav-bar__right-view"
+  >
+    
+    <div
+      class="ob-icon ob-icon-bullet-list"
+    />
+    <div
+      class="ob-icon ob-icon-user"
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`NavBar Behavior  NavBar onClickLeftIcon 1`] = `
+<div
+  class="ob-nav-bar"
+>
+  <div
+    class="ob-nav-bar__left-view"
+  >
+    <div
+      class="ob-icon ob-icon-chevron-left"
+    />
+  </div>
+  <div
+    class="ob-nav-bar__title"
+  >
+    
+    
+  </div>
+  <div
+    class="ob-nav-bar__right-view"
+  >
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`NavBar Snap render NavBar -- props className 1`] = `
+<div
+  class="ob-nav-bar test"
+>
+  <div
+    class="ob-nav-bar__left-view"
+  >
+    <!---->
+  </div>
+  <div
+    class="ob-nav-bar__title"
+  >
+    
+    
+  </div>
+  <div
+    class="ob-nav-bar__right-view"
+  >
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`NavBar Snap render NavBar -- props color 1`] = `
+<div
+  class="ob-nav-bar"
+>
+  <div
+    class="ob-nav-bar__left-view"
+    style="color: rgb(255, 255, 255);"
+  >
+    <!---->
+  </div>
+  <div
+    class="ob-nav-bar__title"
+  >
+    
+    
+  </div>
+  <div
+    class="ob-nav-bar__right-view"
+  >
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`NavBar Snap render NavBar -- props customStyle 1`] = `
+<div
+  class="ob-nav-bar"
+  style="color: red;"
+>
+  <div
+    class="ob-nav-bar__left-view"
+  >
+    <!---->
+  </div>
+  <div
+    class="ob-nav-bar__title"
+  >
+    
+    
+  </div>
+  <div
+    class="ob-nav-bar__right-view"
+  >
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`NavBar Snap render NavBar -- props fixed 1`] = `
+<div
+  class="ob-nav-bar ob-nav-bar--fixed"
+>
+  <div
+    class="ob-nav-bar__left-view"
+  >
+    <!---->
+  </div>
+  <div
+    class="ob-nav-bar__title"
+  >
+    
+    
+  </div>
+  <div
+    class="ob-nav-bar__right-view"
+  >
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`NavBar Snap render NavBar -- props leftContent 1`] = `
+<div
+  class="ob-nav-bar"
+>
+  <div
+    class="ob-nav-bar__left-view"
+    style="color: rgb(255, 255, 255);"
+  >
+    <div
+      class="ob-icon ob-icon-chevron-left"
+    />
+  </div>
+  <div
+    class="ob-nav-bar__title"
+  >
+    
+    
+  </div>
+  <div
+    class="ob-nav-bar__right-view"
+  >
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`NavBar Snap render NavBar -- props title 1`] = `
+<div
+  class="ob-nav-bar"
+>
+  <div
+    class="ob-nav-bar__left-view"
+  >
+    <!---->
+  </div>
+  <div
+    class="ob-nav-bar__title"
+  >
+    
+    <span>
+      test
+    </span>
+    
+  </div>
+  <div
+    class="ob-nav-bar__right-view"
+  >
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`NavBar Snap render initial NavBar 1`] = `
+<div
+  class="ob-nav-bar"
+>
+  <div
+    class="ob-nav-bar__left-view"
+  >
+    <!---->
+  </div>
+  <div
+    class="ob-nav-bar__title"
+  >
+    
+    
+  </div>
+  <div
+    class="ob-nav-bar__right-view"
+  >
+    <!---->
+  </div>
+</div>
+`;

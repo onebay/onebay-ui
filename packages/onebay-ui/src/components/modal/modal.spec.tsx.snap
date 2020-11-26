@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Snap render initial Modal 1`] = `
+<div>
+  <div
+    class="ob-modal"
+  >
+    <div
+      class="ob-modal__overlay"
+    />
+    <div
+      class="ob-modal__container"
+    >
+      
+      <div
+        class="ob-modal__header"
+      >
+        
+        This is Title 
+        
+      </div>
+      <div
+        class="ob-modal__content"
+        scroll-y="true"
+      >
+        
+        This is Modal Content  This is Modal Content This is Modal Content
+        
+      </div>
+      <div
+        class="ob-modal__footer"
+      >
+        <div
+          class="ob-modal__action"
+        >
+          
+          <div
+            class="ob-button ob-button--normal"
+          >
+            <!---->
+            <div
+              class="ob-button__text"
+            >
+              
+              Cancel
+              
+            </div>
+          </div>
+          <div
+            class="ob-button ob-button--normal"
+          >
+            <!---->
+            <div
+              class="ob-button__text"
+            >
+              
+              Confirm
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Modal Snap render opened  Modal -- simple 1`] = `
+<div>
+  <div
+    class="ob-modal ob-modal--active"
+  >
+    <div
+      class="ob-modal__overlay"
+    />
+    <div
+      class="ob-modal__container"
+    >
+      <div
+        class="ob-modal__header"
+      >
+        
+        <div>
+          This is Title 
+        </div>
+        
+      </div>
+      <div
+        class="ob-modal__content"
+        scroll-y="true"
+      >
+        
+        <div
+          class="content-simple"
+        >
+          <div>
+            This is Modal Content 
+
+ This is Modal Content
+          </div>
+        </div>
+        
+      </div>
+      <div
+        class="ob-modal__footer ob-modal__footer--simple"
+      >
+        <div
+          class="ob-modal__action"
+        >
+          
+          
+          <button>
+            Confirm
+          </button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Modal Snap render opened Modal -- not header 1`] = `
+<div>
+  <div
+    class="ob-modal ob-modal--active"
+  >
+    <div
+      class="ob-modal__overlay"
+    />
+    <div
+      class="ob-modal__container"
+    >
+      
+      <div
+        class="ob-modal__content"
+        scroll-y="true"
+      >
+        
+        This is Modal Content  This is Modal Content This is Modal Content
+        
+      </div>
+      <div
+        class="ob-modal__footer"
+      >
+        <div
+          class="ob-modal__action"
+        >
+          
+          <div
+            class="ob-button ob-button--normal"
+          >
+            <!---->
+            <div
+              class="ob-button__text"
+            >
+              
+              Cancel
+              
+            </div>
+          </div>
+          <div
+            class="ob-button ob-button--normal"
+          >
+            <!---->
+            <div
+              class="ob-button__text"
+            >
+              
+              Confirm
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Modal Snap render opened Modal -- single button 1`] = `
+<div>
+  <div
+    class="ob-modal ob-modal--active"
+  >
+    <div
+      class="ob-modal__overlay"
+    />
+    <div
+      class="ob-modal__container"
+    >
+      
+      <div
+        class="ob-modal__content"
+        scroll-y="true"
+      >
+        
+        This is Modal Content  This is Modal Content This is Modal Content
+        
+      </div>
+      <div
+        class="ob-modal__footer"
+      >
+        <div
+          class="ob-modal__action"
+        >
+          
+          <div
+            class="ob-button ob-button--normal"
+          >
+            <!---->
+            <div
+              class="ob-button__text"
+            >
+              
+              Confirm
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Modal Snap render opened Modal 1`] = `
+<div>
+  <div
+    class="ob-modal ob-modal--active"
+  >
+    <div
+      class="ob-modal__overlay"
+    />
+    <div
+      class="ob-modal__container"
+    >
+      
+      <div
+        class="ob-modal__header"
+      >
+        
+        This is Title 
+        
+      </div>
+      <div
+        class="ob-modal__content"
+        scroll-y="true"
+      >
+        
+        This is Modal Content  This is Modal Content This is Modal Content
+        
+      </div>
+      <div
+        class="ob-modal__footer"
+      >
+        <div
+          class="ob-modal__action"
+        >
+          
+          <div
+            class="ob-button ob-button--normal"
+          >
+            <!---->
+            <div
+              class="ob-button__text"
+            >
+              
+              Cancel
+              
+            </div>
+          </div>
+          <div
+            class="ob-button ob-button--normal"
+          >
+            <!---->
+            <div
+              class="ob-button__text"
+            >
+              
+              Confirm
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge Snap render Badge -- props maxValue 1`] = `
+<div
+  class="ob-badge"
+>
+  
+  
+  <!---->
+  <div>
+    <div
+      class="ob-badge__num"
+    >
+      9+
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Badge Snap render Badge -- props value less than maxValue 1`] = `
+<div
+  class="ob-badge"
+>
+  
+  
+  <!---->
+  <div>
+    <div
+      class="ob-badge__num"
+    >
+      4
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Badge Snap render Badge -- props value not valid 1`] = `
+<div
+  class="ob-badge"
+>
+  
+  
+  <!---->
+  <div>
+    <div
+      class="ob-badge__num"
+    >
+      s
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Badge Snap render Loading -- props dot 1`] = `
+<div
+  class="ob-badge"
+>
+  
+  
+  <div
+    class="ob-badge__dot"
+  />
+  <!---->
+</div>
+`;
+
+exports[`Badge Snap render initial Badge 1`] = `
+<div
+  class="ob-badge"
+>
+  
+  
+  <!---->
+  
+</div>
+`;

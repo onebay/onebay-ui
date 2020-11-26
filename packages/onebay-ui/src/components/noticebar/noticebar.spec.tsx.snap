@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Noticebar Event Noticebar onClose 1`] = `
+<div
+  class="ob-noticebar ob-noticebar--marquee"
+>
+  <div
+    class="ob-noticebar__close"
+  >
+    <div
+      class="ob-icon ob-icon-close"
+    />
+  </div>
+  <div
+    class="ob-noticebar__content"
+  >
+    
+    <div
+      class="ob-noticebar__content-text"
+    >
+      <div
+        class="ob-noticebar__content-inner onebay-2020"
+        style="animation-duration: 0s;"
+      >
+        
+        这是内容
+        
+      </div>
+    </div>
+    <!---->
+    <div
+      class="ob-noticebar__more-icon"
+    >
+      <div
+        class="ob-icon ob-icon-chevron-right"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Noticebar Snap render Noticebar -- props icon 1`] = `
+<div
+  class="ob-noticebar"
+>
+  <!---->
+  <div
+    class="ob-noticebar__content"
+  >
+    <div
+      class="ob-noticebar__content-icon"
+    >
+      <div
+        class="ob-icon ob-icon-volume-plus"
+      />
+    </div>
+    <div
+      class="ob-noticebar__content-text"
+    >
+      <div
+        class="ob-noticebar__content-inner"
+      >
+        
+        这是内容
+        
+      </div>
+    </div>
+    <!---->
+    <div
+      class="ob-noticebar__more-icon"
+    >
+      <div
+        class="ob-icon ob-icon-chevron-right"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Noticebar Snap render Noticebar -- props moreText & showMore 1`] = `
+<div
+  class="ob-noticebar ob-noticebar--single"
+>
+  <!---->
+  <div
+    class="ob-noticebar__content"
+  >
+    
+    <div
+      class="ob-noticebar__content-text"
+    >
+      <div
+        class="ob-noticebar__content-inner"
+      >
+        
+        这是内容
+        
+      </div>
+    </div>
+    <div
+      class="ob-noticebar__more"
+    >
+      <div
+        class="text"
+      >
+        see details
+      </div>
+    </div>
+    <div
+      class="ob-noticebar__more-icon"
+    >
+      <div
+        class="ob-icon ob-icon-chevron-right"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Noticebar Snap render Noticebar -- props show 1`] = `
+<div
+  class="ob-noticebar"
+>
+  <div
+    class="ob-noticebar__close"
+  >
+    <div
+      class="ob-icon ob-icon-close"
+    />
+  </div>
+  <div
+    class="ob-noticebar__content"
+  >
+    
+    <div
+      class="ob-noticebar__content-text"
+    >
+      <div
+        class="ob-noticebar__content-inner"
+      >
+        
+        这是内容
+        
+      </div>
+    </div>
+    <!---->
+    <div
+      class="ob-noticebar__more-icon"
+    >
+      <div
+        class="ob-icon ob-icon-chevron-right"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Noticebar Snap render Noticebar -- props single 1`] = `
+<div
+  class="ob-noticebar ob-noticebar--single"
+>
+  <!---->
+  <div
+    class="ob-noticebar__content"
+  >
+    
+    <div
+      class="ob-noticebar__content-text"
+    >
+      <div
+        class="ob-noticebar__content-inner"
+      >
+        
+        这是内容
+        
+      </div>
+    </div>
+    <!---->
+    <div
+      class="ob-noticebar__more-icon"
+    >
+      <div
+        class="ob-icon ob-icon-chevron-right"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Noticebar Snap render Noticebar -- props speed 1`] = `
+<div
+  class="ob-noticebar"
+>
+  <!---->
+  <div
+    class="ob-noticebar__content"
+  >
+    
+    <div
+      class="ob-noticebar__content-text"
+    >
+      <div
+        class="ob-noticebar__content-inner"
+      >
+        
+        这是内容
+        
+      </div>
+    </div>
+    <!---->
+    <div
+      class="ob-noticebar__more-icon"
+    >
+      <div
+        class="ob-icon ob-icon-chevron-right"
+      />
+    </div>
+  </div>
+</div>
+`;

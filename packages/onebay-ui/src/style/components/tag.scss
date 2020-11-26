@@ -1,0 +1,59 @@
+@import '../variables/default.scss';
+@import '../mixins/index.scss';
+
+$ob-tag-border-size: 1PX;
+
+.ob-tag {
+  display: inline-block;
+  padding: 0 $spacing-h-xl;
+  height: $ob-tag-height;
+  color: $ob-tag-color;
+  font-size: $ob-tag-font-size;
+  text-align: center;
+  line-height: $ob-tag-height - 2px;
+  vertical-align: middle;
+  border: $ob-tag-border-size solid $ob-tag-border-color;
+  border-radius: $border-radius-md;
+  background-color: $ob-tag-bg-color;
+  box-sizing: border-box;
+
+  /* modifiers */
+  &--primary {
+    color: $ob-tag-color-primary;
+    border-color: $ob-tag-border-color-primary;
+    background-color: $ob-tag-bg-color-primary;
+  }
+
+  &--active {
+    color: $ob-tag-color-active;
+    border-color: $ob-tag-border-color-active;
+    background-color: $ob-tag-bg-color-active;
+
+    &.ob-tag--primary {
+      color: $ob-tag-color-primary-active;
+      border-color: $ob-tag-border-color-active;
+      background-color: $ob-tag-bg-color-primary-active;
+    }
+  }
+
+  &--disabled {
+    opacity: $opacity-disabled;
+  }
+
+  &--circle {
+    border-radius: $ob-tag-height / 2;
+    background-clip: border-box;
+    overflow: hidden;
+  }
+
+  &--small {
+    padding: 0 $spacing-h-md;
+    height: $ob-tag-height-sm;
+    font-size: $ob-tag-font-size-sm;
+    line-height: $ob-tag-height-sm - 2px;
+
+    &.ob-tag--circle {
+      border-radius: $ob-tag-height-sm / 2;
+    }
+  }
+}

@@ -1,0 +1,587 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Snap render completed List -- no border 1`] = `
+<div
+  class="ob-list ob-list--no-border"
+>
+  
+  <div
+    class="ob-list__item ob-list__item--no-border"
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title text
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-list__item ob-list__item--no-border"
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title text
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`List Snap render completed List 1`] = `
+<div
+  class="ob-list"
+>
+  
+  <div
+    class="ob-list__item"
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title text
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-list__item"
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title text
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        
+        
+        <div
+          class="item-extra__icon"
+        >
+          <div
+            class="ob-icon item-extra__icon-arrow ob-icon-chevron-right"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-list__item ob-list__item--multiple"
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title text
+          </div>
+          <div
+            class="item-content__info-note"
+          >
+            Description
+          </div>
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-list__item ob-list__item--disabled"
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Disabled state
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        <div
+          class="item-extra__info"
+        >
+          details
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-list__item ob-list__item--multiple"
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title text
+          </div>
+          <div
+            class="item-content__info-note"
+          >
+            Description
+          </div>
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        
+        
+        <div
+          class="item-extra__icon"
+        >
+          <div
+            class="ob-icon item-extra__icon-arrow ob-icon-chevron-right"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-list__item"
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title text
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        <div
+          class="item-extra__info"
+        >
+          details
+        </div>
+        
+        <div
+          class="item-extra__icon"
+        >
+          <div
+            class="ob-icon item-extra__icon-arrow ob-icon-chevron-right"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-list__item ob-list__item--multiple"
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title textTitle textTitle textTitle textTitle text
+          </div>
+          <div
+            class="item-content__info-note"
+          >
+            Description
+          </div>
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        <div
+          class="item-extra__info"
+        >
+          details details details details
+        </div>
+        
+        <div
+          class="item-extra__icon"
+        >
+          <div
+            class="ob-icon item-extra__icon-arrow ob-icon-chevron-right"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-list__item ob-list__item--thumb ob-list__item--multiple"
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      <div
+        class="ob-list__item-thumb item-thumb"
+      >
+        <img
+          class="item-thumb__info"
+          src="http://img12.360buyimg.com/jdphoto/s72x72_jfs/t10660/330/203667368/1672/801735d7/59c85643N31e68303.png"
+        />
+      </div>
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title text
+          </div>
+          <div
+            class="item-content__info-note"
+          >
+            Description
+          </div>
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        <div
+          class="item-extra__info"
+        >
+          details
+        </div>
+        
+        <div
+          class="item-extra__icon"
+        >
+          <div
+            class="ob-icon item-extra__icon-arrow ob-icon-chevron-right"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-list__item ob-list__item--thumb ob-list__item--multiple"
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      <div
+        class="ob-list__item-thumb item-thumb"
+      >
+        <img
+          class="item-thumb__info"
+          src="http://img12.360buyimg.com/jdphoto/s72x72_jfs/t10660/330/203667368/1672/801735d7/59c85643N31e68303.png"
+        />
+      </div>
+      <div
+        class="ob-list__item-icon item-icon"
+      >
+        <div
+          class="ob-icon ob-icon-calendar"
+          style="color: rgb(120, 164, 250); font-size: 25px;"
+        />
+      </div>
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title text
+          </div>
+          <div
+            class="item-content__info-note"
+          >
+            Description
+          </div>
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        <div
+          class="item-extra__info"
+        >
+          details
+        </div>
+        
+        <div
+          class="item-extra__icon"
+        >
+          <div
+            class="ob-icon item-extra__icon-arrow ob-icon-chevron-right"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-list__item"
+    isswitch=""
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title text
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-list__item ob-list__item--disabled"
+    isswitch=""
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title text
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-list__item"
+    isswitch=""
+    switchischeck=""
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title text
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-list__item ob-list__item--disabled"
+    isswitch=""
+    switchischeck=""
+  >
+    <div
+      class="ob-list__item-container"
+    >
+      
+      
+      <div
+        class="ob-list__item-content item-content"
+      >
+        <div
+          class="item-content__info"
+        >
+          <div
+            class="item-content__info-title"
+          >
+            Title text
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="ob-list__item-extra item-extra"
+      >
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;

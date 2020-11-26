@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio Snap render Radio 1`] = `
+<div
+  class="ob-radio"
+>
+  
+  <div
+    class="ob-radio__option"
+  >
+    <div
+      class="ob-radio__option-wrap"
+    >
+      <div
+        class="ob-radio__option-container"
+      >
+        <div
+          class="ob-radio__title"
+        >
+          Radio one
+        </div>
+        <div
+          class="ob-radio__icon"
+        >
+          <div
+            class="ob-icon ob-icon-check text"
+          />
+        </div>
+      </div>
+      <!---->
+    </div>
+  </div>
+  <div
+    class="ob-radio__option"
+  >
+    <div
+      class="ob-radio__option-wrap"
+    >
+      <div
+        class="ob-radio__option-container"
+      >
+        <div
+          class="ob-radio__title"
+        >
+          Radio two
+        </div>
+        <div
+          class="ob-radio__icon"
+        >
+          <div
+            class="ob-icon ob-icon-check text"
+          />
+        </div>
+      </div>
+      <div
+        class="ob-radio__desc"
+      >
+        Radio description two
+      </div>
+    </div>
+  </div>
+  <div
+    class="ob-radio__option ob-radio__option--disabled"
+  >
+    <div
+      class="ob-radio__option-wrap"
+    >
+      <div
+        class="ob-radio__option-container"
+      >
+        <div
+          class="ob-radio__title"
+        >
+          Radio three
+        </div>
+        <div
+          class="ob-radio__icon"
+        >
+          <div
+            class="ob-icon ob-icon-check text"
+          />
+        </div>
+      </div>
+      <div
+        class="ob-radio__desc"
+      >
+        Radio description three
+      </div>
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Radio Snap render Radio default options 1`] = `
+<div
+  class="ob-radio"
+>
+  
+  
+</div>
+`;
