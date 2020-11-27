@@ -8,7 +8,7 @@ export default defineComponent({
   components: {
     Picker
   },
-  setup(props) {
+  setup() {
     const state = reactive({
       selector: ['java', 'python', 'typescript'],
       multiSelector: [
