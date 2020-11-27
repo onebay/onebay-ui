@@ -8,7 +8,7 @@
 
 ```tsx
 import { defineComponent, reactive } from 'vue'
-import { Button, Modal, ModalAction, ModalHeader, ModalContent } from 'onebay-ui/src/index'
+import { Button, Modal, ModalAction, ModalHeader, ModalContent } from 'onebay-ui/src'
 import toast from 'onebay-ui/src/plugins/toast'
 import modal from 'onebay-ui/src/plugins/modal'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'

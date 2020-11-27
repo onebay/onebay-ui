@@ -8,7 +8,7 @@
 
 ```tsx
 import { defineComponent, ref } from 'vue'
-import { ActionSheet, ActionSheetItem, Button } from 'onebay-ui/src/index'
+import { ActionSheet, ActionSheetItem, Button } from 'onebay-ui/src'
 import toast from 'onebay-ui/src/plugins/toast'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 

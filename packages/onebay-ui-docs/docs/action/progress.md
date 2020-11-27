@@ -8,7 +8,7 @@
 
 ```tsx
 import { defineComponent, ref } from 'vue'
-import { Button, Progress } from 'onebay-ui/src/index'
+import { Button, Progress } from 'onebay-ui/src'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import './index.scss'
 

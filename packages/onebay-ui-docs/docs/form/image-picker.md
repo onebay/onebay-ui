@@ -8,7 +8,7 @@
 
 ```tsx
 import { defineComponent, reactive, toRaw } from 'vue'
-import { ImagePicker } from 'onebay-ui/src/index'
+import { ImagePicker } from 'onebay-ui/src'
 import toast from 'onebay-ui/src/plugins/toast'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 

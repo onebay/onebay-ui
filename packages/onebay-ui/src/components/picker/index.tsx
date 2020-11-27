@@ -76,7 +76,13 @@ const Picker = defineComponent({
     rangeKey: {
       type: String,
       default: ''
-    }
+    },
+    // eslint-disable-next-line vue/require-default-prop
+    onChange: { type: Function },
+    // eslint-disable-next-line vue/require-default-prop
+    onCancel: { type: Function },
+    // eslint-disable-next-line vue/require-default-prop
+    onColumnchange: { type: Function }
   },
   emits: ['change', 'columnchange', 'cancel'],
   setup() {

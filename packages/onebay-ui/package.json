@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "onebay-ui",
   "version": "1.0.0",
   "description": "",
   "browser": "dist/index.umd.js",

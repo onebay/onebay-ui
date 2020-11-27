@@ -8,71 +8,82 @@
 
 ```vue
 <template>
-  <div id="vueSwiper" class="demo-list">
-    <h4>横向无缝切换</h4>
-    <at-swiper :paginationVisibile="true" direction="horizontal" :swiperData="dataImgItem">
-      <div v-for="(item, index) in dataImgItem" :key="index" class="ob-swiper-slide">
-        <img :src="item.imgSrc" style="max-width: 100%" />
-      </div>
-    </at-swiper>
+  <div class="page">
+    <DocsHeader title="Steps"></DocsHeader>
 
-    <h4>横向切换</h4>
-    <at-swiper
-      :paginationVisibile="true"
-      direction="horizontal"
-      :swiperData="dataImgItem"
-      :canDragging="false"
-      :paginationVisible="true"
-    >
-      <div v-for="(item, index) in dataImgItem" :key="index" class="ob-swiper-slide">
-        <img :src="item.imgSrc" style="max-width: 100%" />
+    <div class="doc-body">
+      <div class="panel">
+        <div class="panel__title">Seamless horizontal switching</div>
+        <Swiper :paginationVisibile="true" direction="horizontal" :swiperData="dataImgItem">
+          <div v-for="(item, index) in dataImgItem" :key="index" class="ob-swiper-slide">
+            <img :src="item.imgSrc" style="max-width: 100%" />
+          </div>
+        </Swiper>
       </div>
-    </at-swiper>
-
-    <h4>横向循环切换</h4>
-    <at-swiper
-      :paginationVisibile="true"
-      direction="horizontal"
-      :swiperData="dataImgItem"
-      :loop="true"
-      :canDragging="false"
-      :paginationVisible="true"
-    >
-      <div v-for="(item, index) in dataImgItem" :key="index" class="ob-swiper-slide">
-        <img :src="item.imgSrc" style="max-width: 100%" />
+      <div class="panel">
+        <div class="panel__title">horizontal switching</div>
+        <Swiper
+          :paginationVisibile="true"
+          direction="horizontal"
+          :swiperData="dataImgItem"
+          :canDragging="false"
+          :paginationVisible="true"
+        >
+          <div v-for="(item, index) in dataImgItem" :key="index" class="ob-swiper-slide">
+            <img :src="item.imgSrc" style="max-width: 100%" />
+          </div>
+        </Swiper>
       </div>
-    </at-swiper>
-
-    <h4>纵向自动播放</h4>
-    <at-swiper direction="vertical" :autoPlay="3000" :swiperData="dataImgItem">
-      <div v-for="(item, index) in dataImgItem" :key="index" class="ob-swiper-slide">
-        <img :src="item.imgSrc" style="max-width: 100%" />
+      <div class="panel">
+        <div class="panel__title">horizontal cycle switching</div>
+        <Swiper
+          :paginationVisibile="true"
+          direction="horizontal"
+          :swiperData="dataImgItem"
+          :loop="true"
+          :canDragging="false"
+          :paginationVisible="true"
+        >
+          <div v-for="(item, index) in dataImgItem" :key="index" class="ob-swiper-slide">
+            <img :src="item.imgSrc" style="max-width: 100%" />
+          </div>
+        </Swiper>
       </div>
-    </at-swiper>
-
-    <h4>滑动懒加载图片</h4>
-    <at-swiper
-      direction="horizontal"
-      :paginationClickable="true"
-      :swiperData="dataImgItem"
-      :lazyLoad="true"
-      :paginationVisible="true"
-      @slideChangeEnd="slideChangeEnd"
-      @slideMove="slideMove"
-      @slideChangeStart="slideChangeStart"
-    >
-      <div v-for="(item, index) in dataImgItem" :key="index" class="ob-swiper-slide">
-        <img :data-src="item.imgSrc" style="max-width: 100%" class="ob-img-lazyload" />
+      <div class="panel">
+        <div class="panel__title">Portrait auto play</div>
+        <Swiper direction="vertical" :autoPlay="3000" :swiperData="dataImgItem">
+          <div v-for="(item, index) in dataImgItem" :key="index" class="ob-swiper-slide">
+            <img :src="item.imgSrc" style="max-width: 100%" />
+          </div>
+        </Swiper>
       </div>
-    </at-swiper>
+      <div class="panel">
+        <div class="panel__title">Swipe to lazy load pictures</div>
+        <Swiper
+          direction="horizontal"
+          :paginationClickable="true"
+          :swiperData="dataImgItem"
+          :lazyLoad="true"
+          :paginationVisible="true"
+          @slideChangeEnd="slideChangeEnd"
+          @slideMove="slideMove"
+          @slideChangeStart="slideChangeStart"
+        >
+          <div v-for="(item, index) in dataImgItem" :key="index" class="ob-swiper-slide">
+            <img :data-src="item.imgSrc" style="max-width: 100%" class="ob-img-lazyload" />
+          </div>
+        </Swiper>
+      </div>
+    </div>
   </div>
 </template>
 <script>
 import { defineComponent } from 'vue'
 import { Swiper } from '/@/onebay-ui/src/index.ts'
 export default defineComponent({
+  name: 'SwiperPage',
   components: {
-    'ob-swiper': Swiper
+    Swiper
   },
   data() {
     return {
@@ -130,22 +141,14 @@ export default defineComponent({
   }
 })
 </script>
-<style lang="scss">
-#vueSwiper {
+<style lang="scss" scoped>
+.page {
   .ob-swiper-slide {
     font-size: 24px;
     justify-content: center;
     align-items: center;
     display: flex;
   }
-  // .ob-swiper-slide:nth-child(1), .ob-swiper-slide:nth-child(3){
-  //     color:#fff;
-  //     background:#848689;
-  // }
-  // .ob-swiper-slide:nth-child(2), .ob-swiper-slide:nth-child(4){
-  //     color:#333;
-  //     background:#ccc;
-  // }
 }
 </style>
 

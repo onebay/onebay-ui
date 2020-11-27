@@ -1,5 +1,5 @@
 {
-  "name": "onebay-ui",
+  "name": "onebay-ui-demo",
   "version": "0.0.0",
   "scripts": {
     "start": "vite",

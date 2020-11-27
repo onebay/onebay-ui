@@ -8,7 +8,7 @@
 
 ```tsx
 import { defineComponent, reactive } from 'vue'
-import { Checkbox } from 'onebay-ui/src/index'
+import { Checkbox } from 'onebay-ui/src'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({

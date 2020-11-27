@@ -93,9 +93,6 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import { Picker } from '/@/onebay-ui/src/index.ts'
-// import './ob-picker.scss'
-// import './ob-animate.scss'
-// import './ob-mask.scss'
 import './index.scss'
 
 export default defineComponent({
