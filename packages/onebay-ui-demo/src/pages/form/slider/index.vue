@@ -1,5 +1,8 @@
 <template>
   <div class="page">
+    <Noticebar marquee>
+      This component only supports Touch events, please use mobile mode/device to open this page.
+    </Noticebar>
     <!-- S Header -->
     <DocsHeader title="Slider"></DocsHeader>
     <!-- E Header -->
@@ -77,11 +80,12 @@
 <script>
 import './index.scss'
 import { defineComponent } from 'vue'
-import { Slider } from '/@/onebay-ui/src/index.ts'
+import { Slider, Noticebar } from '/@/onebay-ui/src/index.ts'
 export default defineComponent({
   name: 'SliderPage',
   components: {
-    Slider
+    Slider,
+    Noticebar
   }
 })
 </script>

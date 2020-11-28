@@ -61,10 +61,10 @@ $component: '.ob-switch';
   }
 }
 
-.ob-switch {
+.ob-switch-input {
   appearance: none;
 }
-.ob-switch {
+.ob-switch-input {
   position: relative;
   width: 52px;
   height: 32px;
@@ -93,13 +93,13 @@ $component: '.ob-switch';
       width: 28px;
       height: 28px;
       border-radius: 15px;
-      background-color:$color-bg; // 固定色值
+      background-color:$color-bg; 
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
       transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
   }
 }
 
-.ob-switch:checked {
+.ob-switch-input:checked {
   border-color: $color-brand;
   background-color: $color-brand;
   &:before {

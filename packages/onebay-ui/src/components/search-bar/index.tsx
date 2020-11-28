@@ -64,7 +64,9 @@ const SearchBar = defineComponent({
       default: () => {
         /* */
       }
-    }
+    },
+    // eslint-disable-next-line vue/require-default-prop
+    onChange: { type: Function }
   },
   emits: ['focus', 'blur', 'change'],
   setup(props) {

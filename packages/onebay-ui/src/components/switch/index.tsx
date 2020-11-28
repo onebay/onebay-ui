@@ -35,7 +35,9 @@ const Switch = defineComponent({
     title: {
       type: String,
       default: ''
-    }
+    },
+    // eslint-disable-next-line vue/require-default-prop
+    onChange: { type: Function }
   },
   emits: ['change'],
   setup(props, { emit }) {
@@ -92,7 +94,7 @@ const Switch = defineComponent({
           <div class="ob-switch__mask"></div>
           <input
             type="checkbox"
-            class="ob-switch ob-switch__switch"
+            class="ob-switch-input ob-switch__switch"
             style={style}
             checked={isChecked}
             name={name}

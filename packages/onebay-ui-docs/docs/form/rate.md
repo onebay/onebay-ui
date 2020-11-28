@@ -36,7 +36,7 @@ export default defineComponent({
       return (
         <div class="page">
           {/* <!-- S Header --> */}
-          <DocsHeader title="Rate 评分"></DocsHeader>
+          <DocsHeader title="Rate"></DocsHeader>
           {/* <!-- E Header --> */}
 
           {/* <!-- S Body --> */}
@@ -118,7 +118,7 @@ export default defineComponent({
 <template>
   <div class="page">
     <!-- S Header -->
-    <DocsHeader title="Rate 评分"></DocsHeader>
+    <DocsHeader title="Rate"></DocsHeader>
     <!-- E Header -->
 
     <!-- S Body -->

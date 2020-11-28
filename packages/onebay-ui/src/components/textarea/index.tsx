@@ -59,7 +59,9 @@ const Textarea = defineComponent({
     textOverflowForbidden: {
       type: Boolean,
       default: true
-    }
+    },
+    // eslint-disable-next-line vue/require-default-prop
+    onChange: { type: Function }
   },
   emits: ['change', 'focus', 'blur', 'confirm'],
   setup(props) {
