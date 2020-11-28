@@ -1,14 +1,14 @@
 <template>
   <div class="page">
     <!-- S Header -->
-    <DocsHeader title="Rate 评分"></DocsHeader>
+    <DocsHeader title="Rate"></DocsHeader>
     <!-- E Header -->
 
     <!-- S Body -->
     <div class="doc-body">
-      <!-- 基础用法 -->
+      <!-- Basic usage -->
       <div class="panel">
-        <div class="panel__title">基础用法</div>
+        <div class="panel__title">Basic usage</div>
         <div class="panel__content">
           <div class="example-item">
             <Rate :value="rateValue1" :onChange="handleRateChange.bind(this, 'rateValue1')" />
@@ -16,9 +16,9 @@
         </div>
       </div>
 
-      <!-- 自定义尺寸 -->
+      <!-- Custom size -->
       <div class="panel">
-        <div class="panel__title">自定义尺寸</div>
+        <div class="panel__title">Custom size</div>
         <div class="panel__content">
           <div class="example-item">
             <Rate
@@ -30,9 +30,9 @@
         </div>
       </div>
 
-      <!-- 自定义评分数 -->
+      <!-- Custom rate -->
       <div class="panel">
-        <div class="panel__title">自定义评分数</div>
+        <div class="panel__title">Custom rate</div>
         <div class="panel__content">
           <div class="example-item">
             <Rate
@@ -44,9 +44,9 @@
         </div>
       </div>
 
-      <!-- 自定义星星间隔 -->
+      <!-- Custom margin -->
       <div class="panel">
-        <div class="panel__title">自定义星星间隔</div>
+        <div class="panel__title">Custom margin</div>
         <div class="panel__content">
           <div class="example-item">
             <Rate
@@ -58,12 +58,12 @@
         </div>
       </div>
 
-      <!-- 只读 -->
+      <!-- Readonly -->
       <div class="panel">
-        <div class="panel__title">只读</div>
+        <div class="panel__title">Readonly</div>
         <div class="panel__content">
           <div class="example-item">
-            <div>评分: 3.5</div>
+            <div>rate: 3.5</div>
             <div>
               <Rate :value="3.5" />
             </div>

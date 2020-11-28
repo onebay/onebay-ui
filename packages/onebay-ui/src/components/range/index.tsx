@@ -51,7 +51,9 @@ const Range = defineComponent({
       default: () => {
         /* */
       }
-    }
+    },
+    // eslint-disable-next-line vue/require-default-prop
+    onChange: { type: Function }
   },
   emits: ['change'],
   setup(props) {
@@ -176,7 +178,7 @@ const Range = defineComponent({
       const a = Math.round((aX / 100) * this.deltaValue) + this.min
       const b = Math.round((bX / 100) * this.deltaValue) + this.min
       const result = [a, b].sort((x, y) => x - y)
-
+      console.log('result :>> ', result)
       if (funcName === 'onChange') {
         this.$emit('change', result)
       } else {

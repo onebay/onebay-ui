@@ -27,7 +27,9 @@ const Rate = defineComponent({
     margin: {
       type: Number,
       default: 5
-    }
+    },
+    // eslint-disable-next-line vue/require-default-prop
+    onChange: { type: Function }
   },
   emits: ['change'],
   setup(props) {
@@ -67,8 +69,8 @@ const Rate = defineComponent({
     }
   },
   methods: {
-    handleClick(event: Event, index: number) {
-      this.$emit('change', event, index)
+    handleClick(index: number, event: Event) {
+      this.$emit('change', index, event)
     }
   },
   render() {
@@ -81,7 +83,7 @@ const Rate = defineComponent({
             class={cls}
             key={`ob-rate-star-${i}`}
             style={iconStyle}
-            onClick={(e) => handleClick(e, i)}>
+            onClick={(e) => handleClick(i + 1, e)}>
             <div class="ob-icon ob-icon-star-2" style={starIconStyle}></div>
             <div class="ob-rate__left">
               <div class="ob-icon ob-icon-star-2" style={starIconStyle}></div>
