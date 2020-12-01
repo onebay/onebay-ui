@@ -1,5 +1,5 @@
 <template>
-  <div class="page row-page" style="height: 1000px">
+  <div class="page backtop-page" style="height: 1000px">
     <DocsHeader title="BackTop" />
     <div class="doc-body" style="height: 100%">
       <BackTop v-if="topText" :style="style">{{ topText }}</BackTop>

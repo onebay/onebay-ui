@@ -72,7 +72,6 @@ const routes = [
   dynamicRoute('/pages/form/image-picker/index'),
   dynamicRoute('/pages/form/search-bar/index'),
   dynamicRoute('/pages/view/image-preview/index'),
-  dynamicRoute('/pages/layout/row/index'),
   dynamicRoute('/pages/layout/flex/index'),
   dynamicRoute('/pages/navigation/back-top/index'),
   dynamicRoute('/pages/action/pull-to-refresh/index')

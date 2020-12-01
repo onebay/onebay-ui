@@ -41,8 +41,6 @@ import Range from './components/range'
 import ImagePicker from './components/image-picker'
 import SearchBar from './components/search-bar'
 import ImagePreview from './components/image-preview'
-import Row from './components/row'
-import Col from './components/col'
 import Flex from './components/flex'
 import BackTop from './components/back-top'
 import PullToRefresh from './components/pull-to-refresh'
@@ -91,8 +89,6 @@ export {
   ImagePicker,
   SearchBar,
   ImagePreview,
-  Row,
-  Col,
   Flex,
   BackTop,
   PullToRefresh,

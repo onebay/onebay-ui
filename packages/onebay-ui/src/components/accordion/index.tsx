@@ -49,7 +49,9 @@ export default defineComponent({
     isAnimation: {
       type: Boolean,
       default: true
-    }
+    },
+    // eslint-disable-next-line vue/require-default-prop
+    onClick: { type: Function }
   },
   emits: ['click'],
   setup(props: AccordionProps) {

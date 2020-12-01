@@ -66,7 +66,9 @@ export default defineComponent({
     customStyle: {
       type: [Object, String],
       default: ''
-    }
+    },
+    // eslint-disable-next-line vue/require-default-prop
+    onClose: { type: Function }
   },
   emits: ['click', 'close'],
   setup(props: ToastProps) {

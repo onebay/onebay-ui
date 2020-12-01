@@ -120,10 +120,6 @@ module.exports = {
           {
             text: 'list',
             link: '/docs/layout/list'
-          },
-          {
-            text: 'row',
-            link: '/docs/layout/row'
           }
         ]
       },
