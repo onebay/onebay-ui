@@ -14,7 +14,6 @@ import {
   formatValue
 } from './utils'
 import { TOP, LINE_HEIGHT } from './constant'
-import './index.scss'
 
 export type Mode = 'selector' | 'multiSelector' | 'time' | 'date'
 export type Fields = 'day' | 'month' | 'year'

@@ -1,5 +1,4 @@
 import { defineComponent, ref, watch, computed } from 'vue'
-import './index.scss'
 export interface TouchPoint {
   clientX: number
   clientY: number

@@ -19,7 +19,6 @@ exports[`Drawer Snap render Drawer -- props items 1`] = `
       
       <div
         class="ob-list__item"
-        data-index="0"
       >
         <div
           class="ob-list__item-container"
@@ -63,7 +62,6 @@ exports[`Drawer Snap render Drawer -- props items 1`] = `
       
       <div
         class="ob-list__item"
-        data-index="1"
       >
         <div
           class="ob-list__item-container"

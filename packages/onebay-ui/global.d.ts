@@ -1,5 +1,5 @@
-import Vue, { VNode } from './vue'
-import * as CSS from './csstype'
+import Vue, { VNode } from 'vue'
+import * as CSS from 'csstype'
 
 declare module "*.png";
 declare module "*.gif";
@@ -11,6 +11,7 @@ declare module "*.less";
 declare module "*.scss";
 declare module "*.sass";
 declare module "*.styl";
+declare module "*.json";
 
 declare namespace JSX {
   interface Element extends VNode { }

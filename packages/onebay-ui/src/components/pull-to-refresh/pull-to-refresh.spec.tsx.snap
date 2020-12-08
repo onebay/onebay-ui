@@ -22,7 +22,6 @@ exports[`PullToRefresh props render PullToRefresh init 1`] = `
           style="vertical-align: -6px; margin-right: 4px;"
           viewBox="0 0 1024 1024"
           width="24"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <g
             fill="currentColor"

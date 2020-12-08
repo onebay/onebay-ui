@@ -1,6 +1,6 @@
 import { defineComponent, ref, computed } from 'vue'
 import classNames from 'classnames'
-import statusImg from './img.json'
+import statusImg from './img'
 
 export interface ToastProps {
   text?: string

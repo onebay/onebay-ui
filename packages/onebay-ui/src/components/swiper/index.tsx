@@ -1,6 +1,6 @@
 import { defineComponent, ref } from 'vue'
 import classNames from 'classnames'
-import './index.scss'
+
 // const VERTICAL = 'vertical'
 const HORIZONTAL = 'horizontal'
 export default defineComponent({
@@ -410,10 +410,8 @@ export default defineComponent({
           class="ob-swiper-wrap"
           style={{
             transform: 'translate3d(' + translateX + 'px,' + translateY + 'px,0)',
-            'transition-duration': transitionDuration + 'ms',
-            '-webkit-transform': 'translate3d(' + translateX + 'px,' + translateY + 'px,0)',
-            '-webkit-transition-duration': transitionDuration + 'ms',
-            'transition-timing-function': 'ease'
+            transitionDuration: transitionDuration + 'ms',
+            transitionTimingFunction: 'ease'
           }}
           onTransitionend={_onTransitionEnd}>
           {$slots.default && $slots.default()}

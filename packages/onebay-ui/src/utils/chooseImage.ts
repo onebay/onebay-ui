@@ -81,7 +81,7 @@ const chooseImage = function (options: ChooseImageOptions): Promise<ChooseImageR
   chooseImageId.dispatchEvent(MouseEvents)
   chooseImageId.onchange = function (e) {
     const el = e.target as HTMLInputElement
-    const arr = [...(el.files as FileList)]
+    const arr = Array.from(el.files)
     arr &&
       arr.forEach((item) => {
         const blob = new Blob([item], { type: item.type })

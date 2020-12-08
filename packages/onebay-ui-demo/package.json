@@ -1,6 +1,6 @@
 {
   "name": "onebay-ui-demo",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "start": "vite",
     "dev:tsx": "vite --mode tsx",

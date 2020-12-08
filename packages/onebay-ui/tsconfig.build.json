@@ -21,7 +21,6 @@
     "resolveJsonModule": true,
     "typeRoots": [
       "node_modules/@types",
-      "global.d.ts",
       "types"
     ],
     "declaration": true
@@ -29,9 +28,11 @@
   "include": [
     "src/**/**.tsx",
     "src/**/**.ts",
+    "global.d.ts"
   ],
   "exclude": [
     "node_modules/*",
+    "**/*.spec.tsx",
     "dist"
   ],
   "compileOnSave": false

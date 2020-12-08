@@ -23,7 +23,7 @@ export default defineComponent({
   name: 'ListItem',
   props: {
     className: {
-      type: [Array, String],
+      type: String,
       default: ''
     },
     note: {
@@ -56,15 +56,15 @@ export default defineComponent({
     },
     iconInfo: {
       type: Object,
-      default: function (): IconInfo {
-        return { value: '' }
-      }
+      default: () => ({ value: '' })
     },
     arrow: {
       type: String,
       default: '',
       validator: (val: string): boolean => ['up', 'down', 'right', ''].includes(val)
-    }
+    },
+    // eslint-disable-next-line vue/require-default-prop
+    onClick: { type: Function }
   },
   emits: ['click'],
   setup(props, { emit }) {
@@ -91,13 +91,13 @@ export default defineComponent({
         iconInfo.className
       )
     })
-    const onClick = (e) => {
+    const handleClick = (e) => {
       emit('click', e)
     }
     return {
       rootClass,
       iconClass,
-      onClick
+      handleClick
     }
   },
   methods: {
@@ -114,9 +114,9 @@ export default defineComponent({
   },
   render(): JSX.Element {
     const { thumb, iconInfo, extraThumb, extraText, arrow, note, title } = this.$props
-    const { iconClass, rootClass, getIconStyle, onClick } = this
+    const { iconClass, rootClass, getIconStyle, handleClick } = this
     return (
-      <div class={rootClass} onClick={onClick}>
+      <div class={rootClass} onClick={handleClick}>
         <div class="ob-list__item-container">
           {thumb && (
             <div class="ob-list__item-thumb item-thumb">
