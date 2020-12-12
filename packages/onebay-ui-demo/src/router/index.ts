@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHashHistory, RouteRecordRaw, createMemoryHistory } from 'vue-router'
 import Index from '../pages/index/index.vue'
 import Panel from '../pages/panel/index.vue'
 import Drawer from '../pages/navigation/drawer/index.vue'
@@ -76,9 +76,11 @@ const routes = [
   dynamicRoute('/pages/navigation/back-top/index'),
   dynamicRoute('/pages/action/pull-to-refresh/index')
 ]
+const isServer = typeof window === 'undefined';
+const history = isServer ? createMemoryHistory() : createWebHashHistory();
 const router = createRouter({
-  history: createWebHashHistory(),
+  history,
   routes
 })
-console.log('router', router)
+
 export default router

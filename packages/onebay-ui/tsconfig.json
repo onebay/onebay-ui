@@ -4,7 +4,17 @@
     "target": "es6",
     "jsx": "preserve",
     "jsxFactory": "h",
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "declaration": true,
+    "outDir": "types"
   },
-  "files": ["global.d.ts"]
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.ts",
+    "global.d.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.tsx",
+  ],
+  "files": ["global.d.ts"],
 }

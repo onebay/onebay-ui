@@ -206,19 +206,22 @@
 </template>
 
 <script>
-import './index.scss'
-import { Button } from 'onebay-ui'
+import './index.scss';
+import { Button } from 'onebay-ui';
+import DocsHeader from '../../../components/DocsHeader.vue';
+
 export default {
   components: {
-    Button
+    Button,
+    DocsHeader,
   },
   data() {
-    return {}
+    return {};
   },
   methods: {
     hanldeClick(e) {
-      console.log(e)
+      console.log(e);
     },
   },
-}
+};
 </script>

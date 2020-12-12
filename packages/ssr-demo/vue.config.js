@@ -1,36 +1,54 @@
-const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
-const nodeExternals = require("webpack-node-externals");
+const ManifestPlugin = require('webpack-manifest-plugin');
+const nodeExternals = require('webpack-node-externals');
+// const webpack = require('webpack');
 
-exports.chainWebpack = webpackConfig => {
-  if (!process.env.SSR) {
-    // This is required for repl.it to play nicely with the Dev Server
-    webpackConfig.devServer.disableHostCheck(true);
-    return;
-  }
-  console.log('process.env.SSR', process.env.SSR)
-  // console.log('webpackConfig.entry', webpackConfig.entry)
-  // console.log('webpackConfig', webpackConfig)
-  webpackConfig
-    .entry("app")
-    .clear()
-    .add("./src/main.server.js");
+module.exports = {
+  devServer: {
+    overlay: {
+      warnings: false,
+      errors: false,
+    },
+  },
+  // configureWebpack: {
+  //   resolve: { mainFields: ['main', 'module'] }
+  // },
+  chainWebpack: (webpackConfig) => {
+    webpackConfig.module.rule('vue').uses.delete('cache-loader');
+    webpackConfig.module.rule('js').uses.delete('cache-loader');
+    webpackConfig.module.rule('ts').uses.delete('cache-loader');
+    webpackConfig.module.rule('tsx').uses.delete('cache-loader');
 
-  webpackConfig.target("node");
-  webpackConfig.output.libraryTarget("commonjs2");
+    if (!process.env.SSR) {
+      // This is required for repl.it to play nicely with the Dev Server
+      webpackConfig.devServer.disableHostCheck(true);
 
-  webpackConfig
-    .plugin("manifest")
-    .use(new WebpackManifestPlugin({ fileName: "ssr-manifest.json" }));
+      webpackConfig.entry('app').clear().add('./src/main.js');
+      return;
+    }
 
-  webpackConfig.externals(nodeExternals({ allowlist: /\.(css|vue)$/ }));
+    webpackConfig.entry('app').clear().add('./src/main-server.js');
 
-  webpackConfig.optimization.splitChunks(false).minimize(false);
+    webpackConfig.target('node');
+    webpackConfig.output.libraryTarget('commonjs2');
 
-  webpackConfig.plugins.delete("hmr");
-  webpackConfig.plugins.delete("preload");
-  webpackConfig.plugins.delete("prefetch");
-  webpackConfig.plugins.delete("progress");
-  webpackConfig.plugins.delete("friendly-errors");
+    webpackConfig.plugin('manifest').use(new ManifestPlugin({ fileName: 'ssr-manifest.json' }));
 
-  // console.log(webpackConfig.toConfig())
+    webpackConfig.externals(nodeExternals({ allowlist: /\.(css|vue)$/ }));
+
+    webpackConfig.optimization.splitChunks(false).minimize(false);
+
+    webpackConfig.plugins.delete('hmr');
+    webpackConfig.plugins.delete('preload');
+    webpackConfig.plugins.delete('prefetch');
+    webpackConfig.plugins.delete('progress');
+    webpackConfig.plugins.delete('friendly-errors');
+
+    // webpackConfig.plugin('limit').use(
+    //       new webpack.optimize.LimitChunkCountPlugin({
+    //         maxChunks: 1
+    //       })
+    // )
+
+    // console.log(webpackConfig.toConfig())
+  },
 };

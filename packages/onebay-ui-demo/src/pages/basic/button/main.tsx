@@ -1,5 +1,5 @@
 import './index.scss'
-import { Button } from 'onebay-ui/src'
+import { Button } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default {
