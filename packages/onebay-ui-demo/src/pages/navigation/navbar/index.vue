@@ -115,7 +115,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { NavBar } from '/@/onebay-ui/src/index.ts'
+import { NavBar } from 'onebay-ui'
 import './index.scss'
 export default defineComponent({
   name: 'NavbarPage',

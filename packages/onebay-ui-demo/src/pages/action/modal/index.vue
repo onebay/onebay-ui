@@ -113,7 +113,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Button, Modal, ModalAction, ModalHeader, ModalContent } from '/@/onebay-ui/src/index.ts'
+import { Button, Modal, ModalAction, ModalHeader, ModalContent } from 'onebay-ui'
 export default defineComponent({
   components: {
     Button,

@@ -1,8 +1,9 @@
 import { defineComponent } from 'vue'
-import { List, ListItem } from 'onebay-ui/src'
-import toast from 'onebay-ui/src/plugins/toast'
+import { List } from onebay - ui
+import toast from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
+const { ListItem } = List
 export default defineComponent({
   name: 'ListPage',
   setup() {

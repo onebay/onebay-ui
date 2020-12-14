@@ -207,7 +207,7 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import verification_code from '../../../assets/images/verification_code.png'
-import { Input, Form } from '/@/onebay-ui/src/index.ts'
+import { Input, Form } from 'onebay-ui'
 
 export default defineComponent({
   name: 'InputPage',

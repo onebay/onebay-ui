@@ -1,7 +1,7 @@
 import { defineComponent, reactive } from 'vue'
-import { Button, Modal, ModalAction, ModalHeader, ModalContent } from 'onebay-ui/src'
-import toast from 'onebay-ui/src/plugins/toast'
-import modal from 'onebay-ui/src/plugins/modal'
+import { Button, Modal, ModalAction, ModalHeader, ModalContent } from onebay - ui
+import toast from 'onebay-ui'
+import modal from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({

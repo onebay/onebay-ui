@@ -1,10 +1,10 @@
 import { defineComponent, ref } from 'vue';
 // import { SButton } from './components'
-import { Button } from '/@/onebay-ui/src/index.ts'
-import '/@/onebay-ui/src/style/components/loading.scss'
-import '/@/onebay-ui/src/style/components/accordion.scss'
-import '/@/onebay-ui/src/style/components/icon.scss'
-import '/@/onebay-ui/src/style/index.scss'
+import { Button } from 'onebay-ui'
+import 'onebay-ui/dist/style/components/loading.css'
+import 'onebay-ui/dist/style/components/accordion.css'
+import 'onebay-ui/dist/style/components/icon.css'
+import 'onebay-ui/dist/style/index.css'
 import Index from './index.vue'
 export default defineComponent({
   name: 'App',

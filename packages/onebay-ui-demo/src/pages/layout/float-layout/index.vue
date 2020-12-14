@@ -108,7 +108,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Button, FloatLayout, Toast } from '/@/onebay-ui/src/index.ts'
+import { Button, FloatLayout, Toast } from 'onebay-ui'
 export default defineComponent({
   name: 'FloatLayoutPage',
   components: {

@@ -6,4 +6,4 @@ export interface EnvInterface {
   VITE_TEMPLATE_ENV?: string
 }
 // @ts-ignore
-export default (): EnvInterface => import.meta.env
+export default (): EnvInterface => import.meta?.env || 'dev'

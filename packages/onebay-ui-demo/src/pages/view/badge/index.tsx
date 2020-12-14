@@ -1,5 +1,5 @@
 import { defineComponent } from "vue";
-import { Badge, Button } from '/@/onebay-ui/src/index'
+import { Badge, Button } from 'onebay-ui'
 
 export default defineComponent({
   name: 'BadgePage',

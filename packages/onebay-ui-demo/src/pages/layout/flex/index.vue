@@ -34,7 +34,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Flex } from '/@/onebay-ui/src/index.ts'
+import { Flex } from 'onebay-ui'
 import './index.scss'
 
 export default defineComponent({

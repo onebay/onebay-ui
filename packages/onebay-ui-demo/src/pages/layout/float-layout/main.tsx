@@ -1,5 +1,5 @@
 import { defineComponent, reactive, ref } from 'vue'
-import { Button, FloatLayout, Toast } from '/@/onebay-ui/src'
+import { Button, FloatLayout, Toast } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({

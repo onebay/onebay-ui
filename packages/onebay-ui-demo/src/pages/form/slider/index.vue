@@ -80,7 +80,7 @@
 <script>
 import './index.scss'
 import { defineComponent } from 'vue'
-import { Slider, Noticebar } from '/@/onebay-ui/src/index.ts'
+import { Slider, Noticebar } from 'onebay-ui'
 export default defineComponent({
   name: 'SliderPage',
   components: {

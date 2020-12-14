@@ -150,12 +150,12 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { List, ListItem } from '/@/onebay-ui/src/index.ts'
+import { List } from 'onebay-ui'
 export default defineComponent({
   name: 'ListPage',
   components: {
     List,
-    ListItem
+    ListItem: List.ListItem
   },
   methods: {
     handleChange(e) {

@@ -27,12 +27,12 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { ActionSheet, ActionSheetItem, Button } from '/@/onebay-ui/src/index.ts'
+import { ActionSheet, Button } from 'onebay-ui'
 export default defineComponent({
   name: 'ActionSheetPage',
   components: {
     ActionSheet,
-    ActionSheetItem,
+    ActionSheetItem: ActionSheet.Item,
     Button
   },
   setup(props) {

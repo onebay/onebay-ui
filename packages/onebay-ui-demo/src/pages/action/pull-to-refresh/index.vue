@@ -27,7 +27,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { PullToRefresh, Button, Noticebar } from '/@/onebay-ui/src/index.ts'
+import { PullToRefresh, Button, Noticebar } from 'onebay-ui'
 export default defineComponent({
   name: 'PullToRefreshPage',
   components: {

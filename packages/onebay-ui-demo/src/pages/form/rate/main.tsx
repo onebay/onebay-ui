@@ -1,6 +1,6 @@
 import './index.scss'
 import { defineComponent, reactive } from 'vue'
-import { Rate } from 'onebay-ui/src'
+import { Rate } from onebay - ui
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({

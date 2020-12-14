@@ -106,13 +106,13 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Accordion, List, ListItem } from '/@/onebay-ui/src/index.ts'
+import { Accordion, List } from 'onebay-ui'
 export default defineComponent({
   name: 'AccordionPage',
   components: {
     Accordion,
     List,
-    ListItem
+    ListItem: List.ListItem
   },
   data() {
     return {

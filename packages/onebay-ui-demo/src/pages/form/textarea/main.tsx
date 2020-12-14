@@ -1,5 +1,5 @@
 import { defineComponent, reactive } from 'vue'
-import { Textarea } from 'onebay-ui/src'
+import { Textarea } from onebay - ui
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({

@@ -92,7 +92,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { Picker } from '/@/onebay-ui/src/index.ts'
+import { Picker } from 'onebay-ui'
 import './index.scss'
 
 export default defineComponent({

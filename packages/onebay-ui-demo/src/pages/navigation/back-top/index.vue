@@ -36,7 +36,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { BackTop, Button } from '/@/onebay-ui/src/index.ts'
+import { BackTop, Button } from 'onebay-ui'
 import './index.scss'
 
 export default defineComponent({

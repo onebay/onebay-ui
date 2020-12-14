@@ -78,7 +78,7 @@
 <script>
 import './index.scss'
 import { defineComponent } from 'vue'
-import { Rate } from '/@/onebay-ui/src/index.ts'
+import { Rate } from 'onebay-ui'
 export default defineComponent({
   name: 'RatePage',
   components: { Rate },

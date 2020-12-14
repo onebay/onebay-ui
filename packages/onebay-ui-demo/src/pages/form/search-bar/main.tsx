@@ -1,6 +1,6 @@
 import { defineComponent, reactive } from 'vue'
-import { SearchBar } from 'onebay-ui/src'
-import toast from 'onebay-ui/src/plugins/toast'
+import { SearchBar } from onebay - ui
+import toast from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({

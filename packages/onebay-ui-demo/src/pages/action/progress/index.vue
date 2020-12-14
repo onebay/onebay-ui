@@ -114,7 +114,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Button, Progress } from '/@/onebay-ui/src/index.ts'
+import { Button, Progress } from 'onebay-ui'
 const OFFSET = 15
 export default defineComponent({
   name: 'ProgressPage',

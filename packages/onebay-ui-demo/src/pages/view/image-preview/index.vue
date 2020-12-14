@@ -35,7 +35,7 @@
 </template>
 <script>
 import { defineComponent } from 'vue'
-import { ImagePreview, Button } from '/@/onebay-ui/src/index.ts'
+import { ImagePreview, Button } from 'onebay-ui'
 
 const imgs = [
   '//m.360buyimg.com/mobilecms/s750x366_jfs/t1/18629/34/3378/144318/5c263f64Ef0e2bff0/0d650e0aa2e852ee.jpg',
