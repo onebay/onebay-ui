@@ -1,7 +1,8 @@
 import { defineComponent, computed } from 'vue'
 import classNames from 'classnames'
+import ListItem from './item/index'
 
-export default defineComponent({
+const List = defineComponent({
   name: 'List',
   props: {
     hasBorder: {
@@ -32,3 +33,6 @@ export default defineComponent({
     return <div class={rootClass}>{$slots.default && $slots.default()}</div>
   }
 })
+
+List.ListItem = ListItem
+export default List

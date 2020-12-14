@@ -6,15 +6,19 @@
     "jsxFactory": "h",
     "experimentalDecorators": true,
     "declaration": true,
-    "outDir": "types"
+    "outDir": "output",
+    "declarationDir": "types",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "emitDeclarationOnly": true
   },
   "include": [
-    "src/**/*.tsx",
-    "src/**/*.ts",
+    "src/**/*",
     "global.d.ts"
   ],
   "exclude": [
     "src/**/*.spec.tsx",
+    "node_modules"
   ],
   "files": ["global.d.ts"],
 }

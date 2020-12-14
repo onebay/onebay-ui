@@ -1,17 +1,22 @@
 {
-  "extends": "./tsconfig.build",
   "compilerOptions": {
     "skipLibCheck": true,
     "target": "es5",
+    "jsx": "preserve",
+    "jsxFactory": "h",
     "module": "es6",
     "downlevelIteration": true,
     "baseUrl": "../",
-    "types": ["node"]
+    "types": ["node"],
+    "emitDeclarationOnly": false,
+    "declarationDir": "../dist",
+    "noEmit": true
   },
   "include": [
     "../src"
   ],
   "exclude": [
-    "../node_modules/*"
+    "../node_modules/*",
+    "../src/**/*.spec.tsx"
   ]
 }

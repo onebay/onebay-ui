@@ -1,9 +1,11 @@
 import ActionSheetBody from './components/body'
 import ActionSheetFooter from './components/footer'
 import ActionSheetHeader from './components/header'
+import ActionSheetItem from './components/item'
 import classNames from 'classnames'
 import { defineComponent, ref, computed } from 'vue'
-export default defineComponent({
+
+const ActionSheet = defineComponent({
   name: 'ActionSheet',
   components: {
     ActionSheetBody,
@@ -88,3 +90,7 @@ export default defineComponent({
     )
   }
 })
+
+ActionSheet.Item = ActionSheetItem
+
+export default ActionSheet

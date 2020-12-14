@@ -20,36 +20,40 @@ const extensions = ['.js', '.jsx', '.ts', '.tsx']
 const tsxFiles = glob.sync(NodePath.resolve(__dirname, '../src/components/**/index.tsx'))
 const scssFiles = glob.sync(NodePath.resolve(__dirname, '../src/style/components/*.scss'))
 
-const commonConfig = {
-  external: externalPackages,
-  acornInjectPlugins: [jsx()],
-  plugins: [
-    VuePlugin(),
+const getCommonConfig = (ts = false) => {
+  return {
+    external: externalPackages,
+    acornInjectPlugins: [jsx()],
+    plugins: [
+      VuePlugin(),
 
-    RollupNodeResolve({
-      customResolveOptions: {
-        moduleDirectory: 'node_modules'
-      },
-      extensions
-    }),
-    RollupCommonjs({
-      include: /\/node_modules\//
-    }),
-    RollupJson(),
-    // !DEV_ENV && terser(),
-    RollupTypescript({
-      tsconfig: NodePath.resolve(__dirname, 'tsconfig.rollup.json'),
-      include: ['*.ts+(|x)', '**/*.ts+(|x)']
-    }),
-    babel({
-      extensions,
-      exclude: 'node_modules/**',
-      // babelHelpers: 'runtime',
-      runtimeHelpers: true,
-      externalHelpers: true,
-      plugins: ['transform-vue-jsx']
-    })
-  ]
+      RollupNodeResolve({
+        customResolveOptions: {
+          moduleDirectory: 'node_modules'
+        },
+        extensions
+      }),
+      RollupCommonjs({
+        include: /\/node_modules\//
+      }),
+      RollupJson(),
+      // !DEV_ENV && terser(),
+      ts
+        ? RollupTypescript({
+          tsconfig: NodePath.resolve(__dirname, 'tsconfig.rollup.json'),
+          include: ['*.ts+(|x)', '**/*.ts+(|x)']
+        })
+        : null,
+      babel({
+        extensions,
+        exclude: 'node_modules/**',
+        // babelHelpers: 'runtime',
+        runtimeHelpers: true,
+        externalHelpers: true,
+        plugins: ['transform-vue-jsx']
+      })
+    ]
+  }
 }
 
 const scssTasks = scssFiles.map((item) => {
@@ -60,6 +64,7 @@ const scssTasks = scssFiles.map((item) => {
     plugins: [scss({ output: `dist/style/${name}.css` })]
   }
 })
+// const configs = []
 const configs = tsxFiles
   .filter((item) => {
     const paths = item.split('/')
@@ -80,7 +85,7 @@ const configs = tsxFiles
           format: 'cjs'
         }
       ],
-      ...commonConfig
+      ...getCommonConfig()
     }
   })
 
@@ -88,24 +93,26 @@ configs.push({
   input: resolveFile(Package.source),
   output: [
     {
-      file: `lib/index.js`,
+      file: `lib/index.cjs.js`,
       format: 'cjs',
+      name: 'OnebayUi',
       sourcemap: true
     },
     {
       file: `es/index.esm.js`,
       format: 'es',
+      name: 'OnebayUi',
       sourcemap: true
     },
     {
       file: resolveFile(Package.browser),
       format: 'umd',
-      name: 'onebay-ui',
+      name: 'OnebayUi',
       sourcemap: true,
       globals: {}
     }
   ],
-  ...commonConfig
+  ...getCommonConfig(true)
 })
 
 configs.push(...scssTasks)

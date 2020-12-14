@@ -1,14 +1,13 @@
-import onebayUi from './plugins'
+import { App } from 'vue'
+
 import Loading from './components/loading/index'
 import Accordion from './components/accordion/index'
 import ActionSheet from './components/action-sheet/index'
-import ActionSheetItem from './components/action-sheet/components/item'
 import ActivityIndicator from './components/activity-indicator/index'
 import Badge from './components/badge/index'
 import Button from './components/button/index'
 import Checkbox from './components/checkbox/index'
 import List from './components/list/index'
-import ListItem from './components/list/item/index'
 import Divider from './components/divider/index'
 import Drawer from './components/drawer/index'
 import FloatLayout from './components/float-layout/index'
@@ -34,29 +33,28 @@ import TabBar from './components/tab-bar/index'
 import Swiper from './components/swiper/index'
 import Picker from './components/picker/index'
 import PickerGroup from './components/picker/picker-group'
-import InputNumber from './components/input-number'
-import Switch from './components/switch'
-import Textarea from './components/textarea'
-import Range from './components/range'
-import ImagePicker from './components/image-picker'
-import SearchBar from './components/search-bar'
-import ImagePreview from './components/image-preview'
-import Flex from './components/flex'
-import BackTop from './components/back-top'
-import PullToRefresh from './components/pull-to-refresh'
-import Icon from './components/icon'
+import InputNumber from './components/input-number/index'
+import Switch from './components/switch/index'
+import Textarea from './components/textarea/index'
+import Range from './components/range/index'
+import ImagePicker from './components/image-picker/index'
+import SearchBar from './components/search-bar/index'
+import ImagePreview from './components/image-preview/index'
+import Flex from './components/flex/index'
+import BackTop from './components/back-top/index'
+import PullToRefresh from './components/pull-to-refresh/index'
+import Icon from './components/icon/index'
+import { toast, message, modal, imagePreview } from './plugins/index'
 
 export {
   Loading,
   Accordion,
   ActionSheet,
-  ActionSheetItem,
   ActivityIndicator,
   Badge,
   Button,
   Checkbox,
   List,
-  ListItem,
   Divider,
   Drawer,
   FloatLayout,
@@ -92,7 +90,63 @@ export {
   Flex,
   BackTop,
   PullToRefresh,
-  Icon
+  Icon,
+  toast,
+  message,
+  modal,
+  imagePreview
 }
 
-export default onebayUi
+export default {
+  install: (app: App): void => {
+    app.component('Loading', Loading)
+    app.component('Accordion', Accordion)
+    app.component('ActionSheet', ActionSheet)
+    app.component('ActivityIndicator', ActivityIndicator)
+    app.component('Badge', Badge)
+    app.component('Button', Button)
+    app.component('Checkbox', Checkbox)
+    app.component('List', List)
+    app.component('Divider', Divider)
+    app.component('Drawer', Drawer)
+    app.component('FloatLayout', FloatLayout)
+    app.component('Toast', Toast)
+    app.component('Input', Input)
+    app.component('Form', Form)
+    app.component('Message', Message)
+    app.component('Modal', Modal)
+    app.component('ModalHeader', ModalHeader)
+    app.component('ModalAction', ModalAction)
+    app.component('ModalContent', ModalContent)
+    app.component('NavBar', NavBar)
+    app.component('Noticebar', Noticebar)
+    app.component('Pagination', Pagination)
+    app.component('Progress', Progress)
+    app.component('Radio', Radio)
+    app.component('Rate', Rate)
+    app.component('SegmentedControl', SegmentedControl)
+    app.component('Slider', Slider)
+    app.component('Steps', Steps)
+    app.component('Tag', Tag)
+    app.component('TabBar', TabBar)
+    app.component('Swiper', Swiper)
+    app.component('Picker', Picker)
+    app.component('PickerGroup', PickerGroup)
+    app.component('InputNumber', InputNumber)
+    app.component('Switch', Switch)
+    app.component('Textarea', Textarea)
+    app.component('Range', Range)
+    app.component('ImagePicker', ImagePicker)
+    app.component('SearchBar', SearchBar)
+    app.component('ImagePreview', ImagePreview)
+    app.component('Flex', Flex)
+    app.component('BackTop', BackTop)
+    app.component('PullToRefresh', PullToRefresh)
+    app.component('Icon', Icon)
+
+    app.config.globalProperties.$toast = toast
+    app.config.globalProperties.$message = message
+    app.config.globalProperties.$modal = modal
+    app.config.globalProperties.$imagePreview = imagePreview
+  }
+}

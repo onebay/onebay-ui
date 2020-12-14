@@ -2,25 +2,47 @@
 @import '../mixins/index.scss';
 
 .ob-slider {
+  padding: 15px 18px;
+  user-select: none;
+}
+
+.ob-slider__inner {
+  position: relative;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.ob-slider__track {
+  height: 2px;
+  background-color: $color-brand;
+  width: 0;
+}
+
+.ob-slider__handler {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 28px;
+  height: 28px;
+  margin-left: -14px;
+  margin-top: -14px;
+  border-radius: 50%;
+  background-color: #fff; // 固定色值
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.ob-slider-box {
   display: flex;
   align-items: center;
-
-  /* elements */
-  &__inner {
-    flex: 1;
+  .ob-slider {
+      flex: 1;
   }
-
-  &__text {
-    width: 80px;
-    color: $ob-slider-text-color;
-    font-size: $ob-slider-text-size;
-    text-align: center;
-  }
-
-  /* modifiers */
-  &--disabled {
-    .ob-slider__inner {
-      opacity: $opacity-disabled;
-    }
-  }
+}
+.ob-slider-box__value {
+  margin-left: 0.5em;
+  min-width: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 14px;
 }
