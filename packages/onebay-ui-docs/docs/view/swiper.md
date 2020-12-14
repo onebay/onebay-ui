@@ -79,7 +79,7 @@
 </template>
 <script>
 import { defineComponent } from 'vue'
-import { Swiper } from '/@/onebay-ui/src/index.ts'
+import { Swiper } from 'onebay-ui'
 export default defineComponent({
   name: 'SwiperPage',
   components: {

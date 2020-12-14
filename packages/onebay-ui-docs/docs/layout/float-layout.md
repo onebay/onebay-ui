@@ -8,7 +8,7 @@
 
 ```tsx
 import { defineComponent, reactive, ref } from 'vue'
-import { Button, FloatLayout, Toast } from '/@/onebay-ui/src'
+import { Button, FloatLayout, Toast } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({
@@ -166,7 +166,7 @@ export default defineComponent({
               <p>this is content!!!</p>
             </div>
           </FloatLayout>
-          <Toast isOpened={showToast} text="toastContent" close={closeToast}></Toast>
+          <Toast isOpened={showToast} text="toastContent" onClose={closeToast}></Toast>
         </div>
       )
     }
@@ -177,7 +177,7 @@ export default defineComponent({
 ```vue
 <template>
   <div class="page float-layout-page">
-    <DocsHeader title="Float Layout 浮动弹层" />
+    <DocsHeader title="Float Layout" />
 
     <div class="doc-body">
       <!-- Basic usage -->
@@ -285,7 +285,7 @@ export default defineComponent({
 
 <script>
 import { defineComponent } from 'vue'
-import { Button, FloatLayout, Toast } from '/@/onebay-ui/src/index.ts'
+import { Button, FloatLayout, Toast } from 'onebay-ui'
 export default defineComponent({
   name: 'FloatLayoutPage',
   components: {

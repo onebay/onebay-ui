@@ -96,7 +96,7 @@ export default defineComponent({
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Button } from '/@/onebay-ui/src/index.ts'
+import { Button } from 'onebay-ui'
 export default defineComponent({
   name: 'MessagePage',
   components: {

@@ -185,7 +185,7 @@ export default defineComponent({
 
 <script>
 import { defineComponent } from 'vue'
-import { SearchBar } from '/@/onebay-ui/src/index.ts'
+import { SearchBar } from 'onebay-ui'
 export default defineComponent({
   name: 'SearchBarPage',
   components: {

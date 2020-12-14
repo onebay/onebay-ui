@@ -62,7 +62,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { SegmentedControl } from '/@/onebay-ui/src/index.ts'
+import { SegmentedControl } from 'onebay-ui'
 import './index.scss'
 export default defineComponent({
   name: 'SegmentedControlPage',

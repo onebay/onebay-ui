@@ -150,7 +150,7 @@
 </template>
 <script>
 import { defineComponent } from 'vue'
-import { Tag } from '/@/onebay-ui/src/index.ts'
+import { Tag } from 'onebay-ui'
 export default defineComponent({
   name: 'TagPage',
   components: {

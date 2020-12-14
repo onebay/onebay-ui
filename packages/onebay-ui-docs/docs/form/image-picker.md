@@ -172,7 +172,7 @@ export default defineComponent({
 
 <script>
 import { defineComponent } from 'vue'
-import { ImagePicker } from '/@/onebay-ui/src/index.ts'
+import { ImagePicker } from 'onebay-ui'
 
 const dogaImages = [
   {

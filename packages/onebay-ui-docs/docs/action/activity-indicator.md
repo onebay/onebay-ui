@@ -151,9 +151,7 @@ export default defineComponent({
       </div>
       <!-- Vertical and horizontal center -->
       <div class="panel">
-        <div class="panel__title">
-          Vertical and horizontal center
-        </div>
+        <div class="panel__title">Vertical and horizontal center</div>
         <div class="panel__content">
           <div class="example-item example-item--center">
             <ActivityIndicator mode="center" />
@@ -165,12 +163,11 @@ export default defineComponent({
       </div>
     </div>
     <!-- E Body -->
-    </div>
   </div>
 </template>
 <script>
 import { defineComponent } from 'vue'
-import { ActivityIndicator, Switch } from '/@/onebay-ui/src/index.ts'
+import { ActivityIndicator, Switch } from 'onebay-ui'
 import './index.scss'
 export default defineComponent({
   name: 'ActivityIndicatorPage',

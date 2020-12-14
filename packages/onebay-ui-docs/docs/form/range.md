@@ -130,7 +130,7 @@ export default defineComponent({
 <script>
 import './index.scss'
 import { defineComponent } from 'vue'
-import { Range } from '/@/onebay-ui/src/index.ts'
+import { Range } from 'onebay-ui'
 
 export default defineComponent({
   name: 'RangePage',

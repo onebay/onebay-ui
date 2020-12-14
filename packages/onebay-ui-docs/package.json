@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "docs": "node ./src/genDocs.js",
     "start": "vitepress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

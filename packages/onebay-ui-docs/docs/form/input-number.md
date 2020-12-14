@@ -268,7 +268,7 @@ export default defineComponent({
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { InputNumber } from '/@/onebay-ui/src/index.ts'
+import { InputNumber } from 'onebay-ui'
 import './index.scss'
 
 export default defineComponent({

@@ -8,7 +8,7 @@
 
 ```tsx
 import { defineComponent, reactive } from 'vue'
-import { Form, Switch } from '/@/onebay-ui/src'
+import { Form, Switch } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({
@@ -131,7 +131,7 @@ export default defineComponent({
 
 <script>
 import { defineComponent } from 'vue'
-import { Form, Switch } from '/@/onebay-ui/src/index.ts'
+import { Form, Switch } from 'onebay-ui'
 export default defineComponent({
   name: 'SwitchPage',
   components: {

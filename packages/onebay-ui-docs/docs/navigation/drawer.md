@@ -55,7 +55,7 @@
                 v-for="(item, index) in childrenItem"
                 :class="
                   classNames('drawer-item', {
-                    'drawer-item--sub': index === 1 || index === 2,
+                    'drawer-item--sub': index === 1 || index === 2
                   })
                 "
                 :onClick="onItemClick.bind(this, index)"
@@ -74,7 +74,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Button, Drawer, Badge } from '/@/onebay-ui/src/index.ts'
+import { Button, Drawer, Badge } from 'onebay-ui'
 import classNames from 'classnames'
 import './index.scss'
 export default {

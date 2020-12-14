@@ -8,10 +8,11 @@
 
 ```tsx
 import { defineComponent, ref } from 'vue'
-import { ActionSheet, ActionSheetItem, Button } from 'onebay-ui/src'
-import toast from 'onebay-ui/src/plugins/toast'
+import { ActionSheet, Button, toast } from 'onebay-ui'
+import toast from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
+const ActionSheetItem = ActionSheet.item
 export default defineComponent({
   name: 'ActionSheetPage',
   components: {
@@ -90,12 +91,12 @@ export default defineComponent({
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { ActionSheet, ActionSheetItem, Button } from '/@/onebay-ui/src/index.ts'
+import { ActionSheet, Button } from 'onebay-ui'
 export default defineComponent({
   name: 'ActionSheetPage',
   components: {
     ActionSheet,
-    ActionSheetItem,
+    ActionSheetItem: ActionSheet.Item,
     Button
   },
   setup(props) {

@@ -153,7 +153,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Noticebar } from '/@/onebay-ui/src/index.ts'
+import { Noticebar } from 'onebay-ui'
 import './index.scss'
 export default defineComponent({
   name: 'NoticebarPage',

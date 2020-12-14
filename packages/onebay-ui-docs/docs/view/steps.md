@@ -78,7 +78,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Steps } from '/@/onebay-ui/src/index.ts'
+import { Steps } from 'onebay-ui'
 const items1 = [{ title: 'step 1' }, { title: 'step 2' }]
 
 const items2 = [{ title: 'step 1' }, { title: 'step 2' }, { title: 'step 3' }]

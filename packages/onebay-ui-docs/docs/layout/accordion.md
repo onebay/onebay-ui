@@ -7,11 +7,10 @@
 <div class="code-tabs"></div>
 
 ```tsx
-import { defineComponent } from 'vue'
-import { Accordion, List, ListItem } from 'onebay-ui/src'
+import { defineComponent, reactive } from 'vue'
+import { Accordion, List } from 'onebay-ui/src'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
-import { reactive } from 'vue'
-
+const { ListItem } = List
 export default defineComponent({
   name: 'AccordionPage',
   setup() {
@@ -246,13 +245,13 @@ export default defineComponent({
 
 <script>
 import { defineComponent } from 'vue'
-import { Accordion, List, ListItem } from '/@/onebay-ui/src/index.ts'
+import { Accordion, List } from 'onebay-ui'
 export default defineComponent({
   name: 'AccordionPage',
   components: {
     Accordion,
     List,
-    ListItem
+    ListItem: List.ListItem
   },
   data() {
     return {

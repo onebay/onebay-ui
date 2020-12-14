@@ -8,7 +8,7 @@
 
 ```tsx
 import { defineComponent } from 'vue'
-import { Flex } from '/@/onebay-ui/src/index.ts'
+import { Flex } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import './index.scss'
 
@@ -93,7 +93,7 @@ export default defineComponent({
 
 <script>
 import { defineComponent } from 'vue'
-import { Flex } from '/@/onebay-ui/src/index.ts'
+import { Flex } from 'onebay-ui'
 import './index.scss'
 
 export default defineComponent({

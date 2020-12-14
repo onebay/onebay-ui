@@ -75,7 +75,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Button, Pagination } from '/@/onebay-ui/src/index.ts'
+import { Button, Pagination } from 'onebay-ui'
 import './index.scss'
 export default defineComponent({
   name: 'PaginationPage',

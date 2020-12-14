@@ -8,7 +8,7 @@
 
 ```tsx
 import './index.scss'
-import { Button } from 'onebay-ui/src'
+import { Button } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default {
@@ -438,7 +438,7 @@ export default {
 
 <script>
 import './index.scss'
-import { Button } from '/@/onebay-ui/src/index.ts'
+import { Button } from 'onebay-ui'
 export default {
   components: {
     Button

@@ -46,7 +46,7 @@
 </template>
 <script>
 import { defineComponent } from 'vue'
-import { Divider } from '/@/onebay-ui/src/index.ts'
+import { Divider } from 'onebay-ui'
 import './index.scss'
 export default defineComponent({
   name: 'DividerPage',
