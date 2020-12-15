@@ -8,7 +8,7 @@
 
 ```tsx
 import { defineComponent, reactive } from 'vue'
-import { InputNumber } from 'onebay-ui/src'
+import { InputNumber } from onebay - ui
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import './index.scss'
 

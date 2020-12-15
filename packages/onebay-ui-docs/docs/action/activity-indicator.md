@@ -8,8 +8,8 @@
 
 ```tsx
 import { defineComponent, ref } from 'vue'
-import { ActivityIndicator, Switch } from 'onebay-ui/src'
-import toast from 'onebay-ui/src/plugins/toast'
+import { ActivityIndicator, Switch } from onebay - ui
+import toast from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import './index.scss'
 

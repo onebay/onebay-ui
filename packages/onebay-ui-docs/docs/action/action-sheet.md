@@ -9,7 +9,6 @@
 ```tsx
 import { defineComponent, ref } from 'vue'
 import { ActionSheet, Button, toast } from 'onebay-ui'
-import toast from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 const ActionSheetItem = ActionSheet.item

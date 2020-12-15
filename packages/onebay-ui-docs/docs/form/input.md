@@ -8,8 +8,8 @@
 
 ```tsx
 import { defineComponent, reactive, ref } from 'vue'
-import { Input, Form } from 'onebay-ui/src'
-import toast from 'onebay-ui/src/plugins/toast'
+import { Input, Form } from onebay - ui
+import toast from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import verification_code from '../../../assets/images/verification_code.png'
 

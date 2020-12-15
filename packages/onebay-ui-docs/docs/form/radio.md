@@ -8,7 +8,7 @@
 
 ```tsx
 import { defineComponent, reactive } from 'vue'
-import { Radio } from 'onebay-ui/src'
+import { Radio } from onebay - ui
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 const radioOptions1 = [

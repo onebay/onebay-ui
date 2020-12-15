@@ -9,8 +9,7 @@
 ```tsx
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import { defineComponent, ref } from 'vue'
-import { PullToRefresh, Button, Noticebar } from 'onebay-ui/src'
-import toast from 'onebay-ui/src/plugins/toast'
+import { PullToRefresh, Button, Noticebar, toast } from 'onebay-ui'
 
 export default defineComponent({
   name: 'PullToRefreshPage',

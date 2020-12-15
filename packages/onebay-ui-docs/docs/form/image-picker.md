@@ -8,8 +8,8 @@
 
 ```tsx
 import { defineComponent, reactive, toRaw } from 'vue'
-import { ImagePicker } from 'onebay-ui/src'
-import toast from 'onebay-ui/src/plugins/toast'
+import { ImagePicker } from onebay - ui
+import toast from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 const dogaImages = [

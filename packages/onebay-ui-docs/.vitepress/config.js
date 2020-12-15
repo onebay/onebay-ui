@@ -46,6 +46,10 @@ module.exports = {
           {
             text: 'button',
             link: '/docs/basic/button'
+          },
+          {
+            text: 'icon',
+            link: '/docs/basic/icon'
           }
         ]
       },

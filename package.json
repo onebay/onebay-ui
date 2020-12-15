@@ -13,6 +13,7 @@
     "lerna": "^3.22.1"
   },
   "scripts": {
+    "publish:local": "sh ./.vscode/publish_onebay.sh",
     "publish": "lerna publish --conventional-commits"
   },
   "husky": {
