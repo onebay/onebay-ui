@@ -190,6 +190,10 @@ module.exports = {
           {
             text: 'tag',
             link: '/docs/view/tag'
+          },
+          {
+            text: 'timeline',
+            link: '/docs/view/timeline'
           }
         ]
       }

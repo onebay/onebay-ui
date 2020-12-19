@@ -44,6 +44,7 @@ import Flex from './components/flex/index'
 import BackTop from './components/back-top/index'
 import PullToRefresh from './components/pull-to-refresh/index'
 import Icon from './components/icon/index'
+import Timeline from './components/timeline/index'
 import { toast, message, modal, imagePreview } from './plugins/index'
 
 export {
@@ -94,7 +95,8 @@ export {
   toast,
   message,
   modal,
-  imagePreview
+  imagePreview,
+  Timeline
 }
 
 export default {
@@ -143,6 +145,7 @@ export default {
     app.component('BackTop', BackTop)
     app.component('PullToRefresh', PullToRefresh)
     app.component('Icon', Icon)
+    app.component('Timeline', Timeline)
 
     app.config.globalProperties.$toast = toast
     app.config.globalProperties.$message = message

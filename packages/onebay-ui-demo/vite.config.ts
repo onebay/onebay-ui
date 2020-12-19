@@ -4,9 +4,9 @@ import tsResolver from 'vite-tsconfig-paths'
 // import { getBabelOutputPlugin } from '@rollup/plugin-babel'
 
 const config: UserConfig = {
-  // alias: {
-  //   '/@/onebay-ui/': path.resolve(__dirname, '../onebay-ui'),
-  // },
+  alias: {
+    '/@/onebay-ui/': path.resolve(__dirname, '../onebay-ui'),
+  },
   resolvers: [tsResolver],
   // rollupInputOptions: {
   //   pluginsPostBuild: [

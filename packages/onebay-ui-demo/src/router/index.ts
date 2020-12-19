@@ -75,6 +75,7 @@ const routes = [
   dynamicRoute('/pages/view/image-preview/index'),
   dynamicRoute('/pages/layout/flex/index'),
   dynamicRoute('/pages/navigation/back-top/index'),
+  dynamicRoute('/pages/view/timeline/index'),
   dynamicRoute('/pages/action/pull-to-refresh/index')
 ]
 const isServer = typeof window === 'undefined';

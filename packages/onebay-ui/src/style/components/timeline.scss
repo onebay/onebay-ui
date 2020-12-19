@@ -8,7 +8,7 @@
   /* elements */
   &__content {
     margin-left: $ob-timeline-offset-left;
-    min-height: 56px;
+    min-height: 30px;
     color: $ob-timeline-title-color;
     font-size: $ob-timeline-title-font-size;
     line-height: $line-height-zh;
@@ -67,8 +67,8 @@
     position: absolute;
     top: $ob-timeline-dot-size / 2;
     bottom: -$ob-timeline-dot-size / 2;
-    left: $ob-timeline-dot-size / 2 - 2px;
-    border-left: 1PX solid $ob-timeline-line-color;
+    left: $ob-timeline-dot-size / 2 - 1px;
+    border-left: 1px solid $ob-timeline-line-color;
   }
 
   /* modifiers */
@@ -119,7 +119,7 @@
   &--pending {
     .ob-timeline-item:nth-last-child(2) {
       .ob-timeline-item__content {
-        min-height: 80px;
+        min-height: 40px;
       }
 
       .ob-timeline-item__tail {
