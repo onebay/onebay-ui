@@ -1,19 +1,17 @@
 import { defineComponent, ref } from 'vue'
-import Toast from '../../components/toast'
+import Modal from './Modal'
 
 export default defineComponent({
-  name: 'ToastContainer',
+  name: 'ModalContainer',
   components: {
-    Toast
+    Modal
   },
   props: {
     config: {
       type: Object,
       default: () => ({
-        text: '',
-        status: '',
-        hasMask: true,
-        duration: 3000
+        content: '',
+        title: ''
       })
     },
     close: {
@@ -36,6 +34,6 @@ export default defineComponent({
   render(): JSX.Element {
     const { showToast, handleClose } = this
     const { config } = this.$props
-    return <Toast isOpened={showToast} onClose={handleClose} {...config} />
+    return <Modal isOpened={showToast} onClose={handleClose} {...config} />
   }
 })

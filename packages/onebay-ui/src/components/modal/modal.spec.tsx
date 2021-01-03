@@ -1,6 +1,9 @@
 import { mount } from '@vue/test-utils'
-import { Button, Modal, ModalAction, ModalHeader, ModalContent } from '../../index'
+import { Button } from '../index'
+import Modal from './Modal'
 import { sleep } from '../../utils/helper'
+
+const { ModalAction, ModalHeader, ModalContent } = Modal
 
 const components = {
   Modal,

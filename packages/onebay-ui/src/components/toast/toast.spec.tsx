@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Toast from './index'
+import Toast from './Toast'
 import { sleep } from '../../utils/helper'
 
 const factory = (values = {}, slots = { default: [] }) => {

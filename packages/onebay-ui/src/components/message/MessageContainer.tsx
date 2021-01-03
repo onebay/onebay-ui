@@ -1,17 +1,19 @@
 import { defineComponent, ref } from 'vue'
-import Modal from '../../components/modal'
+import Message from './Message'
 
 export default defineComponent({
-  name: 'ModalContainer',
+  name: 'MessageContainer',
   components: {
-    Modal
+    Message
   },
   props: {
     config: {
       type: Object,
       default: () => ({
-        content: '',
-        title: ''
+        messasge: '',
+        type: 'info',
+        isOpened: true,
+        duration: 3000
       })
     },
     close: {
@@ -22,18 +24,18 @@ export default defineComponent({
     }
   },
   setup() {
-    const showToast = ref(true)
-    return { showToast }
+    const showMessage = ref(true)
+    return { showMessage }
   },
   methods: {
     handleClose() {
-      this.showToast = false
+      this.showMessage = false
       this.$props.close()
     }
   },
   render(): JSX.Element {
-    const { showToast, handleClose } = this
+    const { showMessage, handleClose } = this
     const { config } = this.$props
-    return <Modal isOpened={showToast} onClose={handleClose} {...config} />
+    return <Message isOpened={showMessage} onClose={handleClose} {...config} />
   }
 })

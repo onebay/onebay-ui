@@ -50,7 +50,7 @@ const getCommonConfig = (ts = false) => {
         // babelHelpers: 'runtime',
         runtimeHelpers: true,
         externalHelpers: true,
-        plugins: ['transform-vue-jsx']
+        plugins: ['@babel/plugin-transform-runtime']
       })
     ]
   }
@@ -93,7 +93,7 @@ configs.push({
   input: resolveFile(Package.source),
   output: [
     {
-      file: `lib/index.cjs.js`,
+      file: `lib/index.js`,
       format: 'cjs',
       name: 'OnebayUi',
       sourcemap: true

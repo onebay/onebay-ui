@@ -4,8 +4,8 @@
   "description": "A Mobile UI library built on Vue 3",
   "browser": "dist/index.umd.js",
   "module": "es/index.esm.js",
-  "main": "lib/index.cjs.js",
-  "source": "src/index.ts",
+  "main": "lib/index.js",
+  "source": "src/components/index.ts",
   "typings": "types/index.d.ts",
   "scripts": {
     "build": "npm run clean && rollup --config ./config/rollup.config.js",

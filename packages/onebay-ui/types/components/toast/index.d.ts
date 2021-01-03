@@ -1,103 +1,32 @@
-export interface ToastProps {
-    text?: string;
-    icon?: string;
-    hasMask?: boolean;
-    image?: string;
-    isOpened?: boolean;
-    duration?: number;
-    status?: string;
-    className: any;
-    customStyle: any;
-}
+import { Config } from '../../plugins/withContainer';
+import { App } from 'vue';
 export declare enum ToastStatus {
-    default = "",
-    error = "error",
-    loading = "loading",
-    success = "success"
+    Success = "success",
+    Error = "error",
+    Loading = "loading"
 }
-declare const _default: import("vue").DefineComponent<{
-    text: {
-        type: StringConstructor;
-        default: string;
+export interface ToastConfig extends Config {
+    text?: string;
+    status?: 'success' | 'error' | 'loading';
+    duration?: number;
+    isOpened?: boolean;
+    hasMask?: boolean;
+    onClose?: () => void;
+    onClick?: (e: MouseEvent) => unknown;
+}
+declare const toast: {
+    (config?: ToastConfig): void | {
+        close: () => void;
     };
-    icon: {
-        type: StringConstructor;
-        default: string;
+    success(config?: ToastConfig): void | {
+        close: () => void;
     };
-    hasMask: {
-        type: BooleanConstructor;
-        default: boolean;
+    error(config?: ToastConfig): void | {
+        close: () => void;
     };
-    image: {
-        type: StringConstructor;
-        default: string;
+    loading(config?: ToastConfig): void | {
+        close: () => void;
     };
-    isOpened: {
-        type: BooleanConstructor;
-        default: boolean;
-    };
-    duration: {
-        type: NumberConstructor;
-        default: number;
-    };
-    status: {
-        type: StringConstructor;
-        default: ToastStatus;
-        validator: (val: string) => boolean;
-    };
-    onClick: {
-        type: FunctionConstructor;
-        default: any;
-    };
-    className: {
-        type: (ObjectConstructor | StringConstructor)[];
-        default: () => string;
-    };
-    customStyle: {
-        type: (ObjectConstructor | StringConstructor)[];
-        default: string;
-    };
-    onClose: {
-        type: FunctionConstructor;
-    };
-}, {
-    timer: import("vue").Ref<number>;
-    visible: import("vue").Ref<boolean>;
-    rootCls: import("vue").ComputedRef<string>;
-    bodyClass: import("vue").ComputedRef<string>;
-    realImg: import("vue").ComputedRef<any>;
-    iconClass: import("vue").ComputedRef<string>;
-    isRenderIcon: import("vue").ComputedRef<boolean>;
-}, unknown, {}, {
-    clearTimmer(): void;
-    makeTimer(duration: number): void;
-    close(): void;
-    handleClose(): void;
-    handleClick(event: MouseEvent): void;
-    handleChange(): void;
-}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("click" | "close")[], "click" | "close", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
-    image: string;
-    text: string;
-    icon: string;
-    duration: number;
-    onClick: Function;
-    customStyle: string;
-    className: string;
-    isOpened: boolean;
-    hasMask: boolean;
-    status: string;
-} & {
-    onClose?: Function;
-}>, {
-    image: string;
-    text: string;
-    icon: string;
-    duration: number;
-    onClick: Function;
-    customStyle: string;
-    className: string;
-    isOpened: boolean;
-    hasMask: boolean;
-    status: string;
-}>;
-export default _default;
+    install(app: App<any>): void;
+};
+export default toast;

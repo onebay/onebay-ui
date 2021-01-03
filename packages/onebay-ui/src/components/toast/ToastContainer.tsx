@@ -1,18 +1,18 @@
 import { defineComponent, ref } from 'vue'
-import Message from '../../components/message'
+import Toast from './Toast'
 
 export default defineComponent({
-  name: 'MessageContainer',
+  name: 'ToastContainer',
   components: {
-    Message
+    Toast
   },
   props: {
     config: {
       type: Object,
       default: () => ({
-        messasge: '',
-        type: 'info',
-        isOpened: true,
+        text: '',
+        status: '',
+        hasMask: true,
         duration: 3000
       })
     },
@@ -24,18 +24,18 @@ export default defineComponent({
     }
   },
   setup() {
-    const showMessage = ref(true)
-    return { showMessage }
+    const showToast = ref(true)
+    return { showToast }
   },
   methods: {
     handleClose() {
-      this.showMessage = false
+      this.showToast = false
       this.$props.close()
     }
   },
-  render(): JSX.Element {
-    const { showMessage, handleClose } = this
+  render() {
+    const { showToast, handleClose } = this
     const { config } = this.$props
-    return <Message isOpened={showMessage} onClose={handleClose} {...config} />
+    return <Toast isOpened={showToast} onClose={handleClose} {...config} />
   }
 })

@@ -1,121 +1,46 @@
-import { defineComponent, ref } from 'vue'
-import classNames from 'classnames'
+import MessageContainer from './MessageContainer'
+import withContainer, { Config, WithContainerType } from '../../plugins/withContainer'
 
-export default defineComponent({
-  name: 'Message',
-  props: {
-    customStyle: {
-      type: [Object, String],
-      default: ''
-    },
-    className: {
-      type: [Array, String],
-      default: ''
-    },
-    isOpened: {
-      type: Boolean,
-      default: false
-    },
-    message: {
-      type: String,
-      default: ''
-    },
-    type: {
-      type: String,
-      default: 'info'
-    },
-    duration: {
-      type: Number,
-      default: 3000
-    }
-  },
-  emits: ['close', 'click'],
-  setup(props) {
-    const timer = ref(0)
-    const visible = ref(props.isOpened)
-    return {
-      timer,
-      visible
-    }
-  },
-  watch: {
-    isOpened: {
-      immediate: true,
-      handler() {
-        this.handleChange()
-      }
-    },
-    duration() {
-      this.handleChange()
-    }
-  },
-  methods: {
-    clearTimmer() {
-      if (this.timer) {
-        clearTimeout(this.timer)
-        this.timer = 0
-      }
-    },
+const MESSAGE_CONTAINER_CLASS = 'message-container'
 
-    makeTimer(duration: number) {
-      if (duration === 0) {
-        return
-      }
-      this.timer = window.setTimeout(() => {
-        this.close()
-      }, +duration)
-    },
+export enum MessageType {
+  Info = 'info',
+  Success = 'success',
+  Error = 'error',
+  Loading = 'loading'
+}
 
-    close() {
-      const { visible } = this
-      if (visible) {
-        this.visible = false
-        this.handleClose()
-        this.clearTimmer()
-      }
-    },
+export interface MessageConfig extends Config {
+  message?: string
+  type?: MessageType
+  duration?: number
+  isOpened?: boolean
+  onClose?: () => void
+  onClick?: (e: MouseEvent) => unknown
+}
 
-    handleClose() {
-      this.$emit('close')
-    },
+const message = (config: MessageConfig = {}): WithContainerType => {
+  return withContainer(MessageContainer, MESSAGE_CONTAINER_CLASS, config)
+}
 
-    handleClick(event: MouseEvent) {
-      this.$emit('click', event)
-    },
+message.info = (config: MessageConfig = {}) => {
+  config.type = MessageType.Info
+  return message(config)
+}
 
-    handleChange() {
-      const { isOpened, duration } = this.$props
-      if (!isOpened) {
-        this.close()
-        return
-      }
+message.success = (config: MessageConfig = {}) => {
+  config.type = MessageType.Success
+  return message(config)
+}
 
-      if (!this.visible) {
-        this.visible = true
-      } else {
-        this.clearTimmer()
-      }
-      this.makeTimer(duration || 0)
-    }
-  },
-  render(): JSX.Element {
-    const { className, customStyle, isOpened, message, type } = this.$props
-    const { handleClick } = this
-    return (
-      <div
-        class={classNames(
-          {
-            'ob-message': true,
-            'ob-message--show': isOpened,
-            'ob-message--hidden': !isOpened
-          },
-          `ob-message--${type}`,
-          className
-        )}
-        style={customStyle}
-        onClick={handleClick}>
-        {message}
-      </div>
-    )
-  }
-})
+message.error = (config: MessageConfig = {}) => {
+  config.type = MessageType.Error
+  return message(config)
+}
+
+message.loading = (config: MessageConfig = {}) => {
+  config.type = MessageType.Loading
+  return message(config)
+}
+
+export default message
