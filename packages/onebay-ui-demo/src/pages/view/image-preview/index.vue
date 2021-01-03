@@ -9,12 +9,6 @@
       <!-- Basic usage -->
       <div class="panel">
         <div class="panel__title">Basic usage</div>
-        <ImagePreview
-          :images="imgs"
-          :show="show"
-          :startPosition="startPosition"
-          @close="handleClose"
-        />
         <Button @click="toggleShow">toggle show</Button>
       </div>
       <div class="panel">
@@ -35,7 +29,7 @@
 </template>
 <script>
 import { defineComponent } from 'vue'
-import { ImagePreview, Button } from 'onebay-ui'
+import { Button, Swiper, ImagePreview } from 'onebay-ui'
 
 const imgs = [
   '//m.360buyimg.com/mobilecms/s750x366_jfs/t1/18629/34/3378/144318/5c263f64Ef0e2bff0/0d650e0aa2e852ee.jpg',
@@ -47,34 +41,35 @@ const imgs = [
 export default defineComponent({
   name: 'ImagePreviewPage',
   components: {
-    ImagePreview,
-    Button
+    Button,
+    Swiper
   },
   data() {
     return {
       imgs,
       show: false,
-      paginationVisible: false,
+      paginationVisible: true,
       startPosition: 1
     }
   },
   methods: {
     toggleShow() {
-      this.show = !this.show
+      ImagePreview({
+        images: imgs
+      })
     },
     handleClose() {
       this.show = false
     },
     changeStartPosition() {
-      this.startPosition = 2
-      this.show = true
+      ImagePreview({
+        images: imgs,
+        startPosition: 2,
+        paginationVisible: this.paginationVisible
+      })
     },
     changePaginationVisible() {
-      this.paginationVisible = false
-      this.show = true
-    },
-    handleClick() {
-      this.$imagePreview({
+      ImagePreview({
         images: imgs,
         paginationVisible: false
       })
