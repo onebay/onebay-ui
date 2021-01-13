@@ -3,12 +3,14 @@
   "version": "0.0.1",
   "scripts": {
     "start": "vite",
-    "dev:tsx": "vite --mode tsx",
+    "dev:tsx": "vite --mode xst",
     "build": "vite build"
   },
   "dependencies": {
+    "@vitejs/plugin-vue": "^1.0.5",
     "classnames": "^2.2.6",
     "onebay-ui": "^0.0.1",
+    "vite-plugin-imp": "^2.0.2",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-beta.9"
   },
@@ -30,7 +32,7 @@
     "regenerator-runtime": "^0.13.7",
     "sass": "^1.26.10",
     "typescript": "^4.0.2",
-    "vite": "^1.0.0-rc.13",
+    "vite": "^2.0.0-beta.23",
     "vite-babel-plugin": "^0.0.2",
     "vite-tsconfig-paths": "^1.1.0"
   }

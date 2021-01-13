@@ -8,7 +8,8 @@
   "source": "src/components/index.ts",
   "typings": "types/index.d.ts",
   "scripts": {
-    "build": "npm run clean && rollup --config ./config/rollup.config.js",
+    "build": "npm run clean && rollup --config ./config/rollup.config.js && npm run build-es",
+    "build-es": "tsc ./src/components/index.ts --outDir output --module es6 --jsx",
     "clean": "rimraf dist lib es",
     "test": "jest --coverage --silent",
     "lint": "eslint src/**/*.tsx",

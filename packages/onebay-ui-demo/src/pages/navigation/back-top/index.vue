@@ -40,7 +40,7 @@ import { BackTop, Button } from 'onebay-ui'
 import './index.scss'
 
 export default defineComponent({
-  name: 'RowPage',
+  name: 'BackTopPage',
   components: {
     BackTop,
     Button

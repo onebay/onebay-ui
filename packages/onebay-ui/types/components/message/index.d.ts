@@ -1,51 +1,33 @@
-declare const _default: import("vue").DefineComponent<{
-    customStyle: {
-        type: (ObjectConstructor | StringConstructor)[];
-        default: string;
+import { Config } from '../../plugins/withContainer';
+export declare enum MessageType {
+    Info = "info",
+    Success = "success",
+    Error = "error",
+    Loading = "loading"
+}
+export interface MessageConfig extends Config {
+    message?: string;
+    type?: MessageType;
+    duration?: number;
+    isOpened?: boolean;
+    onClose?: () => void;
+    onClick?: (e: MouseEvent) => unknown;
+}
+declare const message: {
+    (config?: MessageConfig): void | {
+        close: () => void;
     };
-    className: {
-        type: (StringConstructor | ArrayConstructor)[];
-        default: string;
+    info(config?: MessageConfig): void | {
+        close: () => void;
     };
-    isOpened: {
-        type: BooleanConstructor;
-        default: boolean;
+    success(config?: MessageConfig): void | {
+        close: () => void;
     };
-    message: {
-        type: StringConstructor;
-        default: string;
+    error(config?: MessageConfig): void | {
+        close: () => void;
     };
-    type: {
-        type: StringConstructor;
-        default: string;
+    loading(config?: MessageConfig): void | {
+        close: () => void;
     };
-    duration: {
-        type: NumberConstructor;
-        default: number;
-    };
-}, {
-    timer: import("vue").Ref<number>;
-    visible: import("vue").Ref<boolean>;
-}, unknown, {}, {
-    clearTimmer(): void;
-    makeTimer(duration: number): void;
-    close(): void;
-    handleClose(): void;
-    handleClick(event: MouseEvent): void;
-    handleChange(): void;
-}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("click" | "close")[], "click" | "close", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
-    message: string;
-    type: string;
-    duration: number;
-    customStyle: string;
-    className: string | unknown[];
-    isOpened: boolean;
-} & {}>, {
-    message: string;
-    type: string;
-    duration: number;
-    customStyle: string;
-    className: string | unknown[];
-    isOpened: boolean;
-}>;
-export default _default;
+};
+export default message;

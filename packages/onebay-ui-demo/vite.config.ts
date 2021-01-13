@@ -1,13 +1,36 @@
-const path = require('path');
-import type { UserConfig } from 'vite'
-import tsResolver from 'vite-tsconfig-paths'
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import vitePluginImp from 'vite-plugin-imp'
+// const { resolve } = require('path')
+// const vitePluginImp = require(resolve(__dirname, '../vite-plugin-imp/dist')).default
 
-const config: UserConfig = {
-  alias: {
-    '/@/onebay-ui/': path.resolve(__dirname, '../onebay-ui'),
+export default defineConfig({
+  server: {
+    // port: 3333,
   },
-  resolvers: [tsResolver],
-  port: 3333
-}
-
-export default config
+  plugins: [
+    vue(),
+    vitePluginImp({
+      libList: [
+        {
+          libName: 'vant',
+          style(name) {
+            return `vant/es/${name}/index.css`
+          }
+        },
+        {
+          libName: 'element-plus',
+          style: (name) => {
+            return `element-plus/lib/theme-chalk/${name}.css`
+          }
+        },
+        {
+          libName: 'onebay-ui',
+          style: (name) => {
+            return `onebay-ui/dist/style/${name}.css`
+          }
+        }
+      ]
+    })
+  ]
+})

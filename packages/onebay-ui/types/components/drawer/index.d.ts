@@ -27,12 +27,17 @@ declare const Drawer: import("vue").DefineComponent<{
         type: FunctionConstructor;
         default: () => void;
     };
+    onClose: {
+        type: FunctionConstructor;
+        default: () => void;
+    };
 }, () => JSX.Element, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, "close"[], "close", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
     right: boolean;
     show: boolean;
     mask: boolean;
     width: string | number;
     className: string;
+    onClose: Function;
     items: unknown[];
     onItemClick: Function;
 } & {}>, {
@@ -41,6 +46,7 @@ declare const Drawer: import("vue").DefineComponent<{
     mask: boolean;
     width: string | number;
     className: string;
+    onClose: Function;
     items: unknown[];
     onItemClick: Function;
 }>;
