@@ -1,7 +1,7 @@
 # modal 
 
 <DemoView />
-<BackTop />
+<BackToTop />
 
 <div class="code-box code-vue-active">
 <div class="code-tabs"></div>
@@ -223,10 +223,7 @@ export default defineComponent({
       </div>
 
       <!-- Basic Modal -->
-      <Modal
-        :is-opened="state.isOpened1"
-        :on-close="closeModal.bind(null, 1, 'Modal had been closed')"
-      >
+      <Modal :is-opened="state.isOpened1" @close="closeModal(1, 'Modal had been closed')">
         <ModalHeader>This is Title</ModalHeader>
         <ModalContent>
           <div class="modal-content">
@@ -240,10 +237,7 @@ export default defineComponent({
       </Modal>
 
       <!-- Single Button -->
-      <Modal
-        :is-opened="state.isOpened2"
-        :on-close="closeModal.bind(this, 2, 'Modal had been closed')"
-      >
+      <Modal :is-opened="state.isOpened2" @close="closeModal(2, 'Modal had been closed')">
         <ModalHeader>This is Title</ModalHeader>
         <ModalContent>
           <div class="modal-content">
@@ -259,9 +253,9 @@ export default defineComponent({
       <Modal
         :is-opened="state.isOpened3"
         content="This is modal content, This is modal content, This is modal content"
-        :on-close="closeModal.bind(this, 3, 'Modal had been closed')"
-        :on-cancel="closeModal.bind(this, 3, 'click cancel')"
-        :on-confirm="closeModalConfirm.bind(this, 3, 'click confirm')"
+        @close="closeModal(3, 'Modal had been closed')"
+        @cancel="closeModal(3, 'click cancel')"
+        @confirm="closeModalConfirm(3, 'click confirm')"
         cancel-text="Cancel"
         confirm-text="Confirm"
       />
@@ -273,9 +267,9 @@ export default defineComponent({
         cancel-text="Cancel"
         confirm-text="Confirm"
         content="This is modal content This is modal content"
-        :on-close="closeModal.bind(this, 4, 'Modal had been closed')"
-        :on-cancel="closeModal.bind(this, 4, 'click cancel')"
-        :on-confirm="closeModalConfirm.bind(this, 4, 'click confirm')"
+        @close="closeModal(4, 'Modal had been closed')"
+        @cancel="closeModal(4, 'click cancel')"
+        @confirm="closeModalConfirm(4, 'click confirm')"
       />
     </div>
   </div>
@@ -283,7 +277,12 @@ export default defineComponent({
 
 <script>
 import { defineComponent } from 'vue'
-import { Button, Modal, ModalAction, ModalHeader, ModalContent } from 'onebay-ui'
+import { Button, Modal } from 'onebay-ui'
+import $modal from '/@/onebay-ui/src/components/modal'
+import $imagePreview from '/@/onebay-ui/src/components/image-preview'
+import '/@/onebay-ui/src/style/components/image-preview.scss'
+const { ModalAction, ModalHeader, ModalContent } = Modal
+
 export default defineComponent({
   components: {
     Button,
@@ -306,30 +305,37 @@ export default defineComponent({
   methods: {
     handleClickShow(type) {
       this.state[`isOpened${type}`] = true
-      console.log(type)
     },
     closeModal(type, msg) {
       this.state[`isOpened${type}`] = false
-      console.log(`isOpened${type}`, this.state[`isOpened${type}`])
+
       this.$toast({
         text: msg
       })
     },
 
     closeModalConfirm(type, msg) {
-      console.log(type, msg)
       this.state[`isOpened${type}`] = false
-      console.log(`isOpened${type}`, this.state[`isOpened${type}`])
       this.$toast({
         text: msg
       })
     },
     openModal() {
-      const myModal = this.$modal({
+      $imagePreview({
+        images: [
+          'https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg',
+          'https://zos.alipayobjects.com/rmsportal/hqQWgTXdrlmVVYi.jpeg',
+          'https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg',
+          'https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg',
+          'https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg'
+        ]
+      })
+      const myModal = $modal({
         title: 'Open Modal as Method',
         'cancel-text': 'Cancel',
         'confirm-text': 'Confirm',
-        content: 'This is modal content This is modal content'
+        content: 'This is modal content This is modal content',
+        onCancel: () => myModal.close()
       })
     }
   }

@@ -139,10 +139,6 @@ module.exports = {
             link: '/docs/navigation/drawer'
           },
           {
-            text: 'indexes',
-            link: '/docs/navigation/indexes'
-          },
-          {
             text: 'navbar',
             link: '/docs/navigation/navbar'
           },
