@@ -8,8 +8,7 @@
 
 ```tsx
 import { defineComponent, reactive, ref } from 'vue'
-import { Input, Form } from onebay - ui
-import toast from 'onebay-ui'
+import { Input, Form, Toast } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import verification_code from '../../../assets/images/verification_code.png'
 
@@ -67,7 +66,7 @@ export default defineComponent({
     }
 
     const onClickErrorIcon = () => {
-      toast({
+      Toast({
         text: 'Please enter the numbers',
         status: 'error',
         duration: 2000
@@ -494,7 +493,7 @@ export default defineComponent({
 <script>
 import { defineComponent, ref } from 'vue'
 import verification_code from '../../../assets/images/verification_code.png'
-import { Input, Form } from 'onebay-ui'
+import { Input, Form, Toast } from 'onebay-ui'
 
 export default defineComponent({
   name: 'InputPage',
@@ -564,7 +563,7 @@ export default defineComponent({
     },
 
     onClickErrorIcon() {
-      this.$toast({
+      Toast({
         text: '请输入数字',
         status: 'error',
         duration: 2000

@@ -1,8 +1,8 @@
-import { defineComponent, ref } from 'vue'
-import { Button } from onebay - ui
-import message, { MessageType } from 'onebay-ui'
+import { defineComponent } from 'vue'
+import { Button, Message } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import './index.scss'
+import { MessageType } from 'onebay-ui/types/components/message'
 
 export default defineComponent({
   name: 'MessagePage',
@@ -11,7 +11,7 @@ export default defineComponent({
   },
   setup() {
     const handleClick = (type: string) => {
-      message({
+      Message({
         message: 'new message',
         type: type as MessageType
       })

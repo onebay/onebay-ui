@@ -141,7 +141,7 @@
 </template>
 <script>
 import { defineComponent } from 'vue'
-import { Tag } from 'onebay-ui'
+import { Tag, Toast } from 'onebay-ui'
 export default defineComponent({
   name: 'TagPage',
   components: {
@@ -191,7 +191,7 @@ export default defineComponent({
       tagList[findIndex].active = active
       this.tagList = tagList
 
-      this.$toast({
+      Toast({
         text: content
       })
     },

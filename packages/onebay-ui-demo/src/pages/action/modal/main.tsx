@@ -1,16 +1,10 @@
 import { defineComponent, reactive } from 'vue'
-import { Button, Modal, ModalAction, ModalHeader, ModalContent } from onebay - ui
-import toast from 'onebay-ui'
-import modal from 'onebay-ui'
+import { Button, Modal, Toast } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({
   components: {
     Button,
-    Modal,
-    ModalAction,
-    ModalHeader,
-    ModalContent
   },
   name: 'ModalPage',
   setup() {
@@ -26,7 +20,7 @@ export default defineComponent({
     }
     const closeModal = (type, msg) => {
       state[`isOpened${type}`] = false
-      toast({
+      Toast({
         text: msg
       })
     }
@@ -35,7 +29,7 @@ export default defineComponent({
       console.log(type, msg)
       state[`isOpened${type}`] = false
       console.log(`isOpened${type}`, state[`isOpened${type}`])
-      toast({
+      Toast({
         text: msg
       })
     }

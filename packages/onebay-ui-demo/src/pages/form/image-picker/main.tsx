@@ -1,6 +1,5 @@
 import { defineComponent, reactive, toRaw } from 'vue'
-import { ImagePicker } from onebay - ui
-import toast from 'onebay-ui'
+import { ImagePicker, Toast } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 const dogaImages = [
@@ -39,13 +38,13 @@ export default defineComponent({
     }
 
     const onFail = (mes) => {
-      toast({
+      Toast({
         text: `onFail: ${mes}`
       })
     }
 
     const onImageClick = (index, file) => {
-      toast({
+      Toast({
         text: `onImageClick: ${index}${file}`
       })
     }

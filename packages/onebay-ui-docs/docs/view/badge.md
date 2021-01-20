@@ -6,6 +6,35 @@
 <div class="code-box code-vue-active">
 <div class="code-tabs"></div>
 
+```tsx
+import { defineComponent } from "vue";
+import { Badge, Button } from 'onebay-ui'
+
+export default defineComponent({
+  name: 'BadgePage',
+  components: {
+    Badge,
+    Button
+  },
+  data() {
+    return {
+      dot: '...',
+    }
+  },
+  render(): JSX.Element {
+    return (
+      <div>
+        <Badge value="NEW">
+          <Button size="small" circle>
+            按钮
+            </Button>
+        </Badge>
+      </div>
+    )
+  }
+})
+```
+
 ```vue
 <template>
   <div class="page">

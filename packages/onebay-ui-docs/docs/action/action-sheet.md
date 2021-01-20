@@ -8,7 +8,7 @@
 
 ```tsx
 import { defineComponent, ref } from 'vue'
-import { ActionSheet, Button, toast } from 'onebay-ui'
+import { ActionSheet, Button, Toast } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 const ActionSheetItem = ActionSheet.item
@@ -25,7 +25,7 @@ export default defineComponent({
       isOpened.value = !isOpened.value
     }
     const showToast = (name: string) => {
-      toast({
+      Toast({
         text: name
       })
     }
@@ -90,7 +90,7 @@ export default defineComponent({
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { ActionSheet, Button } from 'onebay-ui'
+import { ActionSheet, Button, Toast } from 'onebay-ui'
 export default defineComponent({
   name: 'ActionSheetPage',
   components: {
@@ -109,7 +109,7 @@ export default defineComponent({
       this.isOpened = !this.isOpened
     },
     showToast(name) {
-      this.$toast({
+      Toast({
         text: name
       })
     }

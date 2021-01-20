@@ -150,7 +150,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { List } from 'onebay-ui'
+import { List, Toast } from 'onebay-ui'
 export default defineComponent({
   name: 'ListPage',
   components: {
@@ -159,13 +159,13 @@ export default defineComponent({
   },
   methods: {
     handleChange(e) {
-      this.$toast({
+      Toast({
         text: `Change Switch: ${e}`
       })
     },
 
     handleClick(e) {
-      this.toast({
+      Toast({
         text: `Click item`
       })
     }

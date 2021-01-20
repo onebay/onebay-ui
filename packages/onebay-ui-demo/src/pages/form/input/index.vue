@@ -207,7 +207,7 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import verification_code from '../../../assets/images/verification_code.png'
-import { Input, Form } from 'onebay-ui'
+import { Input, Form, Toast } from 'onebay-ui'
 
 export default defineComponent({
   name: 'InputPage',
@@ -277,7 +277,7 @@ export default defineComponent({
     },
 
     onClickErrorIcon() {
-      this.$toast({
+      Toast({
         text: '请输入数字',
         status: 'error',
         duration: 2000

@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import { Timeline } from '/@/onebay-ui/src/index.ts'
+import { Timeline } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({

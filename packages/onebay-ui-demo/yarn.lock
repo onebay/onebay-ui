@@ -2935,8 +2935,8 @@ once@^1.3.0, once@^1.3.1, once@^1.4.0:
 
 onebay-ui@^0.0.1:
   version "0.0.1"
-  resolved "http://localhost:4873/onebay-ui/-/onebay-ui-0.0.1.tgz#96c386f22534763ebbd3d8fa51980235fd4ed835"
-  integrity sha512-OvTiatF8m8ZZs+735XBEPjaCLovsGtVqvTkgXLRzzmEEgPcUG0F94FiLRz71qpsc7ge5PsNVJYFdowS0XCHEgA==
+  resolved "http://localhost:4873/onebay-ui/-/onebay-ui-0.0.1.tgz#c5321274b0f54ea1513667f7852d2d0d8193a961"
+  integrity sha512-Az6pPmk+rCP+89t+qlrbj0nCsiGQAb3vg0p2qRJuxFFgoJzP7BytDIyMg3flnG8P7tMeqTIrz17jSQ6I5gN/vA==
   dependencies:
     classnames "^2.2.6"
     lodash "^4.17.20"

@@ -1,6 +1,5 @@
 import { defineComponent, reactive } from 'vue'
-import { SearchBar } from onebay - ui
-import toast from 'onebay-ui'
+import { SearchBar, Toast } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({
@@ -17,7 +16,7 @@ export default defineComponent({
       state[stateName] = value
     }
     const onActionClick = () => {
-      toast({
+      Toast({
         text: 'start search',
         status: 'success'
       })

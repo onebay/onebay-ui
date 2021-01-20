@@ -75,7 +75,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Button, Pagination } from 'onebay-ui'
+import { Button, Pagination, Toast } from 'onebay-ui'
 import './index.scss'
 export default defineComponent({
   name: 'PaginationPage',
@@ -95,7 +95,7 @@ export default defineComponent({
   methods: {
     onPage(data) {
       this.current = data.current
-      this.$toast({
+      Toast({
         text: `Pagination: ${data}`
       })
     },

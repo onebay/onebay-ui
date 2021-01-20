@@ -72,7 +72,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { SearchBar } from 'onebay-ui'
+import { SearchBar, Toast } from 'onebay-ui'
 export default defineComponent({
   name: 'SearchBarPage',
   components: {
@@ -91,7 +91,7 @@ export default defineComponent({
       this[stateName] = value
     },
     onActionClick() {
-      this.$toast({
+      Toast({
         text: 'start search',
         status: 'success'
       })

@@ -1,6 +1,5 @@
 import { defineComponent } from 'vue'
-import { List } from onebay - ui
-import toast from 'onebay-ui'
+import { List, Toast } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 const { ListItem } = List
@@ -8,13 +7,13 @@ export default defineComponent({
   name: 'ListPage',
   setup() {
     const handleChange = (e: string) => {
-      toast({
+      Toast({
         text: `Change Switch: ${e}`
       })
     }
 
     const handleClick = (e: string) => {
-      toast({
+      Toast({
         text: `Click item`
       })
     }

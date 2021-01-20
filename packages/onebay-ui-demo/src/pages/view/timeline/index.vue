@@ -107,7 +107,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Timeline } from '/@/onebay-ui/src/index.ts'
+import { Timeline } from 'onebay-ui'
 export default defineComponent({
   name: 'TimelinePage',
   components: { Timeline }

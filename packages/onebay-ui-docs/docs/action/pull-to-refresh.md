@@ -9,7 +9,7 @@
 ```tsx
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import { defineComponent, ref } from 'vue'
-import { PullToRefresh, Button, Noticebar, toast } from 'onebay-ui'
+import { PullToRefresh, Button, Noticebar, Toast } from 'onebay-ui'
 
 export default defineComponent({
   name: 'PullToRefreshPage',
@@ -23,7 +23,7 @@ export default defineComponent({
       direction.value = direction.value === 'up' ? 'down' : 'up'
     }
     const onRefresh = () => {
-      toast({
+      Toast({
         text: 'onRefresh'
       })
     }
@@ -95,7 +95,7 @@ export default defineComponent({
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { PullToRefresh, Button, Noticebar } from 'onebay-ui'
+import { PullToRefresh, Button, Noticebar, Toast } from 'onebay-ui'
 export default defineComponent({
   name: 'PullToRefreshPage',
   components: {
@@ -109,7 +109,7 @@ export default defineComponent({
       direction.value = direction.value === 'up' ? 'down' : 'up'
     }
     const onRefresh = () => {
-      this.$toast({
+      Toast({
         text: 'onRefresh'
       })
     }
