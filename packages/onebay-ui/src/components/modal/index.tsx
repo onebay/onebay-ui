@@ -13,8 +13,8 @@ export interface ModalConfig extends Config {
   title?: string | JSX.Element
   content?: string | JSX.Element
   isOpened?: boolean
-  'cancel-text'?: string
-  'confirm-text'?: string
+  cancelText?: string
+  confirmText?: string
   onClose?: () => void
   onCancel?: () => void
   onConfirm?: (e: Event) => unknown
