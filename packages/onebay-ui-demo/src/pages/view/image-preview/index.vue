@@ -19,10 +19,6 @@
         <div class="panel__title">paginationVisible = false</div>
         <Button @click="changePaginationVisible">toggle show</Button>
       </div>
-      <div class="panel">
-        <div class="panel__title">use with $imagePreview</div>
-        <Button @click="handleClick">open ImagePreview</Button>
-      </div>
     </div>
     <!-- E Body -->
   </div>
@@ -57,9 +53,6 @@ export default defineComponent({
       ImagePreview({
         images: imgs
       })
-    },
-    handleClose() {
-      this.show = false
     },
     changeStartPosition() {
       ImagePreview({
