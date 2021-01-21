@@ -38,6 +38,11 @@ export default defineComponent({
     values: {
       type: Array as PropType<Item[]>,
       default: () => []
+    },
+    onClick: {
+      type: Function,
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      default: () => {}
     }
   },
   emits: ['click'],

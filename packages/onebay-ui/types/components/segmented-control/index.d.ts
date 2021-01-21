@@ -32,6 +32,10 @@ declare const _default: import("vue").DefineComponent<{
         type: PropType<(string | number)[]>;
         default: () => any[];
     };
+    onClick: {
+        type: FunctionConstructor;
+        default: () => void;
+    };
 }, {
     rootCls: import("vue").ComputedRef<string>;
     rootStyle: import("vue").ComputedRef<unknown>;
@@ -54,6 +58,7 @@ declare const _default: import("vue").DefineComponent<{
     disabled: boolean;
     values: (string | number)[];
     color: string;
+    onClick: Function;
     fontSize: string | number;
     customStyle: string;
     className: string | unknown[];
@@ -63,6 +68,7 @@ declare const _default: import("vue").DefineComponent<{
     disabled: boolean;
     values: (string | number)[];
     color: string;
+    onClick: Function;
     fontSize: string | number;
     customStyle: string;
     className: string | unknown[];

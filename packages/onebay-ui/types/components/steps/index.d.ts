@@ -25,14 +25,20 @@ declare const _default: import("vue").DefineComponent<{
         type: PropType<StepItem[]>;
         default: () => any[];
     };
+    onChange: {
+        type: FunctionConstructor;
+        default: () => void;
+    };
 }, unknown, unknown, {}, {
     handleClick(index: number): void;
 }, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, "change"[], "change", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
+    onChange: Function;
     customStyle: "";
     className: "";
     items: StepItem[];
     current: number;
 } & {}>, {
+    onChange: Function;
     customStyle: "";
     className: "";
     items: StepItem[];
