@@ -2,7 +2,7 @@ import { PropType } from 'vue';
 export interface TabListItem {
     title?: string;
     iconType?: string;
-    dot?: string;
+    dot?: boolean;
     text?: string;
     max?: number;
     iconPrefixClass?: string;
@@ -51,6 +51,10 @@ declare const _default: import("vue").DefineComponent<{
         type: StringConstructor;
         default: string;
     };
+    onClick: {
+        type: FunctionConstructor;
+        default: () => void;
+    };
 }, {
     rootCls: import("vue").ComputedRef<string>;
     rootSty: import("vue").ComputedRef<unknown>;
@@ -72,6 +76,7 @@ declare const _default: import("vue").DefineComponent<{
 }, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, "click"[], "click", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
     fixed: boolean;
     color: string;
+    onClick: Function;
     backgroundColor: string;
     fontSize: string | number;
     customStyle: string;
@@ -83,6 +88,7 @@ declare const _default: import("vue").DefineComponent<{
 } & {}>, {
     fixed: boolean;
     color: string;
+    onClick: Function;
     backgroundColor: string;
     fontSize: string | number;
     customStyle: string;

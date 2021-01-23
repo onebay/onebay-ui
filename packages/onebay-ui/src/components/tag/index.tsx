@@ -1,25 +1,19 @@
 import { computed, defineComponent, PropType } from 'vue'
 import classNames from 'classnames'
 
-export enum SIZE_CLASS {
-  normal = 'normal',
-  small = 'small'
-}
-
-export enum TYPE_CLASS {
-  primary = 'primary'
-}
+export type TagSize = 'normal' | 'small'
+export type TagType = 'primary'
 
 const Tag = defineComponent({
   name: 'Tag',
   props: {
     size: {
-      type: String as PropType<SIZE_CLASS>,
+      type: String as PropType<TagSize>,
       default: 'normal',
-      validator: (val: string) => Object.keys(SIZE_CLASS).includes(val)
+      validator: (val: string) => ['normal', 'small'].includes(val)
     },
     type: {
-      type: String as PropType<TYPE_CLASS>,
+      type: String as PropType<TagType>,
       default: '',
       validator: (val: string) => ['', 'primary'].includes(val)
     },
@@ -54,8 +48,8 @@ const Tag = defineComponent({
       const { size, type, circle, disabled, active } = props
       const rootClassName = ['ob-tag']
       const classObject = {
-        [`ob-tag--${SIZE_CLASS[size]}`]: size,
-        [`ob-tag--${TYPE_CLASS[type]}`]: type,
+        [`ob-tag--${size}`]: size,
+        [`ob-tag--${type}`]: type,
         'ob-tag--disabled': disabled,
         'ob-tag--active': active,
         'ob-tag--circle': circle

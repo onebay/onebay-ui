@@ -1,19 +1,14 @@
 import { PropType } from 'vue';
-export declare enum SIZE_CLASS {
-    normal = "normal",
-    small = "small"
-}
-export declare enum TYPE_CLASS {
-    primary = "primary"
-}
+export declare type TagSize = 'normal' | 'small';
+export declare type TagType = 'primary';
 declare const Tag: import("vue").DefineComponent<{
     size: {
-        type: PropType<SIZE_CLASS>;
+        type: PropType<TagSize>;
         default: string;
         validator: (val: string) => boolean;
     };
     type: {
-        type: PropType<TYPE_CLASS>;
+        type: PropType<"primary">;
         default: string;
         validator: (val: string) => boolean;
     };
@@ -49,18 +44,18 @@ declare const Tag: import("vue").DefineComponent<{
     active: boolean;
     disabled: boolean;
     circle: boolean;
-    type: TYPE_CLASS;
+    type: "primary";
     name: string;
-    size: SIZE_CLASS;
+    size: TagSize;
     customStyle: string;
     className: string;
 } & {}>, {
     active: boolean;
     disabled: boolean;
     circle: boolean;
-    type: TYPE_CLASS;
+    type: "primary";
     name: string;
-    size: SIZE_CLASS;
+    size: TagSize;
     customStyle: string;
     className: string;
 }>;
