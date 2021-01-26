@@ -43,6 +43,18 @@ declare const _default: import("vue").DefineComponent<{
         type: ArrayConstructor[];
         default: () => any[];
     };
+    onSlideChangeEnd: {
+        type: FunctionConstructor;
+        default: () => void;
+    };
+    onSlideChangeStart: {
+        type: FunctionConstructor;
+        default: () => void;
+    };
+    onSlideChangeMove: {
+        type: FunctionConstructor;
+        default: () => void;
+    };
 }, {
     dragging: boolean;
     currentPage: number;
@@ -103,6 +115,9 @@ declare const _default: import("vue").DefineComponent<{
     lazyLoad: boolean;
     lazyLoadUrl: string;
     swiperData: unknown[];
+    onSlideChangeEnd: Function;
+    onSlideChangeStart: Function;
+    onSlideChangeMove: Function;
 } & {}>, {
     direction: string;
     speed: number;
@@ -115,5 +130,8 @@ declare const _default: import("vue").DefineComponent<{
     lazyLoad: boolean;
     lazyLoadUrl: string;
     swiperData: unknown[];
+    onSlideChangeEnd: Function;
+    onSlideChangeStart: Function;
+    onSlideChangeMove: Function;
 }>;
 export default _default;
