@@ -3,7 +3,7 @@ export interface EnvInterface {
   DEV: boolean
   MODE: string
   PROD: boolean
-  VITE_TEMPLATE_ENV?: string
+  VITE_LANG_ENV?: string
 }
 // @ts-ignore
-export default (): EnvInterface => import.meta?.env || 'dev'
+export default (): EnvInterface => import.meta.env

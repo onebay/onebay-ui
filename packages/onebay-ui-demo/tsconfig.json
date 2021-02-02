@@ -23,11 +23,11 @@
     },
     "typeRoots": [
       "node_modules/@types",
-      "global.d.ts",
+      "source.d.ts",
       "types",
       "onebay-ui/types"
     ],
   },
   "exclude": ["./.env.**"],
-  "files": ["global.d.ts"]
+  "files": ["source.d.ts"]
 }

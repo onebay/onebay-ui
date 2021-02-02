@@ -5,6 +5,10 @@ import vue from '@vitejs/plugin-vue'
 // const vitePluginImp = require(resolve(__dirname, '../vite-plugin-imp/dist')).default
 
 export default defineConfig({
+  esbuild: {
+    jsxFactory: 'h',
+    jsxFragment: 'Fragment'
+  },
   server: {
     // port: 3333,
   },
