@@ -9,7 +9,7 @@
 ```tsx
 import './index.scss'
 import { defineComponent } from 'vue'
-import { Slider, Noticebar } from onebay - ui
+import { Slider, Noticebar } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({

@@ -1,5 +1,5 @@
 import { defineComponent, reactive } from 'vue'
-import { Checkbox } from onebay - ui
+import { Checkbox } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({

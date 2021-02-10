@@ -6,11 +6,12 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   esbuild: {
+    jsxInject: `import { h } from 'vue'\n`,
     jsxFactory: 'h',
     jsxFragment: 'Fragment'
   },
   server: {
-    // port: 3333,
+    port: 3333,
   },
   plugins: [
     vue()

@@ -8,7 +8,7 @@
 
 ```tsx
 import { defineComponent, reactive } from 'vue'
-import { Accordion, List } from onebay - ui
+import { Accordion, List } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 const { ListItem } = List
 export default defineComponent({

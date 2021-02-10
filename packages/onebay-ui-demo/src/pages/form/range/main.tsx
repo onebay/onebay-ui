@@ -1,6 +1,6 @@
 import './index.scss'
 import { defineComponent, reactive } from 'vue'
-import { Range, Noticebar } from onebay - ui
+import { Range, Noticebar } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 export default defineComponent({

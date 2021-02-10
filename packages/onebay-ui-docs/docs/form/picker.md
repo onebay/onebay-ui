@@ -8,7 +8,7 @@
 
 ```tsx
 import { defineComponent, reactive } from 'vue'
-import { Picker } from 'onebay-ui/src/index'
+import { Picker } from 'onebay-ui'
 import './index.scss'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 

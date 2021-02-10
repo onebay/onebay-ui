@@ -24,7 +24,7 @@ const routes = [
   },
   {
     path: '/pages/basic/button/index',
-    component: () => import('../pages/basic/button/main')
+    component: import('../pages/basic/button/main')
   },
   {
     path: '/pages/basic/icon/index',
