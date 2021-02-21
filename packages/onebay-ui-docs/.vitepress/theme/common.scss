@@ -31,10 +31,23 @@
       height: 30px;
       border: 0;
       outline: none;
+      cursor: pointer;
     }
   }
   .language-vue, .language-tsx {
+    position: relative;
     display: none;
+    &::before {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      content: '';
+      display: inline-block;
+      width: 54px;
+      height: 14px;
+      background-image: url('/assets/images/code.svg');
+      background-repeat: no-repeat;
+    }
   }
   &.code-vue-active {
     .language-vue {
