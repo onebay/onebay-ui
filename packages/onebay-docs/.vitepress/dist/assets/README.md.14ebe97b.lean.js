@@ -1,0 +1,1 @@
+import{o as e,c as a,a as s}from"./app.1827b798.js";const n='{"title":"docs","description":"","frontmatter":{},"headers":[{"level":2,"title":"docs","slug":"docs"},{"level":3,"title":"dev","slug":"dev"}],"relativePath":"README.md","lastUpdated":1614359368539}',d={},t=s('',5);d.render=function(s,n,d,o,r,c){return e(),a("div",null,[t])};export default d;export{n as __pageData};

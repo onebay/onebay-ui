@@ -4,9 +4,6 @@ module.exports = {
   lang: 'en-US',
   description: 'A mobile web UI library write by vue3',
   title: 'onebay',
-  alias: {
-    '/@/onebay-ui/': path.resolve(__dirname, '../../onebay-ui'),
-  },
   head: [
     ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: '/assets/images/favicon.ico' }],
   ],
@@ -15,7 +12,7 @@ module.exports = {
     sidebar: [
       {
         text: 'introduce',
-        link: '/'
+        link: '/docs/index'
       },
       {
         text: 'action',

@@ -1,0 +1,19 @@
+{
+  "name": "onebay-docs",
+  "version": "0.0.1",
+  "description": "onebay-ui-docs",
+  "main": "index.js",
+  "author": "psaren",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.32.8",
+    "vitepress": "^0.12.2"
+  },
+  "scripts": {
+    "start": "vitepress",
+    "build": "vitepress build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  }
+}
