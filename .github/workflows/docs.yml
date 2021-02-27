@@ -30,7 +30,7 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
-          ACCESS_TOKEN: ${{secrets.ONEBAY_ACCESS_TOKEN}}
-          REPOSITORY_NAME: onebay/onebay.github.io
+          token: ${{secrets.ONEBAY_ACCESS_TOKEN}}
+          "repository-name": onebay/onebay.github.io
           branch: main # The branch the action should deploy to.
           folder: ./packages/onebay-docs/.vitepress/dist # The folder the action should deploy.
