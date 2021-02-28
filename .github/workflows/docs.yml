@@ -13,7 +13,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./packages/onebay-docs
+        working-directory: ./packages/onebay-ui-docs
 
     steps:
       - name: Checkout 🛎️
@@ -28,10 +28,12 @@ jobs:
           npm run build
 
       - name: Build demo
-      - run: |
+        run: |
           cd ../onebay-ui-demo
           npm ci
           npm run build
+          mkdir ./.vitepress/dist/demo -p
+          cp ../onebay-ui-demo/dist/* ./.vitepress/dist/demo/ -r
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
@@ -39,4 +41,4 @@ jobs:
           token: ${{secrets.ONEBAY_ACCESS_TOKEN}}
           "repository-name": onebay/onebay.github.io
           branch: main # The branch the action should deploy to.
-          folder: ./packages/onebay-docs/.vitepress/dist # The folder the action should deploy.
+          folder: ./packages/onebay-ui-docs/.vitepress/dist # The folder the action should deploy.

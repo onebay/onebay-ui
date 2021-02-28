@@ -1,1 +1,0 @@
-import{o as t,c as e,b as r}from"./app.1827b798.js";const a='{"title":"","description":"","frontmatter":{},"relativePath":"src/code-template.md","lastUpdated":1614359254633}',o={},d=r("div",{class:"demo-type"}," type ```type code ``` ",-1);o.render=function(r,a,o,p,s,c){return t(),e("div",null,[d])};export default o;export{a as __pageData};
