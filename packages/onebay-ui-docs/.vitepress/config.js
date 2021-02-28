@@ -12,7 +12,7 @@ module.exports = {
     sidebar: [
       {
         text: 'introduce',
-        link: '/docs/index'
+        link: '/'
       },
       {
         text: 'action',

@@ -54,7 +54,7 @@
       display: block;
     }
     .btn-vue {
-      background-color: var(--accent-color);
+      background-color: var(--c-brand);
       color: #fff;
     }
   }
@@ -63,7 +63,7 @@
       display: block;
     }
     .btn-tsx {
-      background-color: var(--accent-color);
+      background-color: var(--c-brand);
       color: #fff;
       &:active {
         border: 0;

@@ -1,24 +1,23 @@
 {
   "name": "onebay-ui-docs",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0-alpha.0",
+  "description": "onebay-ui-docs",
   "main": "index.js",
-  "scripts": {
-    "docs": "node ./src/genDocs.js",
-    "start": "vitepress",
-    "build": "vitepress build",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "psaren",
+  "license": "MIT",
+  "private": "true",
   "devDependencies": {
-    "glob": "^7.1.6",
-    "sass": "^1.29.0",
+    "sass": "^1.32.8",
     "vitepress": "^0.12.2"
   },
+  "scripts": {
+    "start": "vitepress",
+    "build": "vitepress build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
   "dependencies": {
-    "classnames": "^2.2.6",
-    "onebay-ui": "^0.0.1"
+    "classnames": "^2.2.6"
   }
 }

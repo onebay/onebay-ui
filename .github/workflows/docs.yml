@@ -27,6 +27,12 @@ jobs:
           npm install
           npm run build
 
+      - name: Build demo
+      - run: |
+          cd ../onebay-ui-demo
+          npm ci
+          npm run build
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
