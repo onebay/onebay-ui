@@ -33,7 +33,7 @@ jobs:
           npm ci
           npm run build
           mkdir ./.vitepress/dist/demo -p
-          cp ../onebay-ui-demo/dist/* ./.vitepress/dist/demo/ -r
+          cp ./dist/* ../onebay-ui-docs/.vitepress/dist/demo/ -r
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
