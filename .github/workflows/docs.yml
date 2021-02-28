@@ -30,9 +30,11 @@ jobs:
       - name: Build demo
         run: |
           cd ../onebay-ui-demo
+          node -v
+          npm -v
           npm install
           npm run build
-          mkdir ./.vitepress/dist/demo -p
+          mkdir ../onebay-ui-docs/.vitepress/dist/demo -p
           cp ./dist/* ../onebay-ui-docs/.vitepress/dist/demo/ -r
 
       - name: Deploy 🚀
