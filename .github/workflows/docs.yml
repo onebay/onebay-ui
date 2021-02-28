@@ -30,6 +30,7 @@ jobs:
       - name: Build demo
         run: |
           cd ../onebay-ui-demo
+          pwd
           node -v
           npm -v
           npm install
