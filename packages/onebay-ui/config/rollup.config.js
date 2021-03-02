@@ -9,6 +9,8 @@ import VuePlugin from 'rollup-plugin-vue'
 import jsx from 'acorn-jsx'
 import glob from 'glob'
 import scss from 'rollup-plugin-scss'
+import postcss from 'postcss'
+import autoprefixer from 'autoprefixer'
 // import { terser } from 'rollup-plugin-terser'
 // const DEV_ENV = process.env.LIB_ENV === 'dev'
 
@@ -61,7 +63,15 @@ const scssTasks = scssFiles.map((item) => {
   const name = paths[paths.length - 1].replace('.scss', '')
   return {
     input: resolveFile(`src/style/components/${name}.scss`),
-    plugins: [scss({ output: `dist/style/${name}.css` })]
+    plugins: [
+      scss({
+        output: `dist/style/${name}.css`,
+        processor: (css) =>
+          postcss([autoprefixer])
+            .process(css)
+            .then((result) => result.css)
+      })
+    ]
   }
 })
 // const configs = []
