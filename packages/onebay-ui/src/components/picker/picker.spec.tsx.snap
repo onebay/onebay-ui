@@ -11985,7 +11985,7 @@ exports[`Picker Snap render Picker -- props fields === month 1`] = `
         />
         <div
           class="ob-picker__content"
-          style="transform: translate3d(0, 48px, 0); transition: transform 0s;"
+          style="transform: translate3d(0, 0px, 0); transition: transform 0s;"
         >
           
           <div
