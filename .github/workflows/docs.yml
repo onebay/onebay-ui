@@ -1,0 +1,47 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    defaults:
+      run:
+        working-directory: ./packages/onebay-ui-docs
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: |
+          pwd
+          npm install
+          npm run build
+
+      - name: Build demo
+        run: |
+          cd ../onebay-ui-demo
+          pwd
+          node -v
+          npm -v
+          npm install
+          npm run build
+          mkdir ../onebay-ui-docs/.vitepress/dist/demo -p
+          cp ./dist/* ../onebay-ui-docs/.vitepress/dist/demo/ -r
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          token: ${{secrets.ONEBAY_ACCESS_TOKEN}}
+          "repository-name": onebay/onebay.github.io
+          branch: main # The branch the action should deploy to.
+          folder: ./packages/onebay-ui-docs/.vitepress/dist # The folder the action should deploy.

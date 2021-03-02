@@ -1,18 +1,8 @@
-import { defineComponent, computed, ref, watch } from 'vue'
+import { defineComponent, computed, ref, watch, onMounted } from 'vue'
 import classNames from 'classnames'
 import List from '../list/index'
 import ListItem from '../list/item/index'
 
-export interface DrawerProps {
-  show?: boolean
-  mask?: boolean
-  right?: boolean
-  width?: string | number
-  /* eslint-disable */
-  items?: any[]
-  className: any
-  /* eslint-disable */
-}
 const Drawer = defineComponent({
   components: {
     List,
@@ -37,23 +27,26 @@ const Drawer = defineComponent({
     },
     items: {
       type: Array,
-      default: function () {
-        return []
-      }
+      default: () => []
     },
     className: {
-      type: [Object, String],
-      default: function () {
-        return {}
-      }
+      type: String,
+      default: ''
     },
     onItemClick: {
       type: Function,
-      default: () => { /* */ }
+      default: () => {
+        /* */
+      }
+    },
+    onClose: {
+      type: Function,
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      default: () => {}
     }
   },
   emits: ['close'],
-  setup(props: DrawerProps) {
+  setup(props, { emit, slots }) {
     const animShow = ref(false)
     const visible = ref(props.show)
 
@@ -106,66 +99,58 @@ const Drawer = defineComponent({
       const rootClassName = ['ob-drawer']
       return classNames(rootClassName, classObject.value, props.className)
     })
-    return {
-      animShow,
-      visible,
-      inimationShow,
-      maskStyle,
-      classObject,
-      listStyle,
-      rootCls
+
+    const onHide = (): void => {
+      visible.value = false
+      emit('close')
     }
-  },
-  mounted(): void {
-    const { visible } = this
-    if (visible) this.inimationShow()
-  },
-  methods: {
-    handleItemClick(index: number): void {
-      this.onItemClick && this.onItemClick(index)
-      this.animHide()
-    },
 
-    onHide(): void {
-      this.visible = false
-      this.$emit('close')
-    },
-
-    animHide(): void {
-      this.animShow = false
+    const animHide = (): void => {
+      animShow.value = false
       setTimeout(() => {
-        this.onHide()
+        onHide()
       }, 300)
-    },
-
-    onMaskClick(): void {
-      this.animHide()
     }
-  },
-  render(): JSX.Element {
-    const { items } = this.$props
-    const { visible, rootCls, maskStyle, onMaskClick, listStyle, $slots, handleItemClick } = this
-    if (visible) {
-      return (
-        <div class={rootCls}>
-          <div class="ob-drawer__mask" style={maskStyle} onClick={onMaskClick}></div>
-          <div class="ob-drawer__content" style={listStyle}>
-            {!!items &&
-              items.length &&
-              items.map((name, index) => (
-                <List key={index}>
-                  <ListItem
-                    key={`${name}-${index}`}
-                    data-index={index}
-                    onClick={handleItemClick.bind(this, index)}
-                    title={name}
-                    arrow="right"></ListItem>
-                </List>
-              ))}
-            {items.length === 0 && $slots.default && $slots.default()}
+
+    const handleItemClick = (index: number): void => {
+      props.onItemClick(index)
+      animHide()
+    }
+
+    const onMaskClick = (): void => {
+      animHide()
+    }
+
+    onMounted(() => {
+      if (visible.value) inimationShow()
+    })
+
+    return () => {
+      const { items } = props
+      if (visible.value) {
+        return (
+          <div class={rootCls.value}>
+            <div class="ob-drawer__mask" style={maskStyle.value} onClick={onMaskClick}></div>
+            <div class="ob-drawer__content" style={listStyle.value}>
+              {!!items &&
+                items.length &&
+                items.map((name, index) => (
+                  <List key={index}>
+                    <ListItem
+                      key={`${name}-${index}`}
+                      onClick={() => {
+                        handleItemClick(index)
+                      }}
+                      title={name as string}
+                      arrow="right"></ListItem>
+                  </List>
+                ))}
+              {items.length === 0 && slots?.default()}
+            </div>
           </div>
-        </div>
-      )
+        )
+      }
+      return null
     }
   }
 })

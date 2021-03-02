@@ -1,11 +1,20 @@
-# Hello VitePress
+# Install
 
+``` bash
+npm i onebay-ui -S
+```
+
+# Usage
 ``` javascript
 import { defineComponent } from 'vue'
+import { Button } from 'onebay-ui'
+
 export default defineComponent({
   setup() {
     return () => {
-      return <h1>hello world</h1>
+      return (
+        <Button>onebay Button</Button>
+      )
     }
   }
 })

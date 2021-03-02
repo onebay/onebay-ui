@@ -59,8 +59,8 @@
 </template>
 
 <script>
-import { defineComponent, ref } from "vue"
-import { Checkbox } from '/@/onebay-ui/src/index.ts'
+import { defineComponent, ref } from 'vue'
+import { Checkbox } from 'onebay-ui'
 export default defineComponent({
   name: 'CheckboxPage',
   components: {
@@ -75,34 +75,34 @@ export default defineComponent({
         checkboxOption1: [
           { value: 'list1', label: 'iPhone X' },
           { value: 'list2', label: 'HUAWEI P20' },
-          { value: 'list3', label: 'OPPO Find X' },
+          { value: 'list3', label: 'OPPO Find X' }
         ],
         checkboxOption2: [
           {
             value: 'list1',
             label: 'iPhone X',
             desc:
-              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。',
+              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。'
           },
           {
             value: 'list2',
             label: 'HUAWEI P20',
             desc:
-              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。',
+              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。'
           },
           {
             value: 'list3',
             label: 'OPPO Find X',
             desc:
-              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。',
-          },
+              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。'
+          }
         ],
         checkboxOption3: [
           {
             value: 'list1',
             label: 'iPhone X',
             desc:
-              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。',
+              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。'
           },
           { value: 'list2', label: 'HUAWEI P20' },
           {
@@ -110,17 +110,17 @@ export default defineComponent({
             label: 'OPPO Find X',
             desc:
               '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。',
-            disabled: true,
+            disabled: true
           },
           {
             value: 'list4',
             label: 'vivo NEX',
             desc:
               '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。',
-            disabled: true,
-          },
-        ],
-      },
+            disabled: true
+          }
+        ]
+      }
     }
   },
   methods: {
@@ -134,7 +134,7 @@ export default defineComponent({
 
     handleChangeThd(value) {
       this.state.checkedList3 = value
-    },
-  },
+    }
+  }
 })
 </script>

@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import ImagePreview from './index'
+import ImagePreview from './ImagePreview'
 
 const factory = (values = {}, slots = { default: [] }) => {
   return mount(ImagePreview, {

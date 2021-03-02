@@ -1,17 +1,17 @@
 # action-sheet 
 
 <DemoView />
-<BackTop />
+<BackToTop />
 
 <div class="code-box code-vue-active">
 <div class="code-tabs"></div>
 
 ```tsx
 import { defineComponent, ref } from 'vue'
-import { ActionSheet, ActionSheetItem, Button } from 'onebay-ui/src/index'
-import toast from 'onebay-ui/src/plugins/toast'
+import { ActionSheet, Button, Toast } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
+const ActionSheetItem = ActionSheet.item
 export default defineComponent({
   name: 'ActionSheetPage',
   components: {
@@ -25,7 +25,7 @@ export default defineComponent({
       isOpened.value = !isOpened.value
     }
     const showToast = (name: string) => {
-      toast({
+      Toast({
         text: name
       })
     }
@@ -90,12 +90,12 @@ export default defineComponent({
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { ActionSheet, ActionSheetItem, Button } from '/@/onebay-ui/src/index.ts'
+import { ActionSheet, Button, Toast } from 'onebay-ui'
 export default defineComponent({
   name: 'ActionSheetPage',
   components: {
     ActionSheet,
-    ActionSheetItem,
+    ActionSheetItem: ActionSheet.Item,
     Button
   },
   setup(props) {
@@ -109,7 +109,7 @@ export default defineComponent({
       this.isOpened = !this.isOpened
     },
     showToast(name) {
-      this.$toast({
+      Toast({
         text: name
       })
     }

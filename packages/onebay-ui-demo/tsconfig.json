@@ -1,9 +1,9 @@
 {
-  "include": ["./**/*.ts", "./**/*.tsx"],
+  "include": ["./**/*.ts", "./**/*.tsx", "vite.config.ts"],
   "compilerOptions": {
     "jsx": "preserve",
-    "target": "es2020" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */,
-    "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+    "target": "ES2020" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */,
+    "module": "ESNext" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
     // "lib": ["es2017.object"] /* Specify library files to be included in the compilation. */,
     // "declaration": true /* Generates corresponding '.d.ts' file. */,
     // "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
@@ -18,15 +18,13 @@
     "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
     "esModuleInterop": true, /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
     "baseUrl": ".",
-    "paths": {
-      "/@/onebay-ui/*": ["../onebay-ui/*"]
-    },
     "typeRoots": [
       "node_modules/@types",
-      "global.d.ts",
-      "types"
+      "source.d.ts",
+      "types",
+      "onebay-ui/types"
     ],
   },
   "exclude": ["./.env.**"],
-  "files": ["global.d.ts"]
+  "files": ["source.d.ts"]
 }

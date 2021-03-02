@@ -1,5 +1,5 @@
 <template>
-  <div class="page row-page" style="height: 1000px">
+  <div class="page backtop-page" style="height: 1000px">
     <DocsHeader title="BackTop" />
     <div class="doc-body" style="height: 100%">
       <BackTop v-if="topText" :style="style">{{ topText }}</BackTop>
@@ -36,11 +36,11 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { BackTop, Button } from '/@/onebay-ui/src/index.ts'
+import { BackTop, Button } from 'onebay-ui'
 import './index.scss'
 
 export default defineComponent({
-  name: 'RowPage',
+  name: 'BackTopPage',
   components: {
     BackTop,
     Button

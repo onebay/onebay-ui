@@ -14,7 +14,6 @@ import {
   formatValue
 } from './utils'
 import { TOP, LINE_HEIGHT } from './constant'
-import './index.scss'
 
 export type Mode = 'selector' | 'multiSelector' | 'time' | 'date'
 export type Fields = 'day' | 'month' | 'year'
@@ -76,7 +75,13 @@ const Picker = defineComponent({
     rangeKey: {
       type: String,
       default: ''
-    }
+    },
+    // eslint-disable-next-line vue/require-default-prop
+    onChange: { type: Function },
+    // eslint-disable-next-line vue/require-default-prop
+    onCancel: { type: Function },
+    // eslint-disable-next-line vue/require-default-prop
+    onColumnchange: { type: Function }
   },
   emits: ['change', 'columnchange', 'cancel'],
   setup() {

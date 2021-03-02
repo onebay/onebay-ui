@@ -38,9 +38,7 @@ function getInputProps(props: ActualProps): ActualProps {
 const compProps = {
   customStyle: {
     type: [Object, String],
-    default: function () {
-      return {}
-    }
+    default: ''
   },
   className: {
     type: String,
@@ -126,21 +124,14 @@ const compProps = {
   }
 }
 
-export interface InputProps {
-  border?: boolean
-  error?: boolean
-  /* eslint-disable */
-  className: string
-  /* eslint-disable */
-}
-
 const Input = defineComponent({
   name: 'Input',
   props: Object.assign({}, compProps),
   emits: ['click', 'change', 'input', 'focus', 'blur'],
-  setup<T extends InputProps>(props: T) {
+  setup(props) {
     const inputProps = computed(() => {
-      return getInputProps(props)
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      return getInputProps(props as any)
     })
 
     const rootCls = computed(() => {

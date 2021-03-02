@@ -1,17 +1,17 @@
 # message 
 
 <DemoView />
-<BackTop />
+<BackToTop />
 
 <div class="code-box code-vue-active">
 <div class="code-tabs"></div>
 
 ```tsx
-import { defineComponent, ref } from 'vue'
-import { Button } from 'onebay-ui/src/index'
-import message, { MessageType } from 'onebay-ui/src/plugins/message'
+import { defineComponent } from 'vue'
+import { Button, Message } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import './index.scss'
+import { MessageType } from 'onebay-ui/types/components/message'
 
 export default defineComponent({
   name: 'MessagePage',
@@ -20,7 +20,7 @@ export default defineComponent({
   },
   setup() {
     const handleClick = (type: string) => {
-      message({
+      Message({
         message: 'new message',
         type: type as MessageType
       })
@@ -96,7 +96,7 @@ export default defineComponent({
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Button } from '/@/onebay-ui/src/index.ts'
+import { Button, Message } from 'onebay-ui'
 export default defineComponent({
   name: 'MessagePage',
   components: {
@@ -104,7 +104,7 @@ export default defineComponent({
   },
   methods: {
     handleClick(type) {
-      this.$message({
+      Message({
         message: '消息通知',
         type
       })

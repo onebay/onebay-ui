@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Message from './index'
+import Message from './Message'
 import { sleep } from '../../utils/helper'
 
 

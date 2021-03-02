@@ -21,8 +21,11 @@ export default {
   },
   created() {
     const route = this.$router.route.path.split(".")[0].replace("/docs/", "");
-    console.log("route", route);
-    this.src = `http://localhost:3333/#/pages/${route}/index`;
+    if (import.meta.env.MODE === "development") {
+      this.src = `http://localhost:3333/#/pages/${route}/index`;
+    } else {
+      this.src = `/demo/#/pages/${route}/index`;
+    }
   },
   mounted() {
     renderTabs();

@@ -1,7 +1,7 @@
 # pull-to-refresh 
 
 <DemoView />
-<BackTop />
+<BackToTop />
 
 <div class="code-box code-vue-active">
 <div class="code-tabs"></div>
@@ -9,8 +9,7 @@
 ```tsx
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import { defineComponent, ref } from 'vue'
-import { PullToRefresh, Button, Noticebar } from 'onebay-ui/src/index'
-import toast from 'onebay-ui/src/plugins/toast'
+import { PullToRefresh, Button, Noticebar, Toast } from 'onebay-ui'
 
 export default defineComponent({
   name: 'PullToRefreshPage',
@@ -24,7 +23,7 @@ export default defineComponent({
       direction.value = direction.value === 'up' ? 'down' : 'up'
     }
     const onRefresh = () => {
-      toast({
+      Toast({
         text: 'onRefresh'
       })
     }
@@ -69,6 +68,9 @@ export default defineComponent({
 ```vue
 <template>
   <div class="page row-page">
+    <Noticebar marquee>
+      This component only supports Touch events, please use mobile mode/device to open this page.
+    </Noticebar>
     <DocsHeader title="PullToRefresh" />
     <div class="doc-body" style="height: 100%">
       <div class="panel">
@@ -93,12 +95,13 @@ export default defineComponent({
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { PullToRefresh, Button } from '/@/onebay-ui/src/index.ts'
+import { PullToRefresh, Button, Noticebar, Toast } from 'onebay-ui'
 export default defineComponent({
   name: 'PullToRefreshPage',
   components: {
     Button,
-    PullToRefresh
+    PullToRefresh,
+    Noticebar
   },
   setup(props) {
     const direction = ref('down')
@@ -106,7 +109,7 @@ export default defineComponent({
       direction.value = direction.value === 'up' ? 'down' : 'up'
     }
     const onRefresh = () => {
-      this.$toast({
+      Toast({
         text: 'onRefresh'
       })
     }

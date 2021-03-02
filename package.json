@@ -1,13 +1,24 @@
 {
-  "name": "root",
-  "private": true,
+  "name": "onebay-ui",
+  "version": "1.0.0-alpha.0",
+  "private": "true",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "conventional-changelog-cli": "^2.1.1",
     "husky": "^4.3.0",
     "lerna": "^3.22.1"
   },
-  "type": "module",
+  "scripts": {
+    "lerna-version": "lerna version --conventional-commits --no-commit-hooks",
+    "lerna-publish": "lerna publish",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "cd packages/onebay-ui && npm run lint && npm test",

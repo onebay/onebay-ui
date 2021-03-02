@@ -38,7 +38,7 @@ import iconHOC from '../../assets/images/icon-list-hoc.png'
 import iconLayout from '../../assets/images/icon-list-layout.png'
 import iconNavigation from '../../assets/images/icon-list-navigation.png'
 import iconView from '../../assets/images/icon-list-view.png'
-import taroLogo from '../../assets/images/logo_taro.png'
+import taroLogo from '../../assets/images/logo_onebay.png'
 import './index.scss'
 
 const list = [

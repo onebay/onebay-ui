@@ -1,15 +1,14 @@
 # image-picker 
 
 <DemoView />
-<BackTop />
+<BackToTop />
 
 <div class="code-box code-vue-active">
 <div class="code-tabs"></div>
 
 ```tsx
 import { defineComponent, reactive, toRaw } from 'vue'
-import { ImagePicker } from 'onebay-ui/src/index'
-import toast from 'onebay-ui/src/plugins/toast'
+import { ImagePicker, Toast } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
 const dogaImages = [
@@ -48,13 +47,13 @@ export default defineComponent({
     }
 
     const onFail = (mes) => {
-      toast({
+      Toast({
         text: `onFail: ${mes}`
       })
     }
 
     const onImageClick = (index, file) => {
-      toast({
+      Toast({
         text: `onImageClick: ${index}${file}`
       })
     }
@@ -172,7 +171,7 @@ export default defineComponent({
 
 <script>
 import { defineComponent } from 'vue'
-import { ImagePicker } from '/@/onebay-ui/src/index.ts'
+import { ImagePicker, Toast } from 'onebay-ui'
 
 const dogaImages = [
   {
@@ -210,13 +209,13 @@ export default defineComponent({
     },
 
     onFail(mes) {
-      this.$toast({
+      Toast({
         text: `onFail: ${mes}`
       })
     },
 
     onImageClick(index, file) {
-      this.$toast({
+      Toast({
         text: `onImageClick: ${index}${file}`
       })
     }

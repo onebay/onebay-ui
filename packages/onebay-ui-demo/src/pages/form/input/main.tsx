@@ -1,6 +1,5 @@
 import { defineComponent, reactive, ref } from 'vue'
-import { Input, Form } from 'onebay-ui/src'
-import toast from 'onebay-ui/src/plugins/toast'
+import { Input, Form, Toast } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import verification_code from '../../../assets/images/verification_code.png'
 
@@ -58,7 +57,7 @@ export default defineComponent({
     }
 
     const onClickErrorIcon = () => {
-      toast({
+      Toast({
         text: 'Please enter the numbers',
         status: 'error',
         duration: 2000

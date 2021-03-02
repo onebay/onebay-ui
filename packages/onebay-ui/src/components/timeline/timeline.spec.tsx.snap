@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timeline Snap render Timeline -- props customStyle 1`] = `
+<div
+  class="ob-timeline"
+  style="color: red;"
+>
+  
+  
+</div>
+`;
+
+exports[`Timeline Snap render Timeline -- props items 1`] = `
+<div
+  class="ob-timeline"
+>
+  
+  <div
+    class="ob-timeline-item"
+  >
+    <div
+      class="ob-timeline-item__tail"
+    />
+    <div
+      class="ob-timeline-item__dot"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-timeline-item__content"
+    >
+      <div
+        class="ob-timeline-item__content-item"
+      >
+        Eat breakfast
+      </div>
+      
+      <div
+        class="ob-timeline-item__content-item ob-timeline-item__content--sub"
+      >
+        8:00
+      </div>
+      
+    </div>
+  </div>
+  <div
+    class="ob-timeline-item ob-timeline-item--yellow"
+  >
+    <div
+      class="ob-timeline-item__tail"
+    />
+    <div
+      class="ob-timeline-item__dot"
+    >
+      <!---->
+    </div>
+    <div
+      class="ob-timeline-item__content"
+    >
+      <div
+        class="ob-timeline-item__content-item"
+      >
+        Go to work
+      </div>
+      <!---->
+    </div>
+  </div>
+  <div
+    class="ob-timeline-item"
+  >
+    <div
+      class="ob-timeline-item__tail"
+    />
+    <div
+      class="ob-timeline-item__icon"
+    >
+      <div
+        class="ob-icon ob-icon-clock"
+      />
+    </div>
+    <div
+      class="ob-timeline-item__content"
+    >
+      <div
+        class="ob-timeline-item__content-item"
+      >
+        Sleep
+      </div>
+      <!---->
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`Timeline Snap render Timeline -- props pending 1`] = `
+<div
+  class="ob-timeline"
+>
+  
+  
+</div>
+`;
+
+exports[`Timeline Snap render initial Timeline 1`] = `
+<div
+  class="ob-timeline"
+>
+  
+  
+</div>
+`;

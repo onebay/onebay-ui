@@ -50,7 +50,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { TabBar } from '/@/onebay-ui/src/index.ts'
+import { TabBar } from 'onebay-ui'
 export default defineComponent({
   name: 'TabBarPage',
   components: {

@@ -66,7 +66,14 @@ export function getEventDetail(event: any): EventDetail {
   return detail
 }
 
-export function shouleBeObject(target) {
+interface ParameterErrorType {
+  name?: string
+  para?: string
+  correct: string
+  wrong: unknown
+}
+
+export function shouleBeObject(target: unknown): Partial<{ res: boolean; msg: string }> {
   if (target && typeof target === 'object') return { res: true }
   return {
     res: false,
@@ -77,7 +84,7 @@ export function shouleBeObject(target) {
   }
 }
 
-export function getParameterError({ name = '', para, correct, wrong }) {
+export function getParameterError({ name = '', para, correct, wrong }: ParameterErrorType): string {
   const parameter = para ? `parameter.${para}` : 'parameter'
   const errorType = upperCaseFirstLetter(wrong === null ? 'Null' : typeof wrong)
   return `${name}:fail parameter error: ${parameter} should be ${correct} instead of ${errorType}`
@@ -94,7 +101,13 @@ function upperCaseFirstLetter(string: unknown) {
  */
 export const uuid = ((id: number) => () => `uuid-${id++}`)(1000)
 
-export const isTest = (): boolean => process?.env?.NODE_ENV === 'test'
+export const isTest = (): boolean => {
+  try {
+    return process?.env?.NODE_ENV === 'test'
+  } catch (error) {
+    return false
+  }
+}
 
 export { baseToString }
 

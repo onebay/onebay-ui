@@ -26,7 +26,9 @@ const Radio = defineComponent({
     options: {
       type: Array,
       default: () => []
-    }
+    },
+    // eslint-disable-next-line vue/require-default-prop
+    onClick: { type: Function }
   },
   emits: ['click'],
   setup(props) {

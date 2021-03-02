@@ -33,7 +33,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Button } from '/@/onebay-ui/src/index.ts'
+import { Button, Message } from 'onebay-ui'
 export default defineComponent({
   name: 'MessagePage',
   components: {
@@ -41,7 +41,7 @@ export default defineComponent({
   },
   methods: {
     handleClick(type) {
-      this.$message({
+      Message({
         message: '消息通知',
         type
       })

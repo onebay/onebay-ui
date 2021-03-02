@@ -1,11 +1,14 @@
 const path = require('path');
 
 module.exports = {
+  lang: 'en-US',
+  description: 'A mobile web UI library write by vue3',
   title: 'onebay',
-  alias: {
-    '/@/onebay-ui/': path.resolve(__dirname, '../../onebay-ui'),
-  },
+  head: [
+    ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: '/assets/images/favicon.ico' }],
+  ],
   themeConfig: {
+    logo: '/assets/images/onebay.png',
     sidebar: [
       {
         text: 'introduce',
@@ -46,6 +49,10 @@ module.exports = {
           {
             text: 'button',
             link: '/docs/basic/button'
+          },
+          {
+            text: 'icon',
+            link: '/docs/basic/icon'
           }
         ]
       },
@@ -120,10 +127,6 @@ module.exports = {
           {
             text: 'list',
             link: '/docs/layout/list'
-          },
-          {
-            text: 'row',
-            link: '/docs/layout/row'
           }
         ]
       },
@@ -137,10 +140,6 @@ module.exports = {
           {
             text: 'drawer',
             link: '/docs/navigation/drawer'
-          },
-          {
-            text: 'indexes',
-            link: '/docs/navigation/indexes'
           },
           {
             text: 'navbar',
@@ -190,6 +189,10 @@ module.exports = {
           {
             text: 'tag',
             link: '/docs/view/tag'
+          },
+          {
+            text: 'timeline',
+            link: '/docs/view/timeline'
           }
         ]
       }

@@ -1,8 +1,8 @@
 import { defineComponent, ref } from 'vue'
-import { ActionSheet, ActionSheetItem, Button } from 'onebay-ui/src'
-import toast from 'onebay-ui/src/plugins/toast'
+import { ActionSheet, Button, Toast } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 
+const ActionSheetItem = ActionSheet.item
 export default defineComponent({
   name: 'ActionSheetPage',
   components: {
@@ -16,7 +16,7 @@ export default defineComponent({
       isOpened.value = !isOpened.value
     }
     const showToast = (name: string) => {
-      toast({
+      Toast({
         text: name
       })
     }

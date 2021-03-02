@@ -42,7 +42,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Radio } from '/@/onebay-ui/src/index.ts'
+import { Radio } from 'onebay-ui'
 
 export default {
   name: 'RadioPage',

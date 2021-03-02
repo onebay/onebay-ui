@@ -13,9 +13,7 @@
           <div class="example-item">
             <div class="subitem">
               <Badge value="10" :maxValue="99">
-                <Button size="small" circle>
-                  按钮
-                </Button>
+                <Button size="small" circle> 按钮 </Button>
               </Badge>
             </div>
             <div class="subitem">
@@ -34,9 +32,7 @@
           <div class="example-item">
             <div class="subitem">
               <Badge dot>
-                <Button size="small" circle>
-                  按钮
-                </Button>
+                <Button size="small" circle> 按钮 </Button>
               </Badge>
             </div>
             <div class="subitem">
@@ -55,9 +51,7 @@
           <div class="example-item">
             <div class="subitem">
               <Badge value="NEW">
-                <Button size="small" circle>
-                  按钮
-                </Button>
+                <Button size="small" circle> 按钮 </Button>
               </Badge>
             </div>
             <div class="subitem">
@@ -76,9 +70,7 @@
           <div class="example-item">
             <div class="subitem">
               <Badge :value="dot">
-                <Button size="small" circle>
-                  按钮
-                </Button>
+                <Button size="small" circle> 按钮 </Button>
               </Badge>
             </div>
             <div class="subitem">
@@ -94,8 +86,8 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
-import { Badge, Button } from '/@/onebay-ui/src/index.ts'
+import { defineComponent } from 'vue'
+import { Badge, Button } from 'onebay-ui'
 
 export default defineComponent({
   name: 'BadgePage',
@@ -105,11 +97,11 @@ export default defineComponent({
   },
   data() {
     return {
-      dot: '...',
+      dot: '...'
     }
-  },
+  }
 })
 </script>
 <style lang="scss">
-  @import url('./index.scss');
+@import url('./index.scss');
 </style>

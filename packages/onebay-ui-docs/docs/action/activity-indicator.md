@@ -1,15 +1,14 @@
 # activity-indicator 
 
 <DemoView />
-<BackTop />
+<BackToTop />
 
 <div class="code-box code-vue-active">
 <div class="code-tabs"></div>
 
 ```tsx
 import { defineComponent, ref } from 'vue'
-import { ActivityIndicator, Switch } from 'onebay-ui/src/index'
-import toast from 'onebay-ui/src/plugins/toast'
+import { ActivityIndicator, Switch, Toast } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import './index.scss'
 
@@ -21,11 +20,11 @@ export default defineComponent({
   },
   setup() {
     const isOpened = ref(true)
-    const handleChange = (value) => {
+    const handleChange = (value: boolean) => {
       isOpened.value = value
     }
     const showToast = (name: string) => {
-      toast({
+      Toast({
         text: name
       })
     }
@@ -38,9 +37,9 @@ export default defineComponent({
               <div class="panel__title">Custom size</div>
               <div class="panel__content">
                 <div class="example-item">
-                  <div class="subitem"><ActivityIndicator size="20" /></div>
-                  <div class="subitem"><ActivityIndicator size="24" /></div>
-                  <div class="subitem"><ActivityIndicator size="32" /></div>
+                  <div class="subitem"><ActivityIndicator size={20} /></div>
+                  <div class="subitem"><ActivityIndicator size={24} /></div>
+                  <div class="subitem"><ActivityIndicator size={32} /></div>
                 </div>
               </div>
             </div>
@@ -66,13 +65,13 @@ export default defineComponent({
               <div class="panel__title">Switch status</div>
               <div class="panel__content">
                 <Switch
-                  border="false"
+                  border={false}
                   title={isOpened.value ? 'opening' : 'closed'}
-                  checked={isOpened}
+                  checked={isOpened.value}
                   onChange={handleChange}
                 />
                 <div class="example-item">
-                  <ActivityIndicator content="加载中..." isOpened={isOpened} />
+                  <ActivityIndicator content="加载中..." isOpened={isOpened.value} />
                 </div>
               </div>
             </div>
@@ -151,9 +150,7 @@ export default defineComponent({
       </div>
       <!-- Vertical and horizontal center -->
       <div class="panel">
-        <div class="panel__title">
-          Vertical and horizontal center
-        </div>
+        <div class="panel__title">Vertical and horizontal center</div>
         <div class="panel__content">
           <div class="example-item example-item--center">
             <ActivityIndicator mode="center" />
@@ -165,12 +162,11 @@ export default defineComponent({
       </div>
     </div>
     <!-- E Body -->
-    </div>
   </div>
 </template>
 <script>
 import { defineComponent } from 'vue'
-import { ActivityIndicator, Switch } from '/@/onebay-ui/src/index.ts'
+import { ActivityIndicator, Switch } from 'onebay-ui'
 import './index.scss'
 export default defineComponent({
   name: 'ActivityIndicatorPage',

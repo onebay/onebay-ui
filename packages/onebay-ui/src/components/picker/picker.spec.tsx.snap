@@ -7068,7 +7068,7 @@ exports[`Picker Snap render Picker -- props fields === month 1`] = `
         />
         <div
           class="ob-picker__content"
-          style="transform: translate3d(0, 96px, 0); transition: transform 0s;"
+          style="transform: translate3d(0, 48px, 0); transition: transform 0s;"
         >
           
           <div
@@ -11985,9 +11985,59 @@ exports[`Picker Snap render Picker -- props fields === month 1`] = `
         />
         <div
           class="ob-picker__content"
-          style="transform: translate3d(0, 96px, 0); transition: transform 0s;"
+          style="transform: translate3d(0, 48px, 0); transition: transform 0s;"
         >
           
+          <div
+            class="ob-picker__item"
+          >
+            01月
+          </div>
+          <div
+            class="ob-picker__item"
+          >
+            02月
+          </div>
+          <div
+            class="ob-picker__item"
+          >
+            03月
+          </div>
+          <div
+            class="ob-picker__item"
+          >
+            04月
+          </div>
+          <div
+            class="ob-picker__item"
+          >
+            05月
+          </div>
+          <div
+            class="ob-picker__item"
+          >
+            06月
+          </div>
+          <div
+            class="ob-picker__item"
+          >
+            07月
+          </div>
+          <div
+            class="ob-picker__item"
+          >
+            08月
+          </div>
+          <div
+            class="ob-picker__item"
+          >
+            09月
+          </div>
+          <div
+            class="ob-picker__item"
+          >
+            10月
+          </div>
           <div
             class="ob-picker__item"
           >
@@ -12056,7 +12106,7 @@ exports[`Picker Snap render Picker -- props fields === year 1`] = `
         />
         <div
           class="ob-picker__content"
-          style="transform: translate3d(0, 96px, 0); transition: transform 0s;"
+          style="transform: translate3d(0, 48px, 0); transition: transform 0s;"
         >
           
           <div

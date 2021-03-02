@@ -54,10 +54,8 @@ describe('Drawer Event', () => {
     })
     await sleep(300)
     wrapper.find('.ob-drawer .ob-list__item').trigger('click')
-    wrapper.find('.ob-drawer .ob-list__item[data-index="1"]').trigger('click')
     await sleep(0)
     expect(onItemClick.mock.calls[0][0]).toBe(0)
-    expect(onItemClick.mock.calls[1][0]).toBe(1)
   })
   it('Drawer click mask onClose', async () => {
     const onClose = jest.fn()

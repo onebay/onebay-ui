@@ -1,14 +1,10 @@
-import { defineComponent } from 'vue'
-import toast from './toast'
-import message from './message'
-import modal from './modal'
-import imagePreview from './image-preview'
+import { App } from 'vue'
+import imagePreview from './image-preview/index'
+
+export { imagePreview }
 
 export default {
-  install: (app: ReturnType<typeof defineComponent>): void => {
-    app.config.globalProperties.$toast = toast
-    app.config.globalProperties.$message = message
-    app.config.globalProperties.$modal = modal
+  install: (app: App): void => {
     app.config.globalProperties.$imagePreview = imagePreview
   }
 }

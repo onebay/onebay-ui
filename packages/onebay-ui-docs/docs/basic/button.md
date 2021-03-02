@@ -1,20 +1,18 @@
 # button 
 
 <DemoView />
-<BackTop />
+<BackToTop />
 
 <div class="code-box code-vue-active">
 <div class="code-tabs"></div>
 
 ```tsx
 import './index.scss'
-import { Button } from 'onebay-ui/src/index'
+import { Button } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
+import { defineComponent } from 'vue'
 
-export default {
-  components: {
-    Button
-  },
+export default defineComponent({
   setup() {
     return () => {
       return (
@@ -225,7 +223,7 @@ export default {
       )
     }
   }
-}
+})
 ```
 
 ```vue
@@ -438,7 +436,7 @@ export default {
 
 <script>
 import './index.scss'
-import { Button } from '/@/onebay-ui/src/index.ts'
+import { Button } from 'onebay-ui'
 export default {
   components: {
     Button

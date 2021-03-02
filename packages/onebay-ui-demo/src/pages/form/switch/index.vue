@@ -48,7 +48,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Form, Switch } from '/@/onebay-ui/src/index.ts'
+import { Form, Switch } from 'onebay-ui'
 export default defineComponent({
   name: 'SwitchPage',
   components: {

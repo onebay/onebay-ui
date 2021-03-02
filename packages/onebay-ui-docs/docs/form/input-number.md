@@ -1,14 +1,14 @@
 # input-number 
 
 <DemoView />
-<BackTop />
+<BackToTop />
 
 <div class="code-box code-vue-active">
 <div class="code-tabs"></div>
 
 ```tsx
 import { defineComponent, reactive } from 'vue'
-import { InputNumber } from 'onebay-ui/src/index'
+import { InputNumber } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import './index.scss'
 
@@ -268,7 +268,7 @@ export default defineComponent({
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { InputNumber } from '/@/onebay-ui/src/index.ts'
+import { InputNumber } from 'onebay-ui'
 import './index.scss'
 
 export default defineComponent({

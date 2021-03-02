@@ -1,147 +1,321 @@
 # noticebar 
 
 <DemoView />
-<BackTop />
+<BackToTop />
 
 <div class="code-box code-vue-active">
 <div class="code-tabs"></div>
+
+```tsx
+import DocsHeader from '../../../components/DocHeader/DocsHeader'
+import { defineComponent } from 'vue'
+import { Noticebar, Modal } from 'onebay-ui'
+import './index.scss'
+export default defineComponent({
+  name: 'NoticebarPage',
+  components: {
+    Noticebar
+  },
+  setup() {
+    const onGotoMore = () => {
+      Modal({
+        title: 'Click more!',
+        cancelText: 'Cancel'
+      })
+    }
+    return () => {
+      return (
+        <div class="page">
+          {/* <!-- S Header --> */}
+          <DocsHeader title="NoticeBar"></DocsHeader>
+          {/* <!-- E Header --> */}
+
+          {/* <!-- S Body --> */}
+          <div class="doc-body">
+            {/* <!-- text --> */}
+            <div class="panel">
+              <div class="panel__title">text</div>
+              <div class="panel__content">
+                <div class="bar-item">
+                  <Noticebar single>
+                    [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+                <div class="bar-item">
+                  <Noticebar>
+                    [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+                    NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- marquee --> */}
+            <div class="panel">
+              <div class="panel__title">marquee</div>
+              <div class="panel__content">
+                <div class="bar-item">
+                  <Noticebar marquee>
+                    [text]This is NoticeBar,This is NoticeBar,This is NoticeBar[end]
+                </Noticebar>
+                </div>
+                <div class="bar-item">
+                  <Noticebar marquee icon="volume-plus">
+                    [icon]This is NoticeBar,This is NoticeBar,This is NoticeBarThis is NoticeBar,This is
+                    NoticeBar,This is NoticeBar[end]
+                </Noticebar>
+                </div>
+                <div class="bar-item">
+                  <Noticebar marquee>
+                    [long text]This is NoticeBar,This is NoticeBar,This is NoticeBarThis is NoticeBar,This
+                    is NoticeBar,This is NoticeBarThis is NoticeBar,This is NoticeBar,This is
+                    NoticeBarThis is NoticeBar,This is NoticeBar,This is NoticeBarThis is NoticeBar,This
+                    is NoticeBar,This is NoticeBar[end]
+                </Noticebar>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- icon --> */}
+            <div class="panel">
+              <div class="panel__title">icon</div>
+              <div class="panel__content">
+                <div class="bar-item">
+                  <Noticebar icon="volume-plus" single>
+                    [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+                <div class="bar-item">
+                  <Noticebar icon="volume-plus">
+                    [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+                    NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- more --> */}
+            <div class="panel">
+              <div class="panel__title">more</div>
+              <div class="panel__content">
+                <div class="bar-item">
+                  <Noticebar showMore single onGotoMore={onGotoMore}>
+                    [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+                <div class="bar-item">
+                  <Noticebar showMore icon="volume-plus" single onGotoMore={onGotoMore}>
+                    [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+                <div class="bar-item">
+                  <Noticebar showMore moreText="more content" onGotoMore={onGotoMore}>
+                    [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+                    NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+                <div class="bar-item">
+                  <Noticebar showMore moreText="more content" icon="volume-plus" onGotoMore={onGotoMore}>
+                    [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+                    NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- close button --> */}
+            <div class="panel">
+              <div class="panel__title">close button</div>
+              <div class="panel__content">
+                <div class="bar-item">
+                  <Noticebar close single>
+                    [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+                <div class="bar-item">
+                  <Noticebar close icon="volume-plus" single>
+                    [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+                <div class="bar-item">
+                  <Noticebar close onGotoMore={onGotoMore} single showMore>
+                    [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+                <div class="bar-item">
+                  <Noticebar close icon="volume-plus" showMore onGotoMore={onGotoMore} single>
+                    [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+                <div class="bar-item">
+                  <Noticebar close>
+                    [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+                    NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+                <div class="bar-item">
+                  <Noticebar close>
+                    [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+                    NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+                <div class="bar-item">
+                  <Noticebar close icon="volume-plus">
+                    [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+                    NoticeBar,This is NoticeBar
+                </Noticebar>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- E Body --> */}
+        </div>
+      )
+    }
+  }
+})
+```
 
 ```vue
 <template>
   <div class="page">
     <!-- S Header -->
-    <DocsHeader title="NoticeBar 通告栏"></DocsHeader>
+    <DocsHeader title="NoticeBar"></DocsHeader>
     <!-- E Header -->
 
     <!-- S Body -->
     <div class="doc-body">
-      <!-- 文字 -->
+      <!-- text -->
       <div class="panel">
-        <div class="panel__title">文字</div>
+        <div class="panel__title">text</div>
         <div class="panel__content">
           <div class="bar-item">
             <Noticebar single>
-              [单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+              [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
           <div class="bar-item">
             <Noticebar>
-              [多行]
-              这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+              [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+              NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
         </div>
       </div>
 
-      <!-- 跑马灯 -->
+      <!-- marquee -->
       <div class="panel">
-        <div class="panel__title">跑马灯</div>
+        <div class="panel__title">marquee</div>
         <div class="panel__content">
           <div class="bar-item">
             <Noticebar marquee>
-              [纯文字]这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏[结束]
+              [text]This is NoticeBar,This is NoticeBar,This is NoticeBar[end]
             </Noticebar>
           </div>
           <div class="bar-item">
             <Noticebar marquee icon="volume-plus">
-              [带icon]这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏[结束]
+              [icon]This is NoticeBar,This is NoticeBar,This is NoticeBarThis is NoticeBar,This is
+              NoticeBar,This is NoticeBar[end]
             </Noticebar>
           </div>
           <div class="bar-item">
             <Noticebar marquee>
-              [超长文本]这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏[结束]
+              [long text]This is NoticeBar,This is NoticeBar,This is NoticeBarThis is NoticeBar,This
+              is NoticeBar,This is NoticeBarThis is NoticeBar,This is NoticeBar,This is
+              NoticeBarThis is NoticeBar,This is NoticeBar,This is NoticeBarThis is NoticeBar,This
+              is NoticeBar,This is NoticeBar[end]
             </Noticebar>
           </div>
         </div>
       </div>
 
-      <!-- 图标 -->
+      <!-- icon -->
       <div class="panel">
-        <div class="panel__title">图标</div>
+        <div class="panel__title">icon</div>
         <div class="panel__content">
           <div class="bar-item">
             <Noticebar icon="volume-plus" single>
-              [单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+              [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
           <div class="bar-item">
             <Noticebar icon="volume-plus">
-              [多行]
-              这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+              [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+              NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
         </div>
       </div>
 
-      <!-- 查看更多 -->
+      <!-- more -->
       <div class="panel">
-        <div class="panel__title">查看更多</div>
+        <div class="panel__title">more</div>
         <div class="panel__content">
           <div class="bar-item">
             <Noticebar showMore single :onGotoMore="onGotoMore">
-              [单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+              [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
           <div class="bar-item">
             <Noticebar showMore icon="volume-plus" single :onGotoMore="onGotoMore">
-              [单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+              [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
           <div class="bar-item">
-            <Noticebar showMore moreText="更多内容" :onGotoMore="onGotoMore">
-              [多行]
-              这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+            <Noticebar showMore moreText="more content" :onGotoMore="onGotoMore">
+              [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+              NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
           <div class="bar-item">
-            <Noticebar showMore moreText="更多内容" icon="volume-plus" :onGotoMore="onGotoMore">
-              [多行]
-              这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+            <Noticebar showMore moreText="more content" icon="volume-plus" :onGotoMore="onGotoMore">
+              [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+              NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
         </div>
       </div>
 
-      <!-- 关闭按钮 -->
+      <!-- close button -->
       <div class="panel">
-        <div class="panel__title">关闭按钮</div>
+        <div class="panel__title">close button</div>
         <div class="panel__content">
           <div class="bar-item">
             <Noticebar close single>
-              [单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+              [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
           <div class="bar-item">
             <Noticebar close icon="volume-plus" single>
-              [单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+              [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
           <div class="bar-item">
             <Noticebar close :onGotoMore="onGotoMore" single showMore>
-              [单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+              [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
           <div class="bar-item">
             <Noticebar close icon="volume-plus" showMore :onGotoMore="onGotoMore" single>
-              [单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+              [single line] This is NoticeBar,This is NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
           <div class="bar-item">
             <Noticebar close>
-              [多行]
-              这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+              [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+              NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
           <div class="bar-item">
             <Noticebar close>
-              [多行]
-              这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+              [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+              NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
           <div class="bar-item">
             <Noticebar close icon="volume-plus">
-              [多行]
-              这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
+              [multiple line] This is NoticeBar,This is NoticeBar,This is NoticeBar,This is
+              NoticeBar,This is NoticeBar
             </Noticebar>
           </div>
         </div>
@@ -153,7 +327,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Noticebar } from '/@/onebay-ui/src/index.ts'
+import { Noticebar } from 'onebay-ui'
 import './index.scss'
 export default defineComponent({
   name: 'NoticebarPage',

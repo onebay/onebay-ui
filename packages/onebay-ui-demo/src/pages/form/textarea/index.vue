@@ -68,7 +68,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { Textarea } from '/@/onebay-ui/src/index.ts'
+import { Textarea } from 'onebay-ui'
 export default defineComponent({
   name: 'TextareaPage',
   components: { Textarea },

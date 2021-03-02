@@ -207,7 +207,7 @@
 
 <script>
 import './index.scss'
-import { Button } from '/@/onebay-ui/src/index.ts'
+import { Button } from 'onebay-ui'
 export default {
   components: {
     Button

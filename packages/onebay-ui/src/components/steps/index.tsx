@@ -28,6 +28,11 @@ export default defineComponent({
     items: {
       type: Array as PropType<StepItem[]>,
       default: () => []
+    },
+    onChange: {
+      type: Function,
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      default: () => {}
     }
   },
   emits: ['change'],

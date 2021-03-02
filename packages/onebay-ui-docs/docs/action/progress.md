@@ -1,14 +1,14 @@
 # progress 
 
 <DemoView />
-<BackTop />
+<BackToTop />
 
 <div class="code-box code-vue-active">
 <div class="code-tabs"></div>
 
 ```tsx
 import { defineComponent, ref } from 'vue'
-import { Button, Progress } from 'onebay-ui/src/index'
+import { Button, Progress } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
 import './index.scss'
 
@@ -261,7 +261,7 @@ export default defineComponent({
 
 <script>
 import { defineComponent } from 'vue'
-import { Button, Progress } from '/@/onebay-ui/src/index.ts'
+import { Button, Progress } from 'onebay-ui'
 const OFFSET = 15
 export default defineComponent({
   name: 'ProgressPage',

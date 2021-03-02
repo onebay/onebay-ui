@@ -1,29 +1,41 @@
 {
-  "name": "onebay-ui",
-  "version": "0.0.0",
+  "name": "onebay-ui-demo",
+  "version": "1.0.0-alpha.0",
+  "private": "true",
   "scripts": {
     "start": "vite",
-    "dev:tsx": "vite --mode tsx",
-    "build": "vite build"
+    "dev:tsx": "vite --mode type",
+    "build": "vite build",
+    "build-tsx": "vite build --mode type"
   },
   "dependencies": {
+    "@vitejs/plugin-vue": "^1.0.5",
     "classnames": "^2.2.6",
-    "onebay-ui": "file:../onebay-ui",
-    "vue": "^3.0.0",
+    "onebay-ui": "^1.0.0-alpha.0",
+    "vite-plugin-imp": "^2.0.2",
+    "vue": "^3.0.6",
     "vue-router": "^4.0.0-beta.9"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@types/babel__core": "^7.1.12",
     "@types/classnames": "^2.2.10",
-    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/compiler-sfc": "^3.0.6",
+    "babel-plugin-import": "^1.13.3",
     "eslint": "^7.7.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.0.0-beta.2",
     "less": "^3.12.2",
     "prettier": "^2.1.1",
+    "regenerator-runtime": "^0.13.7",
     "sass": "^1.26.10",
     "typescript": "^4.0.2",
-    "vite": "^1.0.0-rc.9",
+    "vite": "^2.0.0-beta.64",
+    "vite-babel-plugin": "^0.0.2",
     "vite-tsconfig-paths": "^1.1.0"
   }
 }

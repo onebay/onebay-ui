@@ -4,3 +4,5 @@ dist
 *.local
 lib
 coverage
+es
+cjs

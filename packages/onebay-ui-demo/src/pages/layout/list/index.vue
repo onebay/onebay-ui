@@ -1,124 +1,133 @@
 <template>
-  <view class="page">
-    <DocsHeader title="List 列表" />
+  <div class="page">
+    <DocsHeader title="List" />
 
-    <view class="doc-body">
-      <!-- 基本用法 -->
-      <view class="panel">
-        <view class="panel__title">基本用法</view>
-        <view class="panel__content no-padding">
-          <view class="example-item">
+    <div class="doc-body">
+      <!-- Basic usage -->
+      <div class="panel">
+        <div class="panel__title">Basic usage</div>
+        <div class="panel__content no-padding">
+          <div class="example-item">
             <List>
-              <ListItem title="标题文字" :onClick="handleClick" />
-              <ListItem title="标题文字" arrow="right" />
-              <ListItem title="标题文字" extraText="详细信息" />
-              <ListItem title="禁用状态" disabled extraText="详细信息" />
+              <ListItem title="Title text" :onClick="handleClick" />
+              <ListItem title="Title text" arrow="right" />
+              <ListItem title="Title text" extraText="details info" />
+              <ListItem title="Disabled state" disabled extraText="Detailed info" />
             </List>
-          </view>
-        </view>
-      </view>
+          </div>
+        </div>
+      </div>
 
-      <!-- 包含描述信息 -->
-      <view class="panel">
-        <view class="panel__title">包含描述信息</view>
-        <view class="panel__content no-padding">
-          <view class="example-item">
+      <!-- Contains description information -->
+      <div class="panel">
+        <div class="panel__title">Contains description information</div>
+        <div class="panel__content no-padding">
+          <div class="example-item">
             <List>
-              <ListItem title="标题文字" note="描述信息" />
-              <ListItem title="标题文字" note="描述信息" arrow="right" />
+              <ListItem title="Title text" note="Description" />
+              <ListItem title="Title text" note="Description" arrow="right" />
               <ListItem
                 arrow="right"
-                note="描述信息"
-                title="我是一个很长很长很长的标题文字"
-                extraText="详细信息详细信息详细信息详细信息"
+                note="Description"
+                title="I am a very long, very long title text"
+                extraText="Detailed info detailed information detailed information"
               />
             </List>
-          </view>
-        </view>
-      </view>
+          </div>
+        </div>
+      </div>
 
-      <!-- 包含图片 -->
-      <view class="panel">
-        <view class="panel__title">包含图片</view>
-        <view class="panel__content no-padding">
-          <view class="example-item">
+      <!-- Include pictures -->
+      <div class="panel">
+        <div class="panel__title">Include pictures</div>
+        <div class="panel__content no-padding">
+          <div class="example-item">
             <List>
               <ListItem
-                title="标题文字"
+                title="Title text"
                 arrow="right"
                 thumb="https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png"
               />
               <ListItem
-                title="标题文字"
-                note="描述信息"
+                title="Title text"
+                note="Description"
                 arrow="right"
                 thumb="http://img10.360buyimg.com/jdphoto/s72x72_jfs/t5872/209/5240187906/2872/8fa98cd/595c3b2aN4155b931.png"
               />
               <ListItem
-                title="标题文字"
-                note="描述信息"
-                extraText="详细信息"
+                title="Title text"
+                note="Description"
+                extraText="Detailed info"
                 arrow="right"
                 thumb="http://img12.360buyimg.com/jdphoto/s72x72_jfs/t10660/330/203667368/1672/801735d7/59c85643N31e68303.png"
               />
             </List>
-          </view>
-        </view>
-      </view>
+          </div>
+        </div>
+      </div>
 
-      <!-- 图标 -->
-      <view class="panel">
-        <view class="panel__title">支持图标(不能与thumb同时存在)</view>
-        <view class="panel__content no-padding">
-          <view class="example-item">
+      <div class="panel">
+        <div class="panel__title">Support icon (cannot exist with thumb at the same time)</div>
+        <div class="panel__content no-padding">
+          <div class="example-item">
             <List>
               <ListItem
-                title="标题文字"
-                note="描述信息"
+                title="Title text"
+                note="Description"
                 arrow="right"
                 :iconInfo="{
                   size: 25,
                   color: '#78A4FA',
-                  value: 'calendar',
+                  value: 'calendar'
                 }"
               />
               <ListItem
-                title="标题文字"
-                note="描述信息"
-                extraText="详细信息"
+                title="Title text"
+                note="Description"
+                extraText="Detailed info"
                 arrow="right"
                 :iconInfo="{
                   size: 25,
                   color: '#FF4949',
-                  value: 'bookmark',
+                  value: 'bookmark'
                 }"
               />
             </List>
-          </view>
-        </view>
-      </view>
+          </div>
+        </div>
+      </div>
 
-      <!-- 无边框 -->
-      <view class="panel">
-        <view class="panel__title">无边框</view>
-        <view class="panel__content no-padding">
-          <view class="example-item">
+      <!-- no border -->
+      <div class="panel">
+        <div class="panel__title">no border</div>
+        <div class="panel__content no-padding">
+          <div class="example-item">
             <List :hasBorder="false">
-              <ListItem isSwitch title="标题文字" :hasBorder="false" :onSwitchChange="handleChange" />
-              <ListItem isSwitch title="标题文字" :hasBorder="false" :onSwitchChange="handleChange" />
+              <ListItem
+                isSwitch
+                title="Title text"
+                :hasBorder="false"
+                :onSwitchChange="handleChange"
+              />
+              <ListItem
+                isSwitch
+                title="Title text"
+                :hasBorder="false"
+                :onSwitchChange="handleChange"
+              />
             </List>
-          </view>
-        </view>
-      </view>
+          </div>
+        </div>
+      </div>
 
-      <!-- Switch 按钮列表 -->
-      <view class="panel">
-        <view class="panel__title">Switch 按钮列表</view>
-        <view class="panel__content no-padding">
-          <view class="example-item">
+      <!-- Switch button list -->
+      <div class="panel">
+        <div class="panel__title">Switch button list</div>
+        <div class="panel__content no-padding">
+          <div class="example-item">
             <List>
               <ListItem
-                title="标题文字"
+                title="Title text"
                 isSwitch
                 :onClick="handleClick"
                 :onSwitchChange="handleChange"
@@ -127,39 +136,37 @@
                 isSwitch
                 disabled
                 switchIsCheck
-                title="禁用状态"
+                title="Disabled state"
                 :onSwitchChange="handleChange"
               />
-              <ListItem isSwitch switchIsCheck title="标题文字" :onSwitchChange="handleChange" />
+              <ListItem isSwitch switchIsCheck title="Title text" :onSwitchChange="handleChange" />
             </List>
-          </view>
-        </view>
-      </view>
-    </view>
-  </view>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
-import { List, ListItem } from '/@/onebay-ui/src/index.ts'
+import { List, Toast } from 'onebay-ui'
 export default defineComponent({
   name: 'ListPage',
   components: {
     List,
-    ListItem
+    ListItem: List.ListItem
   },
   methods: {
     handleChange(e) {
-      alert({
-        title: `Change Switch: ${e}`,
-        icon: 'none'
+      Toast({
+        text: `Change Switch: ${e}`
       })
     },
 
     handleClick(e) {
-      alert({
-        title: `Click Item: ${e}`,
-        icon: 'none'
+      Toast({
+        text: `Click item`
       })
     }
   }

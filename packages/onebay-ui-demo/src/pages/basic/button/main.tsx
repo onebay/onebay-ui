@@ -1,11 +1,9 @@
 import './index.scss'
-import { Button } from 'onebay-ui/src'
+import { Button } from 'onebay-ui'
 import DocsHeader from '../../../components/DocHeader/DocsHeader'
+import { defineComponent } from 'vue'
 
-export default {
-  components: {
-    Button
-  },
+export default defineComponent({
   setup() {
     return () => {
       return (
@@ -216,4 +214,4 @@ export default {
       )
     }
   }
-}
+})

@@ -6,7 +6,7 @@ import classNames from 'classnames'
 export interface TabListItem {
   title?: string
   iconType?: string
-  dot?: string
+  dot?: boolean
   text?: string
   max?: number
   iconPrefixClass?: string
@@ -60,6 +60,11 @@ export default defineComponent({
     backgroundColor: {
       type: String,
       default: ''
+    },
+    onClick: {
+      type: Function,
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      default: () => {}
     }
   },
   emits: ['click'],

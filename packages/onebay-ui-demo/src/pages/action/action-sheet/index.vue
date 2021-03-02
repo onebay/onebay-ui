@@ -27,12 +27,12 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { ActionSheet, ActionSheetItem, Button } from '/@/onebay-ui/src/index.ts'
+import { ActionSheet, Button, Toast } from 'onebay-ui'
 export default defineComponent({
   name: 'ActionSheetPage',
   components: {
     ActionSheet,
-    ActionSheetItem,
+    ActionSheetItem: ActionSheet.Item,
     Button
   },
   setup(props) {
@@ -46,7 +46,7 @@ export default defineComponent({
       this.isOpened = !this.isOpened
     },
     showToast(name) {
-      this.$toast({
+      Toast({
         text: name
       })
     }

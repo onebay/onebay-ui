@@ -1,5 +1,8 @@
 <template>
   <div class="page row-page">
+    <Noticebar marquee>
+      This component only supports Touch events, please use mobile mode/device to open this page.
+    </Noticebar>
     <DocsHeader title="PullToRefresh" />
     <div class="doc-body" style="height: 100%">
       <div class="panel">
@@ -24,12 +27,13 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { PullToRefresh, Button } from '/@/onebay-ui/src/index.ts'
+import { PullToRefresh, Button, Noticebar, Toast } from 'onebay-ui'
 export default defineComponent({
   name: 'PullToRefreshPage',
   components: {
     Button,
-    PullToRefresh
+    PullToRefresh,
+    Noticebar
   },
   setup(props) {
     const direction = ref('down')
@@ -37,7 +41,7 @@ export default defineComponent({
       direction.value = direction.value === 'up' ? 'down' : 'up'
     }
     const onRefresh = () => {
-      this.$toast({
+      Toast({
         text: 'onRefresh'
       })
     }

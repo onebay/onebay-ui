@@ -16,7 +16,7 @@ exports[`Switch Snap Switch Change checked 1`] = `
       class="ob-switch__mask"
     />
     <input
-      class="ob-switch ob-switch__switch"
+      class="ob-switch-input ob-switch__switch"
       name=""
       type="checkbox"
     />
@@ -40,7 +40,7 @@ exports[`Switch Snap Switch color 1`] = `
       class="ob-switch__mask"
     />
     <input
-      class="ob-switch ob-switch__switch"
+      class="ob-switch-input ob-switch__switch"
       name=""
       style="border-color: #ff4455; background-color: rgb(255, 68, 85);"
       type="checkbox"
@@ -65,7 +65,7 @@ exports[`Switch Snap render Switch -- props border 1`] = `
       class="ob-switch__mask"
     />
     <input
-      class="ob-switch ob-switch__switch"
+      class="ob-switch-input ob-switch__switch"
       name=""
       type="checkbox"
     />
@@ -89,7 +89,7 @@ exports[`Switch Snap render Switch -- props checked 1`] = `
       class="ob-switch__mask"
     />
     <input
-      class="ob-switch ob-switch__switch"
+      class="ob-switch-input ob-switch__switch"
       name=""
       type="checkbox"
     />
@@ -113,7 +113,7 @@ exports[`Switch Snap render Switch -- props disabled 1`] = `
       class="ob-switch__mask"
     />
     <input
-      class="ob-switch ob-switch__switch"
+      class="ob-switch-input ob-switch__switch"
       disabled=""
       name=""
       type="checkbox"
@@ -138,7 +138,7 @@ exports[`Switch Snap render Switch -- props disabled 2`] = `
       class="ob-switch__mask"
     />
     <input
-      class="ob-switch ob-switch__switch"
+      class="ob-switch-input ob-switch__switch"
       disabled=""
       name=""
       type="checkbox"
@@ -163,7 +163,7 @@ exports[`Switch Snap render Switch -- props title 1`] = `
       class="ob-switch__mask"
     />
     <input
-      class="ob-switch ob-switch__switch"
+      class="ob-switch-input ob-switch__switch"
       name=""
       type="checkbox"
     />
@@ -187,7 +187,7 @@ exports[`Switch Snap render initial Switch 1`] = `
       class="ob-switch__mask"
     />
     <input
-      class="ob-switch ob-switch__switch"
+      class="ob-switch-input ob-switch__switch"
       name=""
       type="checkbox"
     />

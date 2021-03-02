@@ -115,7 +115,7 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { NavBar } from '/@/onebay-ui/src/index.ts'
+import { NavBar, Toast } from 'onebay-ui'
 import './index.scss'
 export default defineComponent({
   name: 'NavbarPage',
@@ -124,7 +124,7 @@ export default defineComponent({
   },
   methods: {
     handleClick(text) {
-      this.$toast({
+      Toast({
         text,
         duration: 2000,
         status: 'success'
@@ -132,7 +132,7 @@ export default defineComponent({
     },
 
     clickReturn() {
-      this.$toast({
+      Toast({
         text: 'go back',
         duration: 2000,
         status: 'success'
@@ -140,7 +140,7 @@ export default defineComponent({
     },
 
     clickMy() {
-      this.$toast({
+      Toast({
         text: 'My',
         duration: 2000,
         status: 'success'
@@ -148,7 +148,7 @@ export default defineComponent({
     },
 
     clickList() {
-      this.$toast({
+      Toast({
         text: 'function list',
         duration: 2000,
         status: 'success'

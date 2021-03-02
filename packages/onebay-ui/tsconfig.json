@@ -4,7 +4,21 @@
     "target": "es6",
     "jsx": "preserve",
     "jsxFactory": "h",
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "declaration": true,
+    "outDir": "output",
+    "declarationDir": "types",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "emitDeclarationOnly": true
   },
-  "files": ["global.d.ts"]
+  "include": [
+    "src/**/*",
+    "global.d.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.tsx",
+    "node_modules"
+  ],
+  "files": ["global.d.ts"],
 }

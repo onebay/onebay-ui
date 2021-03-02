@@ -44,7 +44,15 @@ export default defineComponent({
     className: {
       type: [String, Array],
       default: ''
-    }
+    },
+    // eslint-disable-next-line vue/require-default-prop
+    onClose: { type: Function },
+    // eslint-disable-next-line vue/require-default-prop
+    onScrollToLower: { type: Function },
+    // eslint-disable-next-line vue/require-default-prop
+    onScrollToUpper: { type: Function },
+    // eslint-disable-next-line vue/require-default-prop
+    onScroll: { type: Function }
   },
   emits: ['close'],
   setup(props) {
@@ -83,11 +91,7 @@ export default defineComponent({
       this.show = false
       this.$emit('close')
     },
-    /**
-     *
-     * @param {event} e
-     */
-    handleTouchMove(e) {
+    handleTouchMove(e: TouchEvent) {
       e.stopPropagation()
     }
   },
