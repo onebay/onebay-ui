@@ -20,7 +20,7 @@
     </svg>
   </div>
 </template>
-<style lang="scss" scoped>
+<style lang="scss">
 .loading-container {
   position: absolute;
   z-index: 99;
@@ -31,8 +31,8 @@
   align-items: center;
 }
 .loading {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   animation: myRotate 3s linear infinite;
 }
 @keyframes myRotate {
