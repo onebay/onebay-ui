@@ -1,6 +1,6 @@
 <template>
   <div class="page row-page">
-    <DocsHeader title="Row & Col" />
+    <DocsHeader title="Flex" />
     <div class="doc-body">
       <div class="panel">
         <div class="panel__title">Basic usage</div>
@@ -38,7 +38,7 @@ import { Flex } from 'onebay-ui'
 import './index.scss'
 
 export default defineComponent({
-  name: 'RowPage',
+  name: 'FlexPage',
   components: {
     Flex,
     FlexItem: Flex.Item
