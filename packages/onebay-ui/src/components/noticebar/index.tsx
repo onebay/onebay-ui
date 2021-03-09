@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { defineComponent, ref, computed, reactive } from 'vue'
+import { defineComponent, ref, computed, reactive, PropType, CSSProperties } from 'vue'
 import { isTest } from '../../utils'
 
 export default defineComponent({
@@ -23,7 +23,7 @@ export default defineComponent({
     },
     moreText: {
       type: String,
-      default: 'see details'
+      default: 'See more'
     },
     showMore: {
       type: Boolean,
@@ -37,8 +37,8 @@ export default defineComponent({
       type: String,
       default: ''
     },
-    customStyle: {
-      type: [Object, String],
+    style: {
+      type: String as PropType<CSSProperties>,
       default: ''
     },
     onGotoMore: {
@@ -78,7 +78,7 @@ export default defineComponent({
       }
       return innerClassName
     })
-    const style = computed(() => {
+    const innerStyle = computed(() => {
       const result: { 'animation-duration'?: string } = {}
       if (props.marquee) {
         result['animation-duration'] = `${state.dura}s`
@@ -89,7 +89,7 @@ export default defineComponent({
       classObject,
       iconClass,
       innerClassName,
-      style,
+      innerStyle,
       timeout,
       state
     }
@@ -127,16 +127,16 @@ export default defineComponent({
       handleClose,
       iconClass,
       innerClassName,
-      style,
+      innerStyle,
       handleGotoMore,
       $slots
     } = this
-    const { icon, showMore, moreText, close, customStyle, className } = this.$props
+    const { icon, showMore, moreText, close, style, className } = this.$props
     if (!show) {
       return <></>
     }
     return (
-      <div class={classNames('ob-noticebar', classObject, className)} style={customStyle}>
+      <div class={classNames('ob-noticebar', classObject, className)} style={style}>
         {close && (
           <div class="ob-noticebar__close" onClick={handleClose}>
             <div class="ob-icon ob-icon-close" />
@@ -149,7 +149,7 @@ export default defineComponent({
             </div>
           )}
           <div class="ob-noticebar__content-text">
-            <div class={classNames(innerClassName)} style={style as string}>
+            <div class={classNames(innerClassName)} style={innerStyle as CSSProperties}>
               {$slots.default && $slots.default()}
             </div>
           </div>

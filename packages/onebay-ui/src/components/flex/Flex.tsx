@@ -1,7 +1,6 @@
 import classnames from 'classnames'
 import { FlexPropsType as BasePropsType } from './PropsType'
-import { defineComponent } from 'vue'
-import { CSSProperties } from '../../../global'
+import { defineComponent, CSSProperties } from 'vue'
 
 export interface FlexProps extends BasePropsType {
   alignContent?: 'start' | 'end' | 'center' | 'between' | 'around' | 'stretch'

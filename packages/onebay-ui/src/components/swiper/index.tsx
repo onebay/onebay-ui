@@ -72,7 +72,8 @@ export default defineComponent({
     'slide-change-start',
     'slide-change-end',
     'slide-revert-start',
-    'slide-revert-end'
+    'slide-revert-end',
+    'change'
   ],
   setup(props) {
     const state = {
@@ -103,6 +104,9 @@ export default defineComponent({
   watch: {
     swiperData() {
       this.updateEvent()
+    },
+    currentPage(val, oldVal) {
+      this.$emit('change', val, oldVal)
     }
   },
   mounted() {

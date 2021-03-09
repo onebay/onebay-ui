@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { defineComponent, computed, reactive } from 'vue'
+import { defineComponent, computed, reactive, PropType, CSSProperties } from 'vue'
 import Button from '../button'
 
 const MIN_MAXPAGE = 1
@@ -26,9 +26,9 @@ export default defineComponent({
     Button
   },
   props: {
-    customStyle: {
-      type: [Object, String],
-      default: () => ''
+    style: {
+      type: String as PropType<CSSProperties>,
+      default: ''
     },
     className: {
       type: [Array, String],
@@ -129,9 +129,9 @@ export default defineComponent({
   },
   render(): JSX.Element {
     const { rootCls, onPrev, onNext, prevDisabled, nextDisabled, state } = this
-    const { customStyle, icon, preText, nextText } = this.$props
+    const { style, icon, preText, nextText } = this.$props
     return (
-      <div class={rootCls} style={customStyle}>
+      <div class={rootCls} style={style}>
         <div class="ob-pagination__btn-prev">
           {icon ? (
             <Button onClick={onPrev} size="small" disabled={prevDisabled}>

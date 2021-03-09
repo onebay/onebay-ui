@@ -7,7 +7,7 @@ interface ActualProps {
     editable?: boolean;
 }
 declare const Input: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -116,7 +116,7 @@ declare const Input: import("vue").DefineComponent<{
     clear: boolean;
     border: boolean;
     cursor: string | number;
-    customStyle: string;
+    style: string;
     className: string;
     placeholder: string;
     placeholderStyle: string;
@@ -139,7 +139,7 @@ declare const Input: import("vue").DefineComponent<{
     clear: boolean;
     border: boolean;
     cursor: string | number;
-    customStyle: string;
+    style: string;
     className: string;
     placeholder: string;
     placeholderStyle: string;

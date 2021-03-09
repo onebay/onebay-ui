@@ -49,7 +49,7 @@ exports[`Divider Snap render Divider -- props content 1`] = `
 </div>
 `;
 
-exports[`Divider Snap render Divider -- props customStyle 1`] = `
+exports[`Divider Snap render Divider -- props style 1`] = `
 <div
   class="ob-divider"
   style=""

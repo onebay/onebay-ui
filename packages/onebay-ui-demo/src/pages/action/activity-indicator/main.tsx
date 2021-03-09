@@ -62,7 +62,7 @@ export default defineComponent({
                   onChange={handleChange}
                 />
                 <div class="example-item">
-                  <ActivityIndicator content="加载中..." isOpened={isOpened.value} />
+                  <ActivityIndicator content="loading..." isOpened={isOpened.value} />
                 </div>
               </div>
             </div>

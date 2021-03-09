@@ -31,7 +31,7 @@ declare const _default: import("vue").DefineComponent<{
         type: StringConstructor;
         default: string;
     };
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -66,7 +66,7 @@ declare const _default: import("vue").DefineComponent<{
     close: boolean;
     icon: string;
     single: boolean;
-    customStyle: string;
+    style: string;
     className: string;
     speed: number;
     moreText: string;
@@ -77,7 +77,7 @@ declare const _default: import("vue").DefineComponent<{
     close: boolean;
     icon: string;
     single: boolean;
-    customStyle: string;
+    style: string;
     className: string;
     speed: number;
     moreText: string;

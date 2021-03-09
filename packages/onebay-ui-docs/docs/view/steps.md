@@ -340,4 +340,23 @@ export default defineComponent({
 
 ```
 
-</div> 
+</div>
+
+## API
+
+| Properties | Descrition                                                                                               | Type          | Default |
+| ---------- | -------------------------------------------------------------------------------------------------------- | ------------- | ------- |
+| className  | class name                                                                                               | string        | -       |
+| style      | custom style                                                                                             | CSSProperties | -       |
+| current    | Required, the current step index value, you needs to update the current value through the onChange event | number        | 0       |
+| items      | Step data list, see the table below for specific fields                                                  | []            | []      |
+| onChange   | Required, Click to trigger the event, you needs to update the current through the onChange event         | []            | []      |
+
+## items props
+
+| Properties | Descrition                                                 | Type                                                                      | Default |
+| ---------- | ---------------------------------------------------------- | ------------------------------------------------------------------------- | ------- |
+| title      | step title                                                 | string                                                                    | -       |
+| desc       | Step description text                                      | string                                                                    | -       |
+| status     | The status of the step, only'success' or'error' is allowed | `'success' | 'error'`                                                     | -       |
+| icon       | Icon information                                           | {value: string; activeColor: string; inactiveColor: string; size: number} | -       |

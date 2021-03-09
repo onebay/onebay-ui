@@ -52,7 +52,7 @@ exports[`Range Snap render Range -- props className 1`] = `
 </div>
 `;
 
-exports[`Range Snap render Range -- props customStyle 1`] = `
+exports[`Range Snap render Range -- props style 1`] = `
 <div
   class="ob-range"
   style="color: red;"

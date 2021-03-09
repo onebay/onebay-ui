@@ -1,7 +1,6 @@
 import classnames from 'classnames'
 import { FlexItemPropsType } from './PropsType'
-import { CSSProperties } from '../../../global'
-import { defineComponent } from 'vue'
+import { defineComponent, CSSProperties } from 'vue'
 
 export interface FlexItemProps extends FlexItemPropsType {
   prefixCls?: string

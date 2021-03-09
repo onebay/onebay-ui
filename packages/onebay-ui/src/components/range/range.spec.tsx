@@ -12,8 +12,8 @@ describe('Range Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render Range -- props customStyle', () => {
-    const wrapper = mount(<Range customStyle='color:red;' />)
+  it('render Range -- props style', () => {
+    const wrapper = mount(<Range style='color:red;' />)
     expect(wrapper.element).toMatchSnapshot()
   })
 

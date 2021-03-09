@@ -16,8 +16,8 @@ describe('SegmentedControl Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render SegmentedControl -- props customStyle', () => {
-    const wrapper = factory({ customStyle: 'color:red;' })
+  it('render SegmentedControl -- props style', () => {
+    const wrapper = factory({ style: 'color:red;' })
     expect(wrapper.element).toMatchSnapshot()
   })
 

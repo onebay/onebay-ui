@@ -1,5 +1,5 @@
 declare const _default: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: () => {};
     };
@@ -17,11 +17,11 @@ declare const _default: import("vue").DefineComponent<{
     handleSubmit(): void;
     handleReset(): void;
 }, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("reset" | "submit")[], "reset" | "submit", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
-    customStyle: {};
+    style: {};
     className: {};
     reportSubmit: boolean;
 } & {}>, {
-    customStyle: {};
+    style: {};
     className: {};
     reportSubmit: boolean;
 }>;

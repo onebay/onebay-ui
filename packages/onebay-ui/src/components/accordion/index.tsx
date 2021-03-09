@@ -22,7 +22,7 @@ export default defineComponent({
       type: Boolean,
       default: false
     },
-    customStyle: {
+    style: {
       type: String,
       default: ''
     },
@@ -125,10 +125,10 @@ export default defineComponent({
     }
   },
   render(): JSX.Element {
-    const { className, customStyle, hasBorder, icon, title, note, open } = this.$props
+    const { className, style, hasBorder, icon, title, note, open } = this.$props
     const { iconCls, contentStyle, isCompleted, startOpen, $slots } = this
     return (
-      <div class={classNames('ob-accordion', className)} style={customStyle}>
+      <div class={classNames('ob-accordion', className)} style={style}>
         <div
           class={classNames('ob-accordion__header', {
             'ob-accordion__header--noborder': !hasBorder

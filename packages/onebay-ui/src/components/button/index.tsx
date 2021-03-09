@@ -1,4 +1,4 @@
-import { defineComponent, computed, PropType } from 'vue'
+import { defineComponent, computed, PropType, CSSProperties } from 'vue'
 import classNames from 'classnames'
 import Loading from '../loading/index'
 
@@ -43,8 +43,8 @@ export default defineComponent({
       type: Boolean,
       default: false
     },
-    customStyle: {
-      type: [Object, String],
+    style: {
+      type: String as PropType<CSSProperties>,
       default: ''
     },
     className: {
@@ -99,12 +99,12 @@ export default defineComponent({
     }
   },
   render(): JSX.Element {
-    const { customStyle, className, loading } = this.$props
+    const { style, className, loading } = this.$props
     const { handelOnClick, classObject, rootClassName, loadingColor, loadingSize, $slots } = this
     return (
       <div
         class={classNames(rootClassName, classObject, className)}
-        style={customStyle}
+        style={style}
         onClick={handelOnClick}>
         {loading && (
           <div class="ob-button__icon">

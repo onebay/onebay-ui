@@ -11,7 +11,7 @@ interface OptionItem {
 const Radio = defineComponent({
   name: 'Radio',
   props: {
-    customStyle: {
+    style: {
       type: [Object, String],
       default: ''
     },
@@ -59,9 +59,9 @@ const Radio = defineComponent({
   },
   render() {
     const { rootCls, handleClick, getOptionCls, getIconCls } = this
-    const { customStyle, options } = this.$props
+    const { style, options } = this.$props
     return (
-      <div class={rootCls} style={customStyle}>
+      <div class={rootCls} style={style}>
         {(options as OptionItem[]).map(
           (option: OptionItem): JSX.Element => (
             <div

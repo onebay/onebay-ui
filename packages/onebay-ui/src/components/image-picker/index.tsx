@@ -39,7 +39,7 @@ const generateMatrix = (files: MatrixFile[], col: number, showAddBtn: boolean) =
 const ImagePicker = defineComponent({
   name: 'ImagePicker',
   props: {
-    customStyle: {
+    style: {
       type: [Object, String],
       default: ''
     },
@@ -142,9 +142,9 @@ const ImagePicker = defineComponent({
   },
   render() {
     const { rootCls, matrix, handleRemoveImg, handleImageClick, chooseFile } = this
-    const { customStyle, length } = this.$props
+    const { style, length } = this.$props
     return (
-      <div class={rootCls} style={customStyle}>
+      <div class={rootCls} style={style}>
         {matrix.map((row, i) => (
           <div class="ob-image-picker__flex-box" key={`${i + 1}`}>
             {row.map((item, j) =>

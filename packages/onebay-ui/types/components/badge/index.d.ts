@@ -11,7 +11,7 @@ declare const _default: import("vue").DefineComponent<{
         type: NumberConstructor;
         default: number;
     };
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -25,13 +25,13 @@ declare const _default: import("vue").DefineComponent<{
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
     value: string | number;
     dot: boolean;
-    customStyle: string;
+    style: string;
     className: string;
     maxValue: number;
 } & {}>, {
     value: string | number;
     dot: boolean;
-    customStyle: string;
+    style: string;
     className: string;
     maxValue: number;
 }>;

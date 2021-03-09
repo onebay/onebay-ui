@@ -8,7 +8,7 @@ exports[`Message Snap render Message -- props className 1`] = `
 </div>
 `;
 
-exports[`Message Snap render Message -- props customStyle 1`] = `
+exports[`Message Snap render Message -- props style 1`] = `
 <div
   class="ob-message ob-message--hidden ob-message--info"
   style="color: red;"

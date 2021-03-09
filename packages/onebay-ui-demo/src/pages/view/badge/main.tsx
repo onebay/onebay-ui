@@ -17,7 +17,7 @@ export default defineComponent({
       <div>
         <Badge value="NEW">
           <Button size="small" circle>
-            按钮
+            Button
             </Button>
         </Badge>
       </div>

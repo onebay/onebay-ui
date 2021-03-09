@@ -1,5 +1,5 @@
 declare const Textarea: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -66,7 +66,7 @@ declare const Textarea: import("vue").DefineComponent<{
     focus: boolean;
     value: string;
     height: string | number;
-    customStyle: string;
+    style: string;
     className: string;
     placeholder: string;
     maxLength: string | number;
@@ -81,7 +81,7 @@ declare const Textarea: import("vue").DefineComponent<{
     focus: boolean;
     value: string;
     height: string | number;
-    customStyle: string;
+    style: string;
     className: string;
     placeholder: string;
     maxLength: string | number;

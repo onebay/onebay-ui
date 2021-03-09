@@ -155,3 +155,10 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties | Descrition                                                            | Type   | Default |
+| ---------- | --------------------------------------------------------------------- | ------ | ------- |
+| className  | class name                                                            | string | -       |
+| distance   | when scrollTop is greater than distance, back top button will display | number | 100     |

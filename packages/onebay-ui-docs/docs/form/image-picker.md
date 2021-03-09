@@ -226,3 +226,18 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties   | Descrition                                          | Type                                                                           | Default |
+| ------------ | --------------------------------------------------- | ------------------------------------------------------------------------------ | ------- |
+| files        | image list                                          | []                                                                             | -       |
+| showAddBtn   | show add button                                     | boolean                                                                        | `true`  |
+| multiple     | support multiple file                               | boolean                                                                        | `false` |
+| length       | support multiple file number                        | number                                                                         | `4`     |
+| onChange     | set the handler to handle change event              | `(files: Array, operationType: 'add' | 'remove', removeIndex: number) => void` | -       |
+| onFail       | Callback triggered by selection failure             | (msg: string) => void                                                          | -       |
+| onImageClick | Callback triggered by clicking on the image         | (index: number, file: Object) => void                                          | -       |
+| count        | The maximum number of pictures that can be selected | number(0~99)                                                                   | -       |
+| className    | class name                                          | string                                                                         | -       |
+| style  | custom style                                        | CSSProperties                                                                  | -       |

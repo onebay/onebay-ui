@@ -4,7 +4,7 @@ export interface CheckboxItem {
     desc?: string;
 }
 declare const Checkbox: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: () => {};
     };
@@ -31,13 +31,13 @@ declare const Checkbox: import("vue").DefineComponent<{
     getOptionCls(option: any): string;
 }, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, "change"[], "change", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
     onChange: Function;
-    customStyle: {};
+    style: {};
     className: string;
     options: unknown[];
     selectedList: unknown[];
 } & {}>, {
     onChange: Function;
-    customStyle: {};
+    style: {};
     className: string;
     options: unknown[];
     selectedList: unknown[];

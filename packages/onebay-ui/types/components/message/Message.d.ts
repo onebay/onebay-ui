@@ -1,5 +1,5 @@
 declare const _default: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -37,14 +37,14 @@ declare const _default: import("vue").DefineComponent<{
     message: string;
     type: string;
     duration: number;
-    customStyle: string;
+    style: string;
     className: string | unknown[];
     isOpened: boolean;
 } & {}>, {
     message: string;
     type: string;
     duration: number;
-    customStyle: string;
+    style: string;
     className: string | unknown[];
     isOpened: boolean;
 }>;

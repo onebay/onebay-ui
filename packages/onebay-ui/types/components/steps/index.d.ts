@@ -9,7 +9,7 @@ export interface StepItem {
     desc?: string;
 }
 declare const _default: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: () => "";
     };
@@ -33,13 +33,13 @@ declare const _default: import("vue").DefineComponent<{
     handleClick(index: number): void;
 }, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, "change"[], "change", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
     onChange: Function;
-    customStyle: "";
+    style: "";
     className: "";
     items: StepItem[];
     current: number;
 } & {}>, {
     onChange: Function;
-    customStyle: "";
+    style: "";
     className: "";
     items: StepItem[];
     current: number;

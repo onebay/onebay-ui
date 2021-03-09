@@ -350,3 +350,16 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+| Properties      | Descrition                                     | Type          | Default |
+| --------------- | ---------------------------------------------- | ------------- | ------- |
+| className       | class name                                     | string        | -       |
+| style           | custom style                                   | CSSProperties | -       |
+| fixed           | Whether to fix the top                         | boolean       | `false` |
+| border          | Whether to display the border                  | boolean       | `true`  |
+| color           | Link text and icon color, excluding title      | string        | ''      |
+| title           | title                                          | string        | ''      |
+| leftContent     | left side content                              | string        | ''      |
+| rightContent    | right side content                             | string        | ''      |
+| onClickLeftIcon | Click event of the first icon type on the left | () => void    | -       |

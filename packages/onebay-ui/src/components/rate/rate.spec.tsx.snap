@@ -79,7 +79,7 @@ exports[`Rate Snap render Rate -- props className 1`] = `
 </div>
 `;
 
-exports[`Rate Snap render Rate -- props customStyle 1`] = `
+exports[`Rate Snap render Rate -- props style 1`] = `
 <div
   class="ob-rate"
   style="color: red;"

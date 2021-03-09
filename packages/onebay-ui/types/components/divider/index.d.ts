@@ -11,7 +11,7 @@ declare const _default: import("vue").DefineComponent<{
         type: StringConstructor;
         default: string;
     };
-    customStyle: {
+    style: {
         type: StringConstructor;
         default: string;
     };
@@ -42,7 +42,7 @@ declare const _default: import("vue").DefineComponent<{
     content: string;
     fontSize: string | number;
     height: string | number;
-    customStyle: string;
+    style: string;
     className: string;
     fontColor: string;
     lineColor: string;
@@ -50,7 +50,7 @@ declare const _default: import("vue").DefineComponent<{
     content: string;
     fontSize: string | number;
     height: string | number;
-    customStyle: string;
+    style: string;
     className: string;
     fontColor: string;
     lineColor: string;

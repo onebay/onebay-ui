@@ -207,3 +207,14 @@ export default {
 ```
 
 </div> 
+
+
+## API
+
+| Properties  | Descrition                        | Type                                                                                   | Default |
+| ----------- | --------------------------------- | -------------------------------------------------------------------------------------- | ------- |
+| value       | the radio value                   | string                                                                                 | -       |
+| options     | the radio data list               | `{ disabled?: boolean label?: string | number value?: string | number desc?: string }` | -       |
+| onClick     | trigger when click the radio item | (value, event) => void                                                                 | -       |
+| className   | class name                        | string                                                                                 | -       |
+| style | custom style                      | CSSProperties                                                                          | -       |

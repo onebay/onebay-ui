@@ -42,8 +42,8 @@ describe('ImagePicker Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render ImagePicker -- props customStyle', () => {
-    const wrapper = factory({ customStyle: 'color:red;' })
+  it('render ImagePicker -- props style', () => {
+    const wrapper = factory({ style: 'color:red;' })
     expect(wrapper.element).toMatchSnapshot()
   })
 

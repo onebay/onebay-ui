@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { defineComponent, computed, PropType } from 'vue'
+import { defineComponent, computed, PropType, CSSProperties } from 'vue'
 
 interface TimelineItem {
   icon?: string
@@ -19,8 +19,8 @@ export default defineComponent({
       type: Array as PropType<TimelineItem[]>,
       default: () => []
     },
-    customStyle: {
-      type: [Object, String],
+    style: {
+      type: String as PropType<CSSProperties>,
       default: ''
     },
     className: {
@@ -60,12 +60,12 @@ export default defineComponent({
     }
 
     return () => {
-      const { customStyle, items, className, pending } = props
+      const { style, items, className, pending } = props
       console.log('items :>> ', items)
       return (
         <div
           class={classNames(rootClassName.value, { 'ob-timeline--pending': pending }, className)}
-          style={customStyle}>
+          style={style}>
           {items.map((item, index) => (
             <div key={`${index}`} class={itemRootClassName(item)}>
               <div class="ob-timeline-item__tail" />

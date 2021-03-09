@@ -272,3 +272,17 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties  | Descrition                        | Type                             | Default       |
+| ----------- | --------------------------------- | -------------------------------- | ------------- |
+| className   | class name                        | string                           | -             |
+| style | custom style                      | CSSProperties                    | -             |
+| open        | whether is open                   | boolean                          | `false`       |
+| title       | title                             | string                           | -             |
+| note        | note                              | string                           | -             |
+| icon        | icon                              | { value: string, color: string } | { value: '' } |
+| hasBorder   | Whether there is a head underline | boolean                          | `true`        |
+| isAnimation | Whether open animation            | boolean                          | `true`        |
+| onClick     | event callback on click the head  | (open, event)=>void              | -             |

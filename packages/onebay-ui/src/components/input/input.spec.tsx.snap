@@ -284,6 +284,7 @@ exports[`Input Snap render Input -- props required 1`] = `
 exports[`Input Snap render Input -- props style 1`] = `
 <div
   class="ob-input"
+  style=""
 >
   <div
     class="ob-input__container"

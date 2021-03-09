@@ -1,14 +1,14 @@
 import classNames from 'classnames'
 import { mergeStyle } from '../../utils'
-import { defineComponent, computed, PropType } from 'vue'
+import { defineComponent, computed, PropType, CSSProperties } from 'vue'
 
 type Item = string | number
 
 export default defineComponent({
   name: 'SegmentedControl',
   props: {
-    customStyle: {
-      type: [Object, String],
+    style: {
+      type: String as PropType<CSSProperties>,
       default: ''
     },
     className: {
@@ -63,7 +63,7 @@ export default defineComponent({
       }
     })
     const rootStyle = computed(() => {
-      return mergeStyle(rootBorderStyle.value, props.customStyle)
+      return mergeStyle(rootBorderStyle.value, props.style)
     })
     const itemStyle = computed(() => {
       const { selectedColor, color, fontSize } = props

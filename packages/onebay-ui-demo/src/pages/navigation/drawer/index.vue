@@ -1,46 +1,46 @@
 <template>
   <div class="page">
-    <DocsHeader title="Drawer 抽屉"></DocsHeader>
+    <DocsHeader title="Drawer"></DocsHeader>
 
     <div class="doc-body">
       <div class="panel">
-        <div class="panel__title">左边滑出</div>
+        <div class="panel__title">Slide out to the right</div>
         <div class="panel__content no-padding">
           <div class="example">
-            <Button @click="leftDrawerClick">显示 Drawer</Button>
+            <Button @click="leftDrawerClick">Show Drawer</Button>
             <Drawer
               :show="leftDrawerShow"
               mask
               :onItemClick="onItemClick"
               :onClose="onClose"
-              :items="['菜单1', '菜单2']"
+              :items="['Menu1', 'Menu2']"
             ></Drawer>
           </div>
         </div>
       </div>
 
       <div class="panel">
-        <div class="panel__title">右边滑出</div>
+        <div class="panel__title">Slide out to the right</div>
         <div class="panel__content no-padding">
           <div class="example">
-            <Button :onClick="rightDrawerClick">显示 Drawer</Button>
+            <Button :onClick="rightDrawerClick">Show Drawer</Button>
             <Drawer
               :show="rightDrawerShow"
               right
               mask
               :onItemClick="onItemClick"
               @Close="onClose"
-              :items="['菜单1', '菜单2']"
+              :items="['Menu1', 'Menu2']"
             ></Drawer>
           </div>
         </div>
       </div>
 
       <div class="panel">
-        <div class="panel__title">自定义内容</div>
+        <div class="panel__title">Custom content</div>
         <div class="panel__content no-padding">
           <div class="example">
-            <Button :onClick="childrenDrawerClick">显示 Drawer</Button>
+            <Button :onClick="childrenDrawerClick">Show Drawer</Button>
             <Drawer :show="childrenDrawerShow" mask :onItemClick="onItemClick" @close="onClose">
               <div
                 v-for="(item, index) in childrenItem"
@@ -80,7 +80,7 @@ export default {
       leftDrawerShow: false,
       rightDrawerShow: false,
       childrenDrawerShow: false,
-      childrenItem: ['首页', '可自定义结构', '或自定义样式', '消息', '个人'],
+      childrenItem: ['Home page', 'Customizable structure','or custom style','message','personal'],
       icons: ['home', '', '', 'message', 'user']
     }
   },
@@ -103,7 +103,7 @@ export default {
       if (typeof index !== 'number') {
         content = ''
       } else {
-        content = `你点击了第 ${+index + 1} 个项目`
+        content = `You clicked on the ${+index + 1}  item`
       }
       content && alert(content)
     },

@@ -6,7 +6,7 @@ declare type ExtendEvent = {
     };
 };
 declare const SearchBar: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: PropType<CSSProperties>;
         default: string;
     };
@@ -81,7 +81,7 @@ declare const SearchBar: import("vue").DefineComponent<{
     disabled: boolean;
     focus: boolean;
     value: string;
-    customStyle: string;
+    style: string;
     className: string;
     placeholder: string;
     maxLength: number;
@@ -97,7 +97,7 @@ declare const SearchBar: import("vue").DefineComponent<{
     disabled: boolean;
     focus: boolean;
     value: string;
-    customStyle: string;
+    style: string;
     className: string;
     placeholder: string;
     maxLength: number;

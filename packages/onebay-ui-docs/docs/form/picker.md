@@ -299,3 +299,26 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties     | Descrition                               | Type                                                             | Default    |
+| -------------- | ---------------------------------------- | ---------------------------------------------------------------- | ---------- |
+| mode           | the picker mode                          | `'selector' | 'multiSelector' | 'time' | 'date'`                 | `selector` |
+| className      | class name                               | string                                                           | -          |
+| style    | custom style                             | CSSProperties                                                    | -          |
+| disabled       | whether is disabled                      | boolean                                                          | `false`    |
+| range          | picker data list                         | []                                                               |            |
+| value          | the picker value                         | number, string, []                                               | ''         |
+| start          | time or date start value                 | string                                                           | ''         |
+| end            | time or date end value                   | string                                                           | ''         |
+| fields         | picker fields only work on mode === date | `'day' | 'month' | 'year'`                                       | ''         |
+| name           | picker input name                        | string                                                           | ''         |
+| cancelText     | cancel text                              | string                                                           | ''         |
+| okText         | ok text                                  | string                                                           | ''         |
+| rangeKey       | picker range key                         | string                                                           | ''         |
+| height         | picker item height                       | number                                                           | 90         |
+| columnId       | picker column id                         | string                                                           | ''         |
+| updateHeight   | update height                            | (height: number, columnId: string, needRevise?: boolean) => void | ''         |
+| onColumnChange | trigger when column value change         | (height: number, columnId: string) => void                       | ''         |
+| updateDay      | update picker day                        | (value: number, fields: number) => void                          | ''         |

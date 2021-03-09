@@ -1,5 +1,5 @@
 import { mergeStyle } from '../../utils'
-import { computed, defineComponent, PropType } from 'vue'
+import { computed, defineComponent, PropType, CSSProperties } from 'vue'
 import Badge from '../badge'
 import classNames from 'classnames'
 
@@ -21,8 +21,8 @@ export default defineComponent({
     Badge
   },
   props: {
-    customStyle: {
-      type: [Object, String],
+    style: {
+      type: String as PropType<CSSProperties>,
       default: ''
     },
     className: {
@@ -83,7 +83,7 @@ export default defineComponent({
       const rootStyle = {
         backgroundColor: backgroundColor || ''
       }
-      return mergeStyle(rootStyle, props.customStyle)
+      return mergeStyle(rootStyle, props.style)
     })
     const titleStyle = computed(() => {
       const { fontSize } = props

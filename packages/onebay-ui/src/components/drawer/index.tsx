@@ -1,4 +1,4 @@
-import { defineComponent, computed, ref, watch, onMounted } from 'vue'
+import { defineComponent, computed, ref, watch, onMounted, PropType, CSSProperties } from 'vue'
 import classNames from 'classnames'
 import List from '../list/index'
 import ListItem from '../list/item/index'
@@ -9,6 +9,10 @@ const Drawer = defineComponent({
     ListItem
   },
   props: {
+    style: {
+      type: String as PropType<CSSProperties>,
+      default: ''
+    },
     show: {
       type: Boolean,
       default: false
@@ -126,10 +130,10 @@ const Drawer = defineComponent({
     })
 
     return () => {
-      const { items } = props
+      const { items, style } = props
       if (visible.value) {
         return (
-          <div class={rootCls.value}>
+          <div class={rootCls.value} style={style}>
             <div class="ob-drawer__mask" style={maskStyle.value} onClick={onMaskClick}></div>
             <div class="ob-drawer__content" style={listStyle.value}>
               {!!items &&

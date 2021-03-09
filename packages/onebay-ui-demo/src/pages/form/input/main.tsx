@@ -105,9 +105,9 @@ export default defineComponent({
               </div>
             </div>
 
-            {/* <!-- Input type --> */}
+            {/* <!-- Inputtype --> */}
             <div class="panel">
-              <div class="panel__title">Input type</div>
+              <div class="panel__title">Inputtype</div>
               <div class="panel__content no-padding">
                 <div class="component-item">
                   <Form>

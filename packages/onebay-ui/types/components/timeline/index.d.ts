@@ -14,7 +14,7 @@ declare const _default: import("vue").DefineComponent<{
         type: PropType<TimelineItem[]>;
         default: () => any[];
     };
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -24,12 +24,12 @@ declare const _default: import("vue").DefineComponent<{
     };
 }, () => JSX.Element, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
     pending: boolean;
-    customStyle: string;
+    style: string;
     className: string;
     items: TimelineItem[];
 } & {}>, {
     pending: boolean;
-    customStyle: string;
+    style: string;
     className: string;
     items: TimelineItem[];
 }>;

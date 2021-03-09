@@ -10,7 +10,7 @@ interface FormProps {
 export default defineComponent({
   name: 'Form',
   props: {
-    customStyle: {
+    style: {
       type: [Object, String],
       default: function () {
         return {}
@@ -46,10 +46,10 @@ export default defineComponent({
     }
   },
   render(): JSX.Element {
-    const { customStyle } = this.$props
+    const { style } = this.$props
     const { handleSubmit, handleReset, $slots, rootCls } = this
     return (
-      <form class={rootCls} style={customStyle} onSubmit={handleSubmit} onReset={handleReset}>
+      <form class={rootCls} style={style} onSubmit={handleSubmit} onReset={handleReset}>
         {$slots.default && $slots.default()}
       </form>
     )

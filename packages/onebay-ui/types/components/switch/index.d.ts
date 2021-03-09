@@ -1,5 +1,5 @@
 declare const Switch: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -45,7 +45,7 @@ declare const Switch: import("vue").DefineComponent<{
     name: string;
     color: string;
     border: boolean;
-    customStyle: string;
+    style: string;
     className: string;
     checked: boolean;
 } & {
@@ -56,7 +56,7 @@ declare const Switch: import("vue").DefineComponent<{
     name: string;
     color: string;
     border: boolean;
-    customStyle: string;
+    style: string;
     className: string;
     checked: boolean;
 }>;

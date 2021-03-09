@@ -44,7 +44,7 @@
             @change="handleChange"
           />
           <div class="example-item">
-            <ActivityIndicator content="加载中..." :is-opened="isOpened" />
+            <ActivityIndicator content="loading..." :is-opened="isOpened" />
           </div>
         </div>
       </div>

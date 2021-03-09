@@ -14,8 +14,8 @@ describe('SearchBar Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render SearchBar -- props customStyle', () => {
-    const wrapper = factory({ customStyle: 'color:red;' })
+  it('render SearchBar -- props style', () => {
+    const wrapper = factory({ style: 'color:red;' })
     expect(wrapper.element).toMatchSnapshot()
   })
 

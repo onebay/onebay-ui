@@ -1,6 +1,6 @@
 import { PropType } from 'vue';
 declare const _default: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -60,7 +60,7 @@ declare const _default: import("vue").DefineComponent<{
     color: string;
     onClick: Function;
     fontSize: string | number;
-    customStyle: string;
+    style: string;
     className: string | unknown[];
     current: number;
     selectedColor: string;
@@ -70,7 +70,7 @@ declare const _default: import("vue").DefineComponent<{
     color: string;
     onClick: Function;
     fontSize: string | number;
-    customStyle: string;
+    style: string;
     className: string | unknown[];
     current: number;
     selectedColor: string;

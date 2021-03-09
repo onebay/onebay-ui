@@ -1,4 +1,4 @@
-import { defineComponent, computed } from 'vue'
+import { defineComponent, computed, PropType, CSSProperties } from 'vue'
 import classNames from 'classnames'
 import { mergeStyle } from '../../utils'
 
@@ -17,8 +17,8 @@ export default defineComponent({
       type: String,
       default: ''
     },
-    customStyle: {
-      type: String,
+    style: {
+      type: String as PropType<CSSProperties>,
       default: ''
     },
     fontSize: {
@@ -58,10 +58,10 @@ export default defineComponent({
     }
   },
   render(): JSX.Element {
-    const { className, customStyle, content } = this.$props
+    const { className, style, content } = this.$props
     const { rootStyle, $slots, fontStyle, lineStyle } = this
     return (
-      <div class={classNames('ob-divider', className)} style={mergeStyle(rootStyle, customStyle)}>
+      <div class={classNames('ob-divider', className)} style={mergeStyle(rootStyle, style)}>
         <div class="ob-divider__content" style={fontStyle}>
           {$slots.default ? $slots.default() : content}
         </div>

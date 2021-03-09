@@ -154,3 +154,20 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties    | Descrition                       | Type                   | Default |
+| ------------- | -------------------------------- | ---------------------- | ------- |
+| value         | the range value                  | string                 | -       |
+| onChange      | trigger when the range change    | (value, event) => void | -       |
+| className     | class name                       | string                 | -       |
+| style   | custom style                     | CSSProperties          | -       |
+| sliderStyle   | custom slider style              | CSSProperties          | -       |
+| railStyle     | custom rail style                | CSSProperties          | -       |
+| trackStyle    | custom track style               | CSSProperties          | -       |
+| blockSize     | the range block size             | number                 | 0       |
+| min           | Mininum                          | number                 | 0       |
+| max           | Maxinum                          | number                 | 100     |
+| disabled      | whether is disabled              | boolean                | `false` |
+| onAfterChange | trigger after range value change | (value) => void        | `false` |

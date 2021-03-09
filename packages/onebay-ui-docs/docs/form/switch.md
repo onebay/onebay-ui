@@ -155,3 +155,17 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties  | Descrition                          | Type            | Default |
+| ----------- | ----------------------------------- | --------------- | ------- |
+| onChange    | trigger when the switch change      | (value) => void | -       |
+| className   | class name                          | string          | -       |
+| style | custom style                        | CSSProperties   | -       |
+| checked     | whether is checked                  | boolean         | `false` |
+| disabled    | whether is checked                  | boolean         | `false` |
+| color       | switch background color             | string          | ''      |
+| name        | the switch inner input element name | string          | ''      |
+| border      | Whether to display the border       | boolean         | `true`  |
+| title       | switch title                        | string          | ''      |

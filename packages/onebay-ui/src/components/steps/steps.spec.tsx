@@ -64,8 +64,8 @@ describe('Steps Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render Steps -- props customStyle', () => {
-    const wrapper = factory({ customStyle: 'color:red;' })
+  it('render Steps -- props style', () => {
+    const wrapper = factory({ style: 'color:red;' })
     expect(wrapper.element).toMatchSnapshot()
   })
 

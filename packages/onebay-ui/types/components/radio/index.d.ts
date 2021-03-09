@@ -5,7 +5,7 @@ interface OptionItem {
     desc?: string;
 }
 declare const Radio: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -32,14 +32,14 @@ declare const Radio: import("vue").DefineComponent<{
     getIconCls(value: string | number): string;
 }, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, "click"[], "click", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
     value: string;
-    customStyle: string;
+    style: string;
     className: string;
     options: unknown[];
 } & {
     onClick?: Function;
 }>, {
     value: string;
-    customStyle: string;
+    style: string;
     className: string;
     options: unknown[];
 }>;
