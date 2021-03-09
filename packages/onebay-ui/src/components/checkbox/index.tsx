@@ -10,7 +10,7 @@ export interface CheckboxItem {
 const Checkbox = defineComponent({
   name: 'Checkbox',
   props: {
-    customStyle: {
+    style: {
       type: [Object, String],
       default: function () {
         return {}
@@ -72,10 +72,10 @@ const Checkbox = defineComponent({
     }
   },
   render() {
-    const { customStyle, options } = this.$props
+    const { style, options } = this.$props
     const { handleClick, rootCls } = this
     return (
-      <div class={rootCls} style={customStyle}>
+      <div class={rootCls} style={style}>
         {options.map((option: CheckboxItem, index: number) => (
           <div
             class={this.getOptionCls(option)}

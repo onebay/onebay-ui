@@ -88,7 +88,7 @@ exports[`SearchBar Snap render SearchBar -- props className 1`] = `
 </div>
 `;
 
-exports[`SearchBar Snap render SearchBar -- props customStyle 1`] = `
+exports[`SearchBar Snap render SearchBar -- props style 1`] = `
 <div
   class="ob-search-bar"
   style="color: red;"

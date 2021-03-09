@@ -44,7 +44,7 @@ exports[`ImagePicker Snap render ImagePicker -- props className 1`] = `
 </div>
 `;
 
-exports[`ImagePicker Snap render ImagePicker -- props customStyle 1`] = `
+exports[`ImagePicker Snap render ImagePicker -- props style 1`] = `
 <div
   class="ob-image-picker"
   style="color: red;"

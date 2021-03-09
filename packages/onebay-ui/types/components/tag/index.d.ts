@@ -28,7 +28,7 @@ declare const Tag: import("vue").DefineComponent<{
         type: BooleanConstructor;
         default: boolean;
     };
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -47,7 +47,7 @@ declare const Tag: import("vue").DefineComponent<{
     type: "primary";
     name: string;
     size: TagSize;
-    customStyle: string;
+    style: string;
     className: string;
 } & {}>, {
     active: boolean;
@@ -56,7 +56,7 @@ declare const Tag: import("vue").DefineComponent<{
     type: "primary";
     name: string;
     size: TagSize;
-    customStyle: string;
+    style: string;
     className: string;
 }>;
 export default Tag;

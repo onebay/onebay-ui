@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { defineComponent, PropType } from 'vue'
+import { defineComponent, PropType, CSSProperties } from 'vue'
 
 type Icon = { value?: string }
 
@@ -13,9 +13,9 @@ export interface StepItem {
 export default defineComponent({
   name: 'Steps',
   props: {
-    customStyle: {
-      type: [Object, String],
-      default: () => ''
+    style: {
+      type: String as PropType<CSSProperties>,
+      default: ''
     },
     className: {
       type: [Object, String],
@@ -42,10 +42,10 @@ export default defineComponent({
     }
   },
   render(): JSX.Element {
-    const { className, customStyle, items, current } = this.$props
+    const { className, style, items, current } = this.$props
     const { handleClick } = this
     return (
-      <div class={classNames('ob-steps', className)} style={customStyle}>
+      <div class={classNames('ob-steps', className)} style={style}>
         {items.map((item: StepItem, index) => (
           <div
             key={index}

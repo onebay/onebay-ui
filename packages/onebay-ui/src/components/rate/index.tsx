@@ -4,7 +4,7 @@ import { defineComponent, computed } from 'vue'
 const Rate = defineComponent({
   name: 'Rate',
   props: {
-    customStyle: {
+    style: {
       type: [Object, String],
       default: ''
     },
@@ -74,10 +74,10 @@ const Rate = defineComponent({
     }
   },
   render() {
-    const { customStyle } = this.$props
+    const { style } = this.$props
     const { rootCls, handleClick, starIconStyle, classNameArr, iconStyle } = this
     return (
-      <div class={rootCls} style={customStyle}>
+      <div class={rootCls} style={style}>
         {classNameArr.map((cls: unknown, i: number) => (
           <div
             class={cls}

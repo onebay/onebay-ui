@@ -19,8 +19,8 @@ describe('Rate Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render Rate -- props customStyle', () => {
-    const wrapper = factory({ customStyle: 'color:red;' })
+  it('render Rate -- props style', () => {
+    const wrapper = factory({ style: 'color:red;' })
     expect(wrapper.element).toMatchSnapshot()
   })
 

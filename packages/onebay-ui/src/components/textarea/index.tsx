@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { defineComponent, computed } from 'vue'
+import { defineComponent, computed, PropType, CSSProperties } from 'vue'
 
 function getMaxLength(maxLength: number, textOverflowForbidden: boolean): number {
   if (!textOverflowForbidden) {
@@ -11,8 +11,8 @@ function getMaxLength(maxLength: number, textOverflowForbidden: boolean): number
 const Textarea = defineComponent({
   name: 'Textarea',
   props: {
-    customStyle: {
-      type: [Object, String],
+    style: {
+      type: String as PropType<CSSProperties>,
       default: ''
     },
     className: {
@@ -48,10 +48,6 @@ const Textarea = defineComponent({
       type: Boolean,
       default: true
     },
-    fixed: {
-      type: Boolean,
-      default: false
-    },
     height: {
       type: [Number, String],
       default: ''
@@ -63,7 +59,7 @@ const Textarea = defineComponent({
     // eslint-disable-next-line vue/require-default-prop
     onChange: { type: Function }
   },
-  emits: ['change', 'focus', 'blur', 'confirm'],
+  emits: ['change', 'focus', 'blur'],
   setup(props) {
     const maxLen = computed(() => {
       return parseInt(props.maxLength.toString())
@@ -118,9 +114,9 @@ const Textarea = defineComponent({
       handleBlur,
       maxLen
     } = this
-    const { customStyle, value, placeholder, disabled, autoFocus, count } = this.$props
+    const { style, value, placeholder, disabled, autoFocus, count } = this.$props
     return (
-      <div class={rootCls} style={customStyle}>
+      <div class={rootCls} style={style}>
         <textarea
           class="ob-textarea__textarea"
           style={textareaStyle}

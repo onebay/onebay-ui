@@ -4,7 +4,7 @@ export interface InputError {
     errorValue: number;
 }
 declare const InputNumber: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -77,7 +77,7 @@ declare const InputNumber: import("vue").DefineComponent<{
     size: "normal" | "large";
     step: number;
     width: number;
-    customStyle: string;
+    style: string;
     className: string;
     min: number;
     disabledInput: boolean;
@@ -92,7 +92,7 @@ declare const InputNumber: import("vue").DefineComponent<{
     size: "normal" | "large";
     step: number;
     width: number;
-    customStyle: string;
+    style: string;
     className: string;
     min: number;
     disabledInput: boolean;

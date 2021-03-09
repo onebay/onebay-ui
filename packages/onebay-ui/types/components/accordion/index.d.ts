@@ -16,7 +16,7 @@ declare const _default: import("vue").DefineComponent<{
         type: BooleanConstructor;
         default: boolean;
     };
-    customStyle: {
+    style: {
         type: StringConstructor;
         default: string;
     };
@@ -65,7 +65,7 @@ declare const _default: import("vue").DefineComponent<{
     open: boolean;
     title: string;
     icon: Record<string, any>;
-    customStyle: string;
+    style: string;
     className: string;
     note: string;
     hasBorder: boolean;
@@ -76,7 +76,7 @@ declare const _default: import("vue").DefineComponent<{
     open: boolean;
     title: string;
     icon: Record<string, any>;
-    customStyle: string;
+    style: string;
     className: string;
     note: string;
     hasBorder: boolean;

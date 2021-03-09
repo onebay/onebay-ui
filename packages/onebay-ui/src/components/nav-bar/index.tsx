@@ -1,4 +1,4 @@
-import { defineComponent, computed, PropType } from 'vue'
+import { defineComponent, computed, PropType, CSSProperties } from 'vue'
 import classNames from 'classnames'
 
 export interface NavBarProps {
@@ -6,7 +6,7 @@ export interface NavBarProps {
   border?: boolean
   color?: string
   title?: string
-  customStyle?: string | unknown
+  style?: string | unknown
   onClickLeftIcon?: () => void
   /* eslint-disable */
   className?: any
@@ -18,8 +18,8 @@ export interface NavBarProps {
 export default defineComponent({
   name: 'NavBar',
   props: {
-    customStyle: {
-      type: [Object, String],
+    style: {
+      type: String as PropType<CSSProperties>,
       default: ''
     },
     className: {
@@ -85,9 +85,9 @@ export default defineComponent({
   render(): JSX.Element {
     const { $slots, linkStyle, rootCls, handleClickLeftView } = this
 
-    const { customStyle, title, leftContent, rightContent } = this.$props
+    const { style, title, leftContent, rightContent } = this.$props
     return (
-      <div class={rootCls} style={customStyle}>
+      <div class={rootCls} style={style}>
         <div class="ob-nav-bar__left-view" style={linkStyle} onClick={handleClickLeftView}>
           {leftContent || ($slots.left && $slots.left())}
         </div>

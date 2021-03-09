@@ -36,7 +36,7 @@ exports[`SegmentedControl Snap render SegmentedControl -- props current 1`] = `
 </div>
 `;
 
-exports[`SegmentedControl Snap render SegmentedControl -- props customStyle 1`] = `
+exports[`SegmentedControl Snap render SegmentedControl -- props style 1`] = `
 <div
   class="ob-segmented-control"
   style=""

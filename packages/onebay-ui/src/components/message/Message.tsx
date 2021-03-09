@@ -4,7 +4,7 @@ import classNames from 'classnames'
 export default defineComponent({
   name: 'Message',
   props: {
-    customStyle: {
+    style: {
       type: [Object, String],
       default: ''
     },
@@ -99,7 +99,7 @@ export default defineComponent({
     }
   },
   render(): JSX.Element {
-    const { className, customStyle, isOpened, message, type } = this.$props
+    const { className, style, isOpened, message, type } = this.$props
     const { handleClick } = this
     return (
       <div
@@ -112,7 +112,7 @@ export default defineComponent({
           `ob-message--${type}`,
           className
         )}
-        style={customStyle}
+        style={style}
         onClick={handleClick}>
         {message}
       </div>

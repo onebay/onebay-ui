@@ -6,7 +6,7 @@ import { getEventDetail, mergeStyle } from '../../utils'
 const Range = defineComponent({
   name: 'Range',
   props: {
-    customStyle: {
+    style: {
       type: [Object, String],
       default: ''
     },
@@ -204,9 +204,9 @@ const Range = defineComponent({
       sliderAStyle,
       sliderBStyle
     } = this
-    const { customStyle, trackStyle, sliderStyle } = this.$props
+    const { style, trackStyle, sliderStyle } = this.$props
     return (
-      <div class={rootCls} style={customStyle} onClick={handleClick}>
+      <div class={rootCls} style={style} onClick={handleClick}>
         <div class="ob-range__container" style={containerStyle}>
           <div class="ob-range__rail" style={railStyle}></div>
           <div class="ob-range__track" style={mergeStyle(atTrackStyle, trackStyle)}></div>

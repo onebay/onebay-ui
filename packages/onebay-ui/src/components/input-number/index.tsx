@@ -38,7 +38,7 @@ function parseValue(num: string): string {
 const InputNumber = defineComponent({
   name: 'InputNumber',
   props: {
-    customStyle: {
+    style: {
       type: [Object, String],
       default: ''
     },
@@ -233,9 +233,9 @@ const InputNumber = defineComponent({
       handleBlur,
       plusBtnCls
     } = this
-    const { customStyle, type, disabledInput, disabled } = this.$props
+    const { style, type, disabledInput, disabled } = this.$props
     return (
-      <div class={rootCls} style={customStyle}>
+      <div class={rootCls} style={style}>
         <div class={minusBtnCls} onClick={() => handleClick('minus')}>
           <div class="ob-icon ob-icon-subtract ob-input-number__btn-subtract"></div>
         </div>

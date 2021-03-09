@@ -108,7 +108,7 @@ export default defineComponent({
           color: iconInfo.color || '',
           fontSize: `${iconInfo.size || 24}px`
         },
-        iconInfo.customStyle
+        iconInfo.style
       )
     }
   },

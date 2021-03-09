@@ -1,4 +1,4 @@
-import { computed, defineComponent, PropType } from 'vue'
+import { computed, defineComponent, PropType, CSSProperties } from 'vue'
 import classNames from 'classnames'
 
 export type TagSize = 'normal' | 'small'
@@ -33,8 +33,8 @@ const Tag = defineComponent({
       type: Boolean,
       default: false
     },
-    customStyle: {
-      type: [Object, String],
+    style: {
+      type: String as PropType<CSSProperties>,
       default: ''
     },
     className: {
@@ -76,9 +76,9 @@ const Tag = defineComponent({
   },
   render() {
     const { handleClick, rootCls, $slots } = this
-    const { customStyle } = this.$props
+    const { style } = this.$props
     return (
-      <div class={rootCls} style={customStyle} onClick={handleClick}>
+      <div class={rootCls} style={style} onClick={handleClick}>
         {$slots.default && $slots.default()}
       </div>
     )

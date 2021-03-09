@@ -1,6 +1,5 @@
 import classNames from 'classnames'
-import { PropType, defineComponent, computed, ref } from 'vue'
-import { CSSProperties } from '../../../global'
+import { PropType, defineComponent, computed, ref, CSSProperties } from 'vue'
 
 type ExtendEvent = {
   target: {
@@ -11,7 +10,7 @@ type ExtendEvent = {
 const SearchBar = defineComponent({
   name: 'SearchBar',
   props: {
-    customStyle: {
+    style: {
       type: [Object, String] as PropType<CSSProperties>,
       default: ''
     },
@@ -189,9 +188,9 @@ const SearchBar = defineComponent({
       handleBlur,
       isFocus
     } = this
-    const { customStyle, placeholder, disabled, maxLength, actionName } = this.$props
+    const { style, placeholder, disabled, maxLength, actionName } = this.$props
     return (
-      <div class={rootCls} style={customStyle} ref="root">
+      <div class={rootCls} style={style} ref="root">
         <div class="ob-search-bar__input-cnt">
           <div class="ob-search-bar__placeholder-wrap" style={placeholderWrapStyle}>
             <div class="ob-icon ob-icon-search"></div>

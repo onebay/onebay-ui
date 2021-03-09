@@ -4,14 +4,14 @@ export interface NavBarProps {
     border?: boolean;
     color?: string;
     title?: string;
-    customStyle?: string | unknown;
+    style?: string | unknown;
     onClickLeftIcon?: () => void;
     className?: any;
     leftContent?: any;
     rightContent?: any;
 }
 declare const _default: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -59,7 +59,7 @@ declare const _default: import("vue").DefineComponent<{
     title: string;
     color: string;
     border: boolean;
-    customStyle: string;
+    style: string;
     className: string | unknown[];
     onClickLeftIcon: () => void;
     leftContent: string;
@@ -69,7 +69,7 @@ declare const _default: import("vue").DefineComponent<{
     title: string;
     color: string;
     border: boolean;
-    customStyle: string;
+    style: string;
     className: string | unknown[];
     onClickLeftIcon: () => void;
     leftContent: string;

@@ -14,8 +14,8 @@ describe('Textarea Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render Textarea -- props customStyle', () => {
-    const wrapper = factory({ customStyle: 'color:red;' })
+  it('render Textarea -- props style', () => {
+    const wrapper = factory({ style: 'color:red;' })
     expect(wrapper.element).toMatchSnapshot()
   })
 

@@ -1,5 +1,5 @@
 declare const Rate: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -42,7 +42,7 @@ declare const Rate: import("vue").DefineComponent<{
     value: number;
     size: string | number;
     margin: number;
-    customStyle: string;
+    style: string;
     className: string;
 } & {
     onChange?: Function;
@@ -51,7 +51,7 @@ declare const Rate: import("vue").DefineComponent<{
     value: number;
     size: string | number;
     margin: number;
-    customStyle: string;
+    style: string;
     className: string;
 }>;
 export default Rate;

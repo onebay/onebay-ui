@@ -81,8 +81,8 @@ export default defineComponent({
         @cancel="handleClose"
         @close="handleClose"
       >
-        <ActionSheetItem @click="showToast('点击了Button 1')"> Button 1 </ActionSheetItem>
-        <ActionSheetItem @click="showToast('点击了Button 2')"> Button 2 </ActionSheetItem>
+        <ActionSheetItem @click="showToast('Click Button 1')"> Button 1 </ActionSheetItem>
+        <ActionSheetItem @click="showToast('Click Button 2')"> Button 2 </ActionSheetItem>
       </ActionSheet>
     </div>
   </div>

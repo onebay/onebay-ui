@@ -2,7 +2,7 @@ import { mount } from '@vue/test-utils'
 import Accordion from './index'
 import { sleep } from '../../utils/helper'
 
-const factory = (values = {}, slots = { default: ['按钮'] }) => {
+const factory = (values = {}, slots = { default: ['Button'] }) => {
   return mount(Accordion, {
     slots,
     props: { ...values }

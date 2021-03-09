@@ -14,8 +14,8 @@ describe('InputNumber Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render InputNumber -- props customStyle', () => {
-    const wrapper = factory({ customStyle: 'color:red;' })
+  it('render InputNumber -- props style', () => {
+    const wrapper = factory({ style: 'color:red;' })
     expect(wrapper.element).toMatchSnapshot()
   })
 

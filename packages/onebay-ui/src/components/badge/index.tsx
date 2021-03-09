@@ -1,4 +1,4 @@
-import { defineComponent, computed } from 'vue'
+import { defineComponent, computed, PropType, CSSProperties } from 'vue'
 import classNames from 'classnames'
 
 const formatValue = (value: string | number | undefined, maxValue: number): string | number => {
@@ -25,8 +25,8 @@ export default defineComponent({
       type: Number,
       default: 99
     },
-    customStyle: {
-      type: [String, Object],
+    style: {
+      type: String as PropType<CSSProperties>,
       default: ''
     },
     className: {
@@ -48,10 +48,10 @@ export default defineComponent({
     }
   },
   render(): JSX.Element {
-    const { dot, customStyle } = this.$props
+    const { dot, style } = this.$props
     const { val, rootClass, $slots } = this
     return (
-      <div class={rootClass} style={customStyle}>
+      <div class={rootClass} style={style}>
         {$slots.default && $slots.default()}
         {dot && <div class="ob-badge__dot" />}
         {!dot && val && (

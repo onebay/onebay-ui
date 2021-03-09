@@ -1,4 +1,5 @@
-import { defineComponent, ref, watch, computed } from 'vue'
+import { defineComponent, ref, watch, computed, PropType, CSSProperties } from 'vue'
+import classnames from 'classnames'
 export interface TouchPoint {
   clientX: number
   clientY: number
@@ -16,6 +17,14 @@ export interface TouchPoint {
 export default defineComponent({
   name: 'Slider',
   props: {
+    style: {
+      type: [Object, String] as PropType<CSSProperties>,
+      default: ''
+    },
+    className: {
+      type: String,
+      default: ''
+    },
     value: {
       type: Number,
       default: 0
@@ -151,7 +160,7 @@ export default defineComponent({
     }
   },
   render() {
-    const { showValue, activeColor, handlerColor, disabled } = this.$props
+    const { showValue, activeColor, handlerColor, disabled, style, className } = this.$props
     let { trackStyle, handlerStyle } = this
     const { innerStyle, percent, handleTouchStart, handleTouchMove, handleTouchEnd } = this
 
@@ -162,7 +171,7 @@ export default defineComponent({
       handlerStyle = { ...handlerStyle, backgroundColor: handlerColor }
     }
     return (
-      <div class="ob-slider-box">
+      <div class={classnames(`ob-slider-box`, className)} style={style}>
         <div class={['ob-slider', disabled ? 'slider-disabled' : '']}>
           <div
             class="ob-slider__inner"

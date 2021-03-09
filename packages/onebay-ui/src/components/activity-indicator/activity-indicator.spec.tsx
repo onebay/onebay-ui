@@ -27,7 +27,7 @@ describe('ActivityIndicator Snap', () => {
   })
 
   it('render ActivityIndicator -- props content', () => {
-    const wrapper = factory({ content: '加载中...' })
+    const wrapper = factory({ content: 'loading...' })
     expect(wrapper.element).toMatchSnapshot()
   })
 

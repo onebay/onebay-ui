@@ -1,5 +1,5 @@
 declare const Range: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -93,7 +93,7 @@ declare const Range: import("vue").DefineComponent<{
     disabled: boolean;
     value: unknown[];
     blockSize: number;
-    customStyle: string;
+    style: string;
     className: string;
     min: number;
     trackStyle: string;
@@ -107,7 +107,7 @@ declare const Range: import("vue").DefineComponent<{
     disabled: boolean;
     value: unknown[];
     blockSize: number;
-    customStyle: string;
+    style: string;
     className: string;
     min: number;
     trackStyle: string;

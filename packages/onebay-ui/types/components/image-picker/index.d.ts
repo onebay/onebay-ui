@@ -5,7 +5,7 @@ interface MatrixFile extends Partial<File> {
     url?: string;
 }
 declare const ImagePicker: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -56,7 +56,7 @@ declare const ImagePicker: import("vue").DefineComponent<{
     length: number;
     multiple: boolean;
     onChange: Function;
-    customStyle: string;
+    style: string;
     className: string;
     count: number;
     files: MatrixFile[];
@@ -67,7 +67,7 @@ declare const ImagePicker: import("vue").DefineComponent<{
     length: number;
     multiple: boolean;
     onChange: Function;
-    customStyle: string;
+    style: string;
     className: string;
     count: number;
     files: MatrixFile[];

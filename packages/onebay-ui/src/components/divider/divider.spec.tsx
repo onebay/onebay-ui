@@ -20,8 +20,8 @@ describe('Divider Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render Divider -- props customStyle', () => {
-    const wrapper = factory({ customStyle: 'color:red;' })
+  it('render Divider -- props style', () => {
+    const wrapper = factory({ style: 'color:red;' })
     expect(wrapper.element).toMatchSnapshot()
   })
 

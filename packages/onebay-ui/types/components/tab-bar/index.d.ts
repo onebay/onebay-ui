@@ -11,7 +11,7 @@ export interface TabListItem {
     image?: string;
 }
 declare const _default: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -79,7 +79,7 @@ declare const _default: import("vue").DefineComponent<{
     onClick: Function;
     backgroundColor: string;
     fontSize: string | number;
-    customStyle: string;
+    style: string;
     className: string | unknown[];
     current: number;
     selectedColor: string;
@@ -91,7 +91,7 @@ declare const _default: import("vue").DefineComponent<{
     onClick: Function;
     backgroundColor: string;
     fontSize: string | number;
-    customStyle: string;
+    style: string;
     className: string | unknown[];
     current: number;
     selectedColor: string;

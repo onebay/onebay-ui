@@ -4,7 +4,7 @@ import classNames from 'classnames'
 const Switch = defineComponent({
   name: 'Switch',
   props: {
-    customStyle: {
+    style: {
       type: [Object, String],
       default: ''
     },
@@ -78,9 +78,9 @@ const Switch = defineComponent({
     }
   },
   render() {
-    const { color, name, title, disabled, customStyle } = this.$props
+    const { color, name, title, disabled, style } = this.$props
     const { switchChange, containerCls, rootCls, isChecked } = this
-    const style =
+    const inputStyle =
       isChecked && color
         ? {
             borderColor: color,
@@ -88,14 +88,14 @@ const Switch = defineComponent({
           }
         : {}
     return (
-      <div class={rootCls} style={customStyle}>
+      <div class={rootCls} style={style}>
         <div class="ob-switch__title">{title}</div>
         <div class={containerCls}>
           <div class="ob-switch__mask"></div>
           <input
             type="checkbox"
             class="ob-switch-input ob-switch__switch"
-            style={style}
+            style={inputStyle}
             checked={isChecked}
             name={name}
             disabled={disabled}

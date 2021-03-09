@@ -266,7 +266,7 @@ exports[`TabBar Snap render TabBar -- props color 1`] = `
 </div>
 `;
 
-exports[`TabBar Snap render TabBar -- props customStyle 1`] = `
+exports[`TabBar Snap render TabBar -- props style 1`] = `
 <div
   class="ob-tab-bar"
   style=""

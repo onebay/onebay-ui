@@ -114,7 +114,7 @@ export const list = {
     },
     {
       id: 'Message',
-      name: '消息通知',
+      name: 'notification',
     },
     {
       id: 'Pull-To-Refresh',

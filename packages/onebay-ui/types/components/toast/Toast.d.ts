@@ -7,7 +7,7 @@ export interface ToastProps {
     duration?: number;
     status?: string;
     className: any;
-    customStyle: any;
+    style: any;
 }
 export declare enum ToastStatus {
     default = "",
@@ -53,7 +53,7 @@ declare const _default: import("vue").DefineComponent<{
         type: (ObjectConstructor | StringConstructor)[];
         default: () => string;
     };
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -81,7 +81,7 @@ declare const _default: import("vue").DefineComponent<{
     icon: string;
     duration: number;
     onClick: Function;
-    customStyle: string;
+    style: string;
     className: string;
     isOpened: boolean;
     hasMask: boolean;
@@ -94,7 +94,7 @@ declare const _default: import("vue").DefineComponent<{
     icon: string;
     duration: number;
     onClick: Function;
-    customStyle: string;
+    style: string;
     className: string;
     isOpened: boolean;
     hasMask: boolean;

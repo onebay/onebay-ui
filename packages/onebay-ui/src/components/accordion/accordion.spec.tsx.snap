@@ -388,7 +388,7 @@ exports[`Accordion Snap test change props open 1`] = `
       class="ob-accordion__body"
     >
       
-      按钮
+      Button
       
     </div>
   </div>

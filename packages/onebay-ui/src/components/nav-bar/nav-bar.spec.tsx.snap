@@ -132,7 +132,7 @@ exports[`NavBar Snap render NavBar -- props color 1`] = `
 </div>
 `;
 
-exports[`NavBar Snap render NavBar -- props customStyle 1`] = `
+exports[`NavBar Snap render NavBar -- props style 1`] = `
 <div
   class="ob-nav-bar"
   style="color: red;"

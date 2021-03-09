@@ -105,7 +105,7 @@ export default defineComponent({
   methods: {
     handleClick(type) {
       Message({
-        message: '消息通知',
+        message: 'notification',
         type
       })
     }

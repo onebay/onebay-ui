@@ -107,7 +107,7 @@ exports[`Steps Snap render Steps -- props current 1`] = `
 </div>
 `;
 
-exports[`Steps Snap render Steps -- props customStyle 1`] = `
+exports[`Steps Snap render Steps -- props style 1`] = `
 <div
   class="ob-steps"
   style="color: red;"

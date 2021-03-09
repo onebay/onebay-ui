@@ -33,7 +33,7 @@ declare const _default: import("vue").DefineComponent<{
         type: BooleanConstructor;
         default: boolean;
     };
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: string;
     };
@@ -65,7 +65,7 @@ declare const _default: import("vue").DefineComponent<{
     type: ButtonType;
     size: string;
     onClick: () => void;
-    customStyle: string;
+    style: string;
     className: string;
     full: boolean;
 } & {}>, {
@@ -75,7 +75,7 @@ declare const _default: import("vue").DefineComponent<{
     type: ButtonType;
     size: string;
     onClick: () => void;
-    customStyle: string;
+    style: string;
     className: string;
     full: boolean;
 }>;

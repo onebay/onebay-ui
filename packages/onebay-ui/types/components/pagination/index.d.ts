@@ -1,5 +1,5 @@
 declare const _default: import("vue").DefineComponent<{
-    customStyle: {
+    style: {
         type: (ObjectConstructor | StringConstructor)[];
         default: () => "";
     };
@@ -49,7 +49,7 @@ declare const _default: import("vue").DefineComponent<{
     onNext(): void;
 }, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
     icon: boolean;
-    customStyle: "";
+    style: "";
     className: string | unknown[];
     current: number;
     total: number;
@@ -59,7 +59,7 @@ declare const _default: import("vue").DefineComponent<{
     nextText: string;
 } & {}>, {
     icon: boolean;
-    customStyle: "";
+    style: "";
     className: string | unknown[];
     current: number;
     total: number;

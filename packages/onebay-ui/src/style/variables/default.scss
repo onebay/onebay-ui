@@ -57,7 +57,7 @@ $color-bg-grey: #F7F7F7 !default;
 
 /* 边框颜色 */
 $color-border-base: #C5D9E8 !default;
-$color-border-split: tint($color-border-base, 20%) !default; // 分割线
+$color-border-split: tint($color-border-base, 20%) !default; // Divider
 $color-border-light: tint($color-border-base, 30%) !default;
 $color-border-lighter: tint($color-border-base, 50%) !default;
 $color-border-lightest: tint($color-border-base, 80%) !default;
@@ -239,7 +239,7 @@ $ob-countdown-card-num-bg-color: $color-white !default;
 $ob-curtain-btn-color: $color-white !default;
 
 /* Divider */
-$ob-divider-height: 112px;
+$ob-divider-height: 64px;
 $ob-divider-content-color: $color-brand !default;
 $ob-divider-font-size: $font-size-lg !default;
 $ob-divider-line-color: $color-grey-3 !default;

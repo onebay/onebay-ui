@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Timeline Snap render Timeline -- props customStyle 1`] = `
+exports[`Timeline Snap render Timeline -- props style 1`] = `
 <div
   class="ob-timeline"
   style="color: red;"

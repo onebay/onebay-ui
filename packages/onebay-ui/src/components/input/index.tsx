@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { defineComponent, computed, PropType, ref } from 'vue'
+import { defineComponent, computed, PropType, ref, CSSProperties } from 'vue'
 
 interface ActualProps {
   type: string
@@ -36,8 +36,8 @@ function getInputProps(props: ActualProps): ActualProps {
 }
 
 const compProps = {
-  customStyle: {
-    type: [Object, String],
+  style: {
+    type: String as PropType<CSSProperties>,
     default: ''
   },
   className: {
@@ -56,21 +56,9 @@ const compProps = {
     type: String as PropType<string>,
     default: ''
   },
-  placeholderStyle: {
-    type: String as PropType<string>,
-    default: ''
-  },
-  placeholderClass: {
-    type: String as PropType<string>,
-    default: ''
-  },
   title: {
     type: String as PropType<string>,
     default: ''
-  },
-  cursor: {
-    type: [String, Number] as PropType<string | number>,
-    default: 0
   },
   maxLength: {
     type: Number as PropType<number>,
@@ -97,10 +85,6 @@ const compProps = {
     default: false
   },
   clear: {
-    type: Boolean as PropType<boolean>,
-    default: false
-  },
-  autoFocus: {
     type: Boolean as PropType<boolean>,
     default: false
   },
@@ -198,7 +182,7 @@ const Input = defineComponent({
     }
   },
   render(): JSX.Element {
-    const { required, name, title, placeholder, value, clear, error, customStyle } = this.$props
+    const { required, name, title, placeholder, value, clear, error, style } = this.$props
     const {
       handleClick,
       handleBlur,
@@ -214,7 +198,7 @@ const Input = defineComponent({
       rootCls
     } = this
     return (
-      <div class={rootCls} style={customStyle}>
+      <div class={rootCls} style={style}>
         <div class={containerCls}>
           <div class={overlayCls} onClick={handleClick}></div>
           {title && (

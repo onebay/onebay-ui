@@ -14,8 +14,8 @@ describe('Timeline Snap', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('render Timeline -- props customStyle', () => {
-    const wrapper = factory({ customStyle: 'color:red;' })
+  it('render Timeline -- props style', () => {
+    const wrapper = factory({ style: 'color:red;' })
     expect(wrapper.element).toMatchSnapshot()
   })
 

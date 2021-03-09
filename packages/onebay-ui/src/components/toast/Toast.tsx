@@ -12,7 +12,7 @@ export interface ToastProps {
   status?: string
   /* eslint-disable */
   className: any
-  customStyle: any
+  style: any
   /* eslint-disable */
 }
 
@@ -63,7 +63,7 @@ export default defineComponent({
       type: [Object, String],
       default: () => ''
     },
-    customStyle: {
+    style: {
       type: [Object, String],
       default: ''
     },
@@ -184,12 +184,12 @@ export default defineComponent({
   },
   render() {
     const { handleClick, visible, rootCls, bodyClass, realImg, isRenderIcon, iconClass } = this
-    const { text, customStyle, hasMask } = this.$props
+    const { text, style, hasMask } = this.$props
     if (visible)
       return (
         <div class={rootCls}>
           {hasMask && <div class="ob-toast__overlay"></div>}
-          <div class={bodyClass} style={customStyle} onClick={handleClick}>
+          <div class={bodyClass} style={style} onClick={handleClick}>
             <div class="toast-body-content">
               {realImg && (
                 <div class="toast-body-content__img">

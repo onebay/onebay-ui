@@ -32,7 +32,7 @@ exports[`Textarea Snap render Textarea -- props count 1`] = `
 </div>
 `;
 
-exports[`Textarea Snap render Textarea -- props customStyle 1`] = `
+exports[`Textarea Snap render Textarea -- props style 1`] = `
 <div
   class="ob-textarea ob-textarea--WEB"
   style="color: red;"

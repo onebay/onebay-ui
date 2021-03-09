@@ -25,7 +25,7 @@ exports[`InputNumber Snap render InputNumber -- props className 1`] = `
 </div>
 `;
 
-exports[`InputNumber Snap render InputNumber -- props customStyle 1`] = `
+exports[`InputNumber Snap render InputNumber -- props style 1`] = `
 <div
   class="ob-input-number"
   style="color: red;"
