@@ -150,3 +150,16 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+| Properties        | Descrition                                            | Type     | Default |
+| ----------------- | ----------------------------------------------------- | -------- | ------- |
+| className         | class name                                            | string   | -       |
+| images            | images url                                            | []       | []      |
+| show              | whether is show                                       | boolean  | `false` |
+| startPosition     | images list index                                     | number   | 1       |
+| paginationVisible | whether is show show the pagination dot               | boolean  | `true`  |
+| maxScale          | The maximum multiple that the picture can be enlarged | number   | 3       |
+| minScale          | The smallest multiple that the picture can be reduced | number   | 1       |
+| onOpen            | The callback fired when the component is opened       | ()=>void | -       |
+| onClose           | The callback fired when the component is closed       | ()=>void | -       |

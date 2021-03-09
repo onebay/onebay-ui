@@ -169,4 +169,17 @@ export default defineComponent({
 
 ```
 
-</div> 
+</div>
+
+## API
+| Properties    | Descrition                                                                                                   | Type                 | Default |
+| ------------- | ------------------------------------------------------------------------------------------------------------ | -------------------- | ------- |
+| className     | class name                                                                                                   | string               | -       |
+| style         | custom style                                                                                                 | CSSProperties        | -       |
+| current       | The currently selected tab index value, counting from 0                                                      | number               | 0       |
+| color         | The background color and the font color of the selected label                                                | string               | #fff    |
+| disabled      | whether is disabled                                                                                          | boolean              | `false` |
+| selectedColor | The selected label background color and border color                                                         | string               | ''      |
+| fontSize      | font size                                                                                                    | `number | string`    | 20      |
+| values        | Option array, the value is a string, eg: ['tab page 1','tab page 2']                                         | []                   | -       |
+| onClick       | Required. Click to trigger the event, you needs to update the current value change through the onClick event | (index, event)=>void | -       |

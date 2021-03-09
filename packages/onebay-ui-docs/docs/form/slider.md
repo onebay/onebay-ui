@@ -195,3 +195,19 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties   | Descrition                           | Type                   | Default |
+| ------------ | ------------------------------------ | ---------------------- | ------- |
+| value        | the slider value                     | number                 | 0       |
+| onChange     | trigger when the slider change       | (value, event) => void | -       |
+| className    | class name                           | string                 | -       |
+| style  | custom style                         | CSSProperties          | -       |
+| showValue    | Whether to display the current Value | CSSProperties          | -       |
+| disabled     | Whether is disabled                  | boolean                | `false` |
+| activeColor  | Selected color                       | string                 | ''      |
+| handlerColor | slider handler color                 | string                 | -       |
+| trackColor   | slider track color                   | string                 | -       |
+| max          | Maxinum value                        | number                 | 100     |
+| min          | Mininum value                        | number                 | 0       |

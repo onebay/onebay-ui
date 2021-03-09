@@ -231,3 +231,32 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+| Properties      | Descrition                                                                                                   | Type          | Default |
+| --------------- | ------------------------------------------------------------------------------------------------------------ | ------------- | ------- |
+| className       | class name                                                                                                   | string        | -       |
+| style           | custom style                                                                                                 | CSSProperties | -       |
+| fixed           | Whether to fix to the bottom                                                                                 | boolean       | `false` |
+| current         | The currently selected label index value, counting from 0                                                    | number        | 0       |
+| iconSize        | icon size                                                                                                    | number        | 24      |
+| fontSize        | font size                                                                                                    | number        | 14      |
+| color           | Unchecked label font and icon color                                                                          | string        | ''      |
+| color           | Unchecked label font and icon color                                                                          | string        | ''      |
+| selectedColor   | checked label font and icon color                                                                            | string        | '#fff'  |
+| backgroundColor | background color                                                                                             | string        | ''      |
+| tabList         | tab list, please see the table below                                                                         | []            | []      |
+| onClick         | Required. Click to trigger the event, you needs to update the current value change through the onClick event | []            | []      |
+
+## tabList object
+| Properties       | Descrition                                                                                                           | Type    | Default |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------- | ------- | ------- |
+| title            | title                                                                                                                | string  | -       |
+| iconPrefixClass  | icon className prefix, used for third-party font icon libraries                                                      | string  | -       |
+| iconType         | The icon type displayed when it is not selected, and the third-party font icon library can be extended               | string  | -       |
+| selectedIconType | The type of icon displayed when selected, can extend the third-party font icon library                               | string  | -       |
+| image            | The link of the image icon when not selected                                                                         | string  | -       |
+| selectedImage    | The link of the image icon when selected                                                                             | string  | -       |
+| text             | The upper right corner displays text, which can be numbers or text. If there is dot, dot will be displayed first     | string  | -       |
+| max              | The largest number that text can display, if it exceeds, the largest number will be displayed plus'+', such as '99+' | number  | -       |
+| dot              | Whether to display the red dot, the priority is higher than text                                                     | boolean | -       |

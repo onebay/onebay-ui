@@ -119,3 +119,14 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties | Descrition                            | Type                          | Default |
+| ---------- | ------------------------------------- | ----------------------------- | ------- |
+| message    | message content                       | string                        | -       |
+| type       | message type                          | info，success，error，warning | `info`  |
+| duration   | message duration (ms)                 | bumber                        | 3000    |
+| onClose    | set the handler to handle close event | () => void                    | -       |
+| onClick    | set the handler to handle click event | () => void                    | -       |
+| className  | class name                            | string                        | -       |

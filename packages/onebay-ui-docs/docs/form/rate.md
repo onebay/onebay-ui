@@ -218,3 +218,15 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties  | Descrition                    | Type                   | Default |
+| ----------- | ----------------------------- | ---------------------- | ------- |
+| value       | the rate value                | number                 | 0       |
+| size        | the rate size                 | number                 | 0       |
+| className   | class name                    | string                 | -       |
+| style | custom style                  | CSSProperties          | -       |
+| max         | Maximum value                 | number                 | 5       |
+| margin      | margin between ench star      | number                 | 5       |
+| onChange    | trigger when the range change | (index, event) => void | -       |

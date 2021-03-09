@@ -345,4 +345,13 @@ export default defineComponent({
 
 ```
 
-</div> 
+</div>
+
+## API
+| Properties | Descrition                                     | Type          | Default |
+| ---------- | ---------------------------------------------- | ------------- | ------- |
+| className  | class name                                     | string        | -       |
+| style      | custom style                                   | CSSProperties | -       |
+| title      | title                                          | string        | ''      |
+| isOpened   | whether is open                                | boolean       | `false` |
+| onClose    | Event triggered when the FloatLayout is closed | ()=>void      | -       |

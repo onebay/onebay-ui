@@ -192,3 +192,18 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API 
+
+| Properties          | Descrition                                              | Type       | Default |
+| ------------------- | ------------------------------------------------------- | ---------- | ------- |
+| title               | the modal title                                         | string     | -       |
+| content             | the modal content                                       | string     | -       |
+| cancelText          | cancel button text                                      | string     | -       |
+| closeOnClickOverlay | Automatically close when clicking on the floating layer | boolean    | `true`  |
+| confirmText         | Confirm button text                                     | string     | -       |
+| isOpened            | Whether to display the modal box                        | boolean    | -       |
+| onClose             | set the handler to handle close event                   | () => void | -       |
+| onCancel            | set the handler to handle cancel event                  | () => void | -       |
+| onConfirm           | set the handler to handle comfirm event                 | () => void | -       |
+| className           | class name                                              | string     | -       |

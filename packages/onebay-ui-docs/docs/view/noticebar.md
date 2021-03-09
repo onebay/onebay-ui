@@ -338,7 +338,7 @@ export default defineComponent({
     onGotoMore() {
       this.$modal({
         title: '点击了更多!',
-        cancelText: '取消'
+        cancelText: 'Cancel'
       })
     }
   }
@@ -348,3 +348,16 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+| Properties | Descrition                           | Type          | Default  |
+| ---------- | ------------------------------------ | ------------- | -------- |
+| className  | class name                           | string        | -        |
+| style      | custom style                         | CSSProperties | -        |
+| close      | Whether to show the close button     | boolean       | `false`  |
+| single     | Whether the content is single line   | boolean       | `false`  |
+| speed      | Content scroll speed                 | number        | 100      |
+| moreText   | "See more" link text                 | string        | See more |
+| icon       | icon in front of content             | string        | ''       |
+| onGotoMore | Triggered when "See More" is clicked | ()=>void      | -        |
+| onClose    | Triggered when noticebar closed      | ()=>void      | -        |

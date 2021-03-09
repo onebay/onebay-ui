@@ -294,3 +294,27 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties          | Descrition                                        | Type                         | Default    |
+| ------------------- | ------------------------------------------------- | ---------------------------- | ---------- |
+| className           | class name                                        | string                       | -          |
+| style               | custom style                                      | CSSProperties                | -          |
+| direction           | swiper direction                                  | `horizontal | vertical`      | horizontal |
+| loop                | Whether to loop                                   | boolean                      | `false`    |
+| paginationVisible   | whether is show pagination                        | boolean                      | `false`    |
+| paginationClickable | Whether the pagination can be clicked             | boolean                      | `false`    |
+| speed               | Scroll speed, default 500ms                       | number                       | 500        |
+| canDragging         | Whether swiper can be dragged                     | boolean                      | `true`     |
+| autoPlay            | Whether is auto play                              | number                       | 0          |
+| initPage            | the init index                                    | number                       | 1          |
+| lazyLoad            | whether is lazy loading                           | boolean                      | `false`    |
+| lazyLoadUrl         | lazy load url, only work when `lazyLoad === true` | string                       | ''         |
+| swiperData          | swiper data list                                  | []                           | []         |
+| onSlideChangeStart  | Trigged when slide change start                   | (number, el)=>void           | -          |
+| onSlideChangeMove   | Trigged when slide change move                    | (number, el)=>void           | -          |
+| onSlideChangeEnd    | Trigged when slide change end                     | (number, el)=>void           | -          |
+| onSlideRevertStart  | Trigged when slide revert start                   | (number, el)=>void           | -          |
+| onSlideRevertEnd    | Trigged when slide revert end                     | (number, el)=>void           | -          |
+| onChange            | Trigged when current page change                  | (currantPage, oldPage)=>void | -          |

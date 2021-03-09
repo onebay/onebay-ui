@@ -75,14 +75,14 @@ export default defineComponent({
         </div>
       </div>
       <ActionSheet
-        cancelText="取消"
+        cancelText="Cancel"
         :isOpened="isOpened"
-        title="清除位置信息后， 别人将不能查看到你"
+        title="After clearing the location information, others will not be able to see you"
         @cancel="handleClose"
         @close="handleClose"
       >
-        <ActionSheetItem @click="showToast('点击了按钮一')"> 按钮一 </ActionSheetItem>
-        <ActionSheetItem @click="showToast('点击了按钮二')"> 按钮二 </ActionSheetItem>
+        <ActionSheetItem @click="showToast('点击了Button 1')"> Button 1 </ActionSheetItem>
+        <ActionSheetItem @click="showToast('点击了Button 2')"> Button 2 </ActionSheetItem>
       </ActionSheet>
     </div>
   </div>
@@ -119,3 +119,22 @@ export default defineComponent({
 ```
 
 </div> 
+
+## ActionSheet API
+
+| Properties | Descrition                             | Type       | Default |
+| ---------- | -------------------------------------- | ---------- | ------- |
+| title      | title                                  | string     | -       |
+| isOpened   | whether is show                        | boolean    | `false`   |
+| cancelText | cancel button text                     | string     | -       |
+| onClose    | set the handler to handle close event  | () => void | -       |
+| onCancel   | set the handler to handle cancel event | () => void | -       |
+| className  | class name                             | string     | -       |
+
+
+## ActionSheetItem API
+
+| Properties | Descrition                            | Type       | Default |
+| ---------- | ------------------------------------- | ---------- | ------- |
+| onClick    | set the handler to handle click event | () => void | -       |
+| className  | class name                            | string     | -       |

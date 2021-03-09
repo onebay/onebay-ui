@@ -71,7 +71,7 @@ export default defineComponent({
                   onChange={handleChange}
                 />
                 <div class="example-item">
-                  <ActivityIndicator content="加载中..." isOpened={isOpened.value} />
+                  <ActivityIndicator content="loading..." isOpened={isOpened.value} />
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default defineComponent({
             @change="handleChange"
           />
           <div class="example-item">
-            <ActivityIndicator content="加载中..." :is-opened="isOpened" />
+            <ActivityIndicator content="loading..." :is-opened="isOpened" />
           </div>
         </div>
       </div>
@@ -190,3 +190,14 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties | Descrition               | Type              | Default   |
+| ---------- | ------------------------ | ----------------- | --------- |
+| mode       | the element type         | `center`,`normal` | `normal`  |
+| size       | the loading element size | string            | `#6190E8` |
+| content    | the element content text | string            | -         |
+| isOpened   | whether is show          | boolean           | `true`      |
+| color      | loading color            | string            | -         |
+| className  | class name               | string            | -         |

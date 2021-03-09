@@ -12,14 +12,14 @@
         </div>
       </div>
       <ActionSheet
-        cancelText="取消"
+        cancelText="Cancel"
         :isOpened="isOpened"
-        title="清除位置信息后， 别人将不能查看到你"
+        title="After clearing the location information, others will not be able to see you"
         @cancel="handleClose"
         @close="handleClose"
       >
-        <ActionSheetItem @click="showToast('点击了按钮一')"> 按钮一 </ActionSheetItem>
-        <ActionSheetItem @click="showToast('点击了按钮二')"> 按钮二 </ActionSheetItem>
+        <ActionSheetItem @click="showToast('click button 1')"> Button 1 </ActionSheetItem>
+        <ActionSheetItem @click="showToast('click button 2')"> Button 2 </ActionSheetItem>
       </ActionSheet>
     </div>
   </div>

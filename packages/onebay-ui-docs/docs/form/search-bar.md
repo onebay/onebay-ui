@@ -215,3 +215,24 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties       | Descrition                                                                                                                                           | Type                   | Default |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------- |
+| value            | Required, the current value of the input box, you needs to update the value value through the onChange event                                         | number                 | 0       |
+| className        | class name                                                                                                                                           | string                 | -       |
+| style      | custom style                                                                                                                                         | CSSProperties          | -       |
+| placeholder      | placeholder text                                                                                                                                     | string                 | Search  |
+| actionName       | Right button text                                                                                                                                    | string                 | Search  |
+| maxLength        | max length                                                                                                                                           | number                 | 140     |
+| fixed            | Whether to fix the top                                                                                                                               | boolean                | `false` |
+| focus            | whether is focus                                                                                                                                     | boolean                | `false` |
+| disabled         | whether is disabled                                                                                                                                  | boolean                | `false` |
+| showActionButton | whether to always show the right button                                                                                                              | boolean                | `false` |
+| inputType        | input type                                                                                                                                           | string                 | `text`  |
+| onActionClick    | Click the button on the right to trigger the event                                                                                                   | (event) => void        | -       |
+| onChange         | Required, the event triggered when the value of the input box changes. Developers need to update the value change through the onChange event.        | (value, event) => void | -       |
+| onClear          | The event is triggered when the clear button is clicked, if it is not provide, the onChange function is called by default by passing an empty string | () => void             | -       |
+| onFocus          | Triggered when the input is focused                                                                                                                  | (event) => void        | -       |
+| onBlur           | Event triggered when the input loses focus                                                                                                           | (event) => void        | -       |

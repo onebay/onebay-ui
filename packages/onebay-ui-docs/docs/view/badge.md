@@ -26,7 +26,7 @@ export default defineComponent({
       <div>
         <Badge value="NEW">
           <Button size="small" circle>
-            按钮
+            Button
             </Button>
         </Badge>
       </div>
@@ -39,81 +39,81 @@ export default defineComponent({
 <template>
   <div class="page">
     <!-- S Header -->
-    <DocsHeader title="Badge 徽标"></DocsHeader>
+    <DocsHeader title="Badge"></DocsHeader>
     <!-- E Header -->
 
     <!-- S Body -->
     <div class="doc-body">
-      <!-- 数字 -->
+      <!-- digital -->
       <div class="panel">
-        <div class="panel__title">数字</div>
+        <div class="panel__title">digital</div>
         <div class="panel__content">
           <div class="example-item">
             <div class="subitem">
               <Badge value="10" :maxValue="99">
-                <Button size="small" circle> 按钮 </Button>
+                <Button size="small" circle> Button </Button>
               </Badge>
             </div>
             <div class="subitem">
               <Badge value="100" :maxValue="99">
-                <Button size="small">按钮</Button>
+                <Button size="small">Button</Button>
               </Badge>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 小红点 -->
+      <!-- small red dot -->
       <div class="panel">
-        <div class="panel__title">小红点</div>
+        <div class="panel__title">small red dot</div>
         <div class="panel__content">
           <div class="example-item">
             <div class="subitem">
               <Badge dot>
-                <Button size="small" circle> 按钮 </Button>
+                <Button size="small" circle> Button </Button>
               </Badge>
             </div>
             <div class="subitem">
               <Badge dot>
-                <Button size="small">按钮</Button>
+                <Button size="small">Button</Button>
               </Badge>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 文本 -->
+      <!-- text -->
       <div class="panel">
-        <div class="panel__title">文本</div>
+        <div class="panel__title">text</div>
         <div class="panel__content">
           <div class="example-item">
             <div class="subitem">
               <Badge value="NEW">
-                <Button size="small" circle> 按钮 </Button>
+                <Button size="small" circle> Button </Button>
               </Badge>
             </div>
             <div class="subitem">
               <Badge value="NEW">
-                <Button size="small">按钮</Button>
+                <Button size="small">Button</Button>
               </Badge>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 省略号 -->
+      <!-- Ellipsis -->
       <div class="panel">
-        <div class="panel__title">省略号</div>
+        <div class="panel__title">Ellipsis</div>
         <div class="panel__content">
           <div class="example-item">
             <div class="subitem">
               <Badge :value="dot">
-                <Button size="small" circle> 按钮 </Button>
+                <Button size="small" circle> Button </Button>
               </Badge>
             </div>
             <div class="subitem">
               <Badge :value="dot">
-                <Button size="small">按钮</Button>
+                <Button size="small">Button</Button>
               </Badge>
             </div>
           </div>
@@ -147,3 +147,12 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+| Properties | Descrition          | Type              | Default |
+| ---------- | ------------------- | ----------------- | ------- |
+| className  | class name          | string            | -       |
+| style      | custom style        | CSSProperties     | -       |
+| dot        | Corner mark red dot | boolean           | `false` |
+| value      | badge content       | `string | number` | ''      |
+| maxValue   | badge max number    | number            | 99      |

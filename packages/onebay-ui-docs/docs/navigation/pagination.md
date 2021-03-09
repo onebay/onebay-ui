@@ -65,9 +65,9 @@ export default defineComponent({
               </div>
             </div>
 
-            {/* <!-- 点击页码出是否出现picker选择页码 --> */}
+            {/* <!-- Click on the page number to see if there is a picker to select the page number --> */}
             <div class="panel">
-              <div class="panel__title">picker快速选择页码</div>
+              <div class="panel__title">picker quickly select page number</div>
               <div class="panel__content no-padding">
                 <div class="example-item">
                   <Pagination icon total={20} pageSize={10} current={1}></Pagination>
@@ -136,9 +136,9 @@ export default defineComponent({
         </div>
       </div>
 
-      <!-- 点击页码出是否出现picker选择页码 -->
+      <!-- Click on the page number to see if there is a picker to select the page number -->
       <div class="panel">
-        <div class="panel__title">picker快速选择页码</div>
+        <div class="panel__title">picker quickly select page number</div>
         <div class="panel__content no-padding">
           <div class="example-item">
             <Pagination icon :total="20" :pageSize="10" :current="1"></Pagination>
@@ -218,3 +218,16 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+| Properties   | Descrition                                           | Type                  | Default  |
+| ------------ | ---------------------------------------------------- | --------------------- | -------- |
+| className    | class name                                           | string                | -        |
+| style        | custom style                                         | CSSProperties         | -        |
+| current      | current page                                         | number                | 1        |
+| total        | total page                                           | number                | 0        |
+| pageSize     | page size                                            | number                | 20       |
+| icon         | Whether to display the button in the form of an icon | boolean               | -`false` |
+| preText      | Previous page text                                   | string                | 'pre'    |
+| nextText     | Next page text                                       | string                | 'next'   |
+| onPageChange | Triggered when the page number button is clicked     | (type, current)=>void | -        |

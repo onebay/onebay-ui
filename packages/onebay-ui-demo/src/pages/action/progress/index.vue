@@ -6,9 +6,9 @@
 
     <!-- S Body -->
     <div class="doc-body">
-      <!-- 基础进度条 -->
+      <!-- Basic progress bar -->
       <div class="panel">
-        <div class="panel__title">基础进度条</div>
+        <div class="panel__title">Basic progress bar</div>
         <div class="panel__content">
           <div class="example-item">
             <Progress :percent="25" />
@@ -22,9 +22,9 @@
         </div>
       </div>
 
-      <!-- 隐藏进度文案 -->
+      <!-- Hide progress text -->
       <div class="panel">
-        <div class="panel__title">隐藏进度文案</div>
+        <div class="panel__title">Hide progress text</div>
         <div class="panel__content">
           <div class="example-item">
             <Progress :percent="25" isHidePercent />
@@ -35,9 +35,9 @@
         </div>
       </div>
 
-      <!-- 自定义进度条线宽 -->
+      <!-- Customize the line width of the progress bar -->
       <div class="panel">
-        <div class="panel__title">自定义进度条线宽</div>
+        <div class="panel__title">Customize the line width of the progress bar</div>
         <div class="panel__content">
           <div class="example-item">
             <Progress :percent="25" :strokeWidth="6" />
@@ -51,9 +51,9 @@
         </div>
       </div>
 
-      <!-- 自定义颜色 -->
+      <!-- Custom color -->
       <div class="panel">
-        <div class="panel__title">自定义颜色</div>
+        <div class="panel__title">Custom color</div>
         <div class="panel__content">
           <div class="example-item">
             <Progress :percent="25" color="#FF4949" />
@@ -67,32 +67,32 @@
         </div>
       </div>
 
-      <!-- 不同的状态 -->
+      <!-- Different states -->
       <div class="panel">
-        <div class="panel__title">不同的状态</div>
+        <div class="panel__title">Different states</div>
         <div class="panel__content">
           <div class="example-item">
-            <div class="example-item__desc">暂停</div>
+            <div class="example-item__desc">suspend</div>
             <Progress :percent="25" />
           </div>
           <div class="example-item">
-            <div class="example-item__desc">进行中</div>
+            <div class="example-item__desc">processing</div>
             <Progress :percent="50" status="progress" />
           </div>
           <div class="example-item">
-            <div class="example-item__desc">错误</div>
+            <div class="example-item__desc">error</div>
             <Progress :percent="75" status="error" />
           </div>
           <div class="example-item">
-            <div class="example-item__desc">已完成</div>
+            <div class="example-item__desc">completed</div>
             <Progress :percent="100" status="success" />
           </div>
         </div>
       </div>
 
-      <!-- 实际案例 -->
+      <!-- actual case -->
       <div class="panel">
-        <div class="panel__title">实际案例</div>
+        <div class="panel__title">actual case</div>
         <div class="panel__content">
           <div class="example-item">
             <Progress :percent="state.percent" />

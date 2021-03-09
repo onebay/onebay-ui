@@ -85,6 +85,25 @@
           </div>
         </div>
       </div>
+      <!-- use with rangeKey -->
+      <div class="panel">
+        <div class="panel__title">use with rangeKey</div>
+        <div class="panel__content">
+          <div class="example-item">
+            <Picker 
+            mode="selector" 
+            :range="state.rangeKeyOptions"
+            rangeKey="label"
+            :value="state.value" 
+            @change="handleChangeWithRangeKey">
+              <div class="demo-list-item">
+                <div class="demo-list-item__label">Please select a item</div>
+                <div class="demo-list-item__value">{{ rangeKeyValue }}</div>
+              </div>
+            </Picker>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- E Body -->
   </div>
@@ -102,7 +121,6 @@ export default defineComponent({
   },
   data() {
     return {
-      isAlipay: false,
       state: {
         selector: ['java', 'python', 'typescript'],
         multiSelector: [
@@ -112,8 +130,19 @@ export default defineComponent({
         selectorValue: 0,
         mulitSelectorValues: [0, 1],
         timeSel: '06:18',
-        dateSel: '2018-06-18'
+        dateSel: '2018-06-18',
+        value: '',
+        rangeKeyOptions: [
+          { value: 0, label: 'vue' },
+          { value: 1, label: 'onebay' }
+        ]
       }
+    }
+  },
+  computed: {
+    rangeKeyValue () {
+      const item = this.state.rangeKeyOptions.find(item => item.value === this.state.value)
+      return item ? item['label'] : ''
     }
   },
   methods: {
@@ -139,6 +168,10 @@ export default defineComponent({
 
     handleColumnChange(e) {
       console.log('handleColumnChange', e)
+    },
+
+    handleChangeWithRangeKey(value) {
+      this.state.value = value
     }
   }
 })

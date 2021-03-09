@@ -107,3 +107,21 @@ export default defineComponent({
 ```
 
 </div> 
+
+## Flex API
+
+| Properties   | Descrition   | Type          | Default  |
+| ------------ | ------------ | ------------- | -------- |
+| className    | class name   | string        | -        |
+| style        | custom style | CSSProperties | -        |
+| align        | flex align        | string        | `center` |
+| direction    | flex direction    | string        | ''       |
+| wrap         | flex wrap         | string        | ''       |
+| justify      | flex justify      | string        | ''       |
+| alignContent | flex alignContent | string        | ''       |
+
+## FlexItem API
+| Properties   | Descrition   | Type          | Default  |
+| ------------ | ------------ | ------------- | -------- |
+| className    | class name   | string        | -        |
+| style        | custom style | CSSProperties | -        |

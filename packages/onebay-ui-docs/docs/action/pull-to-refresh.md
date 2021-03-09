@@ -124,3 +124,15 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API 
+
+| Properties        | Descrition                                              | Type         | Default      |
+| ----------------- | ------------------------------------------------------- | ------------ | ------------ |
+| indicator         | custom indicator                                        | string       | ''           |
+| indicatorText     | indicator text                                          | string       | `loading...` |
+| direction         | pull direction                                          | `up`, `down` | `down`       |
+| distanceToRefresh | distance to refresh                                     | number       | 25           |
+| refreshing        | Whether the view should be indicating an active refresh | boolean      | false        |
+| onRefresh         | required, Called when the view starts refreshing.       | () => void   | -            |
+| className         | class name                                              | string       | ''           |

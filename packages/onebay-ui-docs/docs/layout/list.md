@@ -360,3 +360,26 @@ export default defineComponent({
 ```
 
 </div> 
+
+## List API
+
+| Properties | Descrition                    | Type    | Default |
+| ---------- | ----------------------------- | ------- | ------- |
+| className  | class name                    | string  | -       |
+| hasBorder  | Whether to display the border | boolean | `true`  |
+
+## ListItem API
+
+| Properties | Descrition                                              | Type                             | Default       |
+| ---------- | ------------------------------------------------------- | -------------------------------- | ------------- |
+| className  | class name                                              | string                           | -             |
+| hasBorder  | Whether to display the border                           | boolean                          | `true`        |
+| note       | list item description                                   | string                           | ''            |
+| title      | list item title                                         | string                           | ''            |
+| thumb      | The main thumbnail of the element                       | string                           | ''            |
+| extraText  | Text of additional information                          | string                           | ''            |
+| extraThumb | Thumbnail of extra information                          | string                           | ''            |
+| disabled   | whether is disabled                                     | boolean                          | `false`       |
+| iconInfo   | icon                                                    | { value: string, color: string } | { value: '' } |
+| arrow      | list item arrow direction                               | `'up' | 'down' | 'right' | ''`   | ''            |
+| onClick    | The event triggered by the user clicking on the element | (event)=>void                    | ''            |

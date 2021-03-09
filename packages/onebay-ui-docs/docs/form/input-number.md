@@ -300,3 +300,22 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties    | Descrition                                                 | Type                                                 | Default |
+| ------------- | ---------------------------------------------------------- | ---------------------------------------------------- | ------- |
+| className     | class name                                                 | string                                               | -       |
+| style   | custom style                                               | CSSProperties                                        | -       |
+| disabled      | the input disabled, clicking the button disabled           | boolean                                              | `false` |
+| disabledInput | only the input disabled                                    | boolean                                              | `false` |
+| type          | input type                                                 | `number | digit`                                     | `text`  |
+| size          | input size                                                 | `normal | large`                                     | `text`  |
+| value         | input value                                                | `string | number`                                    | 1       |
+| width         | input width                                                | number                                               | 0       |
+| min           | Minimum                                                    | number                                               | 0       |
+| max           | Maximum                                                    | number                                               | 100     |
+| step          | The size of the interval that changes with each click      | number                                               | 1       |
+| onChange      | Event triggered by input value change                      | (value, event)=>void                                 | -       |
+| onBlur        | The event triggered when the input loses focus             | (e: Event)=>void                                     | -       |
+| onErrorInput  | The input box tries to enter the wrong array trigger event | `{ type: OVER | LOW | DISABLED, errorValue: number}` | -       |

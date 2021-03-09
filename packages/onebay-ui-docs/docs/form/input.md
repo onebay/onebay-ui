@@ -114,9 +114,9 @@ export default defineComponent({
               </div>
             </div>
 
-            {/* <!-- Input type --> */}
+            {/* <!-- Inputtype --> */}
             <div class="panel">
-              <div class="panel__title">Input type</div>
+              <div class="panel__title">Inputtype</div>
               <div class="panel__content no-padding">
                 <div class="component-item">
                   <Form>
@@ -287,36 +287,36 @@ export default defineComponent({
 <template>
   <div class="page">
     <!-- S Header -->
-    <DocsHeader title="Input 输入框"></DocsHeader>
+    <DocsHeader title="Input"></DocsHeader>
     <!-- E Header -->
 
     <!-- S Body -->
     <div class="doc-body">
-      <!-- 基础用法 -->
+      <!-- Basic usage -->
       <div class="panel">
-        <div class="panel__title">基础用法</div>
+        <div class="panel__title">Basic usage</div>
         <div class="panel__content no-padding">
           <div class="component-item">
             <Form>
               <Input
                 name="value1"
-                title="标准五个字"
+                title="hello world"
                 type="text"
-                placeholder="标准五个字"
+                placeholder="hello world"
                 :value="value1"
                 :onChange="handleInput.bind(this, 'value1')"
               />
               <Input
                 name="value2"
-                title="标题实在特别长就换行"
-                placeholder="其他列保持正常间距"
+                title="The title is really long, just wrap"
+                placeholder="Keep other columns with normal spacing"
                 :value="value2"
                 :onChange="handleInput.bind(this, 'value2')"
               />
               <Input
                 name="value3"
                 :border="false"
-                placeholder="无标题"
+                placeholder="Untitled"
                 :value="value3"
                 :onChange="handleInput.bind(this, 'value3')"
               />
@@ -325,58 +325,58 @@ export default defineComponent({
         </div>
       </div>
 
-      <!-- 输入框类型 -->
+      <!-- Inputtype -->
       <div class="panel">
-        <div class="panel__title">输入框类型</div>
+        <div class="panel__title">Inputtype</div>
         <div class="panel__content no-padding">
           <div class="component-item">
             <Form>
               <Input
                 name="value4"
-                title="文本"
+                title="text"
                 type="text"
-                placeholder="单行文本"
+                placeholder="Single line of text"
                 :value="value4"
                 :onChange="handleInput.bind(this, 'value4')"
               />
               <Input
                 name="value5"
-                title="数字"
+                title="digital"
                 type="number"
-                placeholder="请输入数字"
+                placeholder="Please enter the number"
                 :value="value5"
                 :onChange="handleInput.bind(this, 'value5')"
               />
               <Input
                 name="value6"
-                title="密码"
+                title="password"
                 type="password"
-                placeholder="密码不能少于10位数"
+                placeholder="Password cannot be less than 10 digits"
                 :value="value6"
                 :onChange="handleInput.bind(this, 'value6')"
               />
               <Input
                 name="value7"
-                title="身份证"
+                title="ID card"
                 type="idcard"
-                placeholder="身份证号码"
+                placeholder="ID card number"
                 :value="value7"
                 :onChange="handleInput.bind(this, 'value7')"
               />
               <Input
                 name="value8"
-                title="小数"
+                title="Decimal"
                 type="digit"
-                placeholder="请输入小数"
+                placeholder="Please enter a decimal"
                 :value="value8"
                 :onChange="handleInput.bind(this, 'value8')"
               />
               <Input
                 name="value9"
                 :border="false"
-                title="手机号码"
+                title="mobile phone number"
                 type="phone"
-                placeholder="手机号码"
+                placeholder="mobile phone number"
                 :value="value9"
                 :onChange="handleInput.bind(this, 'value9')"
               />
@@ -385,27 +385,27 @@ export default defineComponent({
         </div>
       </div>
 
-      <!-- 状态 -->
+      <!-- status -->
       <div class="panel">
-        <div class="panel__title">状态</div>
+        <div class="panel__title">status</div>
         <div class="panel__content no-padding">
           <div class="component-item">
             <Form>
               <Input
                 name="value10"
                 disabled
-                title="禁用"
+                title="disabled"
                 type="text"
-                placeholder="禁止输入"
+                placeholder="Disable Input"
                 :value="value10"
                 :onChange="handleInput.bind(this, 'value10')"
               />
               <Input
                 name="value11"
                 error
-                title="出现错误"
+                title="An error occurred"
                 type="text"
-                placeholder="点击按钮触发回调"
+                placeholder="Click the button to trigger the callback"
                 :value="value11"
                 :onChange="handleInput.bind(this, 'value11')"
                 :onErrorClick="onClickErrorIcon"
@@ -413,18 +413,18 @@ export default defineComponent({
               <Input
                 name="value12"
                 :editable="false"
-                title="不可编辑"
+                title="Not editable"
                 type="text"
-                placeholder="不可编辑"
-                value="不可编辑的内容"
+                placeholder="Not editable"
+                value="Uneditable content"
               />
               <Input
                 name="value13"
                 :border="false"
                 clear
-                title="清除按钮"
+                title="Clear button"
                 type="text"
-                placeholder="点击清除按钮清空内容"
+                placeholder="Click the clear button to empty the content"
                 :value="value13"
                 :onChange="handleInput.bind(this, 'value13')"
               />
@@ -432,9 +432,9 @@ export default defineComponent({
                 name="value16"
                 :border="false"
                 required
-                title="必填项"
+                title="Required"
                 type="text"
-                placeholder="必填项"
+                placeholder="Required"
                 :value="value16"
                 :onChange="handleInput.bind(this, 'value16')"
               />
@@ -443,19 +443,19 @@ export default defineComponent({
         </div>
       </div>
 
-      <!-- 自定义右边栏 -->
+      <!-- Customize the right sidebar -->
       <div class="panel">
-        <div class="panel__title">自定义右边栏</div>
+        <div class="panel__title">Customize the right sidebar</div>
         <div class="panel__content no-padding">
           <div class="component-item">
             <Form>
               <Input
                 name="value14"
-                title="验证码"
+                title="Verification code"
                 type="text"
                 :maxLength="4"
                 clear
-                placeholder="验证码"
+                placeholder="Verification code"
                 :value="value14"
                 :onChange="handleInput.bind(this, 'value14')"
               >
@@ -466,7 +466,7 @@ export default defineComponent({
                 :border="false"
                 type="phone"
                 clear
-                placeholder="请输入手机号码"
+                placeholder="please enter mobile phone number"
                 :value="value15"
                 :onChange="handleInput.bind(this, 'value15')"
               >
@@ -531,7 +531,7 @@ export default defineComponent({
       })
     },
     showTipText() {
-      return this.disabled ? `${this.second}s后重试` : '发送验证码'
+      return  this.disabled ? `retry after ${this.second} second` : 'Send the verification code'
     },
 
     sendCode() {
@@ -539,7 +539,7 @@ export default defineComponent({
       this.setState({
         disabled: true
       })
-      // 倒计时
+      // Countdown
       const timer = setInterval(() => {
         if (this.second > 0) {
           this.setState({
@@ -564,7 +564,7 @@ export default defineComponent({
 
     onClickErrorIcon() {
       Toast({
-        text: '请输入数字',
+        text: 'Please enter the number',
         status: 'error',
         duration: 2000
       })
@@ -576,3 +576,29 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties   | Descrition                                                   | Type                 | Default |
+| ------------ | ------------------------------------------------------------ | -------------------- | ------- |
+| className    | class name                                                   | string               | -       |
+| style  | custom style                                                 | CSSProperties        | -       |
+| value        | input value                                                  | `string | number`    | -       |
+| name         | input name                                                   | string               | -       |
+| placeholder  | input placeholder                                            | string               | -       |
+| title        | input title                                                  | string               | -       |
+| maxLength    | max length                                                   | string               | 140     |
+| type         | input type                                                   | string               | `text`  |
+| disabled     | whether is disabled                                          | boolean              | `false` |
+| border       | whether has border                                           | boolean              | `true`  |
+| editable     | whether is editable                                          | boolean              | `true`  |
+| error        | whether is error                                             | boolean              | `false` |
+| clear        | whether show clear icon                                      | boolean              | `false` |
+| focus        | whether is auto focus                                        | boolean              | `false` |
+| required     | whether is required                                          | boolean              | `false` |
+| onErrorClick | Event triggered by clicking the error button                 | () => void           | -       |
+| onChange     | Event triggered by input value change                        | (value, event)=>void | -       |
+| onInput      | Event triggered by input element input event                 | (e: Event)=>void     | -       |
+| onBlur       | The event triggered when the input loses focus               | (e: Event)=>void     | -       |
+| onFocus      | The event triggered when the input get focus                 | (e: Event)=>void     | -       |
+| onClick      | The event triggered when the click input (editable  = false) | (e: Event)=>void     | -       |

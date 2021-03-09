@@ -25,9 +25,9 @@
         </div>
       </div>
 
-      <!-- 点击页码出是否出现picker选择页码 -->
+      <!-- Click on the page number to see if there is a picker to select the page number -->
       <div class="panel">
-        <div class="panel__title">picker快速选择页码</div>
+        <div class="panel__title">picker quickly select page number</div>
         <div class="panel__content no-padding">
           <div class="example-item">
             <Pagination icon :total="20" :pageSize="10" :current="1"></Pagination>

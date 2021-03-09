@@ -143,14 +143,14 @@ export default defineComponent({
 <template>
   <div class="page">
     <!-- S Header -->
-    <DocsHeader title="Checkbox 复选框"></DocsHeader>
+    <DocsHeader title="Checkbox"></DocsHeader>
     <!-- E Header -->
 
     <!-- S Body -->
     <div class="doc-body">
-      <!-- 基础用法 -->
+      <!-- Basic usage -->
       <div class="panel">
-        <div class="panel__title">基础用法</div>
+        <div class="panel__title">Basic usage</div>
         <div class="panel__content no-padding">
           <div class="example-item">
             <div class="checkbox-container">
@@ -164,9 +164,9 @@ export default defineComponent({
         </div>
       </div>
 
-      <!-- 含描述信息 -->
+      <!-- With descriptive information -->
       <div class="panel">
-        <div class="panel__title">含描述信息</div>
+        <div class="panel__title">With descriptive information</div>
         <div class="panel__content no-padding">
           <div class="example-item">
             <div class="checkbox-container">
@@ -180,9 +180,9 @@ export default defineComponent({
         </div>
       </div>
 
-      <!-- 选项禁用 -->
+      <!-- Option disabled -->
       <div class="panel">
-        <div class="panel__title">选项禁用</div>
+        <div class="panel__title">Option disabled</div>
         <div class="panel__content no-padding">
           <div class="example-item">
             <div class="checkbox-container">
@@ -224,19 +224,19 @@ export default defineComponent({
             value: 'list1',
             label: 'iPhone X',
             desc:
-              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。'
+              'Some regions provide electronic ordinary invoices, which are equivalent to paper ordinary invoices. The actual invoice type shall prevail.'
           },
           {
             value: 'list2',
             label: 'HUAWEI P20',
             desc:
-              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。'
+              'Some regions provide electronic ordinary invoices, which are equivalent to paper ordinary invoices. The actual invoice type shall prevail.'
           },
           {
             value: 'list3',
             label: 'OPPO Find X',
             desc:
-              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。'
+              'Some regions provide electronic ordinary invoices, which are equivalent to paper ordinary invoices. The actual invoice type shall prevail.'
           }
         ],
         checkboxOption3: [
@@ -244,21 +244,21 @@ export default defineComponent({
             value: 'list1',
             label: 'iPhone X',
             desc:
-              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。'
+              'Some regions provide electronic ordinary invoices, which are equivalent to paper ordinary invoices. The actual invoice type shall prevail.'
           },
           { value: 'list2', label: 'HUAWEI P20' },
           {
             value: 'list3',
             label: 'OPPO Find X',
             desc:
-              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。',
+              'Some regions provide electronic ordinary invoices, which are equivalent to paper ordinary invoices. The actual invoice type shall prevail.',
             disabled: true
           },
           {
             value: 'list4',
             label: 'vivo NEX',
             desc:
-              '部分地区提供电子普通发票，用户可自行打印，效力等同纸质普通发票，具体以实际出具的发票类型为准。',
+              'Some regions provide electronic ordinary invoices, which are equivalent to paper ordinary invoices. The actual invoice type shall prevail.',
             disabled: true
           }
         ]
@@ -284,3 +284,13 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties   | Descrition                            | Type                                                 | Default |
+| ------------ | ------------------------------------- | ---------------------------------------------------- | ------- |
+| options      | the checkbox data list                | `{ value: string; label: string; desc?: string; disabled?: boolean }[]` | []      |
+| selectedList | the checkbox selected value list       | string[]                                             | []      |
+| onChange     | set the handler to handle click event | (selectedList) => void                               | -       |
+| className    | class name                            | string                                               | -       |
+| style  | custom style                          | CSSProperties                                        | -       |

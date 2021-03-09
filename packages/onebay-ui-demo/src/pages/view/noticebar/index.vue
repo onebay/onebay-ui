@@ -159,7 +159,7 @@ export default defineComponent({
     onGotoMore() {
       this.$modal({
         title: '点击了更多!',
-        cancelText: '取消'
+        cancelText: 'Cancel'
       })
     }
   }

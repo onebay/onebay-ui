@@ -43,7 +43,7 @@ export default defineComponent({
       const { tagList } = state
       const findIndex = tagList.findIndex((item) => item.name === data.name)
       const active = !tagList[findIndex].active
-      const content = `您点击的 tag 标签名是：${data.name}，点击前是否选中：${data.active}，点击后：${active}`
+      const content = `The tag name of the tag you clicked is: ${data.name}, is it checked before clicking: ${data.active}, after clicking: ${active}`
 
       tagList[findIndex].active = active
       state.tagList = tagList

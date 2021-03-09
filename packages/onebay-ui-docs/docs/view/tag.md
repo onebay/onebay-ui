@@ -52,7 +52,7 @@ export default defineComponent({
       const { tagList } = state
       const findIndex = tagList.findIndex((item) => item.name === data.name)
       const active = !tagList[findIndex].active
-      const content = `您点击的 tag 标签名是：${data.name}，点击前是否选中：${data.active}，点击后：${active}`
+      const content = `The tag name of the tag you clicked is: ${data.name}, is it checked before clicking: ${data.active}, after clicking: ${active}`
 
       tagList[findIndex].active = active
       state.tagList = tagList
@@ -459,7 +459,7 @@ export default defineComponent({
       const { tagList } = this
       const findIndex = tagList.findIndex((item) => item.name === data.name)
       const active = !tagList[findIndex].active
-      const content = `您点击的 tag 标签名是：${data.name}，点击前是否选中：${data.active}，点击后：${active}`
+      const content = `The tag name of the tag you clicked is: ${data.name}, is it checked before clicking: ${data.active}, after clicking: ${active}`
 
       tagList[findIndex].active = active
       this.tagList = tagList
@@ -507,3 +507,17 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties | Descrition                      | Type                          | Default |
+| ---------- | ------------------------------- | ----------------------------- | ------- |
+| className  | class name                      | string                        | -       |
+| style      | custom style                    | CSSProperties                 | -       |
+| size       | tag size                        | `'normal' | 'small'`          | normal  |
+| type       | tag type                        | `'' | 'primary'`              | ''      |
+| name       | tag name                        | string                        | ''      |
+| circle     | whether is circle               | boolean                       | false   |
+| active     | whether is active               | boolean                       | false   |
+| disabled   | whether is disabled             | boolean                       | false   |
+| onClick    | Trigger when the tag is clicked | ({name, active}, event)=>void | -       |

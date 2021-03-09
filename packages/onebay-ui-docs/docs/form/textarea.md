@@ -193,3 +193,21 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties            | Descrition                                                               | Type             | Default |
+| --------------------- | ------------------------------------------------------------------------ | ---------------- | ------- |
+| className             | class name                                                               | string           | -       |
+| style           | custom style                                                             | CSSProperties    | -       |
+| maxLength             | max length                                                               | number           | 200     |
+| placeholder           | placeholder                                                              | string           | ''      |
+| disabled              | whether is disabled                                                      | boolean          | `false` |
+| focus                 | whether is focus                                                         | boolean          | `false` |
+| textOverflowForbidden | Whether to prohibit text overflow                                        | boolean          | `true`  |
+| height                | custom textarea height                                                   | number           | -       |
+| count                 | Whether to calculate the textarea content length                         | boolean          | `true`  |
+| value                 | Required, you needs to update the value value through the onChange event | string           | ''      |
+| onBlur                | The event triggered when the textarea loses focus                        | (e: Event)=>void | -       |
+| onFocus               | The event triggered when the textarea get focus                          | (e: Event)=>void | -       |
+| onChange              | trigger when the textarea change                                         | (value) => void  | -       |

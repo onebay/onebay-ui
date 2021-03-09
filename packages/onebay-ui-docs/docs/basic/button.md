@@ -17,16 +17,16 @@ export default defineComponent({
     return () => {
       return (
         <div>
-          <DocsHeader title="Button 按钮" />
+          <DocsHeader title="Button" />
           <div class="doc-body">
             <div class="panel">
               <div class="panel__title">
-                主操作
+                Main operation
               </div>
               <div class="panel__content">
                 <div class="btn-item">
                   <Button type="primary">
-                    主操作按钮
+                    Main operation button
                   </Button>
                 </div>
                 <div class="btn-item">
@@ -36,19 +36,19 @@ export default defineComponent({
                 </div>
                 <div class="btn-item">
                   <Button type="primary" disabled>
-                    不可操作
+                    disabled
                   </Button>
                 </div>
               </div>
             </div>
             <div class="panel">
               <div class="panel__title">
-                次要操作
+                Secondary operation
               </div>
               <div class="panel__content">
                 <div class="btn-item">
                   <Button type="secondary">
-                    次操作按钮
+                    Secondary operation button
                   </Button>
                 </div>
                 <div class="btn-item">
@@ -58,7 +58,7 @@ export default defineComponent({
                 </div>
                 <div class="btn-item">
                   <Button type="secondary" disabled>
-                    不可操作
+                    disabled
                   </Button>
                 </div>
               </div>
@@ -66,11 +66,11 @@ export default defineComponent({
 
             <div class="panel">
               <div class="panel__title">
-                次次要操作
+                Secondary operation
               </div>
               <div class="panel__content">
                 <div class="btn-item">
-                  <Button>次次要操作按钮</Button>
+                  <Button>Secondary operation button</Button>
                 </div>
                 <div class="btn-item">
                   <Button loading>
@@ -79,7 +79,7 @@ export default defineComponent({
                 </div>
                 <div class="btn-item">
                   <Button disabled>
-                    不可操作
+                    disabled
                   </Button>
                 </div>
               </div>
@@ -87,27 +87,27 @@ export default defineComponent({
 
             <div class="panel">
               <div class="panel__title">
-                通栏按钮
+                Column Button
               </div>
               <div class="panel__content" style="padding: 0;">
                 <div class="btn-item">
                   <Button type="primary" full>
-                    主操作按钮
+                    Main operation button
                   </Button>
                 </div>
                 <div class="btn-item">
                   <Button type="secondary" full>
-                    次操作按钮
+                    Secondary operation button
                   </Button>
                 </div>
                 <div class="btn-item">
                   <Button full>
-                    次次要操作按钮
+                    Secondary operation button
                   </Button>
                 </div>
                 <div class="btn-item">
                   <Button disabled full>
-                    不可操作
+                    disabled
                   </Button>
                 </div>
               </div>
@@ -115,23 +115,23 @@ export default defineComponent({
 
             <div class="panel">
               <div class="panel__title">
-                小按钮
+                Small Button
               </div>
               <div class="panel__content">
                 <div class="btn-item">
                   <div class="subitem">
                     <Button type="primary" size="small">
-                      按钮
+                      Button
                     </Button>
                   </div>
                   <div class="subitem">
                     <Button type="secondary" size="small">
-                      按钮
+                      Button
                     </Button>
                   </div>
                   <div class="subitem">
                     <Button size="small">
-                      按钮
+                      Button
                     </Button>
                   </div>
                 </div>
@@ -149,17 +149,17 @@ export default defineComponent({
                 <div class="btn-item">
                   <div class="subitem">
                     <Button type="primary" size="small" disabled>
-                      按钮
+                      Button
                     </Button>
                   </div>
                   <div class="subitem">
                     <Button type="secondary" size="small" disabled>
-                      按钮
+                      Button
                     </Button>
                   </div>
                   <div class="subitem">
                     <Button size="small" disabled>
-                      按钮
+                      Button
                     </Button>
                   </div>
                 </div>
@@ -168,23 +168,23 @@ export default defineComponent({
 
             <div class="panel">
               <div class="panel__title">
-                圆角按钮
+                Round button
               </div>
               <div class="panel__content">
                 <div class="btn-item">
                   <div class="subitem">
                     <Button type="primary" size="small" circle>
-                      按钮
+                      Button
                     </Button>
                   </div>
                   <div class="subitem">
                     <Button type="secondary" size="small" circle>
-                      按钮
+                      Button
                     </Button>
                   </div>
                   <div class="subitem">
                     <Button size="small" circle>
-                      按钮
+                      Button
                     </Button>
                   </div>
                 </div>
@@ -202,17 +202,17 @@ export default defineComponent({
                 <div class="btn-item">
                   <div class="subitem">
                     <Button type="primary" size="small" disabled circle>
-                      按钮
+                      Button
                     </Button>
                   </div>
                   <div class="subitem">
                     <Button type="secondary" size="small" disabled circle>
-                      按钮
+                      Button
                     </Button>
                   </div>
                   <div class="subitem">
                     <Button size="small" disabled circle>
-                      按钮
+                      Button
                     </Button>
                   </div>
                 </div>
@@ -229,16 +229,16 @@ export default defineComponent({
 ```vue
 <template>
   <div>
-    <DocsHeader title="Button 按钮" />
+    <DocsHeader title="Button" />
     <div class="doc-body">
       <div class="panel">
         <div class="panel__title">
-          主操作
+          Main operation
         </div>
         <div class="panel__content">
           <div class="btn-item">
             <Button type="primary">
-              主操作按钮
+              Main operation button
             </Button>
           </div>
           <div class="btn-item">
@@ -248,19 +248,19 @@ export default defineComponent({
           </div>
           <div class="btn-item">
             <Button type="primary" disabled>
-              不可操作
+              disabled
             </Button>
           </div>
         </div>
       </div>
       <div class="panel">
         <div class="panel__title">
-          次要操作
+          Secondary operation
         </div>
         <div class="panel__content">
           <div class="btn-item">
             <Button type="secondary">
-              次操作按钮
+              Secondary operation button
             </Button>
           </div>
           <div class="btn-item">
@@ -270,7 +270,7 @@ export default defineComponent({
           </div>
           <div class="btn-item">
             <Button type="secondary" disabled>
-              不可操作
+              disabled
             </Button>
           </div>
         </div>
@@ -278,11 +278,11 @@ export default defineComponent({
 
       <div class="panel">
         <div class="panel__title">
-          次次要操作
+          Secondary operation
         </div>
         <div class="panel__content">
           <div class="btn-item">
-            <Button>次次要操作按钮</Button>
+            <Button>Secondary operation button</Button>
           </div>
           <div class="btn-item">
             <Button loading>
@@ -291,7 +291,7 @@ export default defineComponent({
           </div>
           <div class="btn-item">
             <Button disabled>
-              不可操作
+              disabled
             </Button>
           </div>
         </div>
@@ -299,27 +299,27 @@ export default defineComponent({
 
       <div class="panel">
         <div class="panel__title">
-          通栏按钮
+          Column Button
         </div>
         <div class="panel__content" style="padding: 0;">
           <div class="btn-item">
             <Button type="primary" full>
-              主操作按钮
+              Main operation button
             </Button>
           </div>
           <div class="btn-item">
             <Button type="secondary" full>
-              次操作按钮
+              Secondary operation button
             </Button>
           </div>
           <div class="btn-item">
             <Button full>
-              次次要操作按钮
+              Secondary operation button
             </Button>
           </div>
           <div class="btn-item">
             <Button disabled full>
-              不可操作
+              disabled
             </Button>
           </div>
         </div>
@@ -327,23 +327,23 @@ export default defineComponent({
 
       <div class="panel">
         <div class="panel__title">
-          小按钮
+          Small Button
         </div>
         <div class="panel__content">
           <div class="btn-item">
             <div class="subitem">
               <Button type="primary" size="small">
-                按钮
+                Button
               </Button>
             </div>
             <div class="subitem">
               <Button type="secondary" size="small">
-                按钮
+                Button
               </Button>
             </div>
             <div class="subitem">
               <Button size="small">
-                按钮
+                Button
               </Button>
             </div>
           </div>
@@ -361,17 +361,17 @@ export default defineComponent({
           <div class="btn-item">
             <div class="subitem">
               <Button type="primary" size="small" disabled>
-                按钮
+                Button
               </Button>
             </div>
             <div class="subitem">
               <Button type="secondary" size="small" disabled>
-                按钮
+                Button
               </Button>
             </div>
             <div class="subitem">
               <Button size="small" disabled>
-                按钮
+                Button
               </Button>
             </div>
           </div>
@@ -380,23 +380,23 @@ export default defineComponent({
 
       <div class="panel">
         <div class="panel__title">
-          圆角按钮
+          Round button
         </div>
         <div class="panel__content">
           <div class="btn-item">
             <div class="subitem">
               <Button type="primary" size="small" circle>
-                按钮
+                Button
               </Button>
             </div>
             <div class="subitem">
               <Button type="secondary" size="small" circle>
-                按钮
+                Button
               </Button>
             </div>
             <div class="subitem">
               <Button size="small" circle>
-                按钮
+                Button
               </Button>
             </div>
           </div>
@@ -414,17 +414,17 @@ export default defineComponent({
           <div class="btn-item">
             <div class="subitem">
               <Button type="primary" size="small" disabled circle>
-                按钮
+                Button
               </Button>
             </div>
             <div class="subitem">
               <Button type="secondary" size="small" disabled circle>
-                按钮
+                Button
               </Button>
             </div>
             <div class="subitem">
               <Button size="small" disabled circle>
-                按钮
+                Button
               </Button>
             </div>
           </div>
@@ -455,3 +455,17 @@ export default {
 ```
 
 </div> 
+
+## API
+
+| Properties  | Descrition                            | Type                   | Default |
+| ----------- | ------------------------------------- | ---------------------- | ------- |
+| size        | button size                           | `small`, `normal`      | normal  |
+| type        | button type                           | `primary`, `secondary` | -       |
+| circle      | whethe is circle                      | boolean                | false   |
+| full        | whethe is block                       | boolean                | false   |
+| loading     | whethe is loading                     | boolean                | false   |
+| disabled    | whethe is disabled                    | boolean                | false   |
+| className   | class name                            | string                | -   |
+| style | custom style                      | CSSProperties                | -   |
+| onClick     | set the handler to handle click event | () => void             | false   |

@@ -247,3 +247,20 @@ export default defineComponent({
 ```
 
 </div> 
+
+## API
+
+| Properties | Descrition                      | Type          | Default |
+| ---------- | ------------------------------- | ------------- | ------- |
+| className  | class name                      | string        | -       |
+| style      | custom style                    | CSSProperties | -       |
+| pending    | whether is pending              | boolean       | `false` |
+| items      | see the table below for details | []            | []      |
+
+## items props
+| Properties | Descrition      | Type     | Default |
+| ---------- | --------------- | -------- | ------- |
+| icon       | icon            | string   | -       |
+| color      | color           | string   | -       |
+| title      | Required, title | string   | -       |
+| content    | Timeline content         | string[] | -       |

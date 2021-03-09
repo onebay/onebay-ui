@@ -30,7 +30,7 @@ export const list = {
     },
     {
       id: 'Button',
-      name: '按钮',
+      name: 'Button',
     },
   ],
   view: [
@@ -48,7 +48,7 @@ export const list = {
     },
     {
       id: 'Countdown',
-      name: '倒计时',
+      name: 'Countdown',
     },
     {
       id: 'Curtain',
@@ -56,7 +56,7 @@ export const list = {
     },
     {
       id: 'Divider',
-      name: '分割线',
+      name: 'Divider',
     },
     {
       id: 'NoticeBar',
