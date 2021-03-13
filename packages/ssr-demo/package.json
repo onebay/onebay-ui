@@ -1,6 +1,6 @@
 {
   "name": "vue3-ssr-demo",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "private": true,
   "scripts": {
     "startcsr": "vue-cli-service serve",
@@ -17,7 +17,7 @@
     "core-js": "^3.6.5",
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
-    "onebay-ui": "^1.0.0-alpha.1",
+    "onebay-ui": "^1.0.0-alpha.2",
     "sass": "^1.30.0",
     "sass-loader": "^10.1.0",
     "serialize-javascript": "^5.0.1",

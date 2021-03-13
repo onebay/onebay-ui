@@ -1,6 +1,6 @@
 {
   "name": "onebay-ui",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "A Mobile UI library built on Vue 3",
   "browser": "dist/index.umd.js",
   "module": "es/index.js",
@@ -19,7 +19,8 @@
     "dist",
     "lib",
     "es",
-    "types"
+    "types",
+    "src/style"
   ],
   "keywords": [],
   "author": "",

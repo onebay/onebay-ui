@@ -54,4 +54,9 @@ export default {
   border-radius: 10px;
   box-shadow: 1px 0 var(--border-color);
 }
+@media screen and (max-width: 414px) {
+  .iframe-window {
+    border: 0;
+  }
+}
 </style>
