@@ -3,16 +3,29 @@ const path = require('path');
 module.exports = {
   lang: 'en-US',
   description: 'A mobile web UI library write by vue3',
-  title: 'onebay',
+  title: 'Onebay',
   head: [
     ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: '/assets/images/favicon.ico' }],
   ],
+  markdown: {
+    anchor: { permalink: false },
+  },
   themeConfig: {
     logo: '/assets/images/onebay.png',
+    nav: [
+      { text: 'Guide', link: '/guide/getting-started' },
+      { text: 'Components', link: '/docs/action/action-sheet' },
+      { text: 'Release Notes', link: 'https://github.com/onebay/onebay-ui/releases' },
+      { text: 'Github', link: 'https://github.com/onebay/onebay-ui' }
+    ],
     sidebar: [
       {
-        text: 'introduce',
-        link: '/'
+        text: 'Introduce',
+        link: '/guide/'
+      },
+      {
+        text: 'Getting started',
+        link: '/guide/getting-started'
       },
       {
         text: 'action',

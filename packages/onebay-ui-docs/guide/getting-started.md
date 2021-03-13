@@ -1,0 +1,145 @@
+## Install
+
+``` bash
+npm i onebay-ui -S
+```
+or
+``` bash
+yarn add onebay-ui
+```
+
+## Usage
+``` ts
+import { defineComponent } from 'vue'
+import { Button } from 'onebay-ui'
+
+export default defineComponent({
+  setup() {
+    return () => {
+      return (
+        <Button>Submit</Button>
+      )
+    }
+  }
+})
+```
+
+## Import component style(Recommended)
+
+### Only import the styles of the components that are used
+``` ts
+import { Button } from 'onebay-ui'
+import 'onebay-ui/dist/style/button.css'
+```
+
+### Using with vite
+If our app was created by vite, it is strongly recommended to use the vite plugin [vite-plugin-imp](https://github.com/onebay/vite-plugin-imp) in your project, which can automatically import component styles for you on demand.
+``` ts
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import vitePluginImp from 'vite-plugin-imp'
+
+export default defineConfig({
+  plugins: [
+    vue(),
+    vitePluginImp({
+      libList: [
+        {
+          libName: 'onebay-ui',
+          style(name) {
+            return `onebay-ui/dist/style/${name}.css`
+          }
+        }
+      ]
+    })
+  ]
+})
+
+```
+Checkout the demo on [codesandbox](https://codesandbox.io/s/vite-project-hph7n?file=/vite.config.ts)
+
+### Using with vue-cli
+If our app was created by vue-cli, we can use [babel-plugin-import](https://www.npmjs.com/package/babel-plugin-import) as below:
+``` ts
+module.exports = {
+  presets: ["@vue/cli-plugin-babel/preset"],
+  plugins: [
+    [
+      "import",
+      {
+        libraryName: "onebay-ui",
+        libraryDirectory: "es",
+        style: name => {
+          return `${name.replace("/es/", "/dist/style/")}.css`;
+        }
+      }
+    ]
+  ]
+};
+
+```
+
+### Import all components styles(Not recommended)
+``` ts
+import 'onebay-ui/dist/style/index.css'
+```
+
+## Custom theme
+We need import scss file in project, and inject scss variable.
+### Using with vite
+
+``` ts{13-23,31}
+// vite.vonfig.ts
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import vitePluginImp from 'vite-plugin-imp'
+
+export default defineConfig({
+  esbuild: {
+    jsxFactory: 'h',
+    jsxFragment: 'Fragment',
+    jsxInject: "import { h } from 'vue';"
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          $color-brand: #ffc701;
+          $color-brand-light: #ffd541;
+          $color-brand-dark: #cc9f01;
+        `
+      }
+    }
+  },
+  plugins: [
+    vue(),
+    vitePluginImp({
+      libList: [
+        {
+          libName: 'onebay-ui',
+          style(name) {
+            return `onebay-ui/src/style/components/${name}.scss`
+          }
+        }
+      ]
+    })
+  ]
+})
+```
+
+### Using with vue-cli
+``` ts
+module.exports = {
+  css: {
+    loaderOptions: {
+      sass: {
+        additionalData: `
+          $color-brand: #ffc701;
+          $color-brand-light: #ffd541;
+          $color-brand-dark: #cc9f01;
+        `
+      }
+    }
+  }
+}
+```
