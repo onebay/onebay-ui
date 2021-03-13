@@ -1,15 +1,6 @@
-/*
- * @Author: pengyue
- * @Date: 2020-07-05 16:12:58
- * @LastEditTime: 2020-07-05 16:15:47
- * @LastEditors: pengyue
- * @Description:
- * @FilePath: /taro-ui-vue/src/pages/panel/listConfig.js
- */
 import iconAction from '../../assets/images/icon-list-action.png'
 import iconBasic from '../../assets/images/icon-list-basic.png'
 import iconForm from '../../assets/images/icon-list-form.png'
-import iconHOC from '../../assets/images/icon-list-hoc.png'
 import iconLayout from '../../assets/images/icon-list-layout.png'
 import iconNavigation from '../../assets/images/icon-list-navigation.png'
 import iconView from '../../assets/images/icon-list-view.png'
@@ -17,42 +8,18 @@ import iconView from '../../assets/images/icon-list-view.png'
 export const list = {
   basic: [
     {
-      id: 'Color',
-      name: '颜色',
-    },
-    {
       id: 'Icon',
       name: '图标',
     },
     {
-      id: 'Typo',
-      name: '字体',
-    },
-    {
       id: 'Button',
-      name: 'Button',
+      name: '按钮',
     },
   ],
   view: [
     {
-      id: 'Avatar',
-      name: '头像',
-    },
-    {
-      id: 'Article',
-      name: '文章',
-    },
-    {
       id: 'Badge',
       name: '徽标',
-    },
-    {
-      id: 'Countdown',
-      name: 'Countdown',
-    },
-    {
-      id: 'Curtain',
-      name: '幕帘',
     },
     {
       id: 'Divider',
@@ -80,7 +47,7 @@ export const list = {
     },
     {
       id: 'Steps',
-      name: '步骤条',
+      name: 'Steps',
     },
     {
       id: 'Image-Preview',
@@ -98,7 +65,7 @@ export const list = {
     },
     {
       id: 'Modal',
-      name: '模态框',
+      name: 'Modal',
     },
     {
       id: 'Progress',
@@ -114,7 +81,7 @@ export const list = {
     },
     {
       id: 'Message',
-      name: 'notification',
+      name: 'Message',
     },
     {
       id: 'Pull-To-Refresh',
@@ -181,20 +148,8 @@ export const list = {
       name: '弹性布局',
     },
     {
-      id: 'Row',
-      name: 'Percentage layout',
-    },
-    {
-      id: 'Grid',
-      name: '栅格',
-    },
-    {
       id: 'List',
       name: '列表',
-    },
-    {
-      id: 'Card',
-      name: '卡片',
     },
     {
       id: 'Float-Layout',
@@ -231,49 +186,35 @@ export const list = {
       name: '抽屉',
     },
     {
-      id: 'Indexes',
-      name: '索引选择器',
-    },
-    {
       id: 'Back-Top',
       name: 'Back Top Button',
     },
-  ],
-  advanced: [
-    {
-      id: 'Calendar',
-      name: '日历',
-    },
-  ],
+  ]
 }
 
 export const panelNames = {
   basic: {
-    name: '基础',
+    name: 'Basic',
     icon: iconBasic,
   },
   view: {
-    name: '视图',
+    name: 'View',
     icon: iconView,
   },
   action: {
-    name: '操作反馈',
+    name: 'Action',
     icon: iconAction,
   },
   form: {
-    name: '表单',
+    name: 'Form',
     icon: iconForm,
   },
   layout: {
-    name: '布局',
+    name: 'Layout',
     icon: iconLayout,
   },
   navigation: {
-    name: '导航',
+    name: 'Navigation',
     icon: iconNavigation,
-  },
-  advanced: {
-    name: '高阶组件',
-    icon: iconHOC,
-  },
+  }
 }

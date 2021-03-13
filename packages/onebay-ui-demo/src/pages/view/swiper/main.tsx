@@ -45,7 +45,7 @@ export default defineComponent({
       const { dataImgItem } = state
       return (
         <div class="page">
-          <DocsHeader title="Steps"></DocsHeader>
+          <DocsHeader title="Swiper"></DocsHeader>
 
           <div class="doc-body">
             <div class="panel">
