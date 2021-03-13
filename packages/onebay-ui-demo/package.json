@@ -1,6 +1,6 @@
 {
   "name": "onebay-ui-demo",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "private": "true",
   "scripts": {
     "start": "vite",
@@ -11,7 +11,7 @@
   "dependencies": {
     "@vitejs/plugin-vue": "^1.0.5",
     "classnames": "^2.2.6",
-    "onebay-ui": "^1.0.0-alpha.1",
+    "onebay-ui": "^1.0.0-alpha.2",
     "vite-plugin-imp": "^2.0.2",
     "vue": "^3.0.6",
     "vue-router": "^4.0.0-beta.9"
