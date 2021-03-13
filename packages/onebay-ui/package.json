@@ -19,7 +19,8 @@
     "dist",
     "lib",
     "es",
-    "types"
+    "types",
+    "src/style"
   ],
   "keywords": [],
   "author": "",
