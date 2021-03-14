@@ -35,6 +35,7 @@ jobs:
           npm -v
           npm install
           npm run build
+          npm run sitemap
           mkdir ../onebay-ui-docs/.vitepress/dist/demo -p
           cp ./dist/* ../onebay-ui-docs/.vitepress/dist/demo/ -r
 

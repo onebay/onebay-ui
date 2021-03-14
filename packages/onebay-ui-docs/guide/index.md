@@ -11,5 +11,5 @@ All Components demo in this document are written by vue template and tsx.
 ## Demo
 Scan the onebay QR code to view the [demo](https://onebay.io/demo/#/) on your mobile phone.
 <div>
-  <img src="/assets/images/onebay-qrcode.png" width="200px">
+  <img src="/assets/images/onebay-qrcode.png" width="200">
 </div>

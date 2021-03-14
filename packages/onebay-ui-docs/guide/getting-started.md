@@ -24,7 +24,7 @@ export default defineComponent({
 })
 ```
 
-## Import component style(Recommended)
+## Import component style (Recommended)
 
 ### Only import the styles of the components that are used
 ``` ts
@@ -33,7 +33,7 @@ import 'onebay-ui/dist/style/button.css'
 ```
 
 ### Using with vite
-If our app was created by vite, it is strongly recommended to use the vite plugin [vite-plugin-imp](https://github.com/onebay/vite-plugin-imp) in your project, which can automatically import component styles for you on demand.
+If your app was created by vite, it is strongly recommended to use the vite plugin [vite-plugin-imp](https://github.com/onebay/vite-plugin-imp) in your project, which can automatically import component styles for you on demand.
 ``` ts
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -59,7 +59,7 @@ export default defineConfig({
 Checkout the demo on [codesandbox](https://codesandbox.io/s/vite-project-hph7n?file=/vite.config.ts)
 
 ### Using with vue-cli
-If our app was created by vue-cli, we can use [babel-plugin-import](https://www.npmjs.com/package/babel-plugin-import) as below:
+If your app was created by vue-cli, you can use [babel-plugin-import](https://www.npmjs.com/package/babel-plugin-import) as below:
 ``` ts
 module.exports = {
   presets: ["@vue/cli-plugin-babel/preset"],
@@ -79,16 +79,16 @@ module.exports = {
 
 ```
 
-### Import all components styles(Not recommended)
+### Import all components styles (Not recommended)
 ``` ts
 import 'onebay-ui/dist/style/index.css'
 ```
 
 ## Custom theme
-We need import scss file in project, and inject scss variable.
+You need to inject scss variables in your project.
 ### Using with vite
 
-``` ts{13-23,31}
+``` ts{12-22,30}
 // vite.vonfig.ts
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -126,6 +126,7 @@ export default defineConfig({
   ]
 })
 ```
+Checkout demo in [onebay-ui-custom-theme-with-vite](https://github.com/psaren/onebay-ui-custom-theme-with-vite)
 
 ### Using with vue-cli
 ``` ts
@@ -143,3 +144,4 @@ module.exports = {
   }
 }
 ```
+Checkout demo in [onebay-ui-custom-theme-with-vue-cli](https://github.com/psaren/onebay-ui-custom-theme-with-vue-cli)

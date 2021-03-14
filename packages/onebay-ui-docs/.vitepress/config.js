@@ -3,9 +3,11 @@ const path = require('path');
 module.exports = {
   lang: 'en-US',
   description: 'A mobile web UI library write by vue3',
-  title: 'Onebay',
+  title: 'OnebayUI',
   head: [
     ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: '/assets/images/favicon.ico' }],
+    ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-M049RY7KX1' }],
+    ['script', { src: '/assets/js/ga.js' }],
   ],
   markdown: {
     anchor: { permalink: false },

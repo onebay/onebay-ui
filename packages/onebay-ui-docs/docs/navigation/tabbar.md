@@ -246,7 +246,7 @@ export default defineComponent({
 | selectedColor   | checked label font and icon color                                                                            | string        | '#fff'  |
 | backgroundColor | background color                                                                                             | string        | ''      |
 | tabList         | tab list, please see the table below                                                                         | []            | []      |
-| onClick         | Required. Click to trigger the event, you needs to update the current value change through the onClick event | []            | []      |
+| onClick         | Required. Click to trigger the event, you need to update the current value change through the onClick event | []            | []      |
 
 ## tabList object
 | Properties       | Descrition                                                                                                           | Type    | Default |

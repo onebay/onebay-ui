@@ -348,9 +348,9 @@ export default defineComponent({
 | ---------- | -------------------------------------------------------------------------------------------------------- | ------------- | ------- |
 | className  | class name                                                                                               | string        | -       |
 | style      | custom style                                                                                             | CSSProperties | -       |
-| current    | Required, the current step index value, you needs to update the current value through the onChange event | number        | 0       |
+| current    | Required, the current step index value, you need to update the current value through the onChange event | number        | 0       |
 | items      | Step data list, see the table below for specific fields                                                  | []            | []      |
-| onChange   | Required, Click to trigger the event, you needs to update the current through the onChange event         | []            | []      |
+| onChange   | Required, Click to trigger the event, you need to update the current through the onChange event         | []            | []      |
 
 ## items props
 

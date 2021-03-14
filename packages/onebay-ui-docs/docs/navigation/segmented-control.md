@@ -182,4 +182,4 @@ export default defineComponent({
 | selectedColor | The selected label background color and border color                                                         | string               | ''      |
 | fontSize      | font size                                                                                                    | `number | string`    | 20      |
 | values        | Option array, the value is a string, eg: ['tab page 1','tab page 2']                                         | []                   | -       |
-| onClick       | Required. Click to trigger the event, you needs to update the current value change through the onClick event | (index, event)=>void | -       |
+| onClick       | Required. Click to trigger the event, you need to update the current value change through the onClick event | (index, event)=>void | -       |

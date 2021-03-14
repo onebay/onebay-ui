@@ -207,7 +207,7 @@ export default defineComponent({
 | textOverflowForbidden | Whether to prohibit text overflow                                        | boolean          | `true`  |
 | height                | custom textarea height                                                   | number           | -       |
 | count                 | Whether to calculate the textarea content length                         | boolean          | `true`  |
-| value                 | Required, you needs to update the value value through the onChange event | string           | ''      |
+| value                 | Required, you need to update the value value through the onChange event | string           | ''      |
 | onBlur                | The event triggered when the textarea loses focus                        | (e: Event)=>void | -       |
 | onFocus               | The event triggered when the textarea get focus                          | (e: Event)=>void | -       |
 | onChange              | trigger when the textarea change                                         | (value) => void  | -       |

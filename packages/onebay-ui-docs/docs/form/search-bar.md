@@ -220,7 +220,7 @@ export default defineComponent({
 
 | Properties       | Descrition                                                                                                                                           | Type                   | Default |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------- |
-| value            | Required, the current value of the input box, you needs to update the value value through the onChange event                                         | number                 | 0       |
+| value            | Required, the current value of the input box, you need to update the value value through the onChange event                                         | number                 | 0       |
 | className        | class name                                                                                                                                           | string                 | -       |
 | style      | custom style                                                                                                                                         | CSSProperties          | -       |
 | placeholder      | placeholder text                                                                                                                                     | string                 | Search  |

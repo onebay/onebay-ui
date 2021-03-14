@@ -8,11 +8,13 @@
   "private": "true",
   "devDependencies": {
     "sass": "^1.32.8",
+    "sitemap-generator": "^8.5.1",
     "vitepress": "^0.12.2"
   },
   "scripts": {
     "start": "vitepress",
     "build": "vitepress build",
+    "sitemap": "node ./src/sitemapGenerate.js",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
