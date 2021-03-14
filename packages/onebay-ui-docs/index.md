@@ -2,7 +2,7 @@
 home: true
 heroImage: /assets/images/onebay.png
 heroAlt: Logo image
-heroText: Onebay
+heroText: OnebayUI
 tagline: A mobile web UI library write by vue3.
 actionText: Get Started
 actionLink: /guide/getting-started

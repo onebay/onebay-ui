@@ -1,4 +1,4 @@
-## What is Onebay?
+## What is OnebayUI?
 OnebayUI is a mobile web UI library written with vue3, it can help you write vue3 applications quickly and easily.  
 All components are written with tsx.  
 All Components demo in this document are written by vue template and tsx. 
